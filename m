@@ -2,43 +2,43 @@ Return-Path: <cip-testing-results-bounces@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from mail.linuxfoundation.org (mail.linuxfoundation.org [140.211.169.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 8A1EB9C436
-	for <lists@lfdr.de>; Sun, 25 Aug 2019 15:59:57 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id B09A49C474
+	for <lists@lfdr.de>; Sun, 25 Aug 2019 16:44:03 +0200 (CEST)
 Received: from mail.linux-foundation.org (localhost [127.0.0.1])
-	by mail.linuxfoundation.org (Postfix) with ESMTP id 1018B10B1;
-	Sun, 25 Aug 2019 13:59:56 +0000 (UTC)
+	by mail.linuxfoundation.org (Postfix) with ESMTP id 0D39110CE;
+	Sun, 25 Aug 2019 14:44:02 +0000 (UTC)
 X-Original-To: cip-testing-results@lists.cip-project.org
 Delivered-To: cip-testing-results@mail.linuxfoundation.org
 Received: from smtp1.linuxfoundation.org (smtp1.linux-foundation.org
 	[172.17.192.35])
-	by mail.linuxfoundation.org (Postfix) with ESMTPS id DBC9010AF
+	by mail.linuxfoundation.org (Postfix) with ESMTPS id 4327910C7
 	for <cip-testing-results@lists.cip-project.org>;
-	Sun, 25 Aug 2019 13:59:54 +0000 (UTC)
+	Sun, 25 Aug 2019 14:44:00 +0000 (UTC)
 X-Greylist: domain auto-whitelisted by SQLgrey-1.7.6
 Received: from a27-42.smtp-out.us-west-2.amazonses.com
 	(a27-42.smtp-out.us-west-2.amazonses.com [54.240.27.42])
-	by smtp1.linuxfoundation.org (Postfix) with ESMTPS id DA442887
+	by smtp1.linuxfoundation.org (Postfix) with ESMTPS id BFB52756
 	for <cip-testing-results@lists.cip-project.org>;
-	Sun, 25 Aug 2019 13:59:53 +0000 (UTC)
+	Sun, 25 Aug 2019 14:43:59 +0000 (UTC)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
-	s=xioabx2jkcysio5xms3ztvaqoydfvujj; d=ciplatform.org; t=1566741593;
+	s=xioabx2jkcysio5xms3ztvaqoydfvujj; d=ciplatform.org; t=1566744239;
 	h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID;
-	bh=eT4EdZB3FvNI+Ci4OLDfmrHiR8xwF3Q2+bTtVAhIUQ4=;
-	b=kZ09qeVq7YZRO9asFRQlZzIZWQf3oUbCW89q5OV4NTLfgDvHYDWkC9QyDBiaJ5QL
-	F6juoIFolVvKO5lWr51TFSvLNX4jQVLo6IBUCs2oovlRuHRrWPN4S3uTec2nw+g03Zd
-	rGGabwPsKGnh06BbbxfGsEbJOZaL31w0eI5HykAc=
+	bh=Ou47Q4l9NkC/2nO4abltch4T0lcahMEkxgf2OHGS52s=;
+	b=AY49bEctlCJl/4aGlECW5MIVA+V7XuBG+BqsXuYoQyeqPkPobH1/+QWSX2bOgp+u
+	V6yUkv2KQ+yVF7uu74zPV8orPlF+vX5qUcg+LTl/bGnRx75n4XV/ENEJZgMT97ZkP4S
+	607sDzRlguiT8zigpjX0Dum7daud255ueI7OGI0Y=
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
-	s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1566741593;
+	s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1566744239;
 	h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID:Feedback-ID;
-	bh=eT4EdZB3FvNI+Ci4OLDfmrHiR8xwF3Q2+bTtVAhIUQ4=;
-	b=C/p2/w5XIB2Qy3mTUn4fdTT3bPIBMqrssYrg6WGdpbzrNvYe3pVIMj3K0DpCg4I3
-	GkFycjOAccx8E/HtXqVGf44TKpVPGYKVPIeIdRnTPeCdVtf0RPYo18KV9zHnLXPRpX8
-	mHpj5ObGDfLmhBiT+vtbtgpuvyFklcmYglh/Dq7o=
+	bh=Ou47Q4l9NkC/2nO4abltch4T0lcahMEkxgf2OHGS52s=;
+	b=d1kIHiIzZp8bsO1dDAzGvOnWnevBxPrDM/qIzJfbY1RWiRNuRQ+Akfb4B/2SrsWl
+	EOQ4ZaRF8smAhxa+OZ9r7mB6TjNDYx6B7S+6zW9WZzyLAxRdVcMDh4PADLc/Acw4QgC
+	c5zFrbsXYf5x8CvntoF+CcaK1FBY643EaJuTGxeo=
 MIME-Version: 1.0
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Sun, 25 Aug 2019 13:59:53 +0000
-Message-ID: <0101016cc9137b82-21bd9016-f3e8-4931-98d6-58f57b9398c8-000000@us-west-2.amazonses.com>
+Date: Sun, 25 Aug 2019 14:43:58 +0000
+Message-ID: <0101016cc93bdb1a-d69b0fe9-4697-467b-aec1-3d0b84e7d081-000000@us-west-2.amazonses.com>
 X-SES-Outgoing: 2019.08.25-54.240.27.42
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 X-Spam-Status: No, score=-2.0 required=5.0 tests=BAYES_00,DKIM_SIGNED,
@@ -46,8 +46,8 @@ X-Spam-Status: No, score=-2.0 required=5.0 tests=BAYES_00,DKIM_SIGNED,
 	RCVD_IN_DNSWL_NONE autolearn=ham version=3.3.1
 X-Spam-Checker-Version: SpamAssassin 3.3.1 (2010-03-16) on
 	smtp1.linux-foundation.org
-Subject: [Cip-testing-results] LAVA notification for Test Job 3209
- Altera-Terasic-Deo-Nano healthcheck
+Subject: [Cip-testing-results] LAVA notification for Test Job 3210 x86
+	health-check
 X-BeenThere: cip-testing-results@lists.cip-project.org
 X-Mailman-Version: 2.1.12
 Precedence: list
@@ -68,26 +68,26 @@ Errors-To: cip-testing-results-bounces@lists.cip-project.org
 
 Hello,
 
-The job with ID # 3209 is now in state Finished and health Complete. Job was submitted by lava-health.
+The job with ID # 3210 is now in state Finished and health Complete. Job was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/3209
+Job details and log file: http://lava.ciplatform.org/scheduler/job/3210
 
 
 
 
 Device details:
-Hostname: Altera-Terasic-Deo-Nano-01
-Type: Altera-Terasic-Deo-Nano
+Hostname: x86-SIMATIC-IPC227E
+Type: x86
 Owner: siemens-users
 Worker: lab-cip-mentor
 Job details:
 Priority: Medium
 Visibility: Publicly visible
-Description: Altera-Terasic-Deo-Nano healthcheck
-Submitted: 2019-08-25 13:57:17 (+0000 UTC)
-Started: 2019-08-25 13:57:18 (+0000 UTC)
-Finished: 2019-08-25 13:59:52 (+0000 UTC)
-Duration: 0:02:34.328436
+Description: x86 health-check
+Submitted: 2019-08-25 14:38:30 (+0000 UTC)
+Started: 2019-08-25 14:38:30 (+0000 UTC)
+Finished: 2019-08-25 14:43:58 (+0000 UTC)
+Duration: 0:05:27.742529
 
 -- 
 LAVA
