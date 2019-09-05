@@ -2,52 +2,52 @@ Return-Path: <cip-testing-results-bounces@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from mail.linuxfoundation.org (mail.linuxfoundation.org [140.211.169.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 1D55CAA8CE
-	for <lists@lfdr.de>; Thu,  5 Sep 2019 18:21:17 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id E8207AA8DA
+	for <lists@lfdr.de>; Thu,  5 Sep 2019 18:23:51 +0200 (CEST)
 Received: from mail.linux-foundation.org (localhost [127.0.0.1])
-	by mail.linuxfoundation.org (Postfix) with ESMTP id C9A70194C;
-	Thu,  5 Sep 2019 16:21:15 +0000 (UTC)
+	by mail.linuxfoundation.org (Postfix) with ESMTP id A914A1A5D;
+	Thu,  5 Sep 2019 16:23:50 +0000 (UTC)
 X-Original-To: cip-testing-results@lists.cip-project.org
 Delivered-To: cip-testing-results@mail.linuxfoundation.org
 Received: from smtp1.linuxfoundation.org (smtp1.linux-foundation.org
 	[172.17.192.35])
-	by mail.linuxfoundation.org (Postfix) with ESMTPS id E57E014E3
+	by mail.linuxfoundation.org (Postfix) with ESMTPS id E33ED1A53
 	for <cip-testing-results@lists.cip-project.org>;
-	Thu,  5 Sep 2019 16:21:13 +0000 (UTC)
+	Thu,  5 Sep 2019 16:23:49 +0000 (UTC)
 X-Greylist: domain auto-whitelisted by SQLgrey-1.7.6
-Received: from a27-50.smtp-out.us-west-2.amazonses.com
-	(a27-50.smtp-out.us-west-2.amazonses.com [54.240.27.50])
-	by smtp1.linuxfoundation.org (Postfix) with ESMTPS id 8BFD6887
+Received: from a27-42.smtp-out.us-west-2.amazonses.com
+	(a27-42.smtp-out.us-west-2.amazonses.com [54.240.27.42])
+	by smtp1.linuxfoundation.org (Postfix) with ESMTPS id 846137DB
 	for <cip-testing-results@lists.cip-project.org>;
-	Thu,  5 Sep 2019 16:21:13 +0000 (UTC)
+	Thu,  5 Sep 2019 16:23:49 +0000 (UTC)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
-	s=xioabx2jkcysio5xms3ztvaqoydfvujj; d=ciplatform.org; t=1567700472;
+	s=xioabx2jkcysio5xms3ztvaqoydfvujj; d=ciplatform.org; t=1567700629;
 	h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID;
-	bh=c4LbLeluCuDBr7+4yKDLaYcNBAk7X3xMGbhHPuAnBjA=;
-	b=kY9/CIEuvWE6SOGUEtAYYwUdVTeLtQ45jxbwrPimgBgPLctFT0hsbSAH8Iq0YdUN
-	KiUi23lcKE6wgI5BDBK3KKdvd1LYiXIhr9ZQEUrOFagKW12uA4LqtiydDAHRgn8hFST
-	GNipidWvltVJpFJ3vKLxwJiG3kJk5NmzcXBRer7k=
+	bh=EtU7vyBTViTlGWLNevKcUVg0Obv/5j02YLl99Z6JR9Y=;
+	b=F/N/dmTh4j59fBIcWmxjkOiSVmcCy4q2WsjQ026ry/vyGICn468eXj9SWqXm8DLf
+	D8LkWkVoz5fCATVTp8UamZrIutR/jgkwMMrFUoGOqPTl6p3iZq0qi6KjoxigIzTlmC2
+	VeXg5AdsXFy+BUT71cZsxTucucdTPkdH2liWwfF8=
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
-	s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1567700472;
+	s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1567700628;
 	h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID:Feedback-ID;
-	bh=c4LbLeluCuDBr7+4yKDLaYcNBAk7X3xMGbhHPuAnBjA=;
-	b=Ny2zR4o6fIKu1xzZPQuObhLvXN9xHviyWRE58Ow8kQGTNpb6HCT/oRj+pSoTVsU0
-	9Zl5P7n7Qkv/0rNOF8cTJ+mXKxXpj8BGCG0NRkM8TFWdtOqQDET+tovNwd+pZ+X9Q7E
-	Mqv6o+/OpBrOEuiVNawGbrbG72EeBDtuULkJvQTM=
+	bh=EtU7vyBTViTlGWLNevKcUVg0Obv/5j02YLl99Z6JR9Y=;
+	b=Blb4pLRQ9OUoN02iWh2yYstFbDtNJg4tbEuqZMd5j8Kw1ZEXvsDNhsRud9p19wVV
+	YZBI5mw0BeaXZqPvH0D+v3nAM4idJQXPpgpHECVKArqUI6oYuTuSBeL+JTZtDYTfBLG
+	YT2Az76n0uon6tlcZqbMZ5c/riu87galy695SViI=
 MIME-Version: 1.0
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Thu, 5 Sep 2019 16:21:12 +0000
-Message-ID: <0101016d023ad3b4-1c407c34-30db-479d-a0ae-87fcfc0097e5-000000@us-west-2.amazonses.com>
-X-SES-Outgoing: 2019.09.05-54.240.27.50
+Date: Thu, 5 Sep 2019 16:23:48 +0000
+Message-ID: <0101016d023d3553-0c8f40c3-2fff-4882-a0af-c9e91f9ecc4b-000000@us-west-2.amazonses.com>
+X-SES-Outgoing: 2019.09.05-54.240.27.42
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 X-Spam-Status: No, score=-2.0 required=5.0 tests=BAYES_00,DKIM_SIGNED,
 	DKIM_VALID, DKIM_VALID_AU,
 	RCVD_IN_DNSWL_NONE autolearn=ham version=3.3.1
 X-Spam-Checker-Version: SpamAssassin 3.3.1 (2010-03-16) on
 	smtp1.linux-foundation.org
-Subject: [Cip-testing-results] LAVA notification for Test Job 3466
- 4.19.66-cip9_50145768c_arm_shmobile_defconfig_r8a7745-iwg22d-sodimm-dbhd-ca.dtb_healthcheck
+Subject: [Cip-testing-results] LAVA notification for Test Job 3467
+ 4.19.66-cip9_50145768c_arm_shmobile_defconfig_r8a7745-iwg22d-sodimm-dbhd-ca.dtb_smc
 X-BeenThere: cip-testing-results@lists.cip-project.org
 X-Mailman-Version: 2.1.12
 Precedence: list
@@ -68,9 +68,9 @@ Errors-To: cip-testing-results-bounces@lists.cip-project.org
 
 Hello,
 
-The job with ID # 3466 is now in state Finished and health Complete. Job was submitted by CIP-Testing.
+The job with ID # 3467 is now in state Finished and health Complete. Job was submitted by CIP-Testing.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/3466
+Job details and log file: http://lava.ciplatform.org/scheduler/job/3467
 
 
 
@@ -83,42 +83,58 @@ Worker: lab-cip-renesas
 Job details:
 Priority: Medium
 Visibility: Publicly visible
-Description: 4.19.66-cip9_50145768c_arm_shmobile_defconfig_r8a7745-iwg22d-sodimm-dbhd-ca.dtb_healthcheck
-Submitted: 2019-09-05 16:13:06 (+0000 UTC)
-Started: 2019-09-05 16:19:41 (+0000 UTC)
-Finished: 2019-09-05 16:21:12 (+0000 UTC)
-Duration: 0:01:31.319599
+Description: 4.19.66-cip9_50145768c_arm_shmobile_defconfig_r8a7745-iwg22d-sodimm-dbhd-ca.dtb_smc
+Submitted: 2019-09-05 16:13:07 (+0000 UTC)
+Started: 2019-09-05 16:21:21 (+0000 UTC)
+Finished: 2019-09-05 16:23:48 (+0000 UTC)
+Duration: 0:02:26.857188
 
 Metadata:
 
 Results:
 
 
-Test Suite 0_kernel-version-inline: http://lava.ciplatform.org/results/3466/0_kernel-version-inline
-Test Case uname: Test passed
+Test Suite 0_spectre-meltdown-checker-test: http://lava.ciplatform.org/results/3467/0_spectre-meltdown-checker-test
+Test Case CVE-2019-11091: Test passed
+Test Case CVE-2018-12127: Test passed
+Test Case CVE-2018-12130: Test passed
+Test Case CVE-2018-12126: Test passed
+Test Case CVE-2018-3646: Test passed
+Test Case CVE-2018-3620: Test passed
+Test Case CVE-2018-3615: Test passed
+Test Case CVE-2018-3639: Test passed
+Test Case CVE-2018-3640: Test passed
+Test Case CVE-2017-5754: Test passed
+Test Case CVE-2017-5715: Test passed
+Test Case CVE-2017-5753: Test passed
 
-Test Suite lava: http://lava.ciplatform.org/results/3466/lava
+Test Suite lava: http://lava.ciplatform.org/results/3467/lava
 Test Case job: Test passed
 Test Case power-off: Test passed
 Measurement: 0.2300000000 seconds
-Test Case 0_kernel-version-inline: Test passed
-Measurement: 0.1400000000 seconds
+Test Case 0_spectre-meltdown-checker-test: Test passed
+Measurement: 6.1300000000 seconds
 Test Case auto-login-action: Test passed
-Measurement: 11.7300000000 seconds
+Measurement: 11.7200000000 seconds
 Test Case kernel-messages: Test passed
 Measurement: 10.8200000000 seconds
 Test Case pdu-reboot: Test passed
 Measurement: 0.2300000000 seconds
 Test Case bootloader-overlay: Test passed
 Test Case test-runscript-overlay: Test passed
+Measurement: 0.0100000000 seconds
 Test Case test-install-overlay: Test passed
+Measurement: 0.0100000000 seconds
 Test Case test-overlay: Test passed
+Measurement: 0.0100000000 seconds
+Test Case git-repo-action: Test passed
+Measurement: 8.2900000000 seconds
 Test Case http-download: Test passed
-Measurement: 5.8600000000 seconds
+Measurement: 5.6600000000 seconds
 Test Case http-download: Test passed
-Measurement: 1.2100000000 seconds
+Measurement: 0.9900000000 seconds
 Test Case http-download: Test passed
-Measurement: 3.4300000000 seconds
+Measurement: 36.9100000000 seconds
 Test Case validate: Test passed
 No query is set for results comparing.
 
