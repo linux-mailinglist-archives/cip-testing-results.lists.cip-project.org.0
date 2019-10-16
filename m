@@ -2,24 +2,24 @@ Return-Path: <cip-testing-results-bounces@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from mail.linuxfoundation.org (mail.linuxfoundation.org [140.211.169.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id F3256D9F1D
-	for <lists@lfdr.de>; Thu, 17 Oct 2019 00:08:57 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id 277D5D9E2C
+	for <lists@lfdr.de>; Thu, 17 Oct 2019 00:02:59 +0200 (CEST)
 Received: from mail.linux-foundation.org (localhost [127.0.0.1])
-	by mail.linuxfoundation.org (Postfix) with ESMTP id 75B50D6A;
-	Wed, 16 Oct 2019 22:08:56 +0000 (UTC)
+	by mail.linuxfoundation.org (Postfix) with ESMTP id A69DCD7D;
+	Wed, 16 Oct 2019 22:02:57 +0000 (UTC)
 X-Original-To: cip-testing-results@lists.cip-project.org
 Delivered-To: cip-testing-results@mail.linuxfoundation.org
-Received: from smtp2.linuxfoundation.org (smtp2.linux-foundation.org
-	[172.17.192.36])
-	by mail.linuxfoundation.org (Postfix) with ESMTPS id 8876CC00
+Received: from smtp1.linuxfoundation.org (smtp1.linux-foundation.org
+	[172.17.192.35])
+	by mail.linuxfoundation.org (Postfix) with ESMTPS id A50FECAD
 	for <cip-testing-results@lists.cip-project.org>;
-	Wed, 16 Oct 2019 22:08:55 +0000 (UTC)
+	Wed, 16 Oct 2019 22:02:55 +0000 (UTC)
 X-Greylist: domain auto-whitelisted by SQLgrey-1.7.6
 Received: from a27-27.smtp-out.us-west-2.amazonses.com
 	(a27-27.smtp-out.us-west-2.amazonses.com [54.240.27.27])
-	by smtp2.linuxfoundation.org (Postfix) with ESMTPS id 1080A1DE7D
+	by smtp1.linuxfoundation.org (Postfix) with ESMTPS id 2A2E789D
 	for <cip-testing-results@lists.cip-project.org>;
-	Wed, 16 Oct 2019 22:08:55 +0000 (UTC)
+	Wed, 16 Oct 2019 22:02:55 +0000 (UTC)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
 	s=xioabx2jkcysio5xms3ztvaqoydfvujj; d=ciplatform.org; t=1571263374;
 	h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID;
@@ -45,7 +45,7 @@ X-Spam-Status: No, score=-2.0 required=5.0 tests=BAYES_00,DKIM_SIGNED,
 	DKIM_VALID, DKIM_VALID_AU,
 	RCVD_IN_DNSWL_NONE autolearn=ham version=3.3.1
 X-Spam-Checker-Version: SpamAssassin 3.3.1 (2010-03-16) on
-	smtp2.linux-foundation.org
+	smtp1.linux-foundation.org
 Subject: [Cip-testing-results] LAVA notification for Test Job 6032
  4.19.75-cip11_b511a67b7_arm_renesas_shmobile_defconfig_r8a7743-iwg20d-q7-dbcm-ca.dtb_ltp-dio-tests
 X-BeenThere: cip-testing-results@lists.cip-project.org
