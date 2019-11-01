@@ -2,52 +2,52 @@ Return-Path: <cip-testing-results-bounces@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from mail.linuxfoundation.org (mail.linuxfoundation.org [140.211.169.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 1CF1CEC56E
-	for <lists@lfdr.de>; Fri,  1 Nov 2019 16:13:27 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id E4F16EC56F
+	for <lists@lfdr.de>; Fri,  1 Nov 2019 16:13:29 +0100 (CET)
 Received: from mail.linux-foundation.org (localhost [127.0.0.1])
-	by mail.linuxfoundation.org (Postfix) with ESMTP id 9F54AE8F;
-	Fri,  1 Nov 2019 15:13:25 +0000 (UTC)
+	by mail.linuxfoundation.org (Postfix) with ESMTP id A6201E91;
+	Fri,  1 Nov 2019 15:13:28 +0000 (UTC)
 X-Original-To: cip-testing-results@lists.cip-project.org
 Delivered-To: cip-testing-results@mail.linuxfoundation.org
 Received: from smtp2.linuxfoundation.org (smtp2.linux-foundation.org
 	[172.17.192.36])
-	by mail.linuxfoundation.org (Postfix) with ESMTPS id 91031E76
+	by mail.linuxfoundation.org (Postfix) with ESMTPS id 10BE0E76
 	for <cip-testing-results@lists.cip-project.org>;
-	Fri,  1 Nov 2019 15:13:24 +0000 (UTC)
+	Fri,  1 Nov 2019 15:13:28 +0000 (UTC)
 X-Greylist: domain auto-whitelisted by SQLgrey-1.7.6
-Received: from a27-24.smtp-out.us-west-2.amazonses.com
-	(a27-24.smtp-out.us-west-2.amazonses.com [54.240.27.24])
-	by smtp2.linuxfoundation.org (Postfix) with ESMTPS id 903ED1DE27
+Received: from a27-22.smtp-out.us-west-2.amazonses.com
+	(a27-22.smtp-out.us-west-2.amazonses.com [54.240.27.22])
+	by smtp2.linuxfoundation.org (Postfix) with ESMTPS id CE1B91DE27
 	for <cip-testing-results@lists.cip-project.org>;
-	Fri,  1 Nov 2019 15:13:23 +0000 (UTC)
+	Fri,  1 Nov 2019 15:13:27 +0000 (UTC)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
-	s=xioabx2jkcysio5xms3ztvaqoydfvujj; d=ciplatform.org; t=1572621203;
+	s=xioabx2jkcysio5xms3ztvaqoydfvujj; d=ciplatform.org; t=1572621207;
 	h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID;
-	bh=6dMWmNYeEeyCVA9wl49JBi5VpCHsUy4rhssE1YI2/Ew=;
-	b=KR8TsZ2iP7rU06Z6wiA2CSaAxxOXOsQav6QKunKttdjTHqK0POkXWDzLQ1w929ll
-	QJ1T+vhqQET+LX2D24HDQCblrPfMMt3IWDr1gaSPQv1KdOxeVYCOyN1A6bM2W3If10Y
-	7sYS/cqllA3RbZTavNFyKp65DTC5kRqYlRJhR9Gw=
+	bh=OqUqR0Eg3e1sq/xOh0wKwrzXaAcDwEf/2+vzW6TKIeA=;
+	b=G4FjW889veRCkWPZ4DtBQYGHVysTHY2nsDUCM5m1bCyIlMxeCNmEZKm+C+hakauR
+	4LGJhdTzggBzMxsYQ9CyMCAwI2sgzsbydf1kJdbbt2juBz7bwejdqreAvUu3CPKfbMS
+	VXMD5ooe4D9qOZnVTktgNy3ZHLfSRhNNAY5eFLSE=
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
-	s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1572621202;
+	s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1572621207;
 	h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID:Feedback-ID;
-	bh=6dMWmNYeEeyCVA9wl49JBi5VpCHsUy4rhssE1YI2/Ew=;
-	b=PaQqxkX1ie2/BTq+S4AGZD4dHUXe6dKV1zMiu4hy8S5ULHDUpxpe6qZSJ/1bxvkh
-	LcFEh4WWpzZrt0CC0teJbbKRnSZbmTFBC9x6IQbrLYIUuvIrBOrsSkZbhK8lisZZ9cQ
-	cgA79qM7ThtXPOpU/RyYFsqu2XNEWQfFeZUZgdjc=
+	bh=OqUqR0Eg3e1sq/xOh0wKwrzXaAcDwEf/2+vzW6TKIeA=;
+	b=b99P8ZC8IQQ7uvBfAzpuPDLF9XyfL5E91LC8T3dW2CpVqzG5ppe1lZKic9CjJ413
+	AO0/7dMgSIwXA+m4VZ55LagElTYGIb3jyd6JgTEgRatsarGtZ6PrgTkhpjGJAYogkHm
+	12kbJbXP8LRtI4RRRhKbEpFzDx7RdczwutdXdmoE=
 MIME-Version: 1.0
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Fri, 1 Nov 2019 15:13:22 +0000
-Message-ID: <0101016e27873584-6ae8f72a-009f-4796-b143-e8ae2b3fbecb-000000@us-west-2.amazonses.com>
-X-SES-Outgoing: 2019.11.01-54.240.27.24
+Date: Fri, 1 Nov 2019 15:13:26 +0000
+Message-ID: <0101016e2787455f-f15f98ee-a061-40cd-be28-0747f8033556-000000@us-west-2.amazonses.com>
+X-SES-Outgoing: 2019.11.01-54.240.27.22
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 X-Spam-Status: No, score=0.7 required=5.0 tests=BAYES_00,DKIM_SIGNED,
 	DKIM_VALID, DKIM_VALID_AU, DOS_RCVD_IP_TWICE_B,
 	RCVD_IN_DNSWL_NONE autolearn=no version=3.3.1
 X-Spam-Checker-Version: SpamAssassin 3.3.1 (2010-03-16) on
 	smtp2.linux-foundation.org
-Subject: [Cip-testing-results] LAVA notification for Test Job 6898
-	r8a77470-iwg23s-sbc healthcheck
+Subject: [Cip-testing-results] LAVA notification for Test Job 6894
+	r8a7743-iwg20d-q7 healthcheck
 X-BeenThere: cip-testing-results@lists.cip-project.org
 X-Mailman-Version: 2.1.12
 Precedence: list
@@ -68,27 +68,27 @@ Errors-To: cip-testing-results-bounces@lists.cip-project.org
 
 Hello,
 
-The job with ID # 6898 is now in state Finished and health Incomplete. Job was submitted by lava-health.
+The job with ID # 6894 is now in state Finished and health Incomplete. Job was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/6898
+Job details and log file: http://lava.ciplatform.org/scheduler/job/6894
 
 
-Job error: bootloader-commands timed out after 296 seconds
+Job error: wait for prompt timed out
 
 
 Device details:
-Hostname: r8a77470-iwg23s-sbc-01
-Type: r8a77470-iwg23s-sbc
-Owner: admin
+Hostname: r8a7743-iwg20d-q7-02
+Type: r8a7743-iwg20d-q7
+Owner: renesas-admin
 Worker: lab-cip-renesas
 Job details:
 Priority: Medium
 Visibility: Publicly visible
-Description: r8a77470-iwg23s-sbc healthcheck
-Submitted: 2019-11-01 15:07:49 (+0000 UTC)
+Description: r8a7743-iwg20d-q7 healthcheck
+Submitted: 2019-11-01 15:07:48 (+0000 UTC)
 Started: 2019-11-01 15:07:50 (+0000 UTC)
-Finished: 2019-11-01 15:13:22 (+0000 UTC)
-Duration: 0:05:31.870757
+Finished: 2019-11-01 15:13:26 (+0000 UTC)
+Duration: 0:05:35.965391
 
 -- 
 LAVA
