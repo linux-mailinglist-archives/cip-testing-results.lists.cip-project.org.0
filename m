@@ -1,67 +1,67 @@
 Return-Path: <cip-testing-results-bounces@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
-Received: from silver.osuosl.org (smtp3.osuosl.org [140.211.166.136])
-	by mail.lfdr.de (Postfix) with ESMTPS id B1827102429
-	for <lists@lfdr.de>; Tue, 19 Nov 2019 13:20:53 +0100 (CET)
+Received: from hemlock.osuosl.org (smtp2.osuosl.org [140.211.166.133])
+	by mail.lfdr.de (Postfix) with ESMTPS id A9F9F10242A
+	for <lists@lfdr.de>; Tue, 19 Nov 2019 13:21:12 +0100 (CET)
 Received: from localhost (localhost [127.0.0.1])
-	by silver.osuosl.org (Postfix) with ESMTP id 6CD6922703;
-	Tue, 19 Nov 2019 12:20:52 +0000 (UTC)
+	by hemlock.osuosl.org (Postfix) with ESMTP id 66C458833B;
+	Tue, 19 Nov 2019 12:21:11 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
-Received: from silver.osuosl.org ([127.0.0.1])
+Received: from hemlock.osuosl.org ([127.0.0.1])
 	by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
-	with ESMTP id Z5Is7IFB-2f7; Tue, 19 Nov 2019 12:20:51 +0000 (UTC)
+	with ESMTP id dOUCiwmIUlcY; Tue, 19 Nov 2019 12:21:11 +0000 (UTC)
 Received: from lists.linuxfoundation.org (lf-lists.osuosl.org [140.211.9.56])
-	by silver.osuosl.org (Postfix) with ESMTP id E0D6822654;
-	Tue, 19 Nov 2019 12:20:51 +0000 (UTC)
+	by hemlock.osuosl.org (Postfix) with ESMTP id 05EC7881BB;
+	Tue, 19 Nov 2019 12:21:11 +0000 (UTC)
 Received: from lf-lists.osuosl.org (localhost [127.0.0.1])
-	by lists.linuxfoundation.org (Postfix) with ESMTP id C1476C1DD5;
-	Tue, 19 Nov 2019 12:20:51 +0000 (UTC)
+	by lists.linuxfoundation.org (Postfix) with ESMTP id E9599C1DD5;
+	Tue, 19 Nov 2019 12:21:10 +0000 (UTC)
 X-Original-To: cip-testing-results@lists.cip-project.org
 Delivered-To: cip-testing-results@lists.linuxfoundation.org
-Received: from whitealder.osuosl.org (smtp1.osuosl.org [140.211.166.138])
- by lists.linuxfoundation.org (Postfix) with ESMTP id C2F46C07AC
+Received: from fraxinus.osuosl.org (smtp4.osuosl.org [140.211.166.137])
+ by lists.linuxfoundation.org (Postfix) with ESMTP id 20458C07AC
  for <cip-testing-results@lists.cip-project.org>;
- Tue, 19 Nov 2019 12:20:49 +0000 (UTC)
+ Tue, 19 Nov 2019 12:21:10 +0000 (UTC)
 Received: from localhost (localhost [127.0.0.1])
- by whitealder.osuosl.org (Postfix) with ESMTP id AFAC387476
+ by fraxinus.osuosl.org (Postfix) with ESMTP id 1CC3785F57
  for <cip-testing-results@lists.cip-project.org>;
- Tue, 19 Nov 2019 12:20:49 +0000 (UTC)
+ Tue, 19 Nov 2019 12:21:10 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
-Received: from whitealder.osuosl.org ([127.0.0.1])
+Received: from fraxinus.osuosl.org ([127.0.0.1])
  by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
- with ESMTP id 3bNZpTGSobwJ
+ with ESMTP id RiBcNdIg_j_W
  for <cip-testing-results@lists.cip-project.org>;
- Tue, 19 Nov 2019 12:20:49 +0000 (UTC)
+ Tue, 19 Nov 2019 12:21:09 +0000 (UTC)
 X-Greylist: domain auto-whitelisted by SQLgrey-1.7.6
-Received: from a27-24.smtp-out.us-west-2.amazonses.com
- (a27-24.smtp-out.us-west-2.amazonses.com [54.240.27.24])
- by whitealder.osuosl.org (Postfix) with ESMTPS id 3A76F84540
+Received: from a27-22.smtp-out.us-west-2.amazonses.com
+ (a27-22.smtp-out.us-west-2.amazonses.com [54.240.27.22])
+ by fraxinus.osuosl.org (Postfix) with ESMTPS id A7311858F7
  for <cip-testing-results@lists.cip-project.org>;
- Tue, 19 Nov 2019 12:20:49 +0000 (UTC)
+ Tue, 19 Nov 2019 12:21:09 +0000 (UTC)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=xioabx2jkcysio5xms3ztvaqoydfvujj; d=ciplatform.org; t=1574166048;
+ s=xioabx2jkcysio5xms3ztvaqoydfvujj; d=ciplatform.org; t=1574166068;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID;
- bh=ltmAZeGgq/Ez0Lml9RwRsch0baXyvYhNSfvOf2izWVo=;
- b=NhnpIgAFB++tW4k0WrJsLzdI5x6eXTr0dGei+AB1Y1BJnyJtKIoE0l9j1es+YTOX
- HqSlq1zAZHUogYdmetztx+BQAEJ87JY+PuYYEsUFE3zxhJbFufLjf0pMsZmFCQYbbgq
- 65TVmUmVFsBFsdfAEk5zJ38tRG+StA1bOVGiRMa4=
+ bh=zueHF34dRhBxbTlOu4VqVooAe15LyHiyXrOrrxmjyxk=;
+ b=Tf4RTXjk8tCI2SzYlMvyqxdQn5yCdhOUhzucL1PIGDxxAAJQwYV9aEejn1hEMmoy
+ AaAkdEIin50OzGf6ZyRvNKbpMcJqAeIISge9BqroZhLHsp393cPqP4Zu8+kafu9Vk9q
+ WjoNd8f2VpRsgoshHJPiuTLtLL83Lg1GjjeDynhk=
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1574166048;
+ s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1574166068;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID:Feedback-ID;
- bh=ltmAZeGgq/Ez0Lml9RwRsch0baXyvYhNSfvOf2izWVo=;
- b=QocJFOPDfPmBghHRv/Z+yxpzJ7wwoGzqhYULlmm8kw2V+BxCIe442IZbVhc+QZGv
- 6j4XcwcDNh0khRVLzOCieuccSRfOJJ0oHjHEH8pNZd9N2IX2ZwhDUE10MaDGqJ8izGC
- XwoZiVPkeBFrk1/cx/QuqKTVLriHlBPG8nJPvo54=
+ bh=zueHF34dRhBxbTlOu4VqVooAe15LyHiyXrOrrxmjyxk=;
+ b=Hjte+NZTX9TU4IMTK/Y5v5ECUmEZ4b3EwmjxG7W8U0TWGe4BhRoV6CcNXAav9F9C
+ dwopEQp51Xf7AG4QYotfY+LXodoaIxn+zy5b5VoovSTYltWRGFQXGv4R2ecRlnHgM8v
+ UxHs7rByXJe0jI3cyuNjlJSkbJWfuFomSybrt3BM=
 MIME-Version: 1.0
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Tue, 19 Nov 2019 12:20:48 +0000
-Message-ID: <0101016e839bae94-28abdf0c-16c6-4bf3-9864-d6b8000cd1b0-000000@us-west-2.amazonses.com>
-X-SES-Outgoing: 2019.11.19-54.240.27.24
+Date: Tue, 19 Nov 2019 12:21:08 +0000
+Message-ID: <0101016e839bfe12-7c70389d-cb0b-4e85-910f-a2496e8939d4-000000@us-west-2.amazonses.com>
+X-SES-Outgoing: 2019.11.19-54.240.27.22
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-Subject: [Cip-testing-results] LAVA notification for Test Job 7531
- 4.19.80-cip13_8d1f45950_arm_renesas_shmobile_defconfig_r8a7745-iwg22d-sodimm-dbhd-ca.dtb_boot
+Subject: [Cip-testing-results] LAVA notification for Test Job 7532
+ 4.19.80-cip13_8d1f45950_arm_renesas_shmobile_defconfig_r8a7745-iwg22d-sodimm-dbhd-ca.dtb_smc
 X-BeenThere: cip-testing-results@lists.cip-project.org
 X-Mailman-Version: 2.1.15
 Precedence: list
@@ -83,12 +83,12 @@ Sender: "Cip-testing-results"
 
 Hello,
 
-The job with ID # 7531 is now in state Finished and health Incomplete. Job was submitted by CIP-Testing.
+The job with ID # 7532 is now in state Finished and health Incomplete. Job was submitted by CIP-Testing.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/7531
+Job details and log file: http://lava.ciplatform.org/scheduler/job/7532
 
 
-Job error: Invalid job data: ['Cannot download a directory for kernel', "Resource unavailable at 'https://s3-us-west-2.amazonaws.com/download.cip-project.org/ciptesting/ci//builds/cip-project/cip-kernel/linux-cip/output/4.19.80-cip13_8d1f45950/arm/renesas_shmobile_defconfig/kernel/' (404)", "Resource unavailable at 'https://s3-us-west-2.amazonaws.com/download.cip-project.org/ciptesting/ci//builds/cip-project/cip-kernel/linux-cip/output/4.19.80-cip13_8d1f45950/arm/renesas_shmobile_defconfig/dtb/r8a7745-iwg22d-sodimm-dbhd-ca.dtb' (404)"]
+Job error: Invalid job data: ['Cannot download a directory for kernel', "Resource unavailable at 'https://s3-us-west-2.amazonaws.com/download.cip-project.org/ciptesting/ci//builds/cip-project/cip-kernel/linux-cip/output/4.19.80-cip13_8d1f45950/arm/renesas_shmobile_defconfig/kernel//builds/cip-project/cip-kernel/linux-cip/output/4.19.80-cip13_8d1f45950/arm/renesas_shmobile_defconfig/kernel/' (404)", "Resource unavailable at 'https://s3-us-west-2.amazonaws.com/download.cip-project.org/ciptesting/ci//builds/cip-project/cip-kernel/linux-cip/output/4.19.80-cip13_8d1f45950/arm/renesas_shmobile_defconfig/dtb/r8a7745-iwg22d-sodimm-dbhd-ca.dtb' (404)"]
 
 
 
@@ -100,18 +100,18 @@ Worker: lab-cip-renesas
 Job details:
 Priority: Medium
 Visibility: Publicly visible
-Description: 4.19.80-cip13_8d1f45950_arm_renesas_shmobile_defconfig_r8a7745-iwg22d-sodimm-dbhd-ca.dtb_boot
-Submitted: 2019-11-19 12:20:32 (+0000 UTC)
-Started: 2019-11-19 12:20:44 (+0000 UTC)
-Finished: 2019-11-19 12:20:48 (+0000 UTC)
-Duration: 0:00:03.978598
+Description: 4.19.80-cip13_8d1f45950_arm_renesas_shmobile_defconfig_r8a7745-iwg22d-sodimm-dbhd-ca.dtb_smc
+Submitted: 2019-11-19 12:20:34 (+0000 UTC)
+Started: 2019-11-19 12:21:04 (+0000 UTC)
+Finished: 2019-11-19 12:21:08 (+0000 UTC)
+Duration: 0:00:03.987571
 
 Metadata:
 
 Results:
 
 
-Test Suite lava: http://lava.ciplatform.org/results/7531/lava
+Test Suite lava: http://lava.ciplatform.org/results/7532/lava
 Test Case job: Test failed
 Test Case validate: Test failed
 No query is set for results comparing.
