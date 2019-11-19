@@ -1,44 +1,44 @@
 Return-Path: <cip-testing-results-bounces@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
-Received: from hemlock.osuosl.org (smtp2.osuosl.org [140.211.166.133])
-	by mail.lfdr.de (Postfix) with ESMTPS id B8391101843
-	for <lists@lfdr.de>; Tue, 19 Nov 2019 07:07:09 +0100 (CET)
+Received: from silver.osuosl.org (smtp3.osuosl.org [140.211.166.136])
+	by mail.lfdr.de (Postfix) with ESMTPS id 9403B101887
+	for <lists@lfdr.de>; Tue, 19 Nov 2019 07:10:28 +0100 (CET)
 Received: from localhost (localhost [127.0.0.1])
-	by hemlock.osuosl.org (Postfix) with ESMTP id 6DBD385C62;
-	Tue, 19 Nov 2019 06:07:08 +0000 (UTC)
+	by silver.osuosl.org (Postfix) with ESMTP id 397672263C;
+	Tue, 19 Nov 2019 06:10:27 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
-Received: from hemlock.osuosl.org ([127.0.0.1])
+Received: from silver.osuosl.org ([127.0.0.1])
 	by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
-	with ESMTP id YrHU0QJSsfDR; Tue, 19 Nov 2019 06:07:03 +0000 (UTC)
+	with ESMTP id bTI5PcIzlPs3; Tue, 19 Nov 2019 06:10:27 +0000 (UTC)
 Received: from lists.linuxfoundation.org (lf-lists.osuosl.org [140.211.9.56])
-	by hemlock.osuosl.org (Postfix) with ESMTP id C916B86416;
-	Tue, 19 Nov 2019 06:07:03 +0000 (UTC)
+	by silver.osuosl.org (Postfix) with ESMTP id 119DC220EF;
+	Tue, 19 Nov 2019 06:10:27 +0000 (UTC)
 Received: from lf-lists.osuosl.org (localhost [127.0.0.1])
-	by lists.linuxfoundation.org (Postfix) with ESMTP id 8F2ABC1DDA;
-	Tue, 19 Nov 2019 06:07:03 +0000 (UTC)
+	by lists.linuxfoundation.org (Postfix) with ESMTP id 0EA07C1DDA;
+	Tue, 19 Nov 2019 06:10:27 +0000 (UTC)
 X-Original-To: cip-testing-results@lists.cip-project.org
 Delivered-To: cip-testing-results@lists.linuxfoundation.org
-Received: from hemlock.osuosl.org (smtp2.osuosl.org [140.211.166.133])
- by lists.linuxfoundation.org (Postfix) with ESMTP id A930FC07AC
+Received: from fraxinus.osuosl.org (smtp4.osuosl.org [140.211.166.137])
+ by lists.linuxfoundation.org (Postfix) with ESMTP id 59993C07AC
  for <cip-testing-results@lists.cip-project.org>;
- Tue, 19 Nov 2019 06:07:01 +0000 (UTC)
+ Tue, 19 Nov 2019 06:10:26 +0000 (UTC)
 Received: from localhost (localhost [127.0.0.1])
- by hemlock.osuosl.org (Postfix) with ESMTP id A28AE87E3C
+ by fraxinus.osuosl.org (Postfix) with ESMTP id 526ED864F4
  for <cip-testing-results@lists.cip-project.org>;
- Tue, 19 Nov 2019 06:07:01 +0000 (UTC)
+ Tue, 19 Nov 2019 06:10:26 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
-Received: from hemlock.osuosl.org ([127.0.0.1])
+Received: from fraxinus.osuosl.org ([127.0.0.1])
  by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
- with ESMTP id ooTp2m1sDNAQ
+ with ESMTP id Kug7EjPy4RdO
  for <cip-testing-results@lists.cip-project.org>;
- Tue, 19 Nov 2019 06:06:26 +0000 (UTC)
+ Tue, 19 Nov 2019 06:10:21 +0000 (UTC)
 X-Greylist: domain auto-whitelisted by SQLgrey-1.7.6
-Received: from a27-42.smtp-out.us-west-2.amazonses.com
- (a27-42.smtp-out.us-west-2.amazonses.com [54.240.27.42])
- by hemlock.osuosl.org (Postfix) with ESMTPS id DDCAE881DE
+Received: from a27-50.smtp-out.us-west-2.amazonses.com
+ (a27-50.smtp-out.us-west-2.amazonses.com [54.240.27.50])
+ by fraxinus.osuosl.org (Postfix) with ESMTPS id 44877864EC
  for <cip-testing-results@lists.cip-project.org>;
- Tue, 19 Nov 2019 06:06:25 +0000 (UTC)
+ Tue, 19 Nov 2019 06:10:03 +0000 (UTC)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
  s=xioabx2jkcysio5xms3ztvaqoydfvujj; d=ciplatform.org; t=1574143585;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID;
@@ -58,7 +58,7 @@ From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
 Date: Tue, 19 Nov 2019 06:06:25 +0000
 Message-ID: <0101016e8244eafd-617a1576-841e-4801-9585-748733434af9-000000@us-west-2.amazonses.com>
-X-SES-Outgoing: 2019.11.19-54.240.27.42
+X-SES-Outgoing: 2019.11.19-54.240.27.50
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 Subject: [Cip-testing-results] LAVA notification for Test Job 7498
  4.19.85-rc1_1fd0ac648_arm_renesas_shmobile_defconfig_r8a7743-iwg20d-q7-dbcm-ca.dtb_smc
