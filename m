@@ -1,44 +1,44 @@
 Return-Path: <cip-testing-results-bounces@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
-Received: from silver.osuosl.org (smtp3.osuosl.org [140.211.166.136])
-	by mail.lfdr.de (Postfix) with ESMTPS id 06238108A5C
-	for <lists@lfdr.de>; Mon, 25 Nov 2019 09:57:43 +0100 (CET)
-Received: from localhost (localhost [127.0.0.1])
-	by silver.osuosl.org (Postfix) with ESMTP id A9ED8203AB;
-	Mon, 25 Nov 2019 08:57:41 +0000 (UTC)
-X-Virus-Scanned: amavisd-new at osuosl.org
-Received: from silver.osuosl.org ([127.0.0.1])
-	by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
-	with ESMTP id 4wbwm6YkhOCL; Mon, 25 Nov 2019 08:57:41 +0000 (UTC)
-Received: from lists.linuxfoundation.org (lf-lists.osuosl.org [140.211.9.56])
-	by silver.osuosl.org (Postfix) with ESMTP id 837F1204CA;
-	Mon, 25 Nov 2019 08:57:41 +0000 (UTC)
-Received: from lf-lists.osuosl.org (localhost [127.0.0.1])
-	by lists.linuxfoundation.org (Postfix) with ESMTP id 6A500C1DD8;
-	Mon, 25 Nov 2019 08:57:41 +0000 (UTC)
-X-Original-To: cip-testing-results@lists.cip-project.org
-Delivered-To: cip-testing-results@lists.linuxfoundation.org
 Received: from fraxinus.osuosl.org (smtp4.osuosl.org [140.211.166.137])
- by lists.linuxfoundation.org (Postfix) with ESMTP id 3BBDDC0878
- for <cip-testing-results@lists.cip-project.org>;
- Mon, 25 Nov 2019 08:57:40 +0000 (UTC)
+	by mail.lfdr.de (Postfix) with ESMTPS id 9242C108A55
+	for <lists@lfdr.de>; Mon, 25 Nov 2019 09:51:10 +0100 (CET)
 Received: from localhost (localhost [127.0.0.1])
- by fraxinus.osuosl.org (Postfix) with ESMTP id 3900E856E9
- for <cip-testing-results@lists.cip-project.org>;
- Mon, 25 Nov 2019 08:57:40 +0000 (UTC)
+	by fraxinus.osuosl.org (Postfix) with ESMTP id 511CB856E8;
+	Mon, 25 Nov 2019 08:51:09 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
 Received: from fraxinus.osuosl.org ([127.0.0.1])
+	by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id pyrKC5lg7xn3; Mon, 25 Nov 2019 08:51:08 +0000 (UTC)
+Received: from lists.linuxfoundation.org (lf-lists.osuosl.org [140.211.9.56])
+	by fraxinus.osuosl.org (Postfix) with ESMTP id BAFE5856CB;
+	Mon, 25 Nov 2019 08:50:47 +0000 (UTC)
+Received: from lf-lists.osuosl.org (localhost [127.0.0.1])
+	by lists.linuxfoundation.org (Postfix) with ESMTP id 985C4C1DD8;
+	Mon, 25 Nov 2019 08:50:47 +0000 (UTC)
+X-Original-To: cip-testing-results@lists.cip-project.org
+Delivered-To: cip-testing-results@lists.linuxfoundation.org
+Received: from whitealder.osuosl.org (smtp1.osuosl.org [140.211.166.138])
+ by lists.linuxfoundation.org (Postfix) with ESMTP id 794C2C0878
+ for <cip-testing-results@lists.cip-project.org>;
+ Mon, 25 Nov 2019 08:50:46 +0000 (UTC)
+Received: from localhost (localhost [127.0.0.1])
+ by whitealder.osuosl.org (Postfix) with ESMTP id 6D636860D6
+ for <cip-testing-results@lists.cip-project.org>;
+ Mon, 25 Nov 2019 08:50:46 +0000 (UTC)
+X-Virus-Scanned: amavisd-new at osuosl.org
+Received: from whitealder.osuosl.org ([127.0.0.1])
  by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
- with ESMTP id NpOxJrBNkjVc
+ with ESMTP id J1DWiYZpZf9A
  for <cip-testing-results@lists.cip-project.org>;
- Mon, 25 Nov 2019 08:57:39 +0000 (UTC)
+ Mon, 25 Nov 2019 08:50:45 +0000 (UTC)
 X-Greylist: domain auto-whitelisted by SQLgrey-1.7.6
-Received: from a27-27.smtp-out.us-west-2.amazonses.com
- (a27-27.smtp-out.us-west-2.amazonses.com [54.240.27.27])
- by fraxinus.osuosl.org (Postfix) with ESMTPS id C6B09856E8
+Received: from a27-42.smtp-out.us-west-2.amazonses.com
+ (a27-42.smtp-out.us-west-2.amazonses.com [54.240.27.42])
+ by whitealder.osuosl.org (Postfix) with ESMTPS id 1D5B186094
  for <cip-testing-results@lists.cip-project.org>;
- Mon, 25 Nov 2019 08:57:39 +0000 (UTC)
+ Mon, 25 Nov 2019 08:50:08 +0000 (UTC)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
  s=xioabx2jkcysio5xms3ztvaqoydfvujj; d=ciplatform.org; t=1574671807;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID;
@@ -58,7 +58,7 @@ From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
 Date: Mon, 25 Nov 2019 08:50:07 +0000
 Message-ID: <0101016ea1c0f330-0549f196-5763-43bb-b8ca-3c8b7bb0bdf7-000000@us-west-2.amazonses.com>
-X-SES-Outgoing: 2019.11.25-54.240.27.27
+X-SES-Outgoing: 2019.11.25-54.240.27.42
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 Subject: [Cip-testing-results] LAVA notification for Test Job 7691
  Altera-Terasic-Deo-Nano healthcheck
