@@ -1,67 +1,67 @@
 Return-Path: <cip-testing-results-bounces@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
-Received: from hemlock.osuosl.org (smtp2.osuosl.org [140.211.166.133])
-	by mail.lfdr.de (Postfix) with ESMTPS id B681810D85D
-	for <lists@lfdr.de>; Fri, 29 Nov 2019 17:24:27 +0100 (CET)
+Received: from whitealder.osuosl.org (smtp1.osuosl.org [140.211.166.138])
+	by mail.lfdr.de (Postfix) with ESMTPS id DDB6410D85F
+	for <lists@lfdr.de>; Fri, 29 Nov 2019 17:24:37 +0100 (CET)
 Received: from localhost (localhost [127.0.0.1])
-	by hemlock.osuosl.org (Postfix) with ESMTP id 60D12885BA;
-	Fri, 29 Nov 2019 16:24:26 +0000 (UTC)
+	by whitealder.osuosl.org (Postfix) with ESMTP id 79D5D87E84;
+	Fri, 29 Nov 2019 16:24:36 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
-Received: from hemlock.osuosl.org ([127.0.0.1])
+Received: from whitealder.osuosl.org ([127.0.0.1])
 	by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
-	with ESMTP id wjIawQmxfrlS; Fri, 29 Nov 2019 16:24:26 +0000 (UTC)
+	with ESMTP id I1TfxraeHQw2; Fri, 29 Nov 2019 16:24:36 +0000 (UTC)
 Received: from lists.linuxfoundation.org (lf-lists.osuosl.org [140.211.9.56])
-	by hemlock.osuosl.org (Postfix) with ESMTP id 0B4C6885B9;
-	Fri, 29 Nov 2019 16:24:26 +0000 (UTC)
+	by whitealder.osuosl.org (Postfix) with ESMTP id 2F83E87E81;
+	Fri, 29 Nov 2019 16:24:36 +0000 (UTC)
 Received: from lf-lists.osuosl.org (localhost [127.0.0.1])
-	by lists.linuxfoundation.org (Postfix) with ESMTP id EFD70C1DE0;
-	Fri, 29 Nov 2019 16:24:25 +0000 (UTC)
+	by lists.linuxfoundation.org (Postfix) with ESMTP id 1CC6DC1DE0;
+	Fri, 29 Nov 2019 16:24:36 +0000 (UTC)
 X-Original-To: cip-testing-results@lists.cip-project.org
 Delivered-To: cip-testing-results@lists.linuxfoundation.org
-Received: from fraxinus.osuosl.org (smtp4.osuosl.org [140.211.166.137])
- by lists.linuxfoundation.org (Postfix) with ESMTP id 2DB16C0881
+Received: from whitealder.osuosl.org (smtp1.osuosl.org [140.211.166.138])
+ by lists.linuxfoundation.org (Postfix) with ESMTP id CB1E9C0881
  for <cip-testing-results@lists.cip-project.org>;
- Fri, 29 Nov 2019 16:24:25 +0000 (UTC)
+ Fri, 29 Nov 2019 16:24:34 +0000 (UTC)
 Received: from localhost (localhost [127.0.0.1])
- by fraxinus.osuosl.org (Postfix) with ESMTP id 2A77D86B7C
+ by whitealder.osuosl.org (Postfix) with ESMTP id BA19387E81
  for <cip-testing-results@lists.cip-project.org>;
- Fri, 29 Nov 2019 16:24:25 +0000 (UTC)
+ Fri, 29 Nov 2019 16:24:34 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
-Received: from fraxinus.osuosl.org ([127.0.0.1])
+Received: from whitealder.osuosl.org ([127.0.0.1])
  by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
- with ESMTP id MKbR1Y83gaU4
+ with ESMTP id 3fjyodacDWuW
  for <cip-testing-results@lists.cip-project.org>;
- Fri, 29 Nov 2019 16:24:24 +0000 (UTC)
+ Fri, 29 Nov 2019 16:24:34 +0000 (UTC)
 X-Greylist: domain auto-whitelisted by SQLgrey-1.7.6
-Received: from a27-27.smtp-out.us-west-2.amazonses.com
- (a27-27.smtp-out.us-west-2.amazonses.com [54.240.27.27])
- by fraxinus.osuosl.org (Postfix) with ESMTPS id B826F86AAC
+Received: from a27-42.smtp-out.us-west-2.amazonses.com
+ (a27-42.smtp-out.us-west-2.amazonses.com [54.240.27.42])
+ by whitealder.osuosl.org (Postfix) with ESMTPS id 282B287E7B
  for <cip-testing-results@lists.cip-project.org>;
- Fri, 29 Nov 2019 16:24:24 +0000 (UTC)
+ Fri, 29 Nov 2019 16:24:34 +0000 (UTC)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=xioabx2jkcysio5xms3ztvaqoydfvujj; d=ciplatform.org; t=1575044664;
+ s=xioabx2jkcysio5xms3ztvaqoydfvujj; d=ciplatform.org; t=1575044673;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID;
- bh=S8HibicihJTnURG0SjfhaZ+4FPV1pM2gitglbFiSayk=;
- b=XUiAI5J6NX58EoIurbRsnbL2oHFGcRe+CCZoh1s3zCpA0cEAcG2zM8LsO4nftllS
- ZGdXhX8ml0948fqDX3zCGF1auFRV4AD9Hbeq9PGhyMm6z817roSkz/HFNVCB/ovU7V6
- 4yDTf1YtVoiYA4bi/TgJBWxgN3WsCpUY2lqtBMtU=
+ bh=5fRT1ab5EU7UVPuX6q0tO8adCovwgzCpk24drjlngac=;
+ b=FUNTNdl+ers3QOqP8GoFHDOH1QuC86whN8Mf59ARmoTZsEcebjOt2EjKIVS5ui9W
+ tE4R7SsUGgOMidTXCAwYMCiE6ENJKFWEY92QjaJo3GcfaAUO+yjU5DFNOKnQQR0Cie+
+ 7Zs2HC/1Hg2Yre91uQkth8vPbDch19X4CIHitVNg=
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1575044664;
+ s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1575044673;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID:Feedback-ID;
- bh=S8HibicihJTnURG0SjfhaZ+4FPV1pM2gitglbFiSayk=;
- b=MLiFcNWvqClnF8SV+3/0/Oyim02p53NeP3ZJHD2PoCuiss9bXYwbdQBJP2Z3GNoE
- 6u15W0vVIqzJy0B4osrdZSFjVXam6iYz2SOizlFgwTn90hf4GoravF0vPF6+NYFtu8X
- cc1iyTBUx90f8nNv9OvhW4eq6ix5HSTREYQMFq60=
+ bh=5fRT1ab5EU7UVPuX6q0tO8adCovwgzCpk24drjlngac=;
+ b=SFcPIU6lygHGc9w+tDGZeEBAe0BAug6op4HXS+5Kuo5CHv8wMA4ivm75LHIpikQ9
+ jWWUoHN/HvpyKRj4lA/nKdhNm6UBcIkGP5aQBUiNcGV4CpToLJd4pKJUdGJLuAeDKOB
+ KC8bnopfZUegjhmifxL79EA0zlCGUlTnj450eQJE=
 MIME-Version: 1.0
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Fri, 29 Nov 2019 16:24:24 +0000
-Message-ID: <0101016eb7fa4ace-f0517fbc-2609-424f-9e99-6e5419bff239-000000@us-west-2.amazonses.com>
-X-SES-Outgoing: 2019.11.29-54.240.27.27
+Date: Fri, 29 Nov 2019 16:24:33 +0000
+Message-ID: <0101016eb7fa6f55-fb6ed4c0-41dc-4559-bcd5-44c5793f51d1-000000@us-west-2.amazonses.com>
+X-SES-Outgoing: 2019.11.29-54.240.27.42
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-Subject: [Cip-testing-results] LAVA notification for Test Job 7931
-	r8a7743-iwg20d-q7 healthcheck
+Subject: [Cip-testing-results] LAVA notification for Test Job 7934
+	r8a7745-iwg22d-sodimm healthcheck
 X-BeenThere: cip-testing-results@lists.cip-project.org
 X-Mailman-Version: 2.1.15
 Precedence: list
@@ -83,26 +83,26 @@ Sender: "Cip-testing-results"
 
 Hello,
 
-The job with ID # 7931 is now in state Finished and health Complete. Job was submitted by lava-health.
+The job with ID # 7934 is now in state Finished and health Complete. Job was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/7931
+Job details and log file: http://lava.ciplatform.org/scheduler/job/7934
 
 
 
 
 Device details:
-Hostname: r8a7743-iwg20d-q7-02
-Type: r8a7743-iwg20d-q7
+Hostname: r8a7745-iwg22d-sodimm-01
+Type: r8a7745-iwg22d-sodimm
 Owner: renesas-admin
 Worker: lab-cip-renesas
 Job details:
 Priority: Medium
 Visibility: Publicly visible
-Description: r8a7743-iwg20d-q7 healthcheck
+Description: r8a7745-iwg22d-sodimm healthcheck
 Submitted: 2019-11-29 16:22:26 (+0000 UTC)
 Started: 2019-11-29 16:22:28 (+0000 UTC)
-Finished: 2019-11-29 16:24:23 (+0000 UTC)
-Duration: 0:01:55.744040
+Finished: 2019-11-29 16:24:33 (+0000 UTC)
+Duration: 0:02:04.992138
 
 -- 
 LAVA
