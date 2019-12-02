@@ -2,66 +2,66 @@ Return-Path: <cip-testing-results-bounces@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from fraxinus.osuosl.org (smtp4.osuosl.org [140.211.166.137])
-	by mail.lfdr.de (Postfix) with ESMTPS id D086C10E295
-	for <lists@lfdr.de>; Sun,  1 Dec 2019 17:25:06 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id 1B94810E831
+	for <lists@lfdr.de>; Mon,  2 Dec 2019 11:06:38 +0100 (CET)
 Received: from localhost (localhost [127.0.0.1])
-	by fraxinus.osuosl.org (Postfix) with ESMTP id 6539D85775;
-	Sun,  1 Dec 2019 16:25:05 +0000 (UTC)
+	by fraxinus.osuosl.org (Postfix) with ESMTP id CB8BC8716A;
+	Mon,  2 Dec 2019 10:06:36 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
 Received: from fraxinus.osuosl.org ([127.0.0.1])
 	by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
-	with ESMTP id m4D7POprZvvL; Sun,  1 Dec 2019 16:25:05 +0000 (UTC)
+	with ESMTP id w-0dphfOxLl0; Mon,  2 Dec 2019 10:06:36 +0000 (UTC)
 Received: from lists.linuxfoundation.org (lf-lists.osuosl.org [140.211.9.56])
-	by fraxinus.osuosl.org (Postfix) with ESMTP id 13D318579E;
-	Sun,  1 Dec 2019 16:25:05 +0000 (UTC)
+	by fraxinus.osuosl.org (Postfix) with ESMTP id 462BB87165;
+	Mon,  2 Dec 2019 10:06:36 +0000 (UTC)
 Received: from lf-lists.osuosl.org (localhost [127.0.0.1])
-	by lists.linuxfoundation.org (Postfix) with ESMTP id 0102BC1DE2;
-	Sun,  1 Dec 2019 16:25:05 +0000 (UTC)
+	by lists.linuxfoundation.org (Postfix) with ESMTP id 1EFC8C1DD6;
+	Mon,  2 Dec 2019 10:06:36 +0000 (UTC)
 X-Original-To: cip-testing-results@lists.cip-project.org
 Delivered-To: cip-testing-results@lists.linuxfoundation.org
-Received: from whitealder.osuosl.org (smtp1.osuosl.org [140.211.166.138])
- by lists.linuxfoundation.org (Postfix) with ESMTP id E8E79C087F
+Received: from silver.osuosl.org (smtp3.osuosl.org [140.211.166.136])
+ by lists.linuxfoundation.org (Postfix) with ESMTP id E6023C087F
  for <cip-testing-results@lists.cip-project.org>;
- Sun,  1 Dec 2019 16:25:02 +0000 (UTC)
+ Mon,  2 Dec 2019 10:06:34 +0000 (UTC)
 Received: from localhost (localhost [127.0.0.1])
- by whitealder.osuosl.org (Postfix) with ESMTP id 755D38651C
+ by silver.osuosl.org (Postfix) with ESMTP id DBE2E20529
  for <cip-testing-results@lists.cip-project.org>;
- Sun,  1 Dec 2019 16:25:02 +0000 (UTC)
+ Mon,  2 Dec 2019 10:06:34 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
-Received: from whitealder.osuosl.org ([127.0.0.1])
+Received: from silver.osuosl.org ([127.0.0.1])
  by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
- with ESMTP id fuI6hfocZCoy
+ with ESMTP id Oy7nAqQBmDyb
  for <cip-testing-results@lists.cip-project.org>;
- Sun,  1 Dec 2019 16:24:58 +0000 (UTC)
+ Mon,  2 Dec 2019 10:06:34 +0000 (UTC)
 X-Greylist: domain auto-whitelisted by SQLgrey-1.7.6
-Received: from a27-24.smtp-out.us-west-2.amazonses.com
- (a27-24.smtp-out.us-west-2.amazonses.com [54.240.27.24])
- by whitealder.osuosl.org (Postfix) with ESMTPS id 4E7FB86501
+Received: from a27-50.smtp-out.us-west-2.amazonses.com
+ (a27-50.smtp-out.us-west-2.amazonses.com [54.240.27.50])
+ by silver.osuosl.org (Postfix) with ESMTPS id E8F0E20524
  for <cip-testing-results@lists.cip-project.org>;
- Sun,  1 Dec 2019 16:24:58 +0000 (UTC)
+ Mon,  2 Dec 2019 10:06:33 +0000 (UTC)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=sef3ipnhs6zyfoh33edxhxokcqriataq; d=ciplatform.org; t=1575217497;
+ s=sef3ipnhs6zyfoh33edxhxokcqriataq; d=ciplatform.org; t=1575281193;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID;
- bh=efkgqmsfAca/s1X0xJn6i5JUBKGdZ4dqMG2CxdxpK4w=;
- b=Oxyay8qGXMn104Tm/QCbe1qA+299UZnwcMi6/jblakRRjSQhs4GldHyhwV/g1qJG
- 0nWFTSahKteasmVTHYLDw5EnRAzVrtQZQIYIb6BZIPhi9AQlqwwc61433od6pqLoE9N
- D0LCNR+LHi5sKL/so+thc1ssQFWM/iMx0jiuZq0U=
+ bh=5zrHomfNdBgeq5TW0aNn9hi3xwulICSU+D0ehOoAsds=;
+ b=ASnQPxnyJtLeTZQ0iN+VxSKRHtbzXm3qVS8wKGPTdykg+uLmqnpj+PdUJ283TZ/h
+ RaX7y1YTxM53v+zS8WvBBUqrDONAi9v5AJywQpW32xSogHyVeuQvG1f2Zfvq31vRYjJ
+ qWxV0lXUQfxxmHJht/6yxvu62JLNWggJoLrDowA0=
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1575217497;
+ s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1575281193;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID:Feedback-ID;
- bh=efkgqmsfAca/s1X0xJn6i5JUBKGdZ4dqMG2CxdxpK4w=;
- b=Sc07n4B/q3U78vaqYq5LHNMKAEQY7tAXH8+aIM6iNXXxA/tvuI/rs488WPW2/7xf
- 0eMHb/z+RRurCfoHN1wiPocrltha8TRK+Pt9RbaE/Z2OaA9tbh8EZA5hLEIN8iSRItA
- SsPwH8yJw185KHYz/s5JJquAffGIhKAjPx1OCy9s=
+ bh=5zrHomfNdBgeq5TW0aNn9hi3xwulICSU+D0ehOoAsds=;
+ b=dYj74rMUb0tYAvQnIsw68g0XS6z9bPTGT7lRjMTwFG3IcBevOzOFKsfqAeDMUKmT
+ 8gi5Gp0zXP2joZihJRVFOu7SKb7caK8xCdOHM1A6e0ET0zVfUf0ma3vF7FVfTZXTLLQ
+ JIAkpneieGcqDp0nyYhIBofD1HPUcSq5F7Yx6AVk=
 MIME-Version: 1.0
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Sun, 1 Dec 2019 16:24:57 +0000
-Message-ID: <0101016ec2478537-3aed3fb0-aaeb-4d5d-8566-edc1682aa06d-000000@us-west-2.amazonses.com>
-X-SES-Outgoing: 2019.12.01-54.240.27.24
+Date: Mon, 2 Dec 2019 10:06:33 +0000
+Message-ID: <0101016ec6137050-9ed1e6e9-88b2-4a89-b133-96506fbe12b2-000000@us-west-2.amazonses.com>
+X-SES-Outgoing: 2019.12.02-54.240.27.50
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-Subject: [Cip-testing-results] LAVA notification for Test Job 7970
-	r8a77470-iwg23s-sbc healthcheck
+Subject: [Cip-testing-results] LAVA notification for Test Job 7975
+ 4.19.87_174651bdf_arm_renesas_shmobile_defconfig_r8a7745-iwg22d-sodimm-dbhd-ca.dtb_boot
 X-BeenThere: cip-testing-results@lists.cip-project.org
 X-Mailman-Version: 2.1.15
 Precedence: list
@@ -83,26 +83,60 @@ Sender: "Cip-testing-results"
 
 Hello,
 
-The job with ID # 7970 is now in state Finished and health Complete. Job was submitted by lava-health.
+The job with ID # 7975 is now in state Finished and health Complete. Job was submitted by CIP-Testing.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/7970
+Job details and log file: http://lava.ciplatform.org/scheduler/job/7975
 
 
 
 
 Device details:
-Hostname: r8a77470-iwg23s-sbc-01
-Type: r8a77470-iwg23s-sbc
-Owner: admin
+Hostname: r8a7745-iwg22d-sodimm-01
+Type: r8a7745-iwg22d-sodimm
+Owner: renesas-admin
 Worker: lab-cip-renesas
 Job details:
 Priority: Medium
 Visibility: Publicly visible
-Description: r8a77470-iwg23s-sbc healthcheck
-Submitted: 2019-12-01 16:22:50 (+0000 UTC)
-Started: 2019-12-01 16:22:52 (+0000 UTC)
-Finished: 2019-12-01 16:24:57 (+0000 UTC)
-Duration: 0:02:05.094654
+Description: 4.19.87_174651bdf_arm_renesas_shmobile_defconfig_r8a7745-iwg22d-sodimm-dbhd-ca.dtb_boot
+Submitted: 2019-12-02 10:04:27 (+0000 UTC)
+Started: 2019-12-02 10:04:33 (+0000 UTC)
+Finished: 2019-12-02 10:06:32 (+0000 UTC)
+Duration: 0:01:58.943502
+
+Metadata:
+
+Results:
+
+
+Test Suite 0_kernel-version-inline: http://lava.ciplatform.org/results/7975/0_kernel-version-inline
+Test Case uname: Test passed
+
+Test Suite lava: http://lava.ciplatform.org/results/7975/lava
+Test Case job: Test passed
+Test Case power-off: Test passed
+Measurement: 0.2400000000 seconds
+Test Case 0_kernel-version-inline: Test passed
+Measurement: 0.1600000000 seconds
+Test Case auto-login-action: Test passed
+Measurement: 11.8300000000 seconds
+Test Case kernel-messages: Test passed
+Measurement: 10.9200000000 seconds
+Test Case pdu-reboot: Test passed
+Measurement: 0.2300000000 seconds
+Test Case bootloader-overlay: Test passed
+Test Case test-runscript-overlay: Test passed
+Measurement: 0.0100000000 seconds
+Test Case test-install-overlay: Test passed
+Test Case test-overlay: Test passed
+Test Case http-download: Test passed
+Measurement: 25.2000000000 seconds
+Test Case http-download: Test passed
+Measurement: 2.4000000000 seconds
+Test Case http-download: Test passed
+Measurement: 7.3800000000 seconds
+Test Case validate: Test passed
+No query is set for results comparing.
 
 -- 
 LAVA
