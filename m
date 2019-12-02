@@ -2,66 +2,66 @@ Return-Path: <cip-testing-results-bounces@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from fraxinus.osuosl.org (smtp4.osuosl.org [140.211.166.137])
-	by mail.lfdr.de (Postfix) with ESMTPS id B987310ED15
+	by mail.lfdr.de (Postfix) with ESMTPS id B103A10ED14
 	for <lists@lfdr.de>; Mon,  2 Dec 2019 17:25:14 +0100 (CET)
 Received: from localhost (localhost [127.0.0.1])
-	by fraxinus.osuosl.org (Postfix) with ESMTP id 5106785C97;
+	by fraxinus.osuosl.org (Postfix) with ESMTP id 5483785C9F;
 	Mon,  2 Dec 2019 16:25:13 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
 Received: from fraxinus.osuosl.org ([127.0.0.1])
 	by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
-	with ESMTP id TEnntYp5YsWE; Mon,  2 Dec 2019 16:25:13 +0000 (UTC)
+	with ESMTP id 8tNCpRCcR1Ls; Mon,  2 Dec 2019 16:25:13 +0000 (UTC)
 Received: from lists.linuxfoundation.org (lf-lists.osuosl.org [140.211.9.56])
-	by fraxinus.osuosl.org (Postfix) with ESMTP id F3D0785402;
-	Mon,  2 Dec 2019 16:25:12 +0000 (UTC)
+	by fraxinus.osuosl.org (Postfix) with ESMTP id 070DC85429;
+	Mon,  2 Dec 2019 16:25:13 +0000 (UTC)
 Received: from lf-lists.osuosl.org (localhost [127.0.0.1])
-	by lists.linuxfoundation.org (Postfix) with ESMTP id E11E5C1799;
-	Mon,  2 Dec 2019 16:25:12 +0000 (UTC)
+	by lists.linuxfoundation.org (Postfix) with ESMTP id 04D1FC1797;
+	Mon,  2 Dec 2019 16:25:13 +0000 (UTC)
 X-Original-To: cip-testing-results@lists.cip-project.org
 Delivered-To: cip-testing-results@lists.linuxfoundation.org
 Received: from fraxinus.osuosl.org (smtp4.osuosl.org [140.211.166.137])
- by lists.linuxfoundation.org (Postfix) with ESMTP id 6A91AC1797
+ by lists.linuxfoundation.org (Postfix) with ESMTP id 07FA0C087F
  for <cip-testing-results@lists.cip-project.org>;
- Mon,  2 Dec 2019 16:25:11 +0000 (UTC)
+ Mon,  2 Dec 2019 16:25:12 +0000 (UTC)
 Received: from localhost (localhost [127.0.0.1])
- by fraxinus.osuosl.org (Postfix) with ESMTP id 5A52485402
+ by fraxinus.osuosl.org (Postfix) with ESMTP id E7D6485402
  for <cip-testing-results@lists.cip-project.org>;
  Mon,  2 Dec 2019 16:25:11 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
 Received: from fraxinus.osuosl.org ([127.0.0.1])
  by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
- with ESMTP id 9iV0IvkpQWu9
+ with ESMTP id 0KEq-IYon4cl
  for <cip-testing-results@lists.cip-project.org>;
  Mon,  2 Dec 2019 16:25:10 +0000 (UTC)
 X-Greylist: domain auto-whitelisted by SQLgrey-1.7.6
-Received: from a27-50.smtp-out.us-west-2.amazonses.com
- (a27-50.smtp-out.us-west-2.amazonses.com [54.240.27.50])
- by fraxinus.osuosl.org (Postfix) with ESMTPS id 45D918545F
+Received: from a27-27.smtp-out.us-west-2.amazonses.com
+ (a27-27.smtp-out.us-west-2.amazonses.com [54.240.27.27])
+ by fraxinus.osuosl.org (Postfix) with ESMTPS id 9A4B885CBC
  for <cip-testing-results@lists.cip-project.org>;
  Mon,  2 Dec 2019 16:25:10 +0000 (UTC)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
  s=sef3ipnhs6zyfoh33edxhxokcqriataq; d=ciplatform.org; t=1575303909;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID;
- bh=20aFDfjILgfc6r6QgXP2XiMvYuGXYWUk3OZTYVz0Ads=;
- b=Ax+tuElhOcsQmdGiFskaHvAFP83SRAvLRVWtrTp0xycGazDK+y+Op+vAXEFCYYbP
- gZjmAtFZJYyTEhwUdlSt+tCxcOh8NBjS3mkn2U/w5YAgu3VCfy3jBr6MplYh5Y6WCRT
- zJZTDVb1Iya95G4/cv7RYCXYGY26XoMFXq0f7i3o=
+ bh=wUZA//HY90VBoWwm5EpYNvewdhG4K/EHSLrtDxCpA2M=;
+ b=iYSdpu8ZE9B9WEc1mBFixDnVy0afshlWirKErspDUR79yL8Ip9qGEPcuyLoQSMVb
+ +shwkW/Qkav1dj6zse9DdeQUWgy/ecNiKu4WZ8tLOujYAX+0SuhZCtudWfsblmCbMPx
+ 05ZQcHzQnkTu5G8l2I2ttpmF2+SUHjec5JNo+YSY=
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
  s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1575303909;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID:Feedback-ID;
- bh=20aFDfjILgfc6r6QgXP2XiMvYuGXYWUk3OZTYVz0Ads=;
- b=HHUhJ85HQChTMzwCztNmHFmsOS1rsUngmbfaAftHczQoe3+4q7oKeC3L1wOAsRr7
- j/rEVBPKzHThUlJEzkYEw1Doo8KV6rF7kiL7PHlJrIHu9oUHjZ2HHKU6QusF5nW+Kep
- +o7rw34AFW8in1IRllJf0EBZhD7IAzOxaHZ/Zjm4=
+ bh=wUZA//HY90VBoWwm5EpYNvewdhG4K/EHSLrtDxCpA2M=;
+ b=cXJ8aASU2MRMhc5q6oAwBl2uNXMaReoj1ScAtehDSbsQG7CcHdIZDhD+pQgjG1s6
+ fucZg8ZSelG7iVHNuDjWVi6WE42QHjSe557A7BX4i+3Q9fGf8/G8j9KYQqtsBv3VJ/L
+ mSjfMMG8FE1rgLxx9zC7BucAy/tK92e2cO76i0OA=
 MIME-Version: 1.0
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
 Date: Mon, 2 Dec 2019 16:25:09 +0000
-Message-ID: <0101016ec76e0ff2-392f042e-950a-4a20-9a48-8671ef9147df-000000@us-west-2.amazonses.com>
-X-SES-Outgoing: 2019.12.02-54.240.27.50
+Message-ID: <0101016ec76e116b-de7f3cb9-bd00-4983-a0eb-a0f03b455d26-000000@us-west-2.amazonses.com>
+X-SES-Outgoing: 2019.12.02-54.240.27.27
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-Subject: [Cip-testing-results] LAVA notification for Test Job 7987
- r8a774a1-hihope-rzg2m-ex healthcheck
+Subject: [Cip-testing-results] LAVA notification for Test Job 7982
+	r8a7743-iwg20d-q7 healthcheck
 X-BeenThere: cip-testing-results@lists.cip-project.org
 X-Mailman-Version: 2.1.15
 Precedence: list
@@ -83,26 +83,26 @@ Sender: "Cip-testing-results"
 
 Hello,
 
-The job with ID # 7987 is now in state Finished and health Complete. Job was submitted by lava-health.
+The job with ID # 7982 is now in state Finished and health Complete. Job was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/7987
+Job details and log file: http://lava.ciplatform.org/scheduler/job/7982
 
 
 
 
 Device details:
-Hostname: r8a774a1-hihope-rzg2m-ex-01
-Type: r8a774a1-hihope-rzg2m-ex
-Owner: admin
+Hostname: r8a7743-iwg20d-q7-02
+Type: r8a7743-iwg20d-q7
+Owner: renesas-admin
 Worker: lab-cip-renesas
 Job details:
-Priority: High
+Priority: Medium
 Visibility: Publicly visible
-Description: r8a774a1-hihope-rzg2m-ex healthcheck
+Description: r8a7743-iwg20d-q7 healthcheck
 Submitted: 2019-12-02 16:23:03 (+0000 UTC)
 Started: 2019-12-02 16:23:05 (+0000 UTC)
 Finished: 2019-12-02 16:25:09 (+0000 UTC)
-Duration: 0:02:04.089173
+Duration: 0:02:04.527416
 
 -- 
 LAVA
