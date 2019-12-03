@@ -2,66 +2,66 @@ Return-Path: <cip-testing-results-bounces@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from fraxinus.osuosl.org (smtp4.osuosl.org [140.211.166.137])
-	by mail.lfdr.de (Postfix) with ESMTPS id 37E6110FEDD
-	for <lists@lfdr.de>; Tue,  3 Dec 2019 14:31:40 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id 7D3E310FFD9
+	for <lists@lfdr.de>; Tue,  3 Dec 2019 15:15:39 +0100 (CET)
 Received: from localhost (localhost [127.0.0.1])
-	by fraxinus.osuosl.org (Postfix) with ESMTP id E410C868CC;
-	Tue,  3 Dec 2019 13:31:38 +0000 (UTC)
+	by fraxinus.osuosl.org (Postfix) with ESMTP id 365C4869F6;
+	Tue,  3 Dec 2019 14:15:38 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
 Received: from fraxinus.osuosl.org ([127.0.0.1])
 	by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
-	with ESMTP id OBhS4z_YcdsP; Tue,  3 Dec 2019 13:31:38 +0000 (UTC)
+	with ESMTP id xFpe8m2FlGCb; Tue,  3 Dec 2019 14:15:37 +0000 (UTC)
 Received: from lists.linuxfoundation.org (lf-lists.osuosl.org [140.211.9.56])
-	by fraxinus.osuosl.org (Postfix) with ESMTP id 6D9D9868A6;
-	Tue,  3 Dec 2019 13:31:38 +0000 (UTC)
+	by fraxinus.osuosl.org (Postfix) with ESMTP id 9FC8B869EC;
+	Tue,  3 Dec 2019 14:15:37 +0000 (UTC)
 Received: from lf-lists.osuosl.org (localhost [127.0.0.1])
-	by lists.linuxfoundation.org (Postfix) with ESMTP id 6788CC1DD7;
-	Tue,  3 Dec 2019 13:31:38 +0000 (UTC)
+	by lists.linuxfoundation.org (Postfix) with ESMTP id 93554C1DDE;
+	Tue,  3 Dec 2019 14:15:37 +0000 (UTC)
 X-Original-To: cip-testing-results@lists.cip-project.org
 Delivered-To: cip-testing-results@lists.linuxfoundation.org
 Received: from silver.osuosl.org (smtp3.osuosl.org [140.211.166.136])
- by lists.linuxfoundation.org (Postfix) with ESMTP id BB6E8C087F
+ by lists.linuxfoundation.org (Postfix) with ESMTP id D5422C087F
  for <cip-testing-results@lists.cip-project.org>;
- Tue,  3 Dec 2019 13:31:37 +0000 (UTC)
+ Tue,  3 Dec 2019 14:15:35 +0000 (UTC)
 Received: from localhost (localhost [127.0.0.1])
- by silver.osuosl.org (Postfix) with ESMTP id AB0E020401
+ by silver.osuosl.org (Postfix) with ESMTP id BD8EA20446
  for <cip-testing-results@lists.cip-project.org>;
- Tue,  3 Dec 2019 13:31:37 +0000 (UTC)
+ Tue,  3 Dec 2019 14:15:35 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
 Received: from silver.osuosl.org ([127.0.0.1])
  by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
- with ESMTP id jU67NUZ5Zmim
+ with ESMTP id FHUYTjAjzYl0
  for <cip-testing-results@lists.cip-project.org>;
- Tue,  3 Dec 2019 13:31:37 +0000 (UTC)
+ Tue,  3 Dec 2019 14:15:34 +0000 (UTC)
 X-Greylist: domain auto-whitelisted by SQLgrey-1.7.6
 Received: from a27-42.smtp-out.us-west-2.amazonses.com
  (a27-42.smtp-out.us-west-2.amazonses.com [54.240.27.42])
- by silver.osuosl.org (Postfix) with ESMTPS id 0ACC6203F5
+ by silver.osuosl.org (Postfix) with ESMTPS id D27F720364
  for <cip-testing-results@lists.cip-project.org>;
- Tue,  3 Dec 2019 13:31:36 +0000 (UTC)
+ Tue,  3 Dec 2019 14:15:34 +0000 (UTC)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=sef3ipnhs6zyfoh33edxhxokcqriataq; d=ciplatform.org; t=1575379896;
+ s=sef3ipnhs6zyfoh33edxhxokcqriataq; d=ciplatform.org; t=1575382534;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID;
- bh=jgA05G9CWaPj8Pdhrb+utrH8+zq/ve6v/VqXwhpOC2I=;
- b=MoK6v+b8MW1sADl4JgwqYT2wju7iLIC36Y262NcFrg4ulIw8eFa0Dhz2WrWdM4DX
- VN7mrI9HQOTioFY/cx+qc802FbGjlVRaMCZEBrGIl11Rrhw94JhtRM3f/adeldQIKRB
- X8bNiVTyGC/oOuSSU8u1IM2UMZUScFDfgtzb03xU=
+ bh=ulq/2rhlpAF4gwr1s7QrU8HWq5/MWf46LjVgcC1wh30=;
+ b=STUV5MDBIkFq2pzD2v3PhYjaAFr+TOisA82aaqmEfKC1ylINbLTK0bfdMuorInLL
+ SMqC0FJhiKFiilx6GKy7PLMBcBzR1j4bvoowKXCemReCPNS6TNYcw6n8T/C/584zlFG
+ /7gINRKYg1HiwzzuyHqAtaZ6mHxefsjipnkgVGXo=
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1575379896;
+ s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1575382534;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID:Feedback-ID;
- bh=jgA05G9CWaPj8Pdhrb+utrH8+zq/ve6v/VqXwhpOC2I=;
- b=Z+ZhDbr82dFCWQs7O4vSZoQRcnRcSWq8ioi96mcwlDcodKYn+4dhlrT0Px5c12uZ
- 0hwO/dhN458GoDHZxShVBQ2MWldXyZsTeO10zs6mWqPngvEaXWZE8ecud1alZaHbFiq
- 0rXfxPNpP7Rk4H3IFb89mzGzYf9AEwA1vCDjEsIs=
+ bh=ulq/2rhlpAF4gwr1s7QrU8HWq5/MWf46LjVgcC1wh30=;
+ b=dCxnRa6a7sQQAzzaE8q/DppRdCeVCsfbh4dldTEsSvZSeceWmU21bvNx1ptWXeJt
+ MEq919/ZTTcYpVOJOL0N0Sq1EAxGXO1RknRur0l9l16YgH95N6VJ8lL/jWtfE+JtOo8
+ 3O+StL/UUZJeBitOga2dq62z+VTYx0Hb25qDfPJE=
 MIME-Version: 1.0
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Tue, 3 Dec 2019 13:31:36 +0000
-Message-ID: <0101016ecbf586ff-8c6fbbc9-89ef-499e-8462-d455270ccc36-000000@us-west-2.amazonses.com>
+Date: Tue, 3 Dec 2019 14:15:33 +0000
+Message-ID: <0101016ecc1dc6f9-48369018-6afa-4034-8a29-091cfc547560-000000@us-west-2.amazonses.com>
 X-SES-Outgoing: 2019.12.03-54.240.27.42
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-Subject: [Cip-testing-results] LAVA notification for Test Job 8000
- 4.4.201-cip39-rt26_3f9ab417_arm_renesas_shmobile_defconfig_r8a77470-iwg23s-sbc.dtb_boot
+Subject: [Cip-testing-results] LAVA notification for Test Job 8006
+ 4.19.82-cip13-rt4_52dd9bdfd_arm_renesas_shmobile_defconfig_r8a7745-iwg22d-sodimm-dbhd-ca.dtb_boot
 X-BeenThere: cip-testing-results@lists.cip-project.org
 X-Mailman-Version: 2.1.15
 Precedence: list
@@ -83,45 +83,45 @@ Sender: "Cip-testing-results"
 
 Hello,
 
-The job with ID # 8000 is now in state Finished and health Complete. Job was submitted by CIP-Testing.
+The job with ID # 8006 is now in state Finished and health Complete. Job was submitted by CIP-Testing.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/8000
+Job details and log file: http://lava.ciplatform.org/scheduler/job/8006
 
 
 
 
 Device details:
-Hostname: r8a77470-iwg23s-sbc-01
-Type: r8a77470-iwg23s-sbc
-Owner: admin
+Hostname: r8a7745-iwg22d-sodimm-01
+Type: r8a7745-iwg22d-sodimm
+Owner: renesas-admin
 Worker: lab-cip-renesas
 Job details:
 Priority: Medium
 Visibility: Publicly visible
-Description: 4.4.201-cip39-rt26_3f9ab417_arm_renesas_shmobile_defconfig_r8a77470-iwg23s-sbc.dtb_boot
-Submitted: 2019-12-03 13:29:29 (+0000 UTC)
-Started: 2019-12-03 13:29:41 (+0000 UTC)
-Finished: 2019-12-03 13:31:35 (+0000 UTC)
-Duration: 0:01:54.268877
+Description: 4.19.82-cip13-rt4_52dd9bdfd_arm_renesas_shmobile_defconfig_r8a7745-iwg22d-sodimm-dbhd-ca.dtb_boot
+Submitted: 2019-12-03 14:13:36 (+0000 UTC)
+Started: 2019-12-03 14:13:58 (+0000 UTC)
+Finished: 2019-12-03 14:15:33 (+0000 UTC)
+Duration: 0:01:35.559848
 
 Metadata:
 
 Results:
 
 
-Test Suite 0_kernel-version-inline: http://lava.ciplatform.org/results/8000/0_kernel-version-inline
+Test Suite 0_kernel-version-inline: http://lava.ciplatform.org/results/8006/0_kernel-version-inline
 Test Case uname: Test passed
 
-Test Suite lava: http://lava.ciplatform.org/results/8000/lava
+Test Suite lava: http://lava.ciplatform.org/results/8006/lava
 Test Case job: Test passed
 Test Case power-off: Test passed
 Measurement: 0.2300000000 seconds
 Test Case 0_kernel-version-inline: Test passed
-Measurement: 0.1700000000 seconds
+Measurement: 0.2100000000 seconds
 Test Case auto-login-action: Test passed
-Measurement: 12.7400000000 seconds
+Measurement: 12.9900000000 seconds
 Test Case kernel-messages: Test passed
-Measurement: 12.0200000000 seconds
+Measurement: 12.0900000000 seconds
 Test Case pdu-reboot: Test passed
 Measurement: 0.2300000000 seconds
 Test Case bootloader-overlay: Test passed
@@ -130,11 +130,11 @@ Measurement: 0.0100000000 seconds
 Test Case test-install-overlay: Test passed
 Test Case test-overlay: Test passed
 Test Case http-download: Test passed
-Measurement: 15.3400000000 seconds
+Measurement: 8.5100000000 seconds
 Test Case http-download: Test passed
-Measurement: 5.8300000000 seconds
+Measurement: 0.9100000000 seconds
 Test Case http-download: Test passed
-Measurement: 9.2700000000 seconds
+Measurement: 4.2300000000 seconds
 Test Case validate: Test passed
 No query is set for results comparing.
 
