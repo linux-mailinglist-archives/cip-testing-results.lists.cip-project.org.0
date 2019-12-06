@@ -1,67 +1,67 @@
 Return-Path: <cip-testing-results-bounces@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
-Received: from fraxinus.osuosl.org (smtp4.osuosl.org [140.211.166.137])
-	by mail.lfdr.de (Postfix) with ESMTPS id 9592B114E83
-	for <lists@lfdr.de>; Fri,  6 Dec 2019 10:58:26 +0100 (CET)
+Received: from silver.osuosl.org (smtp3.osuosl.org [140.211.166.136])
+	by mail.lfdr.de (Postfix) with ESMTPS id 6AC7C114EEF
+	for <lists@lfdr.de>; Fri,  6 Dec 2019 11:20:12 +0100 (CET)
 Received: from localhost (localhost [127.0.0.1])
-	by fraxinus.osuosl.org (Postfix) with ESMTP id 52C5A8748F;
-	Fri,  6 Dec 2019 09:58:25 +0000 (UTC)
+	by silver.osuosl.org (Postfix) with ESMTP id 1FE8D25E5D;
+	Fri,  6 Dec 2019 10:20:11 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
-Received: from fraxinus.osuosl.org ([127.0.0.1])
+Received: from silver.osuosl.org ([127.0.0.1])
 	by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
-	with ESMTP id JHb19bNgX73f; Fri,  6 Dec 2019 09:58:24 +0000 (UTC)
+	with ESMTP id JriVcrSA7I4v; Fri,  6 Dec 2019 10:20:10 +0000 (UTC)
 Received: from lists.linuxfoundation.org (lf-lists.osuosl.org [140.211.9.56])
-	by fraxinus.osuosl.org (Postfix) with ESMTP id CC64787446;
-	Fri,  6 Dec 2019 09:58:24 +0000 (UTC)
+	by silver.osuosl.org (Postfix) with ESMTP id 7011A25DFC;
+	Fri,  6 Dec 2019 10:20:10 +0000 (UTC)
 Received: from lf-lists.osuosl.org (localhost [127.0.0.1])
-	by lists.linuxfoundation.org (Postfix) with ESMTP id B95B5C1D7E;
-	Fri,  6 Dec 2019 09:58:24 +0000 (UTC)
+	by lists.linuxfoundation.org (Postfix) with ESMTP id 56A1AC1D7F;
+	Fri,  6 Dec 2019 10:20:10 +0000 (UTC)
 X-Original-To: cip-testing-results@lists.cip-project.org
 Delivered-To: cip-testing-results@lists.linuxfoundation.org
 Received: from fraxinus.osuosl.org (smtp4.osuosl.org [140.211.166.137])
- by lists.linuxfoundation.org (Postfix) with ESMTP id 68A84C077D
+ by lists.linuxfoundation.org (Postfix) with ESMTP id E8FB4C077D
  for <cip-testing-results@lists.cip-project.org>;
- Fri,  6 Dec 2019 09:58:23 +0000 (UTC)
+ Fri,  6 Dec 2019 10:20:08 +0000 (UTC)
 Received: from localhost (localhost [127.0.0.1])
- by fraxinus.osuosl.org (Postfix) with ESMTP id 5693D873BB
+ by fraxinus.osuosl.org (Postfix) with ESMTP id E0D1A875FE
  for <cip-testing-results@lists.cip-project.org>;
- Fri,  6 Dec 2019 09:58:23 +0000 (UTC)
+ Fri,  6 Dec 2019 10:20:08 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
 Received: from fraxinus.osuosl.org ([127.0.0.1])
  by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
- with ESMTP id OH132KU6UmzO
+ with ESMTP id tD8QK0pHfpIk
  for <cip-testing-results@lists.cip-project.org>;
- Fri,  6 Dec 2019 09:58:22 +0000 (UTC)
+ Fri,  6 Dec 2019 10:20:07 +0000 (UTC)
 X-Greylist: domain auto-whitelisted by SQLgrey-1.7.6
-Received: from a27-52.smtp-out.us-west-2.amazonses.com
- (a27-52.smtp-out.us-west-2.amazonses.com [54.240.27.52])
- by fraxinus.osuosl.org (Postfix) with ESMTPS id 9083E873A5
+Received: from a27-22.smtp-out.us-west-2.amazonses.com
+ (a27-22.smtp-out.us-west-2.amazonses.com [54.240.27.22])
+ by fraxinus.osuosl.org (Postfix) with ESMTPS id 0EEB5875A9
  for <cip-testing-results@lists.cip-project.org>;
- Fri,  6 Dec 2019 09:58:22 +0000 (UTC)
+ Fri,  6 Dec 2019 10:20:06 +0000 (UTC)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=sef3ipnhs6zyfoh33edxhxokcqriataq; d=ciplatform.org; t=1575626301;
+ s=sef3ipnhs6zyfoh33edxhxokcqriataq; d=ciplatform.org; t=1575627606;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID;
- bh=MHenEl67u1aGQuVoXXfGDXr3d0AA04lCk38QtP1urEc=;
- b=amllRPTtefOaQGmTSryyDPtpb36WRQYo6MT7fN/KopLhLh2TrVL1dDJWW3U332Z6
- bPsDedol9dWyLnDpft6FF3RjjK/zDlEdC8x7bFcT/7EllBG7D0dtsUBHW/t6u4oVbFO
- 2VaEgos1zIrm1kLln5aP6TPTQG/SROXrdlFanYNg=
+ bh=sW90Zn9hj0Mxd+Q2oX4M2ITJJ8VAti6WyjWtqyGsvJA=;
+ b=UKulI69zdBFskiD6poKuyvbz3KSlVYk6uVoMFamIjP0RmzZiUYDiQjtyP5Vv655Z
+ ZVqJWDl+Xhz9xAViTPax8rRDoegj7MBynh1/dSjWardNebPAB7M6OT1RuGcgwtX01vP
+ Y3ZuKjjtWreskYu73EHPbFwxj+xUnIqlBkv6bgoI=
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1575626301;
+ s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1575627606;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID:Feedback-ID;
- bh=MHenEl67u1aGQuVoXXfGDXr3d0AA04lCk38QtP1urEc=;
- b=PTOvIjfI95WjCM/BQoQ2wnzuaY/tfg/gqoztORAz47foq5rSFKg7hwDGb60YWnK0
- ubWyeWQ+5PBB/3btve1MU/j5hjIDB9KWKl0VTFRInmM0LTygvjPL2/4KT3jT2XsaBvx
- 1ZHFVH2z8G4d7Rzm+e62+x5B+Drmd6Nf+TfUnvyE=
+ bh=sW90Zn9hj0Mxd+Q2oX4M2ITJJ8VAti6WyjWtqyGsvJA=;
+ b=Z/SXVUJ5t762Xm6hbdxpvYhBojY3cfSBCNvYtFBim9J1f5m3p8nX2blLYSupkR/b
+ kaKCFjww7om4292LP+rLWlVKT+mOm+zStTwGtapzITVpB7KfkQVEx3pYYe4MOlsGhGl
+ Byw4/04hMO7JMeIsgH1A1AR68s+At9uxtc3BGdYA=
 MIME-Version: 1.0
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Fri, 6 Dec 2019 09:58:21 +0000
-Message-ID: <0101016edaa560e3-bdecd054-522e-429b-aedd-710d8878424e-000000@us-west-2.amazonses.com>
-X-SES-Outgoing: 2019.12.06-54.240.27.52
+Date: Fri, 6 Dec 2019 10:20:06 +0000
+Message-ID: <0101016edab947ca-50c4d9a2-8c4a-4c59-b876-ec01d46b1a38-000000@us-west-2.amazonses.com>
+X-SES-Outgoing: 2019.12.06-54.240.27.22
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-Subject: [Cip-testing-results] LAVA notification for Test Job 8116
- 4.19.85-cip15_2908bcec4_x86_siemens_ipc227e_defconfig_smc
+Subject: [Cip-testing-results] LAVA notification for Test Job 8117 x86
+	health-check
 X-BeenThere: cip-testing-results@lists.cip-project.org
 X-Mailman-Version: 2.1.15
 Precedence: list
@@ -83,28 +83,11 @@ Sender: "Cip-testing-results"
 
 Hello,
 
-The job with ID # 8116 is now in state Finished and health Incomplete. Job was submitted by patersonc.
+The job with ID # 8117 is now in state Finished and health Complete. Job was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/8116
+Job details and log file: http://lava.ciplatform.org/scheduler/job/8117
 
 
-Job error: Kernel panic - not syncing: VFS: Unable to mount root fs on unknown-block(2,0)
-[  112.948604] CPU: 1 PID: 1 Comm: swapper/0 Not tainted 4.19.85-cip15+ #1
-[  112.955210] Hardware name: SIEMENS AG SIMATIC IPC227E/A5E42630598, BIOS L20.01.11.3 12/18/2018
-[  112.963814] Call Trace:
-[  112.966261]  dump_stack+0x66/0x90
-[  112.969571]  panic+0xe7/0x24a
-[  112.972533]  mount_block_root+0x215/0x239
-[  112.976536]  ? do_mknodat+0x192/0x230
-[  112.980195]  ? do_early_param+0x8e/0x8e
-[  112.984023]  mount_root+0x10f/0x12d
-[  112.987506]  prepare_namespace+0x130/0x166
-[  112.991597]  kernel_init_freeable+0x208/0x218
-[  112.995947]  ? rest_init+0xaa/0xaa
-[  112.999342]  kernel_init+0xa/0xff
-[  113.002650]  ret_from_fork+0x35/0x40
-[  113.006467] Kernel Offset: 0x39400000 from 0xffffffff81000000 (relocation range: 0xffffffff80000000-0xffffffffbfffffff)
-[  113.017244] ---[ end Kernel panic
 
 
 Device details:
@@ -115,43 +98,11 @@ Worker: lab-cip-mentor
 Job details:
 Priority: Medium
 Visibility: Publicly visible
-Description: 4.19.85-cip15_2908bcec4_x86_siemens_ipc227e_defconfig_smc
-Submitted: 2019-12-06 09:44:58 (+0000 UTC)
-Started: 2019-12-06 09:45:04 (+0000 UTC)
-Finished: 2019-12-06 09:58:21 (+0000 UTC)
-Duration: 0:13:16.595013
-
-Metadata:
-
-Results:
-
-
-Test Suite lava: http://lava.ciplatform.org/results/8116/lava
-Test Case job: Test failed
-Test Case power-off: Test passed
-Measurement: 0.0400000000 seconds
-Test Case bootloader-action: Test failed
-Test Case bootloader-retry: Test failed
-Test Case auto-login-action: Test failed
-Measurement: 144.8800000000 seconds
-Test Case kernel-messages: Test failed
-Measurement: 112.6300000000 seconds
-Test Case pdu-reboot: Test passed
-Measurement: 0.0500000000 seconds
-Test Case test-runscript-overlay: Test passed
-Measurement: 0.0100000000 seconds
-Test Case test-install-overlay: Test passed
-Measurement: 0.0100000000 seconds
-Test Case test-overlay: Test passed
-Measurement: 0.0100000000 seconds
-Test Case git-repo-action: Test passed
-Measurement: 32.6300000000 seconds
-Test Case http-download: Test passed
-Measurement: 374.2700000000 seconds
-Test Case http-download: Test passed
-Measurement: 6.7900000000 seconds
-Test Case validate: Test passed
-No query is set for results comparing.
+Description: x86 health-check
+Submitted: 2019-12-06 10:08:31 (+0000 UTC)
+Started: 2019-12-06 10:08:32 (+0000 UTC)
+Finished: 2019-12-06 10:20:05 (+0000 UTC)
+Duration: 0:11:33.486723
 
 -- 
 LAVA
