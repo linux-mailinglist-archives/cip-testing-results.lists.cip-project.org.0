@@ -1,67 +1,67 @@
 Return-Path: <cip-testing-results-bounces@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
-Received: from hemlock.osuosl.org (smtp2.osuosl.org [140.211.166.133])
-	by mail.lfdr.de (Postfix) with ESMTPS id D74B5114F2A
-	for <lists@lfdr.de>; Fri,  6 Dec 2019 11:46:29 +0100 (CET)
+Received: from silver.osuosl.org (smtp3.osuosl.org [140.211.166.136])
+	by mail.lfdr.de (Postfix) with ESMTPS id 945DA114F7D
+	for <lists@lfdr.de>; Fri,  6 Dec 2019 11:55:04 +0100 (CET)
 Received: from localhost (localhost [127.0.0.1])
-	by hemlock.osuosl.org (Postfix) with ESMTP id 649BA88B81;
-	Fri,  6 Dec 2019 10:46:28 +0000 (UTC)
+	by silver.osuosl.org (Postfix) with ESMTP id 295A425BDA;
+	Fri,  6 Dec 2019 10:55:03 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
-Received: from hemlock.osuosl.org ([127.0.0.1])
+Received: from silver.osuosl.org ([127.0.0.1])
 	by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
-	with ESMTP id PyMjsn3HDnsW; Fri,  6 Dec 2019 10:46:27 +0000 (UTC)
+	with ESMTP id reFLmFKAvhcX; Fri,  6 Dec 2019 10:55:02 +0000 (UTC)
 Received: from lists.linuxfoundation.org (lf-lists.osuosl.org [140.211.9.56])
-	by hemlock.osuosl.org (Postfix) with ESMTP id DEFE788B61;
-	Fri,  6 Dec 2019 10:46:27 +0000 (UTC)
+	by silver.osuosl.org (Postfix) with ESMTP id 55787203D7;
+	Fri,  6 Dec 2019 10:55:02 +0000 (UTC)
 Received: from lf-lists.osuosl.org (localhost [127.0.0.1])
-	by lists.linuxfoundation.org (Postfix) with ESMTP id CC5C8C1D7F;
-	Fri,  6 Dec 2019 10:46:27 +0000 (UTC)
+	by lists.linuxfoundation.org (Postfix) with ESMTP id 47D8DC1D7F;
+	Fri,  6 Dec 2019 10:55:02 +0000 (UTC)
 X-Original-To: cip-testing-results@lists.cip-project.org
 Delivered-To: cip-testing-results@lists.linuxfoundation.org
 Received: from hemlock.osuosl.org (smtp2.osuosl.org [140.211.166.133])
- by lists.linuxfoundation.org (Postfix) with ESMTP id AAC86C077D
+ by lists.linuxfoundation.org (Postfix) with ESMTP id 8ADD8C077D
  for <cip-testing-results@lists.cip-project.org>;
- Fri,  6 Dec 2019 10:46:26 +0000 (UTC)
+ Fri,  6 Dec 2019 10:55:00 +0000 (UTC)
 Received: from localhost (localhost [127.0.0.1])
- by hemlock.osuosl.org (Postfix) with ESMTP id 93A1188B61
+ by hemlock.osuosl.org (Postfix) with ESMTP id 791DB88BC7
  for <cip-testing-results@lists.cip-project.org>;
- Fri,  6 Dec 2019 10:46:26 +0000 (UTC)
+ Fri,  6 Dec 2019 10:55:00 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
 Received: from hemlock.osuosl.org ([127.0.0.1])
  by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
- with ESMTP id Q4d6ROYDDZHD
+ with ESMTP id v08ls0GMrLcE
  for <cip-testing-results@lists.cip-project.org>;
- Fri,  6 Dec 2019 10:46:25 +0000 (UTC)
+ Fri,  6 Dec 2019 10:54:59 +0000 (UTC)
 X-Greylist: domain auto-whitelisted by SQLgrey-1.7.6
-Received: from a27-22.smtp-out.us-west-2.amazonses.com
- (a27-22.smtp-out.us-west-2.amazonses.com [54.240.27.22])
- by hemlock.osuosl.org (Postfix) with ESMTPS id CD963888E4
+Received: from a27-52.smtp-out.us-west-2.amazonses.com
+ (a27-52.smtp-out.us-west-2.amazonses.com [54.240.27.52])
+ by hemlock.osuosl.org (Postfix) with ESMTPS id A3A148893B
  for <cip-testing-results@lists.cip-project.org>;
- Fri,  6 Dec 2019 10:46:25 +0000 (UTC)
+ Fri,  6 Dec 2019 10:54:59 +0000 (UTC)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=sef3ipnhs6zyfoh33edxhxokcqriataq; d=ciplatform.org; t=1575629185;
+ s=sef3ipnhs6zyfoh33edxhxokcqriataq; d=ciplatform.org; t=1575629698;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID;
- bh=Izx/DpWZx74lrLeth7dCb2/YsWEiuSm6ti1YUKnGg5M=;
- b=PJ5fwWLKC/7IxNeEAMvz5KDOvhWP76xroiG+dKgslfR0Og2+LKA18L5jaEGCLc5V
- q+vksZYrTWi4DrvlFNO46lTIAmD8RrA+KqatbQAcEprbjUAB8ORYiooroIoC3kWqmnA
- 0HRDzT8d8KtTufG0vvDBzz8J64yOL1NR9NNGFrFk=
+ bh=ZSEnSiURfoN5NnQOcidJ/OPJunveNyR6e+ujYR0ZnJk=;
+ b=HZEbP2c7SjANo68eMHZWAHo5d3KFpEliOrWEi2WZPpM+xIvCiK3y1pf8G8BeP0v7
+ v42p7k1tGh2fzWC3UPsqGRFg4qEjWHR8vwMz0nYUjlMET9lqwSV8ZG/UyvZjGYWnWeU
+ 5YAk/QK5pPvNgmPMkXaJTstJkvJcWHZQYweXcid8=
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1575629185;
+ s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1575629698;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID:Feedback-ID;
- bh=Izx/DpWZx74lrLeth7dCb2/YsWEiuSm6ti1YUKnGg5M=;
- b=eVUu8yVvsSxTDLY5caMB/sI3ZEavFPHDmVMTxkJjcoLG0fulVCo+w6CeQqeBWQ8E
- myDq68Z8VHLPKwdU76AK0AjToX3JhH7jq1GeS0eY/KtPErpSx41MybpkfW+Q9kMllZA
- PdXtWt3SWwV8nrljzaqAO9b/Ejw6nVEg3cir9Y04=
+ bh=ZSEnSiURfoN5NnQOcidJ/OPJunveNyR6e+ujYR0ZnJk=;
+ b=IZWvgpOAZhQu85+Jc0TdHuD3MO7DeMcapBDLZR7KMECoOTztji2wpaDoiy0HxT6c
+ ZL9AmKy/SppSQR3XMFkUdEnhIGPI+BvnZUoyyhToVBSzG6golrE9cVLK/PFR6rBna2f
+ HcjebPjCPVLTEJYpYgtgy3UHJx6gHJ5B82xVDCbM=
 MIME-Version: 1.0
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Fri, 6 Dec 2019 10:46:24 +0000
-Message-ID: <0101016edad15ea5-b4786b17-5592-4273-8436-6c692975b7a0-000000@us-west-2.amazonses.com>
-X-SES-Outgoing: 2019.12.06-54.240.27.22
+Date: Fri, 6 Dec 2019 10:54:58 +0000
+Message-ID: <0101016edad93691-fdd16c7d-8cc1-412f-a533-9d55d2eb56e6-000000@us-west-2.amazonses.com>
+X-SES-Outgoing: 2019.12.06-54.240.27.52
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-Subject: [Cip-testing-results] LAVA notification for Test Job 8121
- 4.19.85-cip15_2908bcec4_x86_siemens_ipc227e_defconfig_boot
+Subject: [Cip-testing-results] LAVA notification for Test Job 8122
+ 4.19.85-cip15_2908bcec4_x86_siemens_ipc227e_defconfig_smc
 X-BeenThere: cip-testing-results@lists.cip-project.org
 X-Mailman-Version: 2.1.15
 Precedence: list
@@ -83,28 +83,28 @@ Sender: "Cip-testing-results"
 
 Hello,
 
-The job with ID # 8121 is now in state Finished and health Incomplete. Job was submitted by CIP-Testing.
+The job with ID # 8122 is now in state Finished and health Incomplete. Job was submitted by CIP-Testing.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/8121
+Job details and log file: http://lava.ciplatform.org/scheduler/job/8122
 
 
 Job error: Kernel panic - not syncing: VFS: Unable to mount root fs on unknown-block(2,0)
-[  112.949144] CPU: 1 PID: 1 Comm: swapper/0 Not tainted 4.19.85-cip15+ #1
-[  112.955750] Hardware name: SIEMENS AG SIMATIC IPC227E/A5E42630598, BIOS L20.01.11.3 12/18/2018
-[  112.964354] Call Trace:
-[  112.966803]  dump_stack+0x66/0x90
-[  112.970114]  panic+0xe7/0x24a
-[  112.973075]  mount_block_root+0x215/0x239
-[  112.977079]  ? do_mknodat+0x192/0x230
-[  112.980738]  ? do_early_param+0x8e/0x8e
-[  112.984567]  mount_root+0x10f/0x12d
-[  112.988050]  prepare_namespace+0x130/0x166
-[  112.992138]  kernel_init_freeable+0x208/0x218
-[  112.996488]  ? rest_init+0xaa/0xaa
-[  112.999883]  kernel_init+0xa/0xff
-[  113.003194]  ret_from_fork+0x35/0x40
-[  113.007008] Kernel Offset: 0xae00000 from 0xffffffff81000000 (relocation range: 0xffffffff80000000-0xffffffffbfffffff)
-[  113.017698] ---[ end Kernel panic
+[  112.949126] CPU: 1 PID: 1 Comm: swapper/0 Not tainted 4.19.85-cip15+ #1
+[  112.955732] Hardware name: SIEMENS AG SIMATIC IPC227E/A5E42630598, BIOS L20.01.11.3 12/18/2018
+[  112.964336] Call Trace:
+[  112.966783]  dump_stack+0x66/0x90
+[  112.970094]  panic+0xe7/0x24a
+[  112.973060]  mount_block_root+0x215/0x239
+[  112.977067]  ? do_mknodat+0x192/0x230
+[  112.980722]  ? do_early_param+0x8e/0x8e
+[  112.984550]  mount_root+0x10f/0x12d
+[  112.988033]  prepare_namespace+0x130/0x166
+[  112.992121]  kernel_init_freeable+0x208/0x218
+[  112.996472]  ? rest_init+0xaa/0xaa
+[  112.999866]  kernel_init+0xa/0xff
+[  113.003177]  ret_from_fork+0x35/0x40
+[  113.006997] Kernel Offset: 0x25600000 from 0xffffffff81000000 (relocation range: 0xffffffff80000000-0xffffffffbfffffff)
+[  113.017775] ---[ end Kernel panic
 
 
 Device details:
@@ -115,25 +115,25 @@ Worker: lab-cip-mentor
 Job details:
 Priority: Medium
 Visibility: Publicly visible
-Description: 4.19.85-cip15_2908bcec4_x86_siemens_ipc227e_defconfig_boot
-Submitted: 2019-12-06 10:20:25 (+0000 UTC)
-Started: 2019-12-06 10:33:40 (+0000 UTC)
-Finished: 2019-12-06 10:46:24 (+0000 UTC)
-Duration: 0:12:43.574344
+Description: 4.19.85-cip15_2908bcec4_x86_siemens_ipc227e_defconfig_smc
+Submitted: 2019-12-06 10:20:27 (+0000 UTC)
+Started: 2019-12-06 10:46:45 (+0000 UTC)
+Finished: 2019-12-06 10:54:58 (+0000 UTC)
+Duration: 0:08:13.175020
 
 Metadata:
 
 Results:
 
 
-Test Suite lava: http://lava.ciplatform.org/results/8121/lava
+Test Suite lava: http://lava.ciplatform.org/results/8122/lava
 Test Case job: Test failed
 Test Case power-off: Test passed
-Measurement: 0.0500000000 seconds
+Measurement: 0.0400000000 seconds
 Test Case bootloader-action: Test failed
 Test Case bootloader-retry: Test failed
 Test Case auto-login-action: Test failed
-Measurement: 144.7200000000 seconds
+Measurement: 144.3000000000 seconds
 Test Case kernel-messages: Test failed
 Measurement: 112.6300000000 seconds
 Test Case pdu-reboot: Test passed
@@ -143,10 +143,13 @@ Measurement: 0.0100000000 seconds
 Test Case test-install-overlay: Test passed
 Measurement: 0.0100000000 seconds
 Test Case test-overlay: Test passed
+Measurement: 0.0100000000 seconds
+Test Case git-repo-action: Test passed
+Measurement: 22.8100000000 seconds
 Test Case http-download: Test passed
-Measurement: 378.4300000000 seconds
+Measurement: 82.1600000000 seconds
 Test Case http-download: Test passed
-Measurement: 7.6600000000 seconds
+Measurement: 6.2400000000 seconds
 Test Case validate: Test passed
 No query is set for results comparing.
 
