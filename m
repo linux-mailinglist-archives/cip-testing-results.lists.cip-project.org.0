@@ -1,66 +1,66 @@
 Return-Path: <cip-testing-results-bounces@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
-Received: from silver.osuosl.org (smtp3.osuosl.org [140.211.166.136])
-	by mail.lfdr.de (Postfix) with ESMTPS id 75F5C11718C
-	for <lists@lfdr.de>; Mon,  9 Dec 2019 17:26:31 +0100 (CET)
+Received: from fraxinus.osuosl.org (smtp4.osuosl.org [140.211.166.137])
+	by mail.lfdr.de (Postfix) with ESMTPS id 2538311718D
+	for <lists@lfdr.de>; Mon,  9 Dec 2019 17:26:33 +0100 (CET)
 Received: from localhost (localhost [127.0.0.1])
-	by silver.osuosl.org (Postfix) with ESMTP id 2FDB82155B;
-	Mon,  9 Dec 2019 16:26:30 +0000 (UTC)
+	by fraxinus.osuosl.org (Postfix) with ESMTP id 479E986911;
+	Mon,  9 Dec 2019 16:26:31 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
-Received: from silver.osuosl.org ([127.0.0.1])
+Received: from fraxinus.osuosl.org ([127.0.0.1])
 	by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
-	with ESMTP id R0Pz4B+Our4O; Mon,  9 Dec 2019 16:26:29 +0000 (UTC)
+	with ESMTP id YrGNqZVmeTMk; Mon,  9 Dec 2019 16:26:30 +0000 (UTC)
 Received: from lists.linuxfoundation.org (lf-lists.osuosl.org [140.211.9.56])
-	by silver.osuosl.org (Postfix) with ESMTP id A509E20034;
-	Mon,  9 Dec 2019 16:26:29 +0000 (UTC)
+	by fraxinus.osuosl.org (Postfix) with ESMTP id D2F5A8691A;
+	Mon,  9 Dec 2019 16:26:30 +0000 (UTC)
 Received: from lf-lists.osuosl.org (localhost [127.0.0.1])
-	by lists.linuxfoundation.org (Postfix) with ESMTP id A25E8C1D84;
-	Mon,  9 Dec 2019 16:26:29 +0000 (UTC)
+	by lists.linuxfoundation.org (Postfix) with ESMTP id C3A20C1D7F;
+	Mon,  9 Dec 2019 16:26:30 +0000 (UTC)
 X-Original-To: cip-testing-results@lists.cip-project.org
 Delivered-To: cip-testing-results@lists.linuxfoundation.org
 Received: from whitealder.osuosl.org (smtp1.osuosl.org [140.211.166.138])
- by lists.linuxfoundation.org (Postfix) with ESMTP id D6E09C0881
+ by lists.linuxfoundation.org (Postfix) with ESMTP id 93CAAC0881
  for <cip-testing-results@lists.cip-project.org>;
- Mon,  9 Dec 2019 16:26:27 +0000 (UTC)
+ Mon,  9 Dec 2019 16:26:29 +0000 (UTC)
 Received: from localhost (localhost [127.0.0.1])
- by whitealder.osuosl.org (Postfix) with ESMTP id D20EE8763C
+ by whitealder.osuosl.org (Postfix) with ESMTP id 907C08763C
  for <cip-testing-results@lists.cip-project.org>;
- Mon,  9 Dec 2019 16:26:27 +0000 (UTC)
+ Mon,  9 Dec 2019 16:26:29 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
 Received: from whitealder.osuosl.org ([127.0.0.1])
  by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
- with ESMTP id 5zndyOM8fwrI
+ with ESMTP id xlxqEr83XnkB
  for <cip-testing-results@lists.cip-project.org>;
- Mon,  9 Dec 2019 16:26:27 +0000 (UTC)
+ Mon,  9 Dec 2019 16:26:29 +0000 (UTC)
 X-Greylist: domain auto-whitelisted by SQLgrey-1.7.6
 Received: from a27-27.smtp-out.us-west-2.amazonses.com
  (a27-27.smtp-out.us-west-2.amazonses.com [54.240.27.27])
- by whitealder.osuosl.org (Postfix) with ESMTPS id 5AE25860BE
+ by whitealder.osuosl.org (Postfix) with ESMTPS id 17C22860BE
  for <cip-testing-results@lists.cip-project.org>;
- Mon,  9 Dec 2019 16:26:27 +0000 (UTC)
+ Mon,  9 Dec 2019 16:26:29 +0000 (UTC)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=sef3ipnhs6zyfoh33edxhxokcqriataq; d=ciplatform.org; t=1575908786;
+ s=sef3ipnhs6zyfoh33edxhxokcqriataq; d=ciplatform.org; t=1575908788;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID;
- bh=IQRR7VP/wrnZNu2B2ecTqyDSwSY6VOQI6G+BiV9E0vA=;
- b=G1OybD7u/eCltw6k4qXW1m9m45E2TjDZTRx2HrWq+YLp71ZBl4E+ft01jfpRtqT9
- Md1rGBwXRqjL9GFh1pyM60QfPl1bNsctSB1C1ou0CcFd/ufL9KPRTACn600zSaxWdJ1
- vSf/JxAA+6hyfHwOBD4ZqmQ9WWS0SP9xfgDyJTfA=
+ bh=e3qxW+yP0JlOEJlzM7eEkNO3k35Q9c3OXDCd8Nn1gIc=;
+ b=fiR8EK3hVTpFmTlH5PuK0sRqvqf8ZZUTgHtDrjVj4asJvFcJC0B5Pz+aLAWQ+HcG
+ OiurgbFMSq1ShD+bzBNAI/IqCn9g5XcmCG450OBC5ofHfA7MGYbGLzCVQjeOvFEBoHp
+ reXizP52XTJtPoF1ubN/bgjMl2PIvRaiE0OHR8G4=
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1575908786;
+ s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1575908788;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID:Feedback-ID;
- bh=IQRR7VP/wrnZNu2B2ecTqyDSwSY6VOQI6G+BiV9E0vA=;
- b=UGz8nai7pVmTSv5bJPB+VGKnPtoKxRJt5DAqCOYE0VJCyFzMvWLvAQ/j7TwC8CaB
- H1PaP87rSdzE7fT1+e9bTbMF9EAAHlCw6hak6GbbpNIrUFNdBXxS+Q+VwsKtS1VVTG9
- zHgyFpKbPqrOKTNT84GMmELQf1VNdmJM2f7GGueU=
+ bh=e3qxW+yP0JlOEJlzM7eEkNO3k35Q9c3OXDCd8Nn1gIc=;
+ b=WfUJf7+wWUdMS0F7EOJDkNB+FfzqMhd3JKr8t4qTXbhbhL8Z63958v5JX3avCL8t
+ xinnQbfjGlji9b2XG3ixQUhWVNeihPp/xguirwJYaaFLAPeDBvPFklOvU24kIszyNSI
+ h9JFQOAYs40dV+xN8K9vS7SeTynRK7AoI4189M+I=
 MIME-Version: 1.0
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Mon, 9 Dec 2019 16:26:26 +0000
-Message-ID: <0101016eeb7bc172-cdaa6a57-475e-47cc-b7c6-ae5f0ead6026-000000@us-west-2.amazonses.com>
+Date: Mon, 9 Dec 2019 16:26:28 +0000
+Message-ID: <0101016eeb7bc9a0-c866b887-0aeb-4888-a65d-0d7c4ccd241d-000000@us-west-2.amazonses.com>
 X-SES-Outgoing: 2019.12.09-54.240.27.27
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-Subject: [Cip-testing-results] LAVA notification for Test Job 8173
+Subject: [Cip-testing-results] LAVA notification for Test Job 8174
 	r8a7743-iwg20d-q7 healthcheck
 X-BeenThere: cip-testing-results@lists.cip-project.org
 X-Mailman-Version: 2.1.15
@@ -83,15 +83,15 @@ Sender: "Cip-testing-results"
 
 Hello,
 
-The job with ID # 8173 is now in state Finished and health Complete. Job was submitted by lava-health.
+The job with ID # 8174 is now in state Finished and health Complete. Job was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/8173
+Job details and log file: http://lava.ciplatform.org/scheduler/job/8174
 
 
 
 
 Device details:
-Hostname: r8a7743-iwg20d-q7-03
+Hostname: r8a7743-iwg20d-q7-04
 Type: r8a7743-iwg20d-q7
 Owner: admin
 Worker: lab-cip-renesas
@@ -101,8 +101,8 @@ Visibility: Publicly visible
 Description: r8a7743-iwg20d-q7 healthcheck
 Submitted: 2019-12-09 16:24:27 (+0000 UTC)
 Started: 2019-12-09 16:24:29 (+0000 UTC)
-Finished: 2019-12-09 16:26:26 (+0000 UTC)
-Duration: 0:01:57.275360
+Finished: 2019-12-09 16:26:28 (+0000 UTC)
+Duration: 0:01:59.359697
 
 -- 
 LAVA
