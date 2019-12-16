@@ -2,66 +2,66 @@ Return-Path: <cip-testing-results-bounces@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from silver.osuosl.org (smtp3.osuosl.org [140.211.166.136])
-	by mail.lfdr.de (Postfix) with ESMTPS id 09FE5121B72
-	for <lists@lfdr.de>; Mon, 16 Dec 2019 22:04:26 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id 0CE7B121B74
+	for <lists@lfdr.de>; Mon, 16 Dec 2019 22:05:04 +0100 (CET)
 Received: from localhost (localhost [127.0.0.1])
-	by silver.osuosl.org (Postfix) with ESMTP id BFFDE2266C;
-	Mon, 16 Dec 2019 21:04:24 +0000 (UTC)
+	by silver.osuosl.org (Postfix) with ESMTP id C0735221D9;
+	Mon, 16 Dec 2019 21:05:02 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
 Received: from silver.osuosl.org ([127.0.0.1])
 	by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
-	with ESMTP id hRQlPs9+Hp9M; Mon, 16 Dec 2019 21:04:23 +0000 (UTC)
+	with ESMTP id IATtkkuMrCV1; Mon, 16 Dec 2019 21:05:02 +0000 (UTC)
 Received: from lists.linuxfoundation.org (lf-lists.osuosl.org [140.211.9.56])
-	by silver.osuosl.org (Postfix) with ESMTP id DB09D22643;
-	Mon, 16 Dec 2019 21:04:23 +0000 (UTC)
+	by silver.osuosl.org (Postfix) with ESMTP id 354AF2076E;
+	Mon, 16 Dec 2019 21:05:02 +0000 (UTC)
 Received: from lf-lists.osuosl.org (localhost [127.0.0.1])
-	by lists.linuxfoundation.org (Postfix) with ESMTP id C87BBC1D83;
-	Mon, 16 Dec 2019 21:04:23 +0000 (UTC)
+	by lists.linuxfoundation.org (Postfix) with ESMTP id 1C13FC1D83;
+	Mon, 16 Dec 2019 21:05:02 +0000 (UTC)
 X-Original-To: cip-testing-results@lists.cip-project.org
 Delivered-To: cip-testing-results@lists.linuxfoundation.org
 Received: from hemlock.osuosl.org (smtp2.osuosl.org [140.211.166.133])
- by lists.linuxfoundation.org (Postfix) with ESMTP id 37793C077D
+ by lists.linuxfoundation.org (Postfix) with ESMTP id 17EDDC077D
  for <cip-testing-results@lists.cip-project.org>;
- Mon, 16 Dec 2019 21:04:22 +0000 (UTC)
+ Mon, 16 Dec 2019 21:05:00 +0000 (UTC)
 Received: from localhost (localhost [127.0.0.1])
- by hemlock.osuosl.org (Postfix) with ESMTP id 2297787FFF
+ by hemlock.osuosl.org (Postfix) with ESMTP id ADB2D87FEA
  for <cip-testing-results@lists.cip-project.org>;
- Mon, 16 Dec 2019 21:04:22 +0000 (UTC)
+ Mon, 16 Dec 2019 21:04:59 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
 Received: from hemlock.osuosl.org ([127.0.0.1])
  by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
- with ESMTP id iqqMxuwcYMeI
+ with ESMTP id g81aamno2fV4
  for <cip-testing-results@lists.cip-project.org>;
- Mon, 16 Dec 2019 21:04:21 +0000 (UTC)
+ Mon, 16 Dec 2019 21:04:58 +0000 (UTC)
 X-Greylist: domain auto-whitelisted by SQLgrey-1.7.6
-Received: from a27-27.smtp-out.us-west-2.amazonses.com
- (a27-27.smtp-out.us-west-2.amazonses.com [54.240.27.27])
- by hemlock.osuosl.org (Postfix) with ESMTPS id 3E94287FE9
+Received: from a27-22.smtp-out.us-west-2.amazonses.com
+ (a27-22.smtp-out.us-west-2.amazonses.com [54.240.27.22])
+ by hemlock.osuosl.org (Postfix) with ESMTPS id 6145087FE9
  for <cip-testing-results@lists.cip-project.org>;
- Mon, 16 Dec 2019 21:04:21 +0000 (UTC)
+ Mon, 16 Dec 2019 21:04:58 +0000 (UTC)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=sef3ipnhs6zyfoh33edxhxokcqriataq; d=ciplatform.org; t=1576530260;
+ s=sef3ipnhs6zyfoh33edxhxokcqriataq; d=ciplatform.org; t=1576530297;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID;
- bh=KjeWQPpyNjQSKHdvCDz9gSvCE5RpGffKB8604rbSOgU=;
- b=fbWZLSbHYlKq17jKihKrD++dMGd6SRksQxaYT0uAYC6A+4gvMQlPfhCveTgjlItT
- LAZPL9RRdOR/EzXOc032B5c4NPw4zzwC0Y8YTwQuL3uG9afeHa+in0f5DQCQIWswJPk
- iZGZi5g7CAvoF02RD5XAapcO5XMnkZsccld9yuMM=
+ bh=ui2Na/U83UPCUzAbr3anCLlZkaTVESkwjpxYyjaYekA=;
+ b=QOLBaeyDu9p25NTtqZjoMKSszjdWyo/QlqrHA/qji9KXHvc7WD7F505AxOlnbqC0
+ IdwiEYHXZpy0nVaoAVTNbcgKVNBVq8u2eTISvAOlCZyOyw2s20n2baCUWwIiHnLTgtD
+ obMSFXorBCF6OAOhfKJ6zK923TWtwSBWQB/dE4qg=
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1576530260;
+ s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1576530297;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID:Feedback-ID;
- bh=KjeWQPpyNjQSKHdvCDz9gSvCE5RpGffKB8604rbSOgU=;
- b=VwAqj8jPuZ32CPSUay6h2E4ifHLB2YBG1lKc547UsagxlSkHn42iJsNKvpiSywra
- 4IeKcjy8xdrCFQqEYf69D1I3iMjIjp4hLVqaLKPcdEYUm76Di7IsBcz0ljMVk0pUx+z
- XAbHQxa5fdjuOTGZeKGHe3wC4WjqCJItTeoUYke0=
+ bh=ui2Na/U83UPCUzAbr3anCLlZkaTVESkwjpxYyjaYekA=;
+ b=QsZO7pLIQemBT2dUlzonP8ddPVhd2AM2SAsF4I1kFUpNLX99DJF0nHlIhPUDGX/d
+ eClb8XV+Kd51YCAvt+AnNlINULmeYf6gur+XJARxhjrsD16tEcUbRN7k2Iv/82p6USr
+ mqVaBeBI58RuYYsS6MtqT+YxV+cX2CWakp5HQrM4=
 MIME-Version: 1.0
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Mon, 16 Dec 2019 21:04:20 +0000
-Message-ID: <0101016f1086b1a1-5b24f20b-79ba-4833-8618-9dd10151b35c-000000@us-west-2.amazonses.com>
-X-SES-Outgoing: 2019.12.16-54.240.27.27
+Date: Mon, 16 Dec 2019 21:04:57 +0000
+Message-ID: <0101016f1087411b-958ea5a2-8222-4852-9be0-bad072083a2d-000000@us-west-2.amazonses.com>
+X-SES-Outgoing: 2019.12.16-54.240.27.22
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-Subject: [Cip-testing-results] LAVA notification for Test Job 8496
- 4.19.90-rc1_9cc8b117a_arm_shmobile_defconfig_r8a7745-iwg22d-sodimm-dbhd-ca.dtb_boot
+Subject: [Cip-testing-results] LAVA notification for Test Job 8495
+ 4.19.90-rc1_9cc8b117a_arm_shmobile_defconfig_r8a7743-iwg20d-q7-dbcm-ca.dtb_boot
 X-BeenThere: cip-testing-results@lists.cip-project.org
 X-Mailman-Version: 2.1.15
 Precedence: list
@@ -83,58 +83,57 @@ Sender: "Cip-testing-results"
 
 Hello,
 
-The job with ID # 8496 is now in state Finished and health Complete. Job was submitted by CIP-Testing.
+The job with ID # 8495 is now in state Finished and health Complete. Job was submitted by CIP-Testing.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/8496
+Job details and log file: http://lava.ciplatform.org/scheduler/job/8495
 
 
 
 
 Device details:
-Hostname: r8a7745-iwg22d-sodimm-01
-Type: r8a7745-iwg22d-sodimm
+Hostname: r8a7743-iwg20d-q7-01
+Type: r8a7743-iwg20d-q7
 Owner: renesas-admin
 Worker: lab-cip-renesas
 Job details:
 Priority: Medium
 Visibility: Publicly visible
-Description: 4.19.90-rc1_9cc8b117a_arm_shmobile_defconfig_r8a7745-iwg22d-sodimm-dbhd-ca.dtb_boot
-Submitted: 2019-12-16 21:02:35 (+0000 UTC)
+Description: 4.19.90-rc1_9cc8b117a_arm_shmobile_defconfig_r8a7743-iwg20d-q7-dbcm-ca.dtb_boot
+Submitted: 2019-12-16 21:02:33 (+0000 UTC)
 Started: 2019-12-16 21:02:42 (+0000 UTC)
-Finished: 2019-12-16 21:04:20 (+0000 UTC)
-Duration: 0:01:37.365588
+Finished: 2019-12-16 21:04:56 (+0000 UTC)
+Duration: 0:02:14.209075
 
 Metadata:
 
 Results:
 
 
-Test Suite 0_kernel-version-inline: http://lava.ciplatform.org/results/8496/0_kernel-version-inline
+Test Suite 0_kernel-version-inline: http://lava.ciplatform.org/results/8495/0_kernel-version-inline
 Test Case uname: Test passed
 
-Test Suite lava: http://lava.ciplatform.org/results/8496/lava
+Test Suite lava: http://lava.ciplatform.org/results/8495/lava
 Test Case job: Test passed
 Test Case power-off: Test passed
-Measurement: 0.0300000000 seconds
+Measurement: 0.2300000000 seconds
 Test Case 0_kernel-version-inline: Test passed
-Measurement: 0.1600000000 seconds
+Measurement: 0.1300000000 seconds
 Test Case auto-login-action: Test passed
-Measurement: 12.3000000000 seconds
+Measurement: 9.9200000000 seconds
 Test Case kernel-messages: Test passed
-Measurement: 11.4000000000 seconds
+Measurement: 9.1600000000 seconds
 Test Case pdu-reboot: Test passed
 Measurement: 0.2300000000 seconds
 Test Case bootloader-overlay: Test passed
 Test Case test-runscript-overlay: Test passed
-Measurement: 0.0100000000 seconds
 Test Case test-install-overlay: Test passed
 Test Case test-overlay: Test passed
 Test Case http-download: Test passed
-Measurement: 5.7200000000 seconds
+Measurement: 23.8900000000 seconds
 Test Case http-download: Test passed
-Measurement: 0.9900000000 seconds
+Measurement: 0.9100000000 seconds
 Test Case http-download: Test passed
-Measurement: 4.0800000000 seconds
+Measurement: 5.0600000000 seconds
 Test Case validate: Test passed
 No query is set for results comparing.
 
