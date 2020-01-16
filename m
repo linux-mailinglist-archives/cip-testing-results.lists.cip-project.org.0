@@ -1,67 +1,67 @@
 Return-Path: <cip-testing-results-bounces@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
-Received: from silver.osuosl.org (smtp3.osuosl.org [140.211.166.136])
-	by mail.lfdr.de (Postfix) with ESMTPS id AC01713FABA
-	for <lists@lfdr.de>; Thu, 16 Jan 2020 21:37:03 +0100 (CET)
+Received: from hemlock.osuosl.org (smtp2.osuosl.org [140.211.166.133])
+	by mail.lfdr.de (Postfix) with ESMTPS id 92F2313FACA
+	for <lists@lfdr.de>; Thu, 16 Jan 2020 21:44:21 +0100 (CET)
 Received: from localhost (localhost [127.0.0.1])
-	by silver.osuosl.org (Postfix) with ESMTP id 5B27320482;
-	Thu, 16 Jan 2020 20:37:02 +0000 (UTC)
+	by hemlock.osuosl.org (Postfix) with ESMTP id 49AC687DB0;
+	Thu, 16 Jan 2020 20:44:20 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
-Received: from silver.osuosl.org ([127.0.0.1])
+Received: from hemlock.osuosl.org ([127.0.0.1])
 	by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
-	with ESMTP id LfDth0kKEk+x; Thu, 16 Jan 2020 20:37:01 +0000 (UTC)
+	with ESMTP id r5EeGt7-zrLX; Thu, 16 Jan 2020 20:44:19 +0000 (UTC)
 Received: from lists.linuxfoundation.org (lf-lists.osuosl.org [140.211.9.56])
-	by silver.osuosl.org (Postfix) with ESMTP id B16D020404;
-	Thu, 16 Jan 2020 20:37:01 +0000 (UTC)
+	by hemlock.osuosl.org (Postfix) with ESMTP id B6E6F87DCE;
+	Thu, 16 Jan 2020 20:44:19 +0000 (UTC)
 Received: from lf-lists.osuosl.org (localhost [127.0.0.1])
-	by lists.linuxfoundation.org (Postfix) with ESMTP id A5EDFC1D88;
-	Thu, 16 Jan 2020 20:37:01 +0000 (UTC)
+	by lists.linuxfoundation.org (Postfix) with ESMTP id 9008EC1D88;
+	Thu, 16 Jan 2020 20:44:19 +0000 (UTC)
 X-Original-To: cip-testing-results@lists.cip-project.org
 Delivered-To: cip-testing-results@lists.linuxfoundation.org
 Received: from silver.osuosl.org (smtp3.osuosl.org [140.211.166.136])
- by lists.linuxfoundation.org (Postfix) with ESMTP id EC139C077D
+ by lists.linuxfoundation.org (Postfix) with ESMTP id C698AC077D
  for <cip-testing-results@lists.cip-project.org>;
- Thu, 16 Jan 2020 20:36:59 +0000 (UTC)
+ Thu, 16 Jan 2020 20:44:17 +0000 (UTC)
 Received: from localhost (localhost [127.0.0.1])
- by silver.osuosl.org (Postfix) with ESMTP id D512C20482
+ by silver.osuosl.org (Postfix) with ESMTP id B805F20440
  for <cip-testing-results@lists.cip-project.org>;
- Thu, 16 Jan 2020 20:36:59 +0000 (UTC)
+ Thu, 16 Jan 2020 20:44:17 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
 Received: from silver.osuosl.org ([127.0.0.1])
  by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
- with ESMTP id W0gIICD2iqrQ
+ with ESMTP id Vb9H+wwOXbB0
  for <cip-testing-results@lists.cip-project.org>;
- Thu, 16 Jan 2020 20:36:59 +0000 (UTC)
+ Thu, 16 Jan 2020 20:44:17 +0000 (UTC)
 X-Greylist: domain auto-whitelisted by SQLgrey-1.7.6
-Received: from a27-50.smtp-out.us-west-2.amazonses.com
- (a27-50.smtp-out.us-west-2.amazonses.com [54.240.27.50])
- by silver.osuosl.org (Postfix) with ESMTPS id 3BEBA20404
+Received: from a27-42.smtp-out.us-west-2.amazonses.com
+ (a27-42.smtp-out.us-west-2.amazonses.com [54.240.27.42])
+ by silver.osuosl.org (Postfix) with ESMTPS id 2E39A20404
  for <cip-testing-results@lists.cip-project.org>;
- Thu, 16 Jan 2020 20:36:59 +0000 (UTC)
+ Thu, 16 Jan 2020 20:44:17 +0000 (UTC)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=sef3ipnhs6zyfoh33edxhxokcqriataq; d=ciplatform.org; t=1579207018;
+ s=sef3ipnhs6zyfoh33edxhxokcqriataq; d=ciplatform.org; t=1579207456;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID;
- bh=j/FmZq5EO7N2LOfJ3UWzbSEj2L2zwWUt/rZ7Du3mfWA=;
- b=XvwPZUaANpUP6f+dgR+gKQHwLDjiu9E0O9vHuhnWg2t/6n6fB4rbxJYBcnuzGgfR
- pjpRkqEW5Tzq25VQ0P7rG9+nHJKvUoBFM+80HUm8z7EUTr/dzcpfgemfxpUZZ3KsylF
- /A7wZ0BqWiVAGODXCJKWSvufkBaGe12kluCyRUPo=
+ bh=7Ped8sFjGnfHM7gH0sBZBU9clRcMixL29tOeUhdnXGY=;
+ b=PbFQtB0t3v98v+HleuatHS/PlfnctoNQ9mILjQEonrHyi1xBnQlfuKO/UCNLnTdU
+ HYSFvBlcC5ueGFbmdHarKGnayn/8Bzq66YLV8zcbdUOEnwuGq5MTwB16Ll3qS7d4adZ
+ 1GX8Uh7LtQRLgz/n7M7SxXceDvM79t8VW86cwyEM=
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1579207018;
+ s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1579207456;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID:Feedback-ID;
- bh=j/FmZq5EO7N2LOfJ3UWzbSEj2L2zwWUt/rZ7Du3mfWA=;
- b=Tz9tQ4blhsplvM2HL5ItJ1IZDrQRT+rv57MrLTq1Mp9XizbjiQmTAkL3Sl1Z6bZs
- e1Y/BxhgvaN27l+Y/OGB9XTIKXHCJjHtUHubSZnLOgxqpOXSvbrzKgfwfLURIdsT+Fq
- FwLrGjR8K1Zb1oQz7MPk2ku3VbRu8iLC81BNAN6o=
+ bh=7Ped8sFjGnfHM7gH0sBZBU9clRcMixL29tOeUhdnXGY=;
+ b=JDMiIlIxori6uzYMrfza6i9i5VGMyhCURXA4DdSYFKEvTZIAmNj90xaSH6e0VRM0
+ WXrXNiYRhtoeNetgPH7ncMJgxpA20Lz6MLggyQ6rnWNwf2/EWAUjgCi+nOtw48ssqLC
+ hsDy8+xp3NNTuQmz1PCTdTi+CJv0scoBt7h9RQJY=
 MIME-Version: 1.0
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Thu, 16 Jan 2020 20:36:58 +0000
-Message-ID: <0101016fb012c793-275377d0-15fb-41c7-9c9c-a2d769f39b25-000000@us-west-2.amazonses.com>
-X-SES-Outgoing: 2020.01.16-54.240.27.50
+Date: Thu, 16 Jan 2020 20:44:16 +0000
+Message-ID: <0101016fb0197662-0236ab4a-abb7-475c-ae52-771868099883-000000@us-west-2.amazonses.com>
+X-SES-Outgoing: 2020.01.16-54.240.27.42
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-Subject: [Cip-testing-results] LAVA notification for Test Job 9954
- linux-4.19.y_bzImage_siemens_ipc227e_defconfig_4.19.97-rc1_3904aafed_x86_siemens_ipc227e_defconfig_boot
+Subject: [Cip-testing-results] LAVA notification for Test Job 9958 x86
+	health-check
 X-BeenThere: cip-testing-results@lists.cip-project.org
 X-Mailman-Version: 2.1.15
 Precedence: list
@@ -83,12 +83,11 @@ Sender: "Cip-testing-results"
 
 Hello,
 
-The job with ID # 9954 is now in state Finished and health Incomplete. Job was submitted by CIP-Testing.
+The job with ID # 9958 is now in state Finished and health Complete. Job was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/9954
+Job details and log file: http://lava.ciplatform.org/scheduler/job/9958
 
 
-Infrastructure error: bootloader-interrupt timed out after 599 seconds
 
 
 Device details:
@@ -99,38 +98,11 @@ Worker: lab-cip-mentor
 Job details:
 Priority: Medium
 Visibility: Publicly visible
-Description: linux-4.19.y_bzImage_siemens_ipc227e_defconfig_4.19.97-rc1_3904aafed_x86_siemens_ipc227e_defconfig_boot
-Submitted: 2020-01-16 20:25:53 (+0000 UTC)
-Started: 2020-01-16 20:25:59 (+0000 UTC)
-Finished: 2020-01-16 20:36:58 (+0000 UTC)
-Duration: 0:10:58.270074
-
-Metadata:
-
-Results:
-
-
-Test Suite lava: http://lava.ciplatform.org/results/9954/lava
-Test Case job: Test failed
-Test Case power-off: Test passed
-Measurement: 0.0400000000 seconds
-Test Case bootloader-action: Test failed
-Test Case bootloader-retry: Test failed
-Test Case bootloader-interrupt: Test failed
-Measurement: 599.0000000000 seconds
-Test Case pdu-reboot: Test passed
-Measurement: 0.0400000000 seconds
-Test Case test-runscript-overlay: Test passed
-Measurement: 0.0100000000 seconds
-Test Case test-install-overlay: Test passed
-Measurement: 0.0100000000 seconds
-Test Case test-overlay: Test passed
-Test Case http-download: Test passed
-Measurement: 47.5800000000 seconds
-Test Case http-download: Test passed
-Measurement: 6.3400000000 seconds
-Test Case validate: Test passed
-No query is set for results comparing.
+Description: x86 health-check
+Submitted: 2020-01-16 20:37:03 (+0000 UTC)
+Started: 2020-01-16 20:37:04 (+0000 UTC)
+Finished: 2020-01-16 20:44:14 (+0000 UTC)
+Duration: 0:07:10.592394
 
 -- 
 LAVA
