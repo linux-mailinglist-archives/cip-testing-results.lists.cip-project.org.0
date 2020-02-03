@@ -2,66 +2,66 @@ Return-Path: <cip-testing-results-bounces@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from hemlock.osuosl.org (smtp2.osuosl.org [140.211.166.133])
-	by mail.lfdr.de (Postfix) with ESMTPS id 8271015068F
-	for <lists@lfdr.de>; Mon,  3 Feb 2020 14:06:44 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id 64DF1150690
+	for <lists@lfdr.de>; Mon,  3 Feb 2020 14:07:13 +0100 (CET)
 Received: from localhost (localhost [127.0.0.1])
-	by hemlock.osuosl.org (Postfix) with ESMTP id 3956685888;
-	Mon,  3 Feb 2020 13:06:43 +0000 (UTC)
+	by hemlock.osuosl.org (Postfix) with ESMTP id 26DFC859B6;
+	Mon,  3 Feb 2020 13:07:12 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
 Received: from hemlock.osuosl.org ([127.0.0.1])
 	by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
-	with ESMTP id KsGfjidIZteR; Mon,  3 Feb 2020 13:06:42 +0000 (UTC)
+	with ESMTP id N0C7e-3gBit4; Mon,  3 Feb 2020 13:07:11 +0000 (UTC)
 Received: from lists.linuxfoundation.org (lf-lists.osuosl.org [140.211.9.56])
-	by hemlock.osuosl.org (Postfix) with ESMTP id B09FA85722;
-	Mon,  3 Feb 2020 13:06:42 +0000 (UTC)
+	by hemlock.osuosl.org (Postfix) with ESMTP id B55F4874F3;
+	Mon,  3 Feb 2020 13:07:11 +0000 (UTC)
 Received: from lf-lists.osuosl.org (localhost [127.0.0.1])
-	by lists.linuxfoundation.org (Postfix) with ESMTP id 9BBDAC1D84;
-	Mon,  3 Feb 2020 13:06:42 +0000 (UTC)
+	by lists.linuxfoundation.org (Postfix) with ESMTP id AF1CAC1D84;
+	Mon,  3 Feb 2020 13:07:11 +0000 (UTC)
 X-Original-To: cip-testing-results@lists.cip-project.org
 Delivered-To: cip-testing-results@lists.linuxfoundation.org
-Received: from hemlock.osuosl.org (smtp2.osuosl.org [140.211.166.133])
- by lists.linuxfoundation.org (Postfix) with ESMTP id 73EE1C0174
+Received: from whitealder.osuosl.org (smtp1.osuosl.org [140.211.166.138])
+ by lists.linuxfoundation.org (Postfix) with ESMTP id 0CEBDC0174
  for <cip-testing-results@lists.cip-project.org>;
- Mon,  3 Feb 2020 13:06:41 +0000 (UTC)
+ Mon,  3 Feb 2020 13:07:10 +0000 (UTC)
 Received: from localhost (localhost [127.0.0.1])
- by hemlock.osuosl.org (Postfix) with ESMTP id 7A71481B52
+ by whitealder.osuosl.org (Postfix) with ESMTP id 092F185A8B
  for <cip-testing-results@lists.cip-project.org>;
- Mon,  3 Feb 2020 13:06:40 +0000 (UTC)
+ Mon,  3 Feb 2020 13:07:10 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
-Received: from hemlock.osuosl.org ([127.0.0.1])
+Received: from whitealder.osuosl.org ([127.0.0.1])
  by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
- with ESMTP id S0EyJieCLwQh
+ with ESMTP id gpYgeiNujlAY
  for <cip-testing-results@lists.cip-project.org>;
- Mon,  3 Feb 2020 13:06:40 +0000 (UTC)
+ Mon,  3 Feb 2020 13:07:09 +0000 (UTC)
 X-Greylist: domain auto-whitelisted by SQLgrey-1.7.6
 Received: from a27-24.smtp-out.us-west-2.amazonses.com
  (a27-24.smtp-out.us-west-2.amazonses.com [54.240.27.24])
- by hemlock.osuosl.org (Postfix) with ESMTPS id 23C8C86DE2
+ by whitealder.osuosl.org (Postfix) with ESMTPS id 477F085C45
  for <cip-testing-results@lists.cip-project.org>;
- Mon,  3 Feb 2020 13:06:10 +0000 (UTC)
+ Mon,  3 Feb 2020 13:07:09 +0000 (UTC)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=sef3ipnhs6zyfoh33edxhxokcqriataq; d=ciplatform.org; t=1580735169;
+ s=sef3ipnhs6zyfoh33edxhxokcqriataq; d=ciplatform.org; t=1580735228;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID;
- bh=ldLuMOCFlhlwihJWYYktWCZpLjAnz2lFHl4NrGFyquY=;
- b=GdFgvGU2QE2f8aGidYctsGsosSI/HRcD0wGvoh9ogv0c/tVDLthvmHWwd/x28Na4
- imtwblZgvq5hEbSnW+mdQzcVADagevxFFrsACeiwDEt5LKU63blKpA9b5Tojq+O+Ets
- hJtk8Nd7AtAKDMkDP10afirClxmI0i9BzdqUdvbw=
+ bh=nHQSe8DOd4DoaC8ftE8d7yW1T8q3rK0FS1Bdjjra0d0=;
+ b=keQ7lW//Z/yxdz8SJJQTDwlDnewpajAbNCWnI/e2dF5BiIL0Pb/upoaX91sTl9IG
+ dh1HthJD53+BHzO65XCdnhu6taq6Q16XtKCAGCXKBNQotLv+3lf5Ptj62yPdhu9WMLp
+ zIXVY61UEmILv9XpS234TXGuDT3s+9qrPKJIso2I=
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1580735169;
+ s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1580735228;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID:Feedback-ID;
- bh=ldLuMOCFlhlwihJWYYktWCZpLjAnz2lFHl4NrGFyquY=;
- b=BQwaOfV+jcx1DKKs9fPovgjB8feXMFgRB+mJF8iZkqHZ7ibs8h8QJl0ym/e3Hgih
- bVWT3qjqWV2SMy6rRAeL1mFchIxSiOv2v8sny3aEuxxE1bqQHq/MW1YNeDZHGFB87oZ
- i9OWruy+Re5Xw6haHxHOTHyI9zXWbdfo5/XqwOig=
+ bh=nHQSe8DOd4DoaC8ftE8d7yW1T8q3rK0FS1Bdjjra0d0=;
+ b=OeTJOvQa8apNi3Ph5rqhUFZjuRizFOXrRdmtj0n8UfUT0UCn8aozItf1eVzyXuyh
+ eS5teu7LGYpY/KPjMBAc/SFDLRbNy3g4MQS0wRcvb5Yt4G3uWsXFg3noG2GWk2vb2qs
+ DO7UQz24Vg9Vcxw6xWO8/JIQjRLR4uO9mzNXdYoQ=
 MIME-Version: 1.0
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Mon, 3 Feb 2020 13:06:09 +0000
-Message-ID: <010101700b288343-7ada5463-875d-413d-9fd5-896a3c83d12c-000000@us-west-2.amazonses.com>
+Date: Mon, 3 Feb 2020 13:07:08 +0000
+Message-ID: <010101700b296a5d-a863d9c6-7d87-4ea9-95ca-0a7c263d7278-000000@us-west-2.amazonses.com>
 X-SES-Outgoing: 2020.02.03-54.240.27.24
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-Subject: [Cip-testing-results] LAVA notification for Test Job 10688
- linux-4.19.y-cip-rt_Image_renesas_defconfig_4.19.98-cip19-rt7_55aae9cca_arm64_renesas_defconfig_r8a774a1-hihope-rzg2m-ex.dtb_smc
+Subject: [Cip-testing-results] LAVA notification for Test Job 10682
+ v4.19.98-cip19-rt7_zImage_siemens_de0-nano-soc_defconfig_4.19.98-cip19-rt7_55aae9cca_arm_siemens_de0-nano-soc_defconfig_socfpga_cyclone5_de0_nano_soc.dtb_smc
 X-BeenThere: cip-testing-results@lists.cip-project.org
 X-Mailman-Version: 2.1.15
 Precedence: list
@@ -83,33 +83,33 @@ Sender: "Cip-testing-results"
 
 Hello,
 
-The job with ID # 10688 is now in state Finished and health Complete. Job was submitted by CIP-Testing.
+The job with ID # 10682 is now in state Finished and health Complete. Job was submitted by CIP-Testing.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/10688
+Job details and log file: http://lava.ciplatform.org/scheduler/job/10682
 
 
 
 
 Device details:
-Hostname: r8a774a1-hihope-rzg2m-ex-02
-Type: r8a774a1-hihope-rzg2m-ex
-Owner: admin
-Worker: lab-cip-renesas
+Hostname: Altera-Terasic-Deo-Nano-01
+Type: Altera-Terasic-Deo-Nano
+Owner: siemens-users
+Worker: lab-cip-mentor
 Job details:
 Priority: Medium
 Visibility: Publicly visible
-Description: linux-4.19.y-cip-rt_Image_renesas_defconfig_4.19.98-cip19-rt7_55aae9cca_arm64_renesas_defconfig_r8a774a1-hihope-rzg2m-ex.dtb_smc
-Submitted: 2020-02-03 13:03:37 (+0000 UTC)
-Started: 2020-02-03 13:03:52 (+0000 UTC)
-Finished: 2020-02-03 13:06:09 (+0000 UTC)
-Duration: 0:02:16.688715
+Description: v4.19.98-cip19-rt7_zImage_siemens_de0-nano-soc_defconfig_4.19.98-cip19-rt7_55aae9cca_arm_siemens_de0-nano-soc_defconfig_socfpga_cyclone5_de0_nano_soc.dtb_smc
+Submitted: 2020-02-03 13:00:45 (+0000 UTC)
+Started: 2020-02-03 13:04:13 (+0000 UTC)
+Finished: 2020-02-03 13:07:08 (+0000 UTC)
+Duration: 0:02:54.993285
 
 Metadata:
 
 Results:
 
 
-Test Suite 0_spectre-meltdown-checker-test: http://lava.ciplatform.org/results/10688/0_spectre-meltdown-checker-test
+Test Suite 0_spectre-meltdown-checker-test: http://lava.ciplatform.org/results/10682/0_spectre-meltdown-checker-test
 Test Case CVE-2019-11091: Test passed
 Test Case CVE-2018-12127: Test passed
 Test Case CVE-2018-12130: Test passed
@@ -118,23 +118,23 @@ Test Case CVE-2018-3646: Test passed
 Test Case CVE-2018-3620: Test passed
 Test Case CVE-2018-3615: Test passed
 Test Case CVE-2018-3639: Test passed
-Test Case CVE-2018-3640: Test failed
+Test Case CVE-2018-3640: Test passed
 Test Case CVE-2017-5754: Test passed
 Test Case CVE-2017-5715: Test passed
-Test Case CVE-2017-5753: Test passed
+Test Case CVE-2017-5753: Test skipped
 
-Test Suite lava: http://lava.ciplatform.org/results/10688/lava
+Test Suite lava: http://lava.ciplatform.org/results/10682/lava
 Test Case job: Test passed
 Test Case power-off: Test passed
-Measurement: 0.2300000000 seconds
+Measurement: 0.0400000000 seconds
 Test Case 0_spectre-meltdown-checker-test: Test passed
-Measurement: 4.6300000000 seconds
+Measurement: 3.7700000000 seconds
 Test Case auto-login-action: Test passed
-Measurement: 18.0900000000 seconds
+Measurement: 21.2900000000 seconds
 Test Case kernel-messages: Test passed
-Measurement: 16.3700000000 seconds
+Measurement: 19.6100000000 seconds
 Test Case pdu-reboot: Test passed
-Measurement: 0.2300000000 seconds
+Measurement: 0.0500000000 seconds
 Test Case bootloader-overlay: Test passed
 Test Case test-runscript-overlay: Test passed
 Measurement: 0.0100000000 seconds
@@ -143,13 +143,13 @@ Measurement: 0.0100000000 seconds
 Test Case test-overlay: Test passed
 Measurement: 0.0100000000 seconds
 Test Case git-repo-action: Test passed
-Measurement: 17.7500000000 seconds
+Measurement: 14.4800000000 seconds
 Test Case http-download: Test passed
-Measurement: 24.2900000000 seconds
+Measurement: 58.8700000000 seconds
 Test Case http-download: Test passed
-Measurement: 1.1700000000 seconds
+Measurement: 1.5200000000 seconds
 Test Case http-download: Test passed
-Measurement: 10.9700000000 seconds
+Measurement: 4.5300000000 seconds
 Test Case validate: Test passed
 No query is set for results comparing.
 
