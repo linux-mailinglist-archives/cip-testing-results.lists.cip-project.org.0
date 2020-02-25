@@ -2,66 +2,66 @@ Return-Path: <cip-testing-results-bounces@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from fraxinus.osuosl.org (smtp4.osuosl.org [140.211.166.137])
-	by mail.lfdr.de (Postfix) with ESMTPS id 38F9916B6DB
-	for <lists@lfdr.de>; Tue, 25 Feb 2020 01:48:15 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id 4898516BBD9
+	for <lists@lfdr.de>; Tue, 25 Feb 2020 09:30:18 +0100 (CET)
 Received: from localhost (localhost [127.0.0.1])
-	by fraxinus.osuosl.org (Postfix) with ESMTP id BFB03868B6;
-	Tue, 25 Feb 2020 00:48:13 +0000 (UTC)
+	by fraxinus.osuosl.org (Postfix) with ESMTP id 0428384A6C;
+	Tue, 25 Feb 2020 08:30:17 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
 Received: from fraxinus.osuosl.org ([127.0.0.1])
 	by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
-	with ESMTP id N5ArJSi1pXZn; Tue, 25 Feb 2020 00:48:13 +0000 (UTC)
+	with ESMTP id g7HpQVsy1iFV; Tue, 25 Feb 2020 08:30:16 +0000 (UTC)
 Received: from lists.linuxfoundation.org (lf-lists.osuosl.org [140.211.9.56])
-	by fraxinus.osuosl.org (Postfix) with ESMTP id 22D668689B;
-	Tue, 25 Feb 2020 00:48:13 +0000 (UTC)
+	by fraxinus.osuosl.org (Postfix) with ESMTP id 018A88495A;
+	Tue, 25 Feb 2020 08:30:16 +0000 (UTC)
 Received: from lf-lists.osuosl.org (localhost [127.0.0.1])
-	by lists.linuxfoundation.org (Postfix) with ESMTP id 070E6C1D88;
-	Tue, 25 Feb 2020 00:48:13 +0000 (UTC)
+	by lists.linuxfoundation.org (Postfix) with ESMTP id DD155C1D87;
+	Tue, 25 Feb 2020 08:30:15 +0000 (UTC)
 X-Original-To: cip-testing-results@lists.cip-project.org
 Delivered-To: cip-testing-results@lists.linuxfoundation.org
-Received: from silver.osuosl.org (smtp3.osuosl.org [140.211.166.136])
- by lists.linuxfoundation.org (Postfix) with ESMTP id BC38FC0177
+Received: from whitealder.osuosl.org (smtp1.osuosl.org [140.211.166.138])
+ by lists.linuxfoundation.org (Postfix) with ESMTP id DF699C0177
  for <cip-testing-results@lists.cip-project.org>;
- Tue, 25 Feb 2020 00:48:11 +0000 (UTC)
+ Tue, 25 Feb 2020 08:30:13 +0000 (UTC)
 Received: from localhost (localhost [127.0.0.1])
- by silver.osuosl.org (Postfix) with ESMTP id A60EF203DC
+ by whitealder.osuosl.org (Postfix) with ESMTP id CA7E08642E
  for <cip-testing-results@lists.cip-project.org>;
- Tue, 25 Feb 2020 00:48:11 +0000 (UTC)
+ Tue, 25 Feb 2020 08:30:13 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
-Received: from silver.osuosl.org ([127.0.0.1])
+Received: from whitealder.osuosl.org ([127.0.0.1])
  by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
- with ESMTP id KvPkgBurP+ke
+ with ESMTP id g-29eFJz+dAk
  for <cip-testing-results@lists.cip-project.org>;
- Tue, 25 Feb 2020 00:48:10 +0000 (UTC)
+ Tue, 25 Feb 2020 08:30:09 +0000 (UTC)
 X-Greylist: domain auto-whitelisted by SQLgrey-1.7.6
-Received: from a27-22.smtp-out.us-west-2.amazonses.com
- (a27-22.smtp-out.us-west-2.amazonses.com [54.240.27.22])
- by silver.osuosl.org (Postfix) with ESMTPS id 97B822002E
+Received: from a27-52.smtp-out.us-west-2.amazonses.com
+ (a27-52.smtp-out.us-west-2.amazonses.com [54.240.27.52])
+ by whitealder.osuosl.org (Postfix) with ESMTPS id 665228624E
  for <cip-testing-results@lists.cip-project.org>;
- Tue, 25 Feb 2020 00:48:10 +0000 (UTC)
+ Tue, 25 Feb 2020 08:30:09 +0000 (UTC)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=sef3ipnhs6zyfoh33edxhxokcqriataq; d=ciplatform.org; t=1582591689;
+ s=sef3ipnhs6zyfoh33edxhxokcqriataq; d=ciplatform.org; t=1582619408;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID;
- bh=35S0NW6N4KJ6iAJfuKvpyd2x+InJfQUVRwC0jOC1Db4=;
- b=JW6rXVbgioVvb6iVKWh5GjTwshuBdC8DYTPtXhNs3pv6S5CKJYX86OsHwhsYx5PR
- 9blokZNbA26ALr3711F31ImPPHaHRh9nAyRnlFnjyQo8352jaNZcXBYqShstrK6N74j
- BCtXjTBlkxBaVO2ZCsDojUirAqclyTo8Gn1g83xw=
+ bh=/06tEcVJM9rC3hW57bwiLHwZb+/Los9IuuajMFfdL1Q=;
+ b=UpzJX3gOv48Nfoc9FsLd2y/5+8kgQynXpY1UW/aYTq8ZywNcPHChIZ0u8gy/godD
+ Qrsf+vUfEdyPv/zbl9vhzz3C99+o0ZcDlw17l1SCFdbnDE5rmNY26u9gGaEFiysTcnh
+ S1ILhb232llNootebiq+AbZbaBJQF9zvUmYX8ZZs=
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1582591689;
+ s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1582619408;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID:Feedback-ID;
- bh=35S0NW6N4KJ6iAJfuKvpyd2x+InJfQUVRwC0jOC1Db4=;
- b=IIBZaFdmG++Oh0w+mFv3rNM8ynW/aV6z4baEuNN9SXlQkO23sHGsJ0aP9oVRHwK1
- 5RvPUM5obqYaXUT2Azd4GoyUEhp8rsC3/hMH0Ubdwqj8o8LAksszTif6a2H6EeqJ6A6
- PECfbCCBGMgdpLoCtNP5kpxI+hjDw+0dqLbR/xUo=
+ bh=/06tEcVJM9rC3hW57bwiLHwZb+/Los9IuuajMFfdL1Q=;
+ b=TqS8afrjlRHtpGgNDCPGPyCe9UOcgFUKGjU+kjYrE+EhNWjC6Ojx4vc+p7VKupLc
+ 5nEECVH3GsPFTrsw+uTPRr9XPh/CQV+0m9gwW/aKifQWhyfaWNw3UAMuUqQ3Lzgy593
+ CAyhRBYKJaZVEhvmwDuiQ82qI9pPQmHo0+sb+eZQ=
 MIME-Version: 1.0
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Tue, 25 Feb 2020 00:48:09 +0000
-Message-ID: <0101017079d0c312-d735464f-215f-4af1-9710-4ce6feac8976-000000@us-west-2.amazonses.com>
-X-SES-Outgoing: 2020.02.25-54.240.27.22
+Date: Tue, 25 Feb 2020 08:30:07 +0000
+Message-ID: <010101707b77b5eb-840c29f8-aa68-4f1d-86e8-17133586808e-000000@us-west-2.amazonses.com>
+X-SES-Outgoing: 2020.02.25-54.240.27.52
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-Subject: [Cip-testing-results] LAVA notification for Test Job 11641
- Altera-Terasic-Deo-Nano healthcheck
+Subject: [Cip-testing-results] LAVA notification for Test Job 11642
+	r8a7743-iwg20d-q7 healthcheck
 X-BeenThere: cip-testing-results@lists.cip-project.org
 X-Mailman-Version: 2.1.15
 Precedence: list
@@ -83,26 +83,26 @@ Sender: "Cip-testing-results"
 
 Hello,
 
-The job with ID # 11641 is now in state Finished and health Complete. Job was submitted by lava-health.
+The job with ID # 11642 is now in state Finished and health Complete. Job was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/11641
+Job details and log file: http://lava.ciplatform.org/scheduler/job/11642
 
 
 
 
 Device details:
-Hostname: Altera-Terasic-Deo-Nano-01
-Type: Altera-Terasic-Deo-Nano
-Owner: siemens-users
-Worker: lab-cip-mentor
+Hostname: r8a7743-iwg20d-q7-01
+Type: r8a7743-iwg20d-q7
+Owner: renesas-admin
+Worker: lab-cip-renesas
 Job details:
 Priority: Medium
 Visibility: Publicly visible
-Description: Altera-Terasic-Deo-Nano healthcheck
-Submitted: 2020-02-25 00:46:00 (+0000 UTC)
-Started: 2020-02-25 00:46:02 (+0000 UTC)
-Finished: 2020-02-25 00:48:09 (+0000 UTC)
-Duration: 0:02:06.607254
+Description: r8a7743-iwg20d-q7 healthcheck
+Submitted: 2020-02-25 08:28:36 (+0000 UTC)
+Started: 2020-02-25 08:28:37 (+0000 UTC)
+Finished: 2020-02-25 08:30:07 (+0000 UTC)
+Duration: 0:01:30.211902
 
 -- 
 LAVA
