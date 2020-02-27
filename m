@@ -1,66 +1,66 @@
 Return-Path: <cip-testing-results-bounces@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
-Received: from fraxinus.osuosl.org (smtp4.osuosl.org [140.211.166.137])
-	by mail.lfdr.de (Postfix) with ESMTPS id 2C371172C5D
-	for <lists@lfdr.de>; Fri, 28 Feb 2020 00:36:51 +0100 (CET)
+Received: from hemlock.osuosl.org (smtp2.osuosl.org [140.211.166.133])
+	by mail.lfdr.de (Postfix) with ESMTPS id C2C5F172C65
+	for <lists@lfdr.de>; Fri, 28 Feb 2020 00:40:59 +0100 (CET)
 Received: from localhost (localhost [127.0.0.1])
-	by fraxinus.osuosl.org (Postfix) with ESMTP id D7AD185F68;
-	Thu, 27 Feb 2020 23:36:49 +0000 (UTC)
+	by hemlock.osuosl.org (Postfix) with ESMTP id 51C2487FB5;
+	Thu, 27 Feb 2020 23:40:58 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
-Received: from fraxinus.osuosl.org ([127.0.0.1])
+Received: from hemlock.osuosl.org ([127.0.0.1])
 	by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
-	with ESMTP id VwGxdf_5znFe; Thu, 27 Feb 2020 23:36:49 +0000 (UTC)
+	with ESMTP id IWPvOZ8vpxuE; Thu, 27 Feb 2020 23:40:54 +0000 (UTC)
 Received: from lists.linuxfoundation.org (lf-lists.osuosl.org [140.211.9.56])
-	by fraxinus.osuosl.org (Postfix) with ESMTP id 454B385F7F;
-	Thu, 27 Feb 2020 23:36:49 +0000 (UTC)
+	by hemlock.osuosl.org (Postfix) with ESMTP id CEB2F87EB5;
+	Thu, 27 Feb 2020 23:40:54 +0000 (UTC)
 Received: from lf-lists.osuosl.org (localhost [127.0.0.1])
-	by lists.linuxfoundation.org (Postfix) with ESMTP id 32382C1D85;
-	Thu, 27 Feb 2020 23:36:49 +0000 (UTC)
+	by lists.linuxfoundation.org (Postfix) with ESMTP id ACD1AC1D85;
+	Thu, 27 Feb 2020 23:40:54 +0000 (UTC)
 X-Original-To: cip-testing-results@lists.cip-project.org
 Delivered-To: cip-testing-results@lists.linuxfoundation.org
-Received: from fraxinus.osuosl.org (smtp4.osuosl.org [140.211.166.137])
- by lists.linuxfoundation.org (Postfix) with ESMTP id CB153C0177
+Received: from whitealder.osuosl.org (smtp1.osuosl.org [140.211.166.138])
+ by lists.linuxfoundation.org (Postfix) with ESMTP id 501F7C0177
  for <cip-testing-results@lists.cip-project.org>;
- Thu, 27 Feb 2020 23:36:47 +0000 (UTC)
+ Thu, 27 Feb 2020 23:40:53 +0000 (UTC)
 Received: from localhost (localhost [127.0.0.1])
- by fraxinus.osuosl.org (Postfix) with ESMTP id B9D5B85F7F
+ by whitealder.osuosl.org (Postfix) with ESMTP id 41A988543B
  for <cip-testing-results@lists.cip-project.org>;
- Thu, 27 Feb 2020 23:36:47 +0000 (UTC)
+ Thu, 27 Feb 2020 23:40:53 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
-Received: from fraxinus.osuosl.org ([127.0.0.1])
+Received: from whitealder.osuosl.org ([127.0.0.1])
  by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
- with ESMTP id MxyQkTb81E_0
+ with ESMTP id MqLWIMnqm9DH
  for <cip-testing-results@lists.cip-project.org>;
- Thu, 27 Feb 2020 23:36:47 +0000 (UTC)
+ Thu, 27 Feb 2020 23:40:52 +0000 (UTC)
 X-Greylist: domain auto-whitelisted by SQLgrey-1.7.6
-Received: from a27-22.smtp-out.us-west-2.amazonses.com
- (a27-22.smtp-out.us-west-2.amazonses.com [54.240.27.22])
- by fraxinus.osuosl.org (Postfix) with ESMTPS id 2B2CF85F68
+Received: from a27-24.smtp-out.us-west-2.amazonses.com
+ (a27-24.smtp-out.us-west-2.amazonses.com [54.240.27.24])
+ by whitealder.osuosl.org (Postfix) with ESMTPS id 69EA08542B
  for <cip-testing-results@lists.cip-project.org>;
- Thu, 27 Feb 2020 23:36:47 +0000 (UTC)
+ Thu, 27 Feb 2020 23:40:52 +0000 (UTC)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=sef3ipnhs6zyfoh33edxhxokcqriataq; d=ciplatform.org; t=1582846606;
+ s=sef3ipnhs6zyfoh33edxhxokcqriataq; d=ciplatform.org; t=1582846851;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID;
- bh=swABE3ZRc5nAaS3MlBf1ZwnGX6ItTmTlXgcJJIpdkHc=;
- b=TKFa7E+mx9tVwbeAS92j2uE3dSkrr8gmFXMKBBAPDkfoBHKp+HXvBZe3sJew1zt/
- 0WzLH0bK48ZwS1OAb9cJWnwHisQ9BAl97dnYVf8KiCTPpqj+AQg8Ryzg1CdpgqnjmyV
- /4rTfIJ+lSSL3YSXgIl7X6OOBNYmyXkOKA1dJmcc=
+ bh=5TnltlYw8wHIwt8I81UDZw+A78hQ7OfwSgIBsDKGOQA=;
+ b=R8VUickDCJdCG9MQdXsNcqDdzGPRp0kR55qtA9K55QGor4JM67bYLFtT5w/NtXzR
+ xoCyktBKfDZs3N3lv9yBuumT/F5ySfha0yCkVQselgX/b05hpmxVHhKt4tDYnMHJVUx
+ h3JfQIvhGk4zo71zRflnvxt5feioMop/NmxtHImg=
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1582846606;
+ s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1582846851;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID:Feedback-ID;
- bh=swABE3ZRc5nAaS3MlBf1ZwnGX6ItTmTlXgcJJIpdkHc=;
- b=Uz0DDMmB2QhU+u3c7+lzcxWYzrXwdjLjc4Hu+jkL+Q8udUdsWMlul1gzo12664ez
- LeVehOFMHIYUInJqGV1veC3lO3rlzhCWu0eCt5BtDOKgUhsQc+yrImkEeNeySlHg0gr
- 8dOUe/BQ0t6E8CN1PnVn1+41w6fSfwzi/IUMuB4M=
+ bh=5TnltlYw8wHIwt8I81UDZw+A78hQ7OfwSgIBsDKGOQA=;
+ b=Dgw22uIZJZbFmL6pxy4ONnaVxVWsZJxKuQqyHwPfVQlbFhMJWmgIOVC7RE5WL7EW
+ AMBOVEswn5/O8LomnvjKnffuV4Rzf7387N+GHyFjMPjCtRqK9M6D1sBYX1DedgB1gEt
+ 99iktLAEaqA/XlxJSzTwV8zyq8wJiNXrayD7/RIQ=
 MIME-Version: 1.0
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Thu, 27 Feb 2020 23:36:46 +0000
-Message-ID: <0101017089027ac5-073ecfc3-1ab3-47aa-bee5-ec138d3dee3a-000000@us-west-2.amazonses.com>
-X-SES-Outgoing: 2020.02.27-54.240.27.22
+Date: Thu, 27 Feb 2020 23:40:51 +0000
+Message-ID: <0101017089063940-17f48066-9e59-4dad-9414-4843e08800f4-000000@us-west-2.amazonses.com>
+X-SES-Outgoing: 2020.02.27-54.240.27.24
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-Subject: [Cip-testing-results] LAVA notification for Test Job 11722
+Subject: [Cip-testing-results] LAVA notification for Test Job 11723
  iwamatsu-linux-4.4.y-cip_bzImage_cip_qemu_defconfig_4.4.213-cip42_089b4b00_x86_cip_qemu_defconfig_boot
 X-BeenThere: cip-testing-results@lists.cip-project.org
 X-Mailman-Version: 2.1.15
@@ -83,9 +83,9 @@ Sender: "Cip-testing-results"
 
 Hello,
 
-The job with ID # 11722 is now in state Finished and health Complete. Job was submitted by iwamatsun.
+The job with ID # 11723 is now in state Finished and health Complete. Job was submitted by iwamatsun.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/11722
+Job details and log file: http://lava.ciplatform.org/scheduler/job/11723
 
 
 
@@ -99,38 +99,39 @@ Job details:
 Priority: Medium
 Visibility: Publicly visible
 Description: iwamatsu-linux-4.4.y-cip_bzImage_cip_qemu_defconfig_4.4.213-cip42_089b4b00_x86_cip_qemu_defconfig_boot
-Submitted: 2020-02-27 23:35:35 (+0000 UTC)
-Started: 2020-02-27 23:35:52 (+0000 UTC)
-Finished: 2020-02-27 23:36:45 (+0000 UTC)
-Duration: 0:00:53.120237
+Submitted: 2020-02-27 23:39:39 (+0000 UTC)
+Started: 2020-02-27 23:39:54 (+0000 UTC)
+Finished: 2020-02-27 23:40:51 (+0000 UTC)
+Duration: 0:00:57.008688
 
 Metadata:
 
 Results:
 
 
-Test Suite 0_kernel-version-inline: http://lava.ciplatform.org/results/11722/0_kernel-version-inline
+Test Suite 0_kernel-version-inline: http://lava.ciplatform.org/results/11723/0_kernel-version-inline
 Test Case uname: Test passed
 
-Test Suite lava: http://lava.ciplatform.org/results/11722/lava
+Test Suite lava: http://lava.ciplatform.org/results/11723/lava
 Test Case job: Test passed
 Test Case 0_kernel-version-inline: Test passed
 Measurement: 0.1000000000 seconds
 Test Case auto-login-action: Test passed
-Measurement: 14.7200000000 seconds
+Measurement: 18.6900000000 seconds
 Test Case kernel-messages: Test passed
-Measurement: 10.6000000000 seconds
+Measurement: 14.6200000000 seconds
 Test Case execute-qemu: Test passed
 Measurement: 0.4000000000 seconds
 Test Case apply-overlay-guest: Test passed
-Measurement: 9.2400000000 seconds
+Measurement: 9.2100000000 seconds
 Test Case test-runscript-overlay: Test passed
+Measurement: 0.0100000000 seconds
 Test Case test-install-overlay: Test passed
 Test Case test-overlay: Test passed
 Test Case http-download: Test passed
-Measurement: 15.5700000000 seconds
+Measurement: 15.4600000000 seconds
 Test Case http-download: Test passed
-Measurement: 3.9600000000 seconds
+Measurement: 4.0200000000 seconds
 Test Case validate: Test passed
 No query is set for results comparing.
 
