@@ -1,67 +1,67 @@
 Return-Path: <cip-testing-results-bounces@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
-Received: from whitealder.osuosl.org (smtp1.osuosl.org [140.211.166.138])
-	by mail.lfdr.de (Postfix) with ESMTPS id 7086D172BA9
-	for <lists@lfdr.de>; Thu, 27 Feb 2020 23:44:43 +0100 (CET)
-Received: from localhost (localhost [127.0.0.1])
-	by whitealder.osuosl.org (Postfix) with ESMTP id 317FA86912;
-	Thu, 27 Feb 2020 22:44:42 +0000 (UTC)
-X-Virus-Scanned: amavisd-new at osuosl.org
-Received: from whitealder.osuosl.org ([127.0.0.1])
-	by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
-	with ESMTP id sPJO+oPXOfgo; Thu, 27 Feb 2020 22:44:41 +0000 (UTC)
-Received: from lists.linuxfoundation.org (lf-lists.osuosl.org [140.211.9.56])
-	by whitealder.osuosl.org (Postfix) with ESMTP id BEBC286856;
-	Thu, 27 Feb 2020 22:44:41 +0000 (UTC)
-Received: from lf-lists.osuosl.org (localhost [127.0.0.1])
-	by lists.linuxfoundation.org (Postfix) with ESMTP id AB9BBC1D87;
-	Thu, 27 Feb 2020 22:44:41 +0000 (UTC)
-X-Original-To: cip-testing-results@lists.cip-project.org
-Delivered-To: cip-testing-results@lists.linuxfoundation.org
 Received: from fraxinus.osuosl.org (smtp4.osuosl.org [140.211.166.137])
- by lists.linuxfoundation.org (Postfix) with ESMTP id 65986C0177
- for <cip-testing-results@lists.cip-project.org>;
- Thu, 27 Feb 2020 22:44:40 +0000 (UTC)
+	by mail.lfdr.de (Postfix) with ESMTPS id A3150172BAA
+	for <lists@lfdr.de>; Thu, 27 Feb 2020 23:45:01 +0100 (CET)
 Received: from localhost (localhost [127.0.0.1])
- by fraxinus.osuosl.org (Postfix) with ESMTP id 548C686190
- for <cip-testing-results@lists.cip-project.org>;
- Thu, 27 Feb 2020 22:44:40 +0000 (UTC)
+	by fraxinus.osuosl.org (Postfix) with ESMTP id 3B35B863E3;
+	Thu, 27 Feb 2020 22:45:00 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
 Received: from fraxinus.osuosl.org ([127.0.0.1])
+	by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id lkimniMARXB6; Thu, 27 Feb 2020 22:44:59 +0000 (UTC)
+Received: from lists.linuxfoundation.org (lf-lists.osuosl.org [140.211.9.56])
+	by fraxinus.osuosl.org (Postfix) with ESMTP id D27DB863FF;
+	Thu, 27 Feb 2020 22:44:59 +0000 (UTC)
+Received: from lf-lists.osuosl.org (localhost [127.0.0.1])
+	by lists.linuxfoundation.org (Postfix) with ESMTP id BF1BEC1D87;
+	Thu, 27 Feb 2020 22:44:59 +0000 (UTC)
+X-Original-To: cip-testing-results@lists.cip-project.org
+Delivered-To: cip-testing-results@lists.linuxfoundation.org
+Received: from silver.osuosl.org (smtp3.osuosl.org [140.211.166.136])
+ by lists.linuxfoundation.org (Postfix) with ESMTP id BD90DC0177
+ for <cip-testing-results@lists.cip-project.org>;
+ Thu, 27 Feb 2020 22:44:57 +0000 (UTC)
+Received: from localhost (localhost [127.0.0.1])
+ by silver.osuosl.org (Postfix) with ESMTP id BA33B20390
+ for <cip-testing-results@lists.cip-project.org>;
+ Thu, 27 Feb 2020 22:44:57 +0000 (UTC)
+X-Virus-Scanned: amavisd-new at osuosl.org
+Received: from silver.osuosl.org ([127.0.0.1])
  by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
- with ESMTP id ww-fLPvPxOp4
+ with ESMTP id nefdJS1Y5xyp
  for <cip-testing-results@lists.cip-project.org>;
- Thu, 27 Feb 2020 22:44:39 +0000 (UTC)
+ Thu, 27 Feb 2020 22:44:57 +0000 (UTC)
 X-Greylist: domain auto-whitelisted by SQLgrey-1.7.6
-Received: from a27-24.smtp-out.us-west-2.amazonses.com
- (a27-24.smtp-out.us-west-2.amazonses.com [54.240.27.24])
- by fraxinus.osuosl.org (Postfix) with ESMTPS id 35B3486141
+Received: from a27-22.smtp-out.us-west-2.amazonses.com
+ (a27-22.smtp-out.us-west-2.amazonses.com [54.240.27.22])
+ by silver.osuosl.org (Postfix) with ESMTPS id 373EC20107
  for <cip-testing-results@lists.cip-project.org>;
- Thu, 27 Feb 2020 22:44:39 +0000 (UTC)
+ Thu, 27 Feb 2020 22:44:57 +0000 (UTC)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=sef3ipnhs6zyfoh33edxhxokcqriataq; d=ciplatform.org; t=1582843478;
+ s=sef3ipnhs6zyfoh33edxhxokcqriataq; d=ciplatform.org; t=1582843496;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID;
- bh=+A694yyHrx0iVWr59ef3JOG0W9Io/KRM5SwWStZHxoc=;
- b=PwMgdCCAVUh+7ANGWI67BfgKi6FbmT/4DABRHyJLM3PE43DqX6bKpn6qhFw0ulei
- cDlaK4AUIg1bAGfYFPD9V3XoiDeDmB0bISsZ/yhakAdPA9FM70irIO8nNxptT0SLPtX
- TcXZPi77HNnrlsKM1tPNR5DnCFc5clKT1bBWVaVg=
+ bh=z+megDGXj2DqPzwpRGSAY36WYIrrMJa/sCEYlOPT/Kg=;
+ b=b2uY7hgojyjOIJRAsyt5MEp4OrgHGEss5eGn0AOLdglVFl/VWyIBuwISbntUrkUj
+ NQev4Cp+2dKwXBLU5uux5Be5ra6LXh29GnBM/W3sGs5XZZeGp8vihRi4AOuEDov5Bsv
+ FB644g+E0e4//uSGQ7DyZollQj2UG12WMnATpjwI=
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1582843478;
+ s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1582843496;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID:Feedback-ID;
- bh=+A694yyHrx0iVWr59ef3JOG0W9Io/KRM5SwWStZHxoc=;
- b=VCyLizuyxF8TFGObWV6tSOeYvb15YqI/2PZCourVATecjYI7FSCwTLTO+yDuLs8a
- YlhBSkPiGYaZELmrORUfHSxTghA+iiMHCjQ3hp4dI5/B90WT7gRbF+VWu6Rr7bYgr7b
- HepzBCXZ1d7Sb+PnGngRPKRxd3sPW7NEjLwdXMr0=
+ bh=z+megDGXj2DqPzwpRGSAY36WYIrrMJa/sCEYlOPT/Kg=;
+ b=PCA+FLsKNpi3/9/x1W2ACXowoAubfmQfrhvzXewAFRD4wjIL97ESypcka0jYPUUP
+ jHghnHAB9HkX3Sq9rz488deC99qRAMxFbEDYSrX9zfNExvHb0mUv+SDcclAP+XMk2gx
+ 5kPphfjCY5XBHRxnWSigrL8PyrFDUrcPg8hwq6Kc=
 MIME-Version: 1.0
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Thu, 27 Feb 2020 22:44:38 +0000
-Message-ID: <0101017088d2c071-7b5cbd6f-690e-4993-b70c-7a71cedda4ae-000000@us-west-2.amazonses.com>
-X-SES-Outgoing: 2020.02.27-54.240.27.24
+Date: Thu, 27 Feb 2020 22:44:56 +0000
+Message-ID: <0101017088d30787-ee963ecd-07d7-461d-9c86-fd52c4daec9b-000000@us-west-2.amazonses.com>
+X-SES-Outgoing: 2020.02.27-54.240.27.22
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-Subject: [Cip-testing-results] LAVA notification for Test Job 11697
-	r8a7743-iwg20d-q7 healthcheck
+Subject: [Cip-testing-results] LAVA notification for Test Job 11688
+ iwamatsu-linux-4.4.y-cip_bzImage_cip_qemu_defconfig_4.4.213-cip42_089b4b00_x86_cip_qemu_defconfig_boot
 X-BeenThere: cip-testing-results@lists.cip-project.org
 X-Mailman-Version: 2.1.15
 Precedence: list
@@ -83,28 +83,35 @@ Sender: "Cip-testing-results"
 
 Hello,
 
-The job with ID # 11697 is now in state Finished and health Incomplete. Job was submitted by lava-health.
+The job with ID # 11688 is now in state Finished and health Canceled. Job was submitted by iwamatsun.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/11697
+Job details and log file: http://lava.ciplatform.org/scheduler/job/11688
 
-
-Job error: Invalid job data: [&#34;Unable to get &#39;https://s3-us-west-2.amazonaws.com/download.cip-project.org/ciptesting/cip-lava/rfs/generic-initramfs.cpio.gz&#39;: HTTPSConnectionPool(host=&#39;s3-us-west-2.amazonaws.com&#39;, port=443): Max retries exceeded with url: /download.cip-project.org/ciptesting/cip-lava/rfs/generic-initramfs.cpio.gz (Caused by NewConnectionError(&#39;&lt;urllib3.connection.VerifiedHTTPSConnection object at 0x7ff1d79afc18&gt;: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution&#39;,))&#34;]
 
 
 
 Device details:
-Hostname: r8a7743-iwg20d-q7-03
-Type: r8a7743-iwg20d-q7
-Owner: admin
+Hostname: qemu-01
+Type: qemu
+Owner: renesas-admin
 Worker: lab-cip-renesas
 Job details:
 Priority: Medium
 Visibility: Publicly visible
-Description: r8a7743-iwg20d-q7 healthcheck
-Submitted: 2020-02-27 22:44:14 (+0000 UTC)
-Started: 2020-02-27 22:44:15 (+0000 UTC)
-Finished: 2020-02-27 22:44:37 (+0000 UTC)
-Duration: 0:00:22.088913
+Description: iwamatsu-linux-4.4.y-cip_bzImage_cip_qemu_defconfig_4.4.213-cip42_089b4b00_x86_cip_qemu_defconfig_boot
+Submitted: 2020-02-27 22:35:40 (+0000 UTC)
+Started: 2020-02-27 22:35:51 (+0000 UTC)
+Finished: 2020-02-27 22:44:56 (+0000 UTC)
+Duration: 0:09:04.412116
+
+Metadata:
+
+Results:
+
+
+Test Suite lava: http://lava.ciplatform.org/results/11688/lava
+Test Case validate: Test passed
+No query is set for results comparing.
 
 -- 
 LAVA
