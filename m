@@ -1,67 +1,67 @@
 Return-Path: <cip-testing-results-bounces@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
-Received: from fraxinus.osuosl.org (smtp4.osuosl.org [140.211.166.137])
-	by mail.lfdr.de (Postfix) with ESMTPS id 56B8317B23C
-	for <lists@lfdr.de>; Fri,  6 Mar 2020 00:27:45 +0100 (CET)
+Received: from hemlock.osuosl.org (smtp2.osuosl.org [140.211.166.133])
+	by mail.lfdr.de (Postfix) with ESMTPS id 51E7917B23D
+	for <lists@lfdr.de>; Fri,  6 Mar 2020 00:27:56 +0100 (CET)
 Received: from localhost (localhost [127.0.0.1])
-	by fraxinus.osuosl.org (Postfix) with ESMTP id 0880986141;
-	Thu,  5 Mar 2020 23:27:44 +0000 (UTC)
+	by hemlock.osuosl.org (Postfix) with ESMTP id 1497F87F1F;
+	Thu,  5 Mar 2020 23:27:55 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
-Received: from fraxinus.osuosl.org ([127.0.0.1])
+Received: from hemlock.osuosl.org ([127.0.0.1])
 	by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
-	with ESMTP id wjNXx0xPetJE; Thu,  5 Mar 2020 23:27:43 +0000 (UTC)
+	with ESMTP id QDw2ciMk7DNf; Thu,  5 Mar 2020 23:27:54 +0000 (UTC)
 Received: from lists.linuxfoundation.org (lf-lists.osuosl.org [140.211.9.56])
-	by fraxinus.osuosl.org (Postfix) with ESMTP id B70DD86119;
-	Thu,  5 Mar 2020 23:27:43 +0000 (UTC)
+	by hemlock.osuosl.org (Postfix) with ESMTP id C304487F0C;
+	Thu,  5 Mar 2020 23:27:54 +0000 (UTC)
 Received: from lf-lists.osuosl.org (localhost [127.0.0.1])
-	by lists.linuxfoundation.org (Postfix) with ESMTP id A5E8AC1D85;
-	Thu,  5 Mar 2020 23:27:43 +0000 (UTC)
+	by lists.linuxfoundation.org (Postfix) with ESMTP id BEEE0C1D85;
+	Thu,  5 Mar 2020 23:27:54 +0000 (UTC)
 X-Original-To: cip-testing-results@lists.cip-project.org
 Delivered-To: cip-testing-results@lists.linuxfoundation.org
 Received: from hemlock.osuosl.org (smtp2.osuosl.org [140.211.166.133])
- by lists.linuxfoundation.org (Postfix) with ESMTP id 089F9C013E
+ by lists.linuxfoundation.org (Postfix) with ESMTP id 31A34C013E
  for <cip-testing-results@lists.cip-project.org>;
- Thu,  5 Mar 2020 23:27:43 +0000 (UTC)
+ Thu,  5 Mar 2020 23:27:53 +0000 (UTC)
 Received: from localhost (localhost [127.0.0.1])
- by hemlock.osuosl.org (Postfix) with ESMTP id EC56C87F1F
+ by hemlock.osuosl.org (Postfix) with ESMTP id 20B3F87F1F
  for <cip-testing-results@lists.cip-project.org>;
- Thu,  5 Mar 2020 23:27:42 +0000 (UTC)
+ Thu,  5 Mar 2020 23:27:53 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
 Received: from hemlock.osuosl.org ([127.0.0.1])
  by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
- with ESMTP id uVJX1P1RP+jh
+ with ESMTP id lNLZsThFsl7u
  for <cip-testing-results@lists.cip-project.org>;
- Thu,  5 Mar 2020 23:27:42 +0000 (UTC)
+ Thu,  5 Mar 2020 23:27:52 +0000 (UTC)
 X-Greylist: domain auto-whitelisted by SQLgrey-1.7.6
 Received: from a27-52.smtp-out.us-west-2.amazonses.com
  (a27-52.smtp-out.us-west-2.amazonses.com [54.240.27.52])
- by hemlock.osuosl.org (Postfix) with ESMTPS id 61F5587F0C
+ by hemlock.osuosl.org (Postfix) with ESMTPS id B37F387F0C
  for <cip-testing-results@lists.cip-project.org>;
- Thu,  5 Mar 2020 23:27:42 +0000 (UTC)
+ Thu,  5 Mar 2020 23:27:52 +0000 (UTC)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=sef3ipnhs6zyfoh33edxhxokcqriataq; d=ciplatform.org; t=1583450861;
+ s=sef3ipnhs6zyfoh33edxhxokcqriataq; d=ciplatform.org; t=1583450872;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID;
- bh=pYoi07Xq2MejTYTNp8Oz7ujp4kaOO08vwcrUlARzb8Q=;
- b=JZU1IrUO7v2NdgtxeECaldiiuL/OT1FHajxe1JzC+wcc1A7ufv9smy13+SCzNxke
- 1gFA6SALoxzU3bLiyftUQtAclTjWGQfeFA6EntB4HyCP/tk169VZl4yaJgs3Q7gXcqL
- 6k4hmSjlWKIDdhzJWHmy+itrLN7FUn8YqQpVv4Aw=
+ bh=yuPNM2kuc7fqQnv561EHV2oVDh4YPYx2yo1bHdzNAnU=;
+ b=gQAB3eaowQoRYGX/KWR8n05yZbSulm58nuRJ33/7kMzFDXkkiUvqm0Cd9IencI8G
+ omEaOXy36cvS65SBl36KCa5BxCe+3N5DncK0cPw+ABQXJbKlhAXi/EB8QE5SV5SyYkU
+ vGt1R6X1BmQQyICk8a/0uisPQog7KpANctuLUhsY=
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1583450861;
+ s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1583450872;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID:Feedback-ID;
- bh=pYoi07Xq2MejTYTNp8Oz7ujp4kaOO08vwcrUlARzb8Q=;
- b=PO7vIGeP/iPr78DDmds7JCL7sLUzzUo8IMlp2Ntj9lxkwhxGspxnEW/ep3flUHXs
- HBlM4uzq0tdTZcEO4/mIuw2nN0v/7uzo4uDSqYA4k9BJwHqbLTNYgOI8wOAp1CQYeAQ
- rSkmh+Ugr4VKqpyRjfxnYG6voqVN8dL11a1bEgL4=
+ bh=yuPNM2kuc7fqQnv561EHV2oVDh4YPYx2yo1bHdzNAnU=;
+ b=YDFNBD3O7m54vNTFQmghAAKayZnMohBfYC3k6yhcqFGgRmogtJt697Co120YR3lh
+ 26kPw7zHu1xG4qFyZM/vrUKmTev5MNsIdpWQLrtCONS6UjPi2UGkjwTIEu4AW0RaZyn
+ KSnVDL3E0YeKMThcOIM7OkzpThXL6MrQDYj6ZlDA=
 MIME-Version: 1.0
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Thu, 5 Mar 2020 23:27:41 +0000
-Message-ID: <01010170ad06af51-3a9e0dee-bb8d-4abc-ab5d-c1a5f73cfa7a-000000@us-west-2.amazonses.com>
+Date: Thu, 5 Mar 2020 23:27:52 +0000
+Message-ID: <01010170ad06d92d-9db2a782-834d-44f1-9a53-93b6dcca2355-000000@us-west-2.amazonses.com>
 X-SES-Outgoing: 2020.03.05-54.240.27.52
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-Subject: [Cip-testing-results] LAVA notification for Test Job 12277
- r8a7745-iwg22d-sodimm healthcheck
+Subject: [Cip-testing-results] LAVA notification for Test Job 12275
+	r8a7743-iwg20d-q7 healthcheck
 X-BeenThere: cip-testing-results@lists.cip-project.org
 X-Mailman-Version: 2.1.15
 Precedence: list
@@ -83,26 +83,26 @@ Sender: "Cip-testing-results"
 
 Hello,
 
-The job with ID # 12277 is now in state Finished and health Complete. Job was submitted by lava-health.
+The job with ID # 12275 is now in state Finished and health Complete. Job was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/12277
+Job details and log file: http://lava.ciplatform.org/scheduler/job/12275
 
 
 
 
 Device details:
-Hostname: r8a7745-iwg22d-sodimm-01
-Type: r8a7745-iwg22d-sodimm
+Hostname: r8a7743-iwg20d-q7-01
+Type: r8a7743-iwg20d-q7
 Owner: renesas-admin
 Worker: lab-cip-renesas
 Job details:
 Priority: Medium
 Visibility: Publicly visible
-Description: r8a7745-iwg22d-sodimm healthcheck
-Submitted: 2020-03-05 23:26:15 (+0000 UTC)
-Started: 2020-03-05 23:26:15 (+0000 UTC)
-Finished: 2020-03-05 23:27:41 (+0000 UTC)
-Duration: 0:01:25.428170
+Description: r8a7743-iwg20d-q7 healthcheck
+Submitted: 2020-03-05 23:25:54 (+0000 UTC)
+Started: 2020-03-05 23:25:55 (+0000 UTC)
+Finished: 2020-03-05 23:27:51 (+0000 UTC)
+Duration: 0:01:56.727888
 
 -- 
 LAVA
