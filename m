@@ -1,67 +1,67 @@
 Return-Path: <cip-testing-results-bounces@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
-Received: from fraxinus.osuosl.org (smtp4.osuosl.org [140.211.166.137])
-	by mail.lfdr.de (Postfix) with ESMTPS id CCD8E1853CF
-	for <lists@lfdr.de>; Sat, 14 Mar 2020 02:19:16 +0100 (CET)
+Received: from whitealder.osuosl.org (smtp1.osuosl.org [140.211.166.138])
+	by mail.lfdr.de (Postfix) with ESMTPS id 8DFDD1854A7
+	for <lists@lfdr.de>; Sat, 14 Mar 2020 05:26:33 +0100 (CET)
 Received: from localhost (localhost [127.0.0.1])
-	by fraxinus.osuosl.org (Postfix) with ESMTP id 25C6D86992;
-	Sat, 14 Mar 2020 01:19:12 +0000 (UTC)
+	by whitealder.osuosl.org (Postfix) with ESMTP id 10FEB88EE6;
+	Sat, 14 Mar 2020 04:26:32 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
-Received: from fraxinus.osuosl.org ([127.0.0.1])
+Received: from whitealder.osuosl.org ([127.0.0.1])
 	by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
-	with ESMTP id E_U2kH9EM61Q; Sat, 14 Mar 2020 01:19:11 +0000 (UTC)
+	with ESMTP id t7F5lGaxEeBX; Sat, 14 Mar 2020 04:26:31 +0000 (UTC)
 Received: from lists.linuxfoundation.org (lf-lists.osuosl.org [140.211.9.56])
-	by fraxinus.osuosl.org (Postfix) with ESMTP id ABD9986892;
-	Sat, 14 Mar 2020 01:19:11 +0000 (UTC)
+	by whitealder.osuosl.org (Postfix) with ESMTP id 510E888EDF;
+	Sat, 14 Mar 2020 04:26:31 +0000 (UTC)
 Received: from lf-lists.osuosl.org (localhost [127.0.0.1])
-	by lists.linuxfoundation.org (Postfix) with ESMTP id 98D2BC1AE2;
-	Sat, 14 Mar 2020 01:19:11 +0000 (UTC)
+	by lists.linuxfoundation.org (Postfix) with ESMTP id 321E2C1D85;
+	Sat, 14 Mar 2020 04:26:31 +0000 (UTC)
 X-Original-To: cip-testing-results@lists.cip-project.org
 Delivered-To: cip-testing-results@lists.linuxfoundation.org
 Received: from hemlock.osuosl.org (smtp2.osuosl.org [140.211.166.133])
- by lists.linuxfoundation.org (Postfix) with ESMTP id D3AFDC0177
+ by lists.linuxfoundation.org (Postfix) with ESMTP id 898FDC0177
  for <cip-testing-results@lists.cip-project.org>;
- Sat, 14 Mar 2020 01:19:09 +0000 (UTC)
+ Sat, 14 Mar 2020 04:26:29 +0000 (UTC)
 Received: from localhost (localhost [127.0.0.1])
- by hemlock.osuosl.org (Postfix) with ESMTP id BC4318993D
+ by hemlock.osuosl.org (Postfix) with ESMTP id 78B08898C0
  for <cip-testing-results@lists.cip-project.org>;
- Sat, 14 Mar 2020 01:19:09 +0000 (UTC)
+ Sat, 14 Mar 2020 04:26:29 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
 Received: from hemlock.osuosl.org ([127.0.0.1])
  by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
- with ESMTP id sEOtqXyxSmbq
+ with ESMTP id xc9O05oVuIxZ
  for <cip-testing-results@lists.cip-project.org>;
- Sat, 14 Mar 2020 01:19:09 +0000 (UTC)
+ Sat, 14 Mar 2020 04:26:28 +0000 (UTC)
 X-Greylist: domain auto-whitelisted by SQLgrey-1.7.6
-Received: from a27-24.smtp-out.us-west-2.amazonses.com
- (a27-24.smtp-out.us-west-2.amazonses.com [54.240.27.24])
- by hemlock.osuosl.org (Postfix) with ESMTPS id 34BD58993C
+Received: from a27-22.smtp-out.us-west-2.amazonses.com
+ (a27-22.smtp-out.us-west-2.amazonses.com [54.240.27.22])
+ by hemlock.osuosl.org (Postfix) with ESMTPS id 1C3E5898BD
  for <cip-testing-results@lists.cip-project.org>;
- Sat, 14 Mar 2020 01:19:09 +0000 (UTC)
+ Sat, 14 Mar 2020 04:26:28 +0000 (UTC)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=sef3ipnhs6zyfoh33edxhxokcqriataq; d=ciplatform.org; t=1584148748;
+ s=sef3ipnhs6zyfoh33edxhxokcqriataq; d=ciplatform.org; t=1584159987;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID;
- bh=iDqkKFz3OWR9lFs1stfBCQbKlq4cwp9iZ5MswnlSvNo=;
- b=b4VLnCcP0IV+sH9D7OlCRgJN3q9N0xAahRw7fMrnTVRdp2GZWp4BaUQAdKpNzeBU
- hB7By1nQxWhO2OFtrya9YeZseUBT5ucA/7qrUDClerAsSDF9UWG4PNUw5/LEVCd8G5G
- O+LzR65RTMHK2tDQh0PnkDM7hu4GrARCz7oQxp3s=
+ bh=SjLnP+P4XcOuwDCNLiTUuOR5Xpe8KuhYxS9mWz8tEqg=;
+ b=V7mFm+Mxgd6e7UotWZxb5RpDMTvNi0Q6XvYfiV0npcqLb83Z7axLyl0Y3n6N5vjl
+ cHZzbmkvQhcFG5d3h6czoP2L361bbJ58uRgSK5cXo62SokHRjzCwLxwm8ddie46pFT1
+ 15d12v8ew92bFa7VfTxps/oKhAlEkEqO9UT5IlVQ=
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=hsbnp7p3ensaochzwyq5wwmceodymuwv; d=amazonses.com; t=1584148748;
+ s=hsbnp7p3ensaochzwyq5wwmceodymuwv; d=amazonses.com; t=1584159987;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID:Feedback-ID;
- bh=iDqkKFz3OWR9lFs1stfBCQbKlq4cwp9iZ5MswnlSvNo=;
- b=CsgPJQ7DE0CM156Dp6L3UdKVg2x54rphOVi6NXfFWzE6e/nPCMsBwLErlXPGRSXk
- t4y1rSeNHVs3vLB0BsnU14Mxd5vE6nFQhw+zCwx9hc6LWsEm1mlfJyEfcVIgRJeGbj5
- k+rJlSBhoDC4P3bhy1Q5r6xgxDo63TOp/MXyRVjs=
+ bh=SjLnP+P4XcOuwDCNLiTUuOR5Xpe8KuhYxS9mWz8tEqg=;
+ b=ktdNGd7OihwdAz9P/I+FiI1cGEBp+A3b4BgZOuetRPyywM8cI6bt5mI2Yj+rRhBt
+ xxzqIZ3eVU/RmzAqpX2tzU0QmS+QZBtr2LkJuN2IT7ewYqKfpLdKNRW2P504zWy5uSq
+ Ausb60XzM+lYrCAZQnK52FS/bEscJu086ooAeTA8=
 MIME-Version: 1.0
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Sat, 14 Mar 2020 01:19:08 +0000
-Message-ID: <01010170d69f97ec-680598af-d2d0-4a4f-8a86-e1bfeb4e450b-000000@us-west-2.amazonses.com>
-X-SES-Outgoing: 2020.03.14-54.240.27.24
+Date: Sat, 14 Mar 2020 04:26:27 +0000
+Message-ID: <01010170d74b15f6-ee47a115-2af2-447e-a4e5-060199de9bab-000000@us-west-2.amazonses.com>
+X-SES-Outgoing: 2020.03.14-54.240.27.22
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-Subject: [Cip-testing-results] LAVA notification for Test Job 12584
-	r8a7743-iwg20d-q7 healthcheck
+Subject: [Cip-testing-results] LAVA notification for Test Job 12590
+ ci-iwamatsu-linux-4.4.y-cip-rc_uImage_renesas_shmobile_defconfig_4.4.215-cip42_bf99ee55_arm_renesas_shmobile_defconfig_r8a7745-iwg22d-sodimm-dbhd-ca.dtb_boot
 X-BeenThere: cip-testing-results@lists.cip-project.org
 X-Mailman-Version: 2.1.15
 Precedence: list
@@ -83,26 +83,61 @@ Sender: "Cip-testing-results"
 
 Hello,
 
-The job with ID # 12584 is now in state Finished and health Complete. Job was submitted by lava-health.
+The job with ID # 12590 is now in state Finished and health Complete. Job was submitted by CIP-Testing.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/12584
+Job details and log file: http://lava.ciplatform.org/scheduler/job/12590
 
 
 
 
 Device details:
-Hostname: r8a7743-iwg20d-q7-01
-Type: r8a7743-iwg20d-q7
+Hostname: r8a7745-iwg22d-sodimm-01
+Type: r8a7745-iwg22d-sodimm
 Owner: renesas-admin
 Worker: lab-cip-renesas
 Job details:
 Priority: Medium
 Visibility: Publicly visible
-Description: r8a7743-iwg20d-q7 healthcheck
-Submitted: 2020-03-14 01:17:15 (+0000 UTC)
-Started: 2020-03-14 01:17:16 (+0000 UTC)
-Finished: 2020-03-14 01:19:08 (+0000 UTC)
-Duration: 0:01:52.057077
+Description: ci-iwamatsu-linux-4.4.y-cip-rc_uImage_renesas_shmobile_defconfig_4.4.215-cip42_bf99ee55_arm_renesas_shmobile_defconfig_r8a7745-iwg22d-sodimm-dbhd-ca.dtb_boot
+Submitted: 2020-03-14 04:24:06 (+0000 UTC)
+Started: 2020-03-14 04:24:26 (+0000 UTC)
+Finished: 2020-03-14 04:26:27 (+0000 UTC)
+Duration: 0:02:00.391601
+
+Metadata:
+
+Results:
+
+
+Test Suite 0_kernel-version-inline: http://lava.ciplatform.org/results/12590/0_kernel-version-inline
+Test Case uname: Test passed
+
+Test Suite lava: http://lava.ciplatform.org/results/12590/lava
+Test Case job: Test passed
+Test Case power-off: Test passed
+Measurement: 0.2300000000 seconds
+Test Case 0_kernel-version-inline: Test passed
+Measurement: 0.1200000000 seconds
+Test Case auto-login-action: Test passed
+Measurement: 13.9500000000 seconds
+Test Case kernel-messages: Test passed
+Measurement: 13.1600000000 seconds
+Test Case pdu-reboot: Test passed
+Measurement: 0.2300000000 seconds
+Test Case bootloader-overlay: Test passed
+Test Case test-runscript-overlay: Test passed
+Measurement: 0.0100000000 seconds
+Test Case test-install-overlay: Test passed
+Measurement: 0.0100000000 seconds
+Test Case test-overlay: Test passed
+Test Case http-download: Test passed
+Measurement: 19.8200000000 seconds
+Test Case http-download: Test passed
+Measurement: 1.7800000000 seconds
+Test Case http-download: Test passed
+Measurement: 13.8300000000 seconds
+Test Case validate: Test passed
+No query is set for results comparing.
 
 -- 
 LAVA
