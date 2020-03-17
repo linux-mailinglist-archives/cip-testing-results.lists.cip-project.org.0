@@ -2,15 +2,15 @@ Return-Path: <cip-testing-results-bounces@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from hemlock.osuosl.org (smtp2.osuosl.org [140.211.166.133])
-	by mail.lfdr.de (Postfix) with ESMTPS id 4CC2C188B98
-	for <lists@lfdr.de>; Tue, 17 Mar 2020 18:06:40 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id 18853188B9C
+	for <lists@lfdr.de>; Tue, 17 Mar 2020 18:07:13 +0100 (CET)
 Received: from localhost (localhost [127.0.0.1])
-	by hemlock.osuosl.org (Postfix) with ESMTP id 62FC688A0D;
-	Tue, 17 Mar 2020 17:06:37 +0000 (UTC)
+	by hemlock.osuosl.org (Postfix) with ESMTP id 266C08154A;
+	Tue, 17 Mar 2020 17:06:39 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
 Received: from hemlock.osuosl.org ([127.0.0.1])
 	by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
-	with ESMTP id 1m9kmFqRHg6e; Tue, 17 Mar 2020 17:06:36 +0000 (UTC)
+	with ESMTP id cXfPc0cvy0qq; Tue, 17 Mar 2020 17:06:38 +0000 (UTC)
 Received: from lists.linuxfoundation.org (lf-lists.osuosl.org [140.211.9.56])
 	by hemlock.osuosl.org (Postfix) with ESMTP id 0764988B41;
 	Tue, 17 Mar 2020 17:06:35 +0000 (UTC)
