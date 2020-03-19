@@ -2,65 +2,65 @@ Return-Path: <cip-testing-results-bounces@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from fraxinus.osuosl.org (smtp4.osuosl.org [140.211.166.137])
-	by mail.lfdr.de (Postfix) with ESMTPS id B411718B9D4
+	by mail.lfdr.de (Postfix) with ESMTPS id A808918B9D3
 	for <lists@lfdr.de>; Thu, 19 Mar 2020 15:58:47 +0100 (CET)
 Received: from localhost (localhost [127.0.0.1])
-	by fraxinus.osuosl.org (Postfix) with ESMTP id 6236B85BC8;
+	by fraxinus.osuosl.org (Postfix) with ESMTP id 625F385C05;
 	Thu, 19 Mar 2020 14:58:46 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
 Received: from fraxinus.osuosl.org ([127.0.0.1])
 	by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
-	with ESMTP id 3GsL7_Nq29KG; Thu, 19 Mar 2020 14:58:46 +0000 (UTC)
+	with ESMTP id BqS1CM9ggcvx; Thu, 19 Mar 2020 14:58:46 +0000 (UTC)
 Received: from lists.linuxfoundation.org (lf-lists.osuosl.org [140.211.9.56])
-	by fraxinus.osuosl.org (Postfix) with ESMTP id F30EA85683;
+	by fraxinus.osuosl.org (Postfix) with ESMTP id F30A285660;
 	Thu, 19 Mar 2020 14:58:45 +0000 (UTC)
 Received: from lf-lists.osuosl.org (localhost [127.0.0.1])
-	by lists.linuxfoundation.org (Postfix) with ESMTP id EAB30C1D8A;
+	by lists.linuxfoundation.org (Postfix) with ESMTP id E1DAFC1D88;
 	Thu, 19 Mar 2020 14:58:45 +0000 (UTC)
 X-Original-To: cip-testing-results@lists.cip-project.org
 Delivered-To: cip-testing-results@lists.linuxfoundation.org
-Received: from fraxinus.osuosl.org (smtp4.osuosl.org [140.211.166.137])
- by lists.linuxfoundation.org (Postfix) with ESMTP id E880AC07FF
+Received: from silver.osuosl.org (smtp3.osuosl.org [140.211.166.136])
+ by lists.linuxfoundation.org (Postfix) with ESMTP id A30C7C07FF
  for <cip-testing-results@lists.cip-project.org>;
  Thu, 19 Mar 2020 14:58:44 +0000 (UTC)
 Received: from localhost (localhost [127.0.0.1])
- by fraxinus.osuosl.org (Postfix) with ESMTP id B5CA980872
+ by silver.osuosl.org (Postfix) with ESMTP id 92779204BC
  for <cip-testing-results@lists.cip-project.org>;
  Thu, 19 Mar 2020 14:58:44 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
-Received: from fraxinus.osuosl.org ([127.0.0.1])
+Received: from silver.osuosl.org ([127.0.0.1])
  by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
- with ESMTP id QzNo8i2LIhlj
+ with ESMTP id uiP3CgnCw3VY
  for <cip-testing-results@lists.cip-project.org>;
- Thu, 19 Mar 2020 14:58:42 +0000 (UTC)
+ Thu, 19 Mar 2020 14:58:43 +0000 (UTC)
 X-Greylist: domain auto-whitelisted by SQLgrey-1.7.6
-Received: from a27-42.smtp-out.us-west-2.amazonses.com
- (a27-42.smtp-out.us-west-2.amazonses.com [54.240.27.42])
- by fraxinus.osuosl.org (Postfix) with ESMTPS id D3AC386C43
+Received: from a27-22.smtp-out.us-west-2.amazonses.com
+ (a27-22.smtp-out.us-west-2.amazonses.com [54.240.27.22])
+ by silver.osuosl.org (Postfix) with ESMTPS id 81578204B8
  for <cip-testing-results@lists.cip-project.org>;
- Thu, 19 Mar 2020 14:58:42 +0000 (UTC)
+ Thu, 19 Mar 2020 14:58:43 +0000 (UTC)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
  s=sef3ipnhs6zyfoh33edxhxokcqriataq; d=ciplatform.org; t=1584629922;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID;
- bh=byUoHpM8Ai/df3bai8KNH3TJT5Kh8r1exLu0NaXkXcc=;
- b=fa5a40nI22HQuOCeBLlxMmix6e4sMHNBb6W6s16tzNosnSYWSAFX9sNxY9dgpGJG
- flYa8gYRYlLKrWuBFu1hHUsjSr4RJC4dml1zlyTFEpCMKx6GDP1WhU5ddi56JEgLKJ3
- D0YFTfLs5SX0qDmRZnEmvw5dMqjko19eUogidoQ0=
+ bh=Gd35/3Dj3eOtZZ80QAt6FlOSbLw8YJ1AzGWt+zCnEHQ=;
+ b=GmiX9Z10K8a8ApTGPNieEmEkBnB0hPQp2uUuiMPX/r/uvmxHjat8MSFi0izdAEZo
+ heE3nLzSaitrIdBczbEtiA/r1P+iQn814IhGghXBm/+hoYKkSuKOYOadyv+c7wPkyCD
+ eQYVTQK6Y1CP4psecmkBa2SqjcsPlkWzWAxDwLlg=
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
  s=hsbnp7p3ensaochzwyq5wwmceodymuwv; d=amazonses.com; t=1584629922;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID:Feedback-ID;
- bh=byUoHpM8Ai/df3bai8KNH3TJT5Kh8r1exLu0NaXkXcc=;
- b=h3GJMiNZ03brnOR4NkRMZyZgZxmx9/eK/DX6vagH1LgHPAP+YmdO8jcfVah1amiM
- shmV3Q9tuUmsIYLVMpNu7R8E9itqjf10v/9NYQ0KjSb95IO1Xi/warRPHxxCL5swRRE
- oK2T6FbRE04E8f5lpmxMI+ZiAy/gbuGatC/CJk2c=
+ bh=Gd35/3Dj3eOtZZ80QAt6FlOSbLw8YJ1AzGWt+zCnEHQ=;
+ b=gLVd4usKot06Gxb1VyWcB8b4y8NjfzoBVGYZrR85IT4voQh5GJH9hWrRAzbuvKRM
+ iU0KoDyD1538srOjxwj7eU6fsYHKRzRfp+uUGeUT/r7Xn4NCvRZsgA8VUqZOiUnsnp2
+ 1cxf9gXZEZrJbsyU/mSxrJV734uwq6okrucjlzt4=
 MIME-Version: 1.0
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Thu, 19 Mar 2020 14:58:41 +0000
-Message-ID: <01010170f34db872-4ffdfa6e-71b9-4467-bf1f-9071139dc5c0-000000@us-west-2.amazonses.com>
-X-SES-Outgoing: 2020.03.19-54.240.27.42
+Date: Thu, 19 Mar 2020 14:58:42 +0000
+Message-ID: <01010170f34dbb38-657fe4c4-595a-4ff8-a61c-2047b3c06e74-000000@us-west-2.amazonses.com>
+X-SES-Outgoing: 2020.03.19-54.240.27.22
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-Subject: [Cip-testing-results] LAVA notification for Test Job 13027
+Subject: [Cip-testing-results] LAVA notification for Test Job 13029
 	r8a7743-iwg20d-q7 healthcheck
 X-BeenThere: cip-testing-results@lists.cip-project.org
 X-Mailman-Version: 2.1.15
@@ -83,26 +83,26 @@ Sender: "Cip-testing-results"
 
 Hello,
 
-The job with ID # 13027 is now in state Finished and health Complete. Job was submitted by lava-health.
+The job with ID # 13029 is now in state Finished and health Complete. Job was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/13027
+Job details and log file: http://lava.ciplatform.org/scheduler/job/13029
 
 
 
 
 Device details:
-Hostname: r8a7743-iwg20d-q7-01
+Hostname: r8a7743-iwg20d-q7-04
 Type: r8a7743-iwg20d-q7
-Owner: renesas-admin
+Owner: admin
 Worker: lab-cip-renesas
 Job details:
 Priority: Medium
 Visibility: Publicly visible
 Description: r8a7743-iwg20d-q7 healthcheck
-Submitted: 2020-03-19 14:56:46 (+0000 UTC)
+Submitted: 2020-03-19 14:56:47 (+0000 UTC)
 Started: 2020-03-19 14:56:48 (+0000 UTC)
-Finished: 2020-03-19 14:58:41 (+0000 UTC)
-Duration: 0:01:53.268265
+Finished: 2020-03-19 14:58:42 (+0000 UTC)
+Duration: 0:01:54.009009
 
 -- 
 LAVA
