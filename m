@@ -2,65 +2,65 @@ Return-Path: <cip-testing-results-bounces@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from fraxinus.osuosl.org (smtp4.osuosl.org [140.211.166.137])
-	by mail.lfdr.de (Postfix) with ESMTPS id 47A3419D6D5
-	for <lists@lfdr.de>; Fri,  3 Apr 2020 14:37:12 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id 2E21019D6E8
+	for <lists@lfdr.de>; Fri,  3 Apr 2020 14:44:31 +0200 (CEST)
 Received: from localhost (localhost [127.0.0.1])
-	by fraxinus.osuosl.org (Postfix) with ESMTP id E3FCB871F3;
-	Fri,  3 Apr 2020 12:37:10 +0000 (UTC)
+	by fraxinus.osuosl.org (Postfix) with ESMTP id D4B1C871EE;
+	Fri,  3 Apr 2020 12:44:29 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
 Received: from fraxinus.osuosl.org ([127.0.0.1])
 	by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
-	with ESMTP id uvXvMirxRPzB; Fri,  3 Apr 2020 12:37:09 +0000 (UTC)
+	with ESMTP id urCpRGGMGosd; Fri,  3 Apr 2020 12:44:28 +0000 (UTC)
 Received: from lists.linuxfoundation.org (lf-lists.osuosl.org [140.211.9.56])
-	by fraxinus.osuosl.org (Postfix) with ESMTP id DF08F86E7E;
-	Fri,  3 Apr 2020 12:37:09 +0000 (UTC)
+	by fraxinus.osuosl.org (Postfix) with ESMTP id D8C908712A;
+	Fri,  3 Apr 2020 12:44:28 +0000 (UTC)
 Received: from lf-lists.osuosl.org (localhost [127.0.0.1])
-	by lists.linuxfoundation.org (Postfix) with ESMTP id C9663C1D85;
-	Fri,  3 Apr 2020 12:37:09 +0000 (UTC)
+	by lists.linuxfoundation.org (Postfix) with ESMTP id CD791C1D85;
+	Fri,  3 Apr 2020 12:44:28 +0000 (UTC)
 X-Original-To: cip-testing-results@lists.cip-project.org
 Delivered-To: cip-testing-results@lists.linuxfoundation.org
-Received: from hemlock.osuosl.org (smtp2.osuosl.org [140.211.166.133])
- by lists.linuxfoundation.org (Postfix) with ESMTP id 851ADC07FF
+Received: from silver.osuosl.org (smtp3.osuosl.org [140.211.166.136])
+ by lists.linuxfoundation.org (Postfix) with ESMTP id B3E04C07FF
  for <cip-testing-results@lists.cip-project.org>;
- Fri,  3 Apr 2020 12:37:08 +0000 (UTC)
+ Fri,  3 Apr 2020 12:44:27 +0000 (UTC)
 Received: from localhost (localhost [127.0.0.1])
- by hemlock.osuosl.org (Postfix) with ESMTP id 6DD2D87DCE
+ by silver.osuosl.org (Postfix) with ESMTP id 9DD7820431
  for <cip-testing-results@lists.cip-project.org>;
- Fri,  3 Apr 2020 12:37:08 +0000 (UTC)
+ Fri,  3 Apr 2020 12:44:27 +0000 (UTC)
 X-Virus-Scanned: amavisd-new at osuosl.org
-Received: from hemlock.osuosl.org ([127.0.0.1])
+Received: from silver.osuosl.org ([127.0.0.1])
  by localhost (.osuosl.org [127.0.0.1]) (amavisd-new, port 10024)
- with ESMTP id iap1hLmmMQJe
+ with ESMTP id xd60Icjsayoi
  for <cip-testing-results@lists.cip-project.org>;
- Fri,  3 Apr 2020 12:37:07 +0000 (UTC)
+ Fri,  3 Apr 2020 12:44:25 +0000 (UTC)
 X-Greylist: domain auto-whitelisted by SQLgrey-1.7.6
-Received: from a27-50.smtp-out.us-west-2.amazonses.com
- (a27-50.smtp-out.us-west-2.amazonses.com [54.240.27.50])
- by hemlock.osuosl.org (Postfix) with ESMTPS id AAEBA87D9E
+Received: from a27-42.smtp-out.us-west-2.amazonses.com
+ (a27-42.smtp-out.us-west-2.amazonses.com [54.240.27.42])
+ by silver.osuosl.org (Postfix) with ESMTPS id F19B320524
  for <cip-testing-results@lists.cip-project.org>;
- Fri,  3 Apr 2020 12:37:07 +0000 (UTC)
+ Fri,  3 Apr 2020 12:44:13 +0000 (UTC)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=sef3ipnhs6zyfoh33edxhxokcqriataq; d=ciplatform.org; t=1585917426;
+ s=sef3ipnhs6zyfoh33edxhxokcqriataq; d=ciplatform.org; t=1585917853;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID;
- bh=qBoxnRsUrpm/1NLbv/ri32AlY/QQjjggNwJTmA/dK6o=;
- b=CNdP2BcIdVAvefBU+dJZEW+eCbX1aJ5AHqnBfTiQbFcE4p2876H9cPozsynNHdJe
- qfmYzHRymGA/t9QNePvtrI0Xe1QbUWMbTumH1yXpWj4IgETij7tMSi8+GbY/TM8QXFP
- MycE3+Ld4e7b656Y4OHjmVJCV1qX+0tQu06gUqy8=
+ bh=m4KqKwGAq1Hh+7o0kjUSn3K5ug9Od1H7ZdiM+GQwZp8=;
+ b=SfDjtMs6qx3RzSSXI/zDmgyE1ok3LCrlnNrD4EV1ALIQIqf+LnXQk4DJ8+y6Wm2e
+ xYW5gMgTSIVd8h+n1j9cCp5HhPfIn4OfzuEx+NfoNImMQhwAsozZNyVhZcvIJQHb+F2
+ TXN1uEqQWxUjBv4zpNM3tPjiTbvJuSW1886Xe7WQ=
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=hsbnp7p3ensaochzwyq5wwmceodymuwv; d=amazonses.com; t=1585917426;
+ s=hsbnp7p3ensaochzwyq5wwmceodymuwv; d=amazonses.com; t=1585917853;
  h=MIME-Version:Content-Type:Content-Transfer-Encoding:Subject:From:To:Date:Message-ID:Feedback-ID;
- bh=qBoxnRsUrpm/1NLbv/ri32AlY/QQjjggNwJTmA/dK6o=;
- b=Ml0a638ZuMkyR/KMmpG2gJ6Vpyz215RWJO7Kaz5pPiDVMKFwtg/157Zw1w32iZ7u
- TJsyTCYq7x43PAfhMWhs5C8GDv6ThSjdzzjQmdgLOCLZvmMRdp0V3xjofeOajuHCnZt
- H7YLzn8+KYH3ptqeWqWpUNkPOeSwGOVWGeAwcWXM=
+ bh=m4KqKwGAq1Hh+7o0kjUSn3K5ug9Od1H7ZdiM+GQwZp8=;
+ b=lr6nOwAmCKnLNdN7Ql7GFC10PJUp8moGwgDHaCiXX0E30xUAEFDylFSXYiV9h2hQ
+ DJkl7zTQI582xy/dpDa5hO0zF1sMaI3G6mKs598V/5S60L5/ajeO1Sc1r/QBt9Zp9Sr
+ rKMJLwbH0dgvNvYbV0Ym5h61ur72VDS5LQ9bpb5A=
 MIME-Version: 1.0
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Fri, 3 Apr 2020 12:37:06 +0000
-Message-ID: <01010171400b7c09-64697b32-e0a7-46d5-86c2-cf75c5abd481-000000@us-west-2.amazonses.com>
-X-SES-Outgoing: 2020.04.03-54.240.27.50
+Date: Fri, 3 Apr 2020 12:44:13 +0000
+Message-ID: <010101714011fcf8-c6d8f12d-c301-44a9-a90c-fab373371e57-000000@us-west-2.amazonses.com>
+X-SES-Outgoing: 2020.04.03-54.240.27.42
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-Subject: [Cip-testing-results] LAVA notification for Test Job 13942 SLLL
+Subject: [Cip-testing-results] LAVA notification for Test Job 13943 SLLL
 	Package-test
 X-BeenThere: cip-testing-results@lists.cip-project.org
 X-Mailman-Version: 2.1.15
@@ -83,14 +83,10 @@ Sender: "Cip-testing-results"
 
 Hello,
 
-The job with ID # 13942 is now in state Finished and health Incomplete. Job was submitted by gumansinghs.
+The job with ID # 13943 is now in state Finished and health Complete. Job was submitted by gumansinghs.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/13942
+Job details and log file: http://lava.ciplatform.org/scheduler/job/13943
 
-
-Job error: Invalid job data: [&#34;Unable to get &#39;http://134.86.254.28:8001/initrd.img&#39;: HTTPConnectionPool(host=&#39;134.86.254.28&#39;, port=8001): Max retries exceeded with url: /initrd.img (Caused by NewConnectionError(&#39;&lt;urllib3.connection.HTTPConnection object at 0x7f2e52cbb978&gt;: Failed to establish a new connection: [Errno 111] Connection refused&#39;,))&#34;, &#34;Unable to get &#39;http://134.86.254.28:8001/vmlinuz&#39;: HTTPConnectionPool(host=&#39;134.86.254.28&#39;, port=8001): Max retries exceeded with url: /vmlinuz (Caused by NewConnectionError(&#39;&lt;urllib3.connection.HTTPConnection object at 0x7f2e52cbb780&gt;: Failed to establish a new connection: [Errno 111] Connection refused&#39;,))&#34;, &#34;Unable to get &#39;http://134.86.254.28:8001/rootfs-ipc227e.tar.gz&#39;: HTTPConnectionPool(host=&#39;134.86.254.28&#39;, port=8001): Max retries exceeded with url: /rootfs-ipc227e.tar.gz (Caused by NewConnectionError(&#39;&lt;urllib3.connection.H
- TTPConne
- ction object at 0x7f2e52cad9e8&gt;: Failed to establish a new connection: [Errno 111] Connection refused&#39;,))&#34;]
 
 
 
@@ -103,10 +99,10 @@ Job details:
 Priority: Medium
 Visibility: Publicly visible
 Description: SLLL Package-test
-Submitted: 2020-04-03 12:36:48 (+0000 UTC)
-Started: 2020-04-03 12:37:04 (+0000 UTC)
-Finished: 2020-04-03 12:37:06 (+0000 UTC)
-Duration: 0:00:01.633645
+Submitted: 2020-04-03 12:38:58 (+0000 UTC)
+Started: 2020-04-03 12:39:05 (+0000 UTC)
+Finished: 2020-04-03 12:44:12 (+0000 UTC)
+Duration: 0:05:07.111740
 
 -- 
 LAVA
