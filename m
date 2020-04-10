@@ -1,21 +1,21 @@
-Return-Path: <bounce+64575+11172+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+11173+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 9D6AE1A3EA0
-	for <lists@lfdr.de>; Fri, 10 Apr 2020 05:12:34 +0200 (CEST)
-X-Received: by 127.0.0.2 with SMTP id yideYY4521862xvyf2kk9VUB; Thu, 09 Apr 2020 20:12:33 -0700
-X-Received: from a27-22.smtp-out.us-west-2.amazonses.com (a27-22.smtp-out.us-west-2.amazonses.com [54.240.27.22])
- by mx.groups.io with SMTP id smtpd.web10.2702.1586488352369191338
+	by mail.lfdr.de (Postfix) with ESMTPS id B15DB1A3EA1
+	for <lists@lfdr.de>; Fri, 10 Apr 2020 05:13:38 +0200 (CEST)
+X-Received: by 127.0.0.2 with SMTP id rTTWYY4521862xz5hjheYUoX; Thu, 09 Apr 2020 20:13:37 -0700
+X-Received: from a27-50.smtp-out.us-west-2.amazonses.com (a27-50.smtp-out.us-west-2.amazonses.com [54.240.27.50])
+ by mx.groups.io with SMTP id smtpd.web10.2717.1586488416937996693
  for <cip-testing-results@lists.cip-project.org>;
- Thu, 09 Apr 2020 20:12:32 -0700
+ Thu, 09 Apr 2020 20:13:37 -0700
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 14378 ci-iwamatsu-linux-4.19.y-cip-rc_bzImage_cip_qemu_defconfig_4.19.114-cip23_a88294bff_x86_cip_qemu_defconfig_ltp-syscalls-tests
+Subject: [cip-testing-results] LAVA notification for Test Job 14377 ci-iwamatsu-linux-4.4.y-cip-rc_bzImage_cip_qemu_defconfig_4.4.218-cip43_d624f33a_x86_cip_qemu_defconfig_ltp-syscalls-tests
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Fri, 10 Apr 2020 03:12:31 +0000
-Message-ID: <0101017162131a17-2741f7cb-10e0-481d-85c9-1f347790ed5b-000000@us-west-2.amazonses.com>
-X-SES-Outgoing: 2020.04.10-54.240.27.22
+Date: Fri, 10 Apr 2020 03:13:36 +0000
+Message-ID: <01010171621416b0-ca474799-1398-446b-b3bd-82a498d214bd-000000@us-west-2.amazonses.com>
+X-SES-Outgoing: 2020.04.10-54.240.27.50
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 Precedence: Bulk
 List-Unsubscribe: <https://lists.cip-project.org/g/cip-testing-results/unsub>
@@ -24,58 +24,58 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: ez3Gb8lNXxOMm5J1jzcT284Qx4520527AA=
+X-Gm-Message-State: XeUT8gqwz9Q1AuUvzeR8GDsKx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1586488353;
- bh=k89k9M6w/lCxi8n74H1UVk1QEZFdyiWiqIpIFoKQNqs=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1586488417;
+ bh=ngx4mJwcH2TfgX3kM5E1m8RBFE/cORbC5N9OTloGBaI=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=uQLjDbLlsJQ+Buzvxy3m+7aDSQiE9kWOZqq+LqiejrHgQwYqcHLqHQJGTAn1xrxYxSo
- hw93wQDm7PImrfF6pJg/AYMMDbnMKeKQ+HHp5e/dGe/hG4qyYwTVuNG3ie4/WqkS9qIFF
- fLY2rgISZcD5Gv5Vk8fKYydpXnm2iQXR+Fw=
+ b=fbGV676FqndLm/sCuoPTDRFp0fUfGf0Q8bPt9WQIQhXKd+tj27efeGU07Y75QUplIg4
+ JoQBw4V8wvNzpje0776+SeOTUad4i/t6zi46WqdNQ+54Zcw9za6Rpn6rlVOGCG+HUqQKV
+ N7Bp87NCkPGAPgtCeZtYvM0QBlIuh+ttC1s=
 
 
 Hello,
 
-The job with ID # 14378 is now in state Finished and health Complete. Job was submitted by CIP-Testing.
+The job with ID # 14377 is now in state Finished and health Complete. Job was submitted by CIP-Testing.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/14378
+Job details and log file: http://lava.ciplatform.org/scheduler/job/14377
 
 
 
 
 Device details:
-Hostname: qemu-02
+Hostname: qemu-01
 Type: qemu
-Owner: siemens-users
-Worker: lab-cip-mentor
+Owner: renesas-admin
+Worker: lab-cip-renesas
 Job details:
 Priority: Medium
 Visibility: Publicly visible
-Description: ci-iwamatsu-linux-4.19.y-cip-rc_bzImage_cip_qemu_defconfig_4.19.114-cip23_a88294bff_x86_cip_qemu_defconfig_ltp-syscalls-tests
-Submitted: 2020-04-10 01:55:39 (+0000 UTC)
-Started: 2020-04-10 02:33:32 (+0000 UTC)
-Finished: 2020-04-10 03:12:31 (+0000 UTC)
-Duration: 0:38:58.621073
+Description: ci-iwamatsu-linux-4.4.y-cip-rc_bzImage_cip_qemu_defconfig_4.4.218-cip43_d624f33a_x86_cip_qemu_defconfig_ltp-syscalls-tests
+Submitted: 2020-04-10 01:55:38 (+0000 UTC)
+Started: 2020-04-10 02:32:52 (+0000 UTC)
+Finished: 2020-04-10 03:13:35 (+0000 UTC)
+Duration: 0:40:43.531203
 
 Metadata:
 
 Results:
 
 
-Test Suite 1_ltp-syscalls-tests: http://lava.ciplatform.org/results/14378/1_ltp-syscalls-tests
+Test Suite 1_ltp-syscalls-tests: http://lava.ciplatform.org/results/14377/1_ltp-syscalls-tests
 Test Case membarrier01: Test passed
 Test Case statx07: Test skipped
-Test Case statx06: Test passed
+Test Case statx06: Test skipped
 Test Case statx05: Test skipped
-Test Case statx04: Test passed
-Test Case statx03: Test passed
-Test Case statx02: Test passed
-Test Case statx01: Test passed
-Test Case copy_file_range01: Test passed
-Test Case memfd_create04: Test passed
-Test Case memfd_create03: Test passed
+Test Case statx04: Test skipped
+Test Case statx03: Test skipped
+Test Case statx02: Test skipped
+Test Case statx01: Test skipped
+Test Case copy_file_range01: Test skipped
+Test Case memfd_create04: Test skipped
+Test Case memfd_create03: Test skipped
 Test Case memfd_create02: Test passed
 Test Case memfd_create01: Test passed
 Test Case futex_wait_bitset02: Test passed
@@ -149,40 +149,6 @@ Test Case unshare01: Test passed
 Test Case unlinkat01: Test passed
 Test Case unlink08: Test passed
 Test Case unlink07: Test passed
-Test Case unlink05: Test passed
-Test Case unlink01: Test passed
-Test Case uname04: Test passed
-Test Case uname03: Test passed
-Test Case uname02: Test passed
-Test Case uname01: Test passed
-Test Case umask01: Test passed
-Test Case ulimit01: Test passed
-Test Case truncate03_64: Test passed
-Test Case truncate03: Test passed
-Test Case truncate02_64: Test passed
-Test Case truncate02: Test passed
-Test Case truncate01_64: Test passed
-Test Case truncate01: Test passed
-Test Case tkill02: Test passed
-Test Case tkill01: Test passed
-Test Case timer_gettime01: Test passed
-Test Case timer_getoverrun01: Test passed
-Test Case timerfd_settime01: Test passed
-Test Case timerfd_gettime01: Test passed
-Test Case timerfd_create01: Test passed
-Test Case timerfd03: Test passed
-Test Case timerfd02: Test passed
-Test Case timerfd01: Test passed
-Test Case times03: Test passed
-Test Case times01: Test passed
-Test Case time02: Test passed
-Test Case time01: Test passed
-Test Case tgkill03: Test passed
-Test Case tgkill02: Test passed
-Test Case tgkill01: Test passed
-Test Case syslog12: Test passed
-Test Case syslog11: Test passed
-Test Case syslog10: Test passed
 Test Case syslog09: Test passed
 Test Case syslog08: Test passed
 Test Case syslog07: Test passed
@@ -260,6 +226,70 @@ Test Case socket01: Test passed
 Test Case sigwaitinfo01: Test passed
 Test Case sigwait01: Test passed
 Test Case sigtimedwait01: Test passed
+Test Case sigsuspend01: Test passed
+Test Case sigrelse01: Test passed
+Test Case sigprocmask01: Test passed
+Test Case sigpending02: Test passed
+Test Case signalfd4_02: Test passed
+Test Case signalfd4_01: Test passed
+Test Case signalfd01: Test passed
+Test Case signal06: Test passed
+Test Case signal05: Test passed
+Test Case signal04: Test passed
+Test Case signal03: Test passed
+Test Case signal02: Test passed
+Test Case signal01: Test passed
+Test Case sighold02: Test passed
+Test Case sigaltstack02: Test passed
+Test Case sigaltstack01: Test passed
+Test Case sigaction02: Test passed
+Test Case sigaction01: Test passed
+Test Case shmget05: Test passed
+Test Case shmget04: Test passed
+Test Case shmget03: Test passed
+Test Case shmget02: Test passed
+Test Case shmget01: Test passed
+Test Case shmdt02: Test passed
+Test Case shmdt01: Test passed
+Test Case shmctl05: Test passed
+Test Case shmctl04: Test passed
+Test Case shmctl03: Test passed
+Test Case shmctl02: Test passed
+Test Case shmctl01: Test passed
+Test Case shmat03: Test passed
+Test Case shmat02: Test passed
+Test Case shmat01: Test passed
+Test Case setxattr03: Test skipped
+Test Case setxattr02: Test skipped
+Test Case setxattr01: Test passed
+Test Case setuid04_16: Test skipped
+Test Case setuid04: Test passed
+Test Case setuid03_16: Test skipped
+Test Case setuid03: Test passed
+Test Case setuid01_16: Test skipped
+Test Case setuid01: Test passed
+Test Case settimeofday02: Test passed
+Test Case settimeofday01: Test passed
+Test Case setsockopt03: Test passed
+Test Case setsockopt02: Test passed
+Test Case setsockopt01: Test passed
+Test Case setsid01: Test passed
+Test Case set_tid_address01: Test passed
+Test Case set_thread_area01: Test skipped
+Test Case set_robust_list01: Test passed
+Test Case setrlimit06: Test passed
+Test Case setrlimit05: Test passed
+Test Case setrlimit04: Test passed
+Test Case setrlimit03: Test passed
+Test Case setrlimit02: Test passed
+Test Case setrlimit01: Test passed
+Test Case setreuid07_16: Test skipped
+Test Case setreuid07: Test passed
+Test Case setreuid06_16: Test skipped
+Test Case setreuid06: Test passed
+Test Case setreuid05_16: Test skipped
+Test Case setreuid05: Test passed
+Test Case setreuid04_16: Test skipped
 Test Case setreuid04: Test passed
 Test Case setreuid03_16: Test skipped
 Test Case setreuid03: Test passed
@@ -334,70 +364,40 @@ Test Case setfsuid02: Test passed
 Test Case setfsuid01_16: Test skipped
 Test Case setfsuid01: Test passed
 Test Case setfsgid03_16: Test skipped
-Test Case setfsgid03: Test passed
-Test Case setfsgid02_16: Test skipped
-Test Case setfsgid02: Test passed
-Test Case setfsgid01_16: Test skipped
-Test Case setfsgid01: Test passed
-Test Case setdomainname03: Test passed
-Test Case setdomainname02: Test passed
-Test Case setdomainname01: Test passed
-Test Case sendto02: Test skipped
-Test Case sendto01: Test passed
-Test Case sendmsg02: Test passed
-Test Case sendmsg01: Test passed
-Test Case sendfile09_64: Test skipped
-Test Case sendfile09: Test skipped
-Test Case sendfile08_64: Test passed
-Test Case sendfile08: Test passed
-Test Case sendfile07_64: Test passed
-Test Case sendfile07: Test passed
-Test Case sendfile06_64: Test passed
-Test Case sendfile06: Test passed
-Test Case sendfile05_64: Test passed
-Test Case sendfile05: Test passed
-Test Case sendfile04_64: Test passed
-Test Case sendfile04: Test passed
-Test Case sendfile03_64: Test passed
-Test Case sendfile03: Test passed
-Test Case sendfile02_64: Test passed
-Test Case sendfile02: Test passed
-Test Case send01: Test passed
-Test Case semop05: Test passed
-Test Case semop04: Test passed
-Test Case semop03: Test passed
-Test Case semop02: Test passed
-Test Case semop01: Test passed
-Test Case semget06: Test passed
-Test Case semget05: Test passed
-Test Case semget03: Test passed
-Test Case semget02: Test passed
-Test Case semget01: Test passed
-Test Case semctl07: Test passed
-Test Case semctl06: Test passed
-Test Case semctl05: Test passed
-Test Case semctl04: Test passed
-Test Case semctl03: Test passed
-Test Case semctl02: Test passed
-Test Case semctl01: Test passed
-Test Case select04: Test passed
-Test Case select03: Test passed
-Test Case select02: Test passed
-Test Case select01: Test passed
-Test Case sched_getattr02: Test passed
-Test Case sched_getattr01: Test passed
-Test Case sched_setattr01: Test passed
-Test Case sched_getaffinity01: Test passed
-Test Case sched_setaffinity01: Test passed
-Test Case sched_yield01: Test passed
-Test Case sched_setscheduler03: Test passed
-Test Case sched_setscheduler02: Test passed
-Test Case sched_setscheduler01: Test passed
-Test Case sched_getscheduler02: Test passed
-Test Case sched_getscheduler01: Test passed
-Test Case sched_setparam05: Test passed
-Test Case sched_setparam04: Test passed
-Test Case sched_setparam03: Test passed
+Test Case unlink05: Test passed
+Test Case unlink01: Test passed
+Test Case uname04: Test passed
+Test Case uname03: Test passed
+Test Case uname02: Test passed
+Test Case uname01: Test passed
+Test Case umask01: Test passed
+Test Case ulimit01: Test passed
+Test Case truncate03_64: Test passed
+Test Case truncate03: Test passed
+Test Case truncate02_64: Test passed
+Test Case truncate02: Test passed
+Test Case truncate01_64: Test passed
+Test Case truncate01: Test passed
+Test Case tkill02: Test passed
+Test Case tkill01: Test passed
+Test Case timer_gettime01: Test passed
+Test Case timer_getoverrun01: Test passed
+Test Case timerfd_settime01: Test passed
+Test Case timerfd_gettime01: Test passed
+Test Case timerfd_create01: Test passed
+Test Case timerfd03: Test passed
+Test Case timerfd02: Test passed
+Test Case timerfd01: Test passed
+Test Case times03: Test passed
+Test Case times01: Test passed
+Test Case time02: Test passed
+Test Case time01: Test passed
+Test Case tgkill03: Test passed
+Test Case tgkill02: Test passed
+Test Case tgkill01: Test passed
+Test Case syslog12: Test passed
+Test Case syslog11: Test passed
+Test Case syslog10: Test passed
 Test Case sched_setparam02: Test passed
 Test Case sched_setparam01: Test passed
 Test Case sched_rr_get_interval03: Test passed
@@ -476,6 +476,14 @@ Test Case readahead01: Test passed
 Test Case read04: Test passed
 Test Case read03: Test passed
 Test Case read02: Test passed
+Test Case read01: Test passed
+Test Case quotactl03: Test skipped
+Test Case quotactl02: Test skipped
+Test Case quotactl01: Test passed
+Test Case pwritev202_64: Test passed
+Test Case pwritev202: Test passed
+Test Case pwritev201_64: Test passed
+Test Case pwritev201: Test passed
 Test Case pwritev03_64: Test passed
 Test Case pwritev03: Test passed
 Test Case pwritev02_64: Test passed
@@ -587,70 +595,6 @@ Test Case nice02: Test passed
 Test Case nice01: Test passed
 Test Case nftw6401: Test passed
 Test Case nftw01: Test passed
-Test Case sigsuspend01: Test passed
-Test Case sigrelse01: Test passed
-Test Case sigprocmask01: Test passed
-Test Case sigpending02: Test passed
-Test Case signalfd4_02: Test passed
-Test Case signalfd4_01: Test passed
-Test Case signalfd01: Test passed
-Test Case signal06: Test passed
-Test Case signal05: Test passed
-Test Case signal04: Test passed
-Test Case signal03: Test passed
-Test Case signal02: Test passed
-Test Case signal01: Test passed
-Test Case sighold02: Test passed
-Test Case sigaltstack02: Test passed
-Test Case sigaltstack01: Test passed
-Test Case sigaction02: Test passed
-Test Case sigaction01: Test passed
-Test Case shmget05: Test passed
-Test Case shmget04: Test passed
-Test Case shmget03: Test passed
-Test Case shmget02: Test passed
-Test Case shmget01: Test passed
-Test Case shmdt02: Test passed
-Test Case shmdt01: Test passed
-Test Case shmctl05: Test passed
-Test Case shmctl04: Test passed
-Test Case shmctl03: Test passed
-Test Case shmctl02: Test passed
-Test Case shmctl01: Test passed
-Test Case shmat03: Test passed
-Test Case shmat02: Test passed
-Test Case shmat01: Test passed
-Test Case setxattr03: Test skipped
-Test Case setxattr02: Test skipped
-Test Case setxattr01: Test passed
-Test Case setuid04_16: Test skipped
-Test Case setuid04: Test passed
-Test Case setuid03_16: Test skipped
-Test Case setuid03: Test passed
-Test Case setuid01_16: Test skipped
-Test Case setuid01: Test passed
-Test Case settimeofday02: Test passed
-Test Case settimeofday01: Test passed
-Test Case setsockopt03: Test passed
-Test Case setsockopt02: Test passed
-Test Case setsockopt01: Test passed
-Test Case setsid01: Test passed
-Test Case set_tid_address01: Test passed
-Test Case set_thread_area01: Test skipped
-Test Case set_robust_list01: Test passed
-Test Case setrlimit06: Test passed
-Test Case setrlimit05: Test passed
-Test Case setrlimit04: Test passed
-Test Case setrlimit03: Test passed
-Test Case setrlimit02: Test passed
-Test Case setrlimit01: Test passed
-Test Case setreuid07_16: Test skipped
-Test Case setreuid07: Test passed
-Test Case setreuid06_16: Test skipped
-Test Case setreuid06: Test passed
-Test Case setreuid05_16: Test skipped
-Test Case setreuid05: Test passed
-Test Case setreuid04_16: Test skipped
 Test Case nanosleep04: Test passed
 Test Case nanosleep03: Test passed
 Test Case nanosleep02: Test passed
@@ -669,122 +613,70 @@ Test Case msgsnd06: Test passed
 Test Case msgsnd05: Test passed
 Test Case msgsnd02: Test passed
 Test Case msgsnd01: Test passed
-Test Case msgrcv08: Test skipped
-Test Case msgrcv07: Test passed
-Test Case msgrcv06: Test passed
-Test Case msgrcv05: Test passed
-Test Case msgrcv04: Test passed
-Test Case msgrcv03: Test passed
-Test Case msgrcv02: Test passed
-Test Case msgrcv01: Test passed
-Test Case msgget03: Test passed
-Test Case msgget02: Test passed
-Test Case msgget01: Test passed
-Test Case msgctl12: Test passed
-Test Case msgstress04: Test skipped
-Test Case msgstress03: Test skipped
-Test Case msgstress02: Test passed
-Test Case msgstress01: Test passed
-Test Case msgctl04: Test passed
-Test Case msgctl03: Test passed
-Test Case msgctl02: Test passed
-Test Case msgctl01: Test passed
-Test Case mremap05: Test passed
-Test Case mremap04: Test passed
-Test Case mremap03: Test passed
-Test Case mremap02: Test passed
-Test Case mremap01: Test passed
-Test Case mq_unlink01: Test passed
-Test Case mq_timedsend01: Test passed
-Test Case mq_timedreceive01: Test passed
-Test Case mq_open01: Test passed
-Test Case mq_notify02: Test passed
-Test Case mq_notify01: Test passed
-Test Case mprotect04: Test passed
-Test Case mprotect03: Test passed
-Test Case mprotect02: Test passed
-Test Case mprotect01: Test passed
-Test Case move_pages12: Test skipped
-Test Case move_pages11: Test skipped
-Test Case move_pages10: Test skipped
-Test Case move_pages09: Test skipped
-Test Case move_pages08: Test skipped
-Test Case move_pages07: Test skipped
-Test Case move_pages06: Test skipped
-Test Case move_pages05: Test skipped
-Test Case move_pages04: Test skipped
-Test Case move_pages03: Test skipped
-Test Case move_pages02: Test skipped
-Test Case move_pages01: Test skipped
-Test Case mount06: Test passed
-Test Case mount05: Test passed
-Test Case mount04: Test passed
-Test Case mount03: Test passed
-Test Case mount02: Test passed
-Test Case mount01: Test passed
-Test Case modify_ldt03: Test skipped
-Test Case modify_ldt02: Test skipped
-Test Case modify_ldt01: Test skipped
-Test Case mmap16: Test passed
-Test Case mmap15: Test passed
-Test Case mmap14: Test passed
-Test Case mmap13: Test passed
-Test Case mmap12: Test passed
-Test Case mmap09: Test passed
-Test Case mmap08: Test passed
-Test Case mmap07: Test passed
-Test Case mmap06: Test passed
-Test Case mmap05: Test passed
-Test Case mmap04: Test passed
-Test Case mmap03: Test passed
-Test Case mmap02: Test passed
-Test Case mmap01: Test passed
-Test Case qmm01: Test passed
-Test Case mlock203: Test passed
-Test Case mlock202: Test passed
-Test Case mlock201: Test passed
-Test Case mlock04: Test passed
-Test Case mlock03: Test passed
-Test Case mlock02: Test passed
-Test Case mlock01: Test passed
-Test Case mknodat02: Test passed
-Test Case mknodat01: Test passed
-Test Case mknod09: Test passed
-Test Case mknod08: Test passed
-Test Case mknod07: Test passed
-Test Case mknod06: Test passed
-Test Case mknod05: Test passed
-Test Case mknod04: Test passed
-Test Case mknod03: Test passed
-Test Case mkdir02: Test passed
-Test Case mlockall03: Test passed
-Test Case mlockall02: Test passed
-Test Case mlockall01: Test passed
-Test Case migrate_pages03: Test skipped
-Test Case migrate_pages02: Test skipped
-Test Case migrate_pages01: Test skipped
-Test Case memcpy01: Test passed
-Test Case memcmp01: Test passed
-Test Case memset01: Test passed
-Test Case mbind01: Test skipped
-Test Case mallopt01: Test passed
-Test Case lstat03_64: Test passed
-Test Case lstat03: Test passed
-Test Case lstat02_64: Test passed
-Test Case lstat02: Test passed
-Test Case lstat01_64: Test passed
-Test Case lstat01: Test passed
-Test Case lstat01A_64: Test passed
-Test Case lstat01A: Test passed
-Test Case lseek11: Test passed
-Test Case lseek07: Test passed
-Test Case lseek02: Test passed
-Test Case lseek01: Test passed
-Test Case lremovexattr01: Test passed
-Test Case llseek03: Test passed
-Test Case llseek02: Test passed
-Test Case llseek01: Test passed
-Test Case llistxattr03: Test passed
+Test Case setfsgid03: Test passed
+Test Case setfsgid02_16: Test skipped
+Test Case setfsgid02: Test passed
+Test Case setfsgid01_16: Test skipped
+Test Case setfsgid01: Test passed
+Test Case setdomainname03: Test passed
+Test Case setdomainname02: Test passed
+Test Case setdomainname01: Test passed
+Test Case sendto02: Test skipped
+Test Case sendto01: Test passed
+Test Case sendmsg02: Test passed
+Test Case sendmsg01: Test passed
+Test Case sendfile09_64: Test skipped
+Test Case sendfile09: Test skipped
+Test Case sendfile08_64: Test passed
+Test Case sendfile08: Test passed
+Test Case sendfile07_64: Test passed
+Test Case sendfile07: Test passed
+Test Case sendfile06_64: Test passed
+Test Case sendfile06: Test passed
+Test Case sendfile05_64: Test passed
+Test Case sendfile05: Test passed
+Test Case sendfile04_64: Test passed
+Test Case sendfile04: Test passed
+Test Case sendfile03_64: Test passed
+Test Case sendfile03: Test passed
+Test Case sendfile02_64: Test passed
+Test Case sendfile02: Test passed
+Test Case send01: Test passed
+Test Case semop05: Test passed
+Test Case semop04: Test passed
+Test Case semop03: Test passed
+Test Case semop02: Test passed
+Test Case semop01: Test passed
+Test Case semget06: Test passed
+Test Case semget05: Test passed
+Test Case semget03: Test passed
+Test Case semget02: Test passed
+Test Case semget01: Test passed
+Test Case semctl07: Test passed
+Test Case semctl06: Test passed
+Test Case semctl05: Test passed
+Test Case semctl04: Test passed
+Test Case semctl03: Test passed
+Test Case semctl02: Test passed
+Test Case semctl01: Test passed
+Test Case select04: Test passed
+Test Case select03: Test passed
+Test Case select02: Test passed
+Test Case select01: Test passed
+Test Case sched_getattr02: Test passed
+Test Case sched_getattr01: Test passed
+Test Case sched_setattr01: Test passed
+Test Case sched_getaffinity01: Test passed
+Test Case sched_setaffinity01: Test passed
+Test Case sched_yield01: Test passed
+Test Case sched_setscheduler03: Test passed
+Test Case sched_setscheduler02: Test passed
+Test Case sched_setscheduler01: Test passed
+Test Case sched_getscheduler02: Test passed
+Test Case sched_getscheduler01: Test passed
+Test Case sched_setparam05: Test passed
+Test Case sched_setparam04: Test passed
+Test Case sched_setparam03: Test passed
 Test Case llistxattr02: Test passed
 Test Case llistxattr01: Test passed
 Test Case listxattr03: Test passed
@@ -864,21 +756,13 @@ Test Case inotify02: Test passed
 Test Case inotify01: Test passed
 Test Case inotify_init1_02: Test passed
 Test Case inotify_init1_01: Test passed
-Test Case ioctl_ns07: Test passed
-Test Case ioctl_ns06: Test failed
-Test Case ioctl_ns05: Test passed
-Test Case read01: Test passed
-Test Case quotactl03: Test skipped
-Test Case quotactl02: Test skipped
-Test Case quotactl01: Test passed
-Test Case pwritev202_64: Test passed
-Test Case pwritev202: Test passed
-Test Case pwritev201_64: Test passed
-Test Case pwritev201: Test passed
-Test Case ioctl_ns04: Test failed
-Test Case ioctl_ns03: Test passed
-Test Case ioctl_ns02: Test passed
-Test Case ioctl_ns01: Test passed
+Test Case ioctl_ns07: Test skipped
+Test Case ioctl_ns06: Test skipped
+Test Case ioctl_ns05: Test skipped
+Test Case ioctl_ns04: Test skipped
+Test Case ioctl_ns03: Test skipped
+Test Case ioctl_ns02: Test skipped
+Test Case ioctl_ns01: Test skipped
 Test Case ioctl08: Test skipped
 Test Case ioctl07: Test passed
 Test Case ioctl06: Test passed
@@ -1000,13 +884,6 @@ Test Case fstat02: Test passed
 Test Case fstat01_64: Test passed
 Test Case fstat01: Test passed
 Test Case fremovexattr02: Test passed
-Test Case fremovexattr01: Test passed
-Test Case fpathconf01: Test passed
-Test Case fork14: Test skipped
-Test Case fork13: Test skipped
-Test Case fork11: Test passed
-Test Case fork10: Test passed
-Test Case fork09: Test passed
 Test Case fork08: Test passed
 Test Case fork07: Test passed
 Test Case fork06: Test passed
@@ -1015,6 +892,131 @@ Test Case fork04: Test passed
 Test Case fork03: Test passed
 Test Case fork02: Test passed
 Test Case fork01: Test passed
+Test Case msgrcv08: Test skipped
+Test Case msgrcv07: Test passed
+Test Case msgrcv06: Test passed
+Test Case msgrcv05: Test passed
+Test Case msgrcv04: Test passed
+Test Case msgrcv03: Test passed
+Test Case msgrcv02: Test passed
+Test Case msgrcv01: Test passed
+Test Case msgget03: Test passed
+Test Case msgget02: Test passed
+Test Case msgget01: Test passed
+Test Case msgctl12: Test passed
+Test Case msgstress04: Test skipped
+Test Case msgstress03: Test skipped
+Test Case msgstress02: Test passed
+Test Case msgstress01: Test passed
+Test Case msgctl04: Test passed
+Test Case msgctl03: Test passed
+Test Case msgctl02: Test passed
+Test Case msgctl01: Test passed
+Test Case mremap05: Test passed
+Test Case mremap04: Test passed
+Test Case mremap03: Test passed
+Test Case mremap02: Test passed
+Test Case mremap01: Test passed
+Test Case mq_unlink01: Test passed
+Test Case mq_timedsend01: Test passed
+Test Case mq_timedreceive01: Test passed
+Test Case mq_open01: Test passed
+Test Case mq_notify02: Test passed
+Test Case mq_notify01: Test passed
+Test Case mprotect04: Test passed
+Test Case mprotect03: Test passed
+Test Case mprotect02: Test passed
+Test Case mprotect01: Test passed
+Test Case move_pages12: Test skipped
+Test Case move_pages11: Test skipped
+Test Case move_pages10: Test skipped
+Test Case move_pages09: Test skipped
+Test Case move_pages08: Test skipped
+Test Case move_pages07: Test skipped
+Test Case move_pages06: Test skipped
+Test Case move_pages05: Test skipped
+Test Case move_pages04: Test skipped
+Test Case move_pages03: Test skipped
+Test Case move_pages02: Test skipped
+Test Case move_pages01: Test skipped
+Test Case mount06: Test passed
+Test Case mount05: Test passed
+Test Case mount04: Test passed
+Test Case mount03: Test passed
+Test Case mount02: Test passed
+Test Case mount01: Test passed
+Test Case modify_ldt03: Test skipped
+Test Case modify_ldt02: Test skipped
+Test Case modify_ldt01: Test skipped
+Test Case mmap16: Test passed
+Test Case mmap15: Test passed
+Test Case mmap14: Test passed
+Test Case mmap13: Test passed
+Test Case mmap12: Test passed
+Test Case mmap09: Test passed
+Test Case mmap08: Test passed
+Test Case mmap07: Test passed
+Test Case mmap06: Test passed
+Test Case mmap05: Test passed
+Test Case mmap04: Test passed
+Test Case mmap03: Test passed
+Test Case mmap02: Test passed
+Test Case mmap01: Test passed
+Test Case qmm01: Test passed
+Test Case mlock203: Test passed
+Test Case mlock202: Test passed
+Test Case mlock201: Test passed
+Test Case mlock04: Test passed
+Test Case mlock03: Test passed
+Test Case mlock02: Test passed
+Test Case mlock01: Test passed
+Test Case mknodat02: Test passed
+Test Case mknodat01: Test passed
+Test Case mknod09: Test passed
+Test Case mknod08: Test passed
+Test Case mknod07: Test passed
+Test Case mknod06: Test passed
+Test Case mknod05: Test passed
+Test Case mknod04: Test passed
+Test Case mknod03: Test passed
+Test Case mknod02: Test passed
+Test Case mknod01: Test passed
+Test Case mkdirat02: Test passed
+Test Case mkdirat01: Test passed
+Test Case mkdir09: Test passed
+Test Case mkdir05A: Test passed
+Test Case mkdir05: Test passed
+Test Case mkdir04: Test passed
+Test Case mkdir03: Test passed
+Test Case mkdir02: Test passed
+Test Case mlockall03: Test passed
+Test Case mlockall02: Test passed
+Test Case mlockall01: Test passed
+Test Case migrate_pages03: Test skipped
+Test Case migrate_pages02: Test skipped
+Test Case migrate_pages01: Test skipped
+Test Case memcpy01: Test passed
+Test Case memcmp01: Test passed
+Test Case memset01: Test passed
+Test Case mbind01: Test skipped
+Test Case mallopt01: Test passed
+Test Case lstat03_64: Test passed
+Test Case lstat03: Test passed
+Test Case lstat02_64: Test passed
+Test Case lstat02: Test passed
+Test Case lstat01_64: Test passed
+Test Case lstat01: Test passed
+Test Case lstat01A_64: Test passed
+Test Case lstat01A: Test passed
+Test Case lseek11: Test passed
+Test Case lseek07: Test passed
+Test Case lseek02: Test passed
+Test Case lseek01: Test passed
+Test Case lremovexattr01: Test passed
+Test Case llseek03: Test passed
+Test Case llseek02: Test passed
+Test Case llseek01: Test passed
+Test Case llistxattr03: Test passed
 Test Case fmtmsg01: Test passed
 Test Case flock06: Test passed
 Test Case flock04: Test passed
@@ -1091,15 +1093,6 @@ Test Case fcntl08: Test passed
 Test Case fcntl07_64: Test passed
 Test Case fcntl07: Test passed
 Test Case fcntl06_64: Test skipped
-Test Case mknod02: Test passed
-Test Case mknod01: Test passed
-Test Case mkdirat02: Test passed
-Test Case mkdirat01: Test passed
-Test Case mkdir09: Test passed
-Test Case mkdir05A: Test passed
-Test Case mkdir05: Test passed
-Test Case mkdir04: Test passed
-Test Case mkdir03: Test passed
 Test Case fcntl06: Test skipped
 Test Case fcntl05_64: Test passed
 Test Case fcntl05: Test passed
@@ -1240,6 +1233,13 @@ Test Case chown02: Test passed
 Test Case chown01_16: Test skipped
 Test Case chown01: Test passed
 Test Case chmod07: Test passed
+Test Case fremovexattr01: Test passed
+Test Case fpathconf01: Test passed
+Test Case fork14: Test skipped
+Test Case fork13: Test skipped
+Test Case fork11: Test passed
+Test Case fork10: Test passed
+Test Case fork09: Test passed
 Test Case chmod06: Test passed
 Test Case chmod05: Test passed
 Test Case chmod04: Test passed
@@ -1283,37 +1283,36 @@ Test Case accept4_01: Test passed
 Test Case accept01: Test passed
 Test Case abort01: Test passed
 
-Test Suite lava: http://lava.ciplatform.org/results/14378/lava
+Test Suite lava: http://lava.ciplatform.org/results/14377/lava
 Test Case job: Test passed
-Test Case read-feedback: Test failed
-Measurement: 6.6100000000 seconds
 Test Case 1_ltp-syscalls-tests: Test passed
-Measurement: 2255.6900000000 seconds
+Measurement: 2358.2300000000 seconds
 Test Case 0_prep-tmp-disk: Test passed
 Measurement: 0.0600000000 seconds
 Test Case auto-login-action: Test passed
-Measurement: 14.6200000000 seconds
+Measurement: 13.0600000000 seconds
 Test Case kernel-messages: Test passed
-Measurement: 11.7900000000 seconds
+Measurement: 11.8400000000 seconds
 Test Case execute-qemu: Test passed
-Measurement: 0.4700000000 seconds
+Measurement: 0.4300000000 seconds
 Test Case apply-overlay-guest: Test passed
-Measurement: 16.7100000000 seconds
+Measurement: 16.3600000000 seconds
 Test Case test-runscript-overlay: Test passed
-Measurement: 0.0800000000 seconds
+Measurement: 0.2400000000 seconds
 Test Case test-install-overlay: Test passed
-Measurement: 0.1500000000 seconds
+Measurement: 0.0100000000 seconds
 Test Case test-overlay: Test passed
 Measurement: 0.0100000000 seconds
 Test Case git-repo-action: Test passed
-Measurement: 13.0700000000 seconds
+Measurement: 13.8200000000 seconds
 Test Case test-runscript-overlay: Test passed
+Measurement: 0.0200000000 seconds
 Test Case test-install-overlay: Test passed
 Test Case test-overlay: Test passed
 Test Case http-download: Test passed
-Measurement: 6.3600000000 seconds
+Measurement: 4.2400000000 seconds
 Test Case http-download: Test passed
-Measurement: 16.7500000000 seconds
+Measurement: 22.7600000000 seconds
 Test Case validate: Test passed
 No query is set for results comparing.
 
@@ -1324,8 +1323,8 @@ Linaro Automated Validation Architecture
 -=-=-=-=-=-=-=-=-=-=-=-
 Links: You receive all messages sent to this group.
 
-View/Reply Online (#11172): https://lists.cip-project.org/g/cip-testing-results/message/11172
-Mute This Topic: https://lists.cip-project.org/mt/72913238/4520527
+View/Reply Online (#11173): https://lists.cip-project.org/g/cip-testing-results/message/11173
+Mute This Topic: https://lists.cip-project.org/mt/72913255/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129362/1896307328/xyzzy  [lists@lfdr.de]
 -=-=-=-=-=-=-=-=-=-=-=-
