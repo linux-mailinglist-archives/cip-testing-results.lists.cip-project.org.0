@@ -1,21 +1,21 @@
-Return-Path: <bounce+64575+11506+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+11507+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 0D6751B2A5F
-	for <lists@lfdr.de>; Tue, 21 Apr 2020 16:44:09 +0200 (CEST)
-X-Received: by 127.0.0.2 with SMTP id CHQCYY4521862xlOg4I0RruV; Tue, 21 Apr 2020 07:44:08 -0700
-X-Received: from a27-52.smtp-out.us-west-2.amazonses.com (a27-52.smtp-out.us-west-2.amazonses.com [54.240.27.52])
- by mx.groups.io with SMTP id smtpd.web12.627.1587480248051070184
+	by mail.lfdr.de (Postfix) with ESMTPS id 5F40B1B2B55
+	for <lists@lfdr.de>; Tue, 21 Apr 2020 17:39:00 +0200 (CEST)
+X-Received: by 127.0.0.2 with SMTP id x4tZYY4521862xihCZ2e9VgN; Tue, 21 Apr 2020 08:38:59 -0700
+X-Received: from a27-24.smtp-out.us-west-2.amazonses.com (a27-24.smtp-out.us-west-2.amazonses.com [54.240.27.24])
+ by mx.groups.io with SMTP id smtpd.web11.2022.1587483538490806960
  for <cip-testing-results@lists.cip-project.org>;
- Tue, 21 Apr 2020 07:44:08 -0700
+ Tue, 21 Apr 2020 08:38:58 -0700
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 15017 Altera-Terasic-Deo-Nano healthcheck
+Subject: [cip-testing-results] LAVA notification for Test Job 15018 ci-patersonc-linux-4.19.y-cip_uImage_renesas_shmobile_defconfig_4.19.114-cip24_dfc027e13_arm_renesas_shmobile_defconfig_r8a7743-iwg20d-q7-dbcm-ca.dtb_boot
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Tue, 21 Apr 2020 14:44:07 +0000
-Message-ID: <010101719d323bb0-59e8853d-1eb5-41e0-ba6b-93397c3d641d-000000@us-west-2.amazonses.com>
-X-SES-Outgoing: 2020.04.21-54.240.27.52
+Date: Tue, 21 Apr 2020 15:38:57 +0000
+Message-ID: <010101719d647010-67446a78-67c6-4a73-b8bc-bc6018e1db69-000000@us-west-2.amazonses.com>
+X-SES-Outgoing: 2020.04.21-54.240.27.24
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 Precedence: Bulk
 List-Unsubscribe: <https://lists.cip-project.org/g/cip-testing-results/unsub>
@@ -24,40 +24,74 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: VPQfaH5feUp7R2oJ7Kfll6e3x4520527AA=
+X-Gm-Message-State: LensDnOWpfgWUyLMgGbE5f0lx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1587480248;
- bh=cKeayxkDX3uObJ2NEBAcYwE5k49FXhdbjW5MtbntJQ4=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1587483539;
+ bh=ctEJrkAZIecYQnxTB05Aqr4XdWz3lnIyNycL51DtXJk=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=vFWtXEH7j1/rNEx91Z8y3TEXA5Nk/hFZE70FMOcaDsfGo6Cxb6numlPqdhxHQbJ3KiA
- jZ0j7TRpwBkyNCs7XqEo3aknVJdXV/oG5eex2nxoZ8klsFVjCxX4a0+OQSd4oMAkoDaLl
- 8nJ5zpctobW7XlerMYpvQ80Kj5b+MeVBiS4=
+ b=Xc00OKHOunuBmr/D7tAI9CZjJLJhCrN4C7erhIGUw0sZD8qj9lUkNlKJxGXUQvKz5pm
+ xqHugNncqFCWc0OwU54QRtVRQ7VBWPOFNu4uWZE+zwJfz/zlNWmPpTJTQ4WHrkPL3qOmA
+ RCjbDvQ3dOLh0NGFpvQL5RMKTOS7EJZ47Dk=
 
 
 Hello,
 
-The job with ID # 15017 is now in state Finished and health Complete. Job was submitted by lava-health.
+The job with ID # 15018 is now in state Finished and health Complete. Job was submitted by CIP-Testing.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/15017
+Job details and log file: http://lava.ciplatform.org/scheduler/job/15018
 
 
 
 
 Device details:
-Hostname: Altera-Terasic-Deo-Nano-01
-Type: Altera-Terasic-Deo-Nano
-Owner: siemens-users
-Worker: lab-cip-mentor
+Hostname: r8a7743-iwg20d-q7-01
+Type: r8a7743-iwg20d-q7
+Owner: renesas-admin
+Worker: lab-cip-renesas
 Job details:
 Priority: Medium
 Visibility: Publicly visible
-Description: Altera-Terasic-Deo-Nano healthcheck
-Submitted: 2020-04-21 14:41:31 (+0000 UTC)
-Started: 2020-04-21 14:41:32 (+0000 UTC)
-Finished: 2020-04-21 14:44:07 (+0000 UTC)
-Duration: 0:02:34.816827
+Description: ci-patersonc-linux-4.19.y-cip_uImage_renesas_shmobile_defconfig_4.19.114-cip24_dfc027e13_arm_renesas_shmobile_defconfig_r8a7743-iwg20d-q7-dbcm-ca.dtb_boot
+Submitted: 2020-04-21 15:36:34 (+0000 UTC)
+Started: 2020-04-21 15:36:52 (+0000 UTC)
+Finished: 2020-04-21 15:38:57 (+0000 UTC)
+Duration: 0:02:05.097640
+
+Metadata:
+
+Results:
+
+
+Test Suite 0_kernel-version-inline: http://lava.ciplatform.org/results/15018/0_kernel-version-inline
+Test Case uname: Test passed
+
+Test Suite lava: http://lava.ciplatform.org/results/15018/lava
+Test Case job: Test passed
+Test Case power-off: Test passed
+Measurement: 0.2400000000 seconds
+Test Case 0_kernel-version-inline: Test passed
+Measurement: 0.1000000000 seconds
+Test Case auto-login-action: Test passed
+Measurement: 9.2500000000 seconds
+Test Case kernel-messages: Test passed
+Measurement: 8.4700000000 seconds
+Test Case pdu-reboot: Test passed
+Measurement: 0.2300000000 seconds
+Test Case bootloader-overlay: Test passed
+Test Case test-runscript-overlay: Test passed
+Measurement: 0.0100000000 seconds
+Test Case test-install-overlay: Test passed
+Test Case test-overlay: Test passed
+Test Case http-download: Test passed
+Measurement: 25.5800000000 seconds
+Test Case http-download: Test passed
+Measurement: 0.8800000000 seconds
+Test Case http-download: Test passed
+Measurement: 5.5300000000 seconds
+Test Case validate: Test passed
+No query is set for results comparing.
 
 -- 
 LAVA
@@ -66,8 +100,8 @@ Linaro Automated Validation Architecture
 -=-=-=-=-=-=-=-=-=-=-=-
 Links: You receive all messages sent to this group.
 
-View/Reply Online (#11506): https://lists.cip-project.org/g/cip-testing-results/message/11506
-Mute This Topic: https://lists.cip-project.org/mt/73173676/4520527
+View/Reply Online (#11507): https://lists.cip-project.org/g/cip-testing-results/message/11507
+Mute This Topic: https://lists.cip-project.org/mt/73175056/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129362/1896307328/xyzzy  [lists@lfdr.de]
 -=-=-=-=-=-=-=-=-=-=-=-
