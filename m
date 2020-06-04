@@ -1,20 +1,20 @@
-Return-Path: <bounce+64575+13620+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+13621+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id BF8D01EE1B1
-	for <lists@lfdr.de>; Thu,  4 Jun 2020 11:44:52 +0200 (CEST)
-X-Received: by 127.0.0.2 with SMTP id zkQoYY4521862xGKRdo6ao7P; Thu, 04 Jun 2020 02:44:51 -0700
+	by mail.lfdr.de (Postfix) with ESMTPS id A0ADD1EE1B5
+	for <lists@lfdr.de>; Thu,  4 Jun 2020 11:45:46 +0200 (CEST)
+X-Received: by 127.0.0.2 with SMTP id 7MAqYY4521862xlACWYN9xaf; Thu, 04 Jun 2020 02:45:45 -0700
 X-Received: from a27-24.smtp-out.us-west-2.amazonses.com (a27-24.smtp-out.us-west-2.amazonses.com [54.240.27.24])
- by mx.groups.io with SMTP id smtpd.web12.10233.1591263891126809382
+ by mx.groups.io with SMTP id smtpd.web10.10631.1591263944965706682
  for <cip-testing-results@lists.cip-project.org>;
- Thu, 04 Jun 2020 02:44:51 -0700
+ Thu, 04 Jun 2020 02:45:45 -0700
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 17237 ci-iwamatsu-linux-4.4.y-cip-rc_bzImage_cip_qemu_defconfig_4.4.222-cip45_f77b9619_x86_cip_qemu_defconfig_ltp-ipc-tests
+Subject: [cip-testing-results] LAVA notification for Test Job 17279 x86 health-check
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Thu, 4 Jun 2020 09:44:50 +0000
-Message-ID: <010101727eb80be5-34847c7e-39ca-4816-a931-74a98abfaa4b-000000@us-west-2.amazonses.com>
+Date: Thu, 4 Jun 2020 09:45:44 +0000
+Message-ID: <010101727eb8de0a-18e158af-656a-4370-80cd-f4016b8f2e2a-000000@us-west-2.amazonses.com>
 X-SES-Outgoing: 2020.06.04-54.240.27.24
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 Precedence: Bulk
@@ -24,83 +24,40 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: dlvEpJuWFHJ7KklnjXfQplUdx4520527AA=
+X-Gm-Message-State: Wwg6wih3SEF3LmxWYcgYClE6x4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1591263891;
- bh=sdV0ruHgHeC3EwsmxTzSl7PUFYDvpzkeXIjKLoq5QO0=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1591263945;
+ bh=Ix2ifwrZqJeVXmpS+dyV3U7jl+k89aKppNpZxKRs4vg=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=aoSK2sdETWvDZEAZ/GsoI/f0yDUH/rvZYUaVR1Lq2X5N/fBuJRT7wenNpxQiA6FWzZE
- 0jMhqqf4ZcFATdsSLTyiUw3vtxTVMaE8qU47YGaFh73eEtO5hKsmlyON1IbeFYm/TVJvp
- J1Ng+ECD0zHEOTPCOlGUC5pmhVusoVSxjMU=
+ b=prSES9BzyTT3ipknY3ynTqbw9sS2jLDOu/NGma5C2S+eYHvyjNWu8eYUHilRE7e4vj0
+ /eKz0Y/cVyMezckcSlPGnkxgzVoNBx5h7ELM7VbQA4D65365if/fc4JMZf/brbdzb0Yw9
+ 6jqqKJDCpuqkhBxJOspRN/fP74fEvzhT0T8=
 
 
 Hello,
 
-The job with ID # 17237 is now in state Finished and health Complete. Job was submitted by CIP-Testing.
+The job with ID # 17279 is now in state Finished and health Incomplete. Job was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/17237
+Job details and log file: http://lava.ciplatform.org/scheduler/job/17279
 
 
+Infrastructure error: matched a bootloader error message: &#39;Connection timed out&#39; (2)
 
 
 Device details:
-Hostname: qemu-01
-Type: qemu
+Hostname: x86-SIMATIC-IPC227E
+Type: x86
 Owner: 
-Worker: lab-cip-renesas
+Worker: lab-cip-mentor
 Job details:
 Priority: Medium
-Description: ci-iwamatsu-linux-4.4.y-cip-rc_bzImage_cip_qemu_defconfig_4.4.222-cip45_f77b9619_x86_cip_qemu_defconfig_ltp-ipc-tests
-Submitted: 2020-06-03 17:16:38 (+0000 UTC)
-Started: 2020-06-04 09:43:29 (+0000 UTC)
-Finished: 2020-06-04 09:44:50 (+0000 UTC)
-Duration: 0:01:20
-
-Metadata:
-
-Results:
-
-
-Test Suite 1_ltp-ipc-tests: http://lava.ciplatform.org/results/17237/1_ltp-ipc-tests
-Test Case sem02: Test failed
-Test Case sem01: Test passed
-Test Case pipeio_8: Test passed
-Test Case pipeio_6: Test passed
-Test Case pipeio_5: Test passed
-Test Case pipeio_4: Test passed
-Test Case pipeio_3: Test passed
-Test Case pipeio_1: Test passed
-
-Test Suite lava: http://lava.ciplatform.org/results/17237/lava
-Test Case job: Test passed
-Test Case 1_ltp-ipc-tests: Test passed
-Measurement: 8.2000000000 seconds
-Test Case 0_prep-tmp-disk: Test passed
-Measurement: 0.0700000000 seconds
-Test Case auto-login-action: Test passed
-Measurement: 12.9800000000 seconds
-Test Case kernel-messages: Test passed
-Measurement: 10.8200000000 seconds
-Test Case execute-qemu: Test passed
-Measurement: 0.4000000000 seconds
-Test Case apply-overlay-guest: Test passed
-Measurement: 15.2900000000 seconds
-Test Case test-runscript-overlay: Test passed
-Test Case test-install-overlay: Test passed
-Test Case test-overlay: Test passed
-Test Case git-repo-action: Test passed
-Measurement: 7.7800000000 seconds
-Test Case test-runscript-overlay: Test passed
-Test Case test-install-overlay: Test passed
-Test Case test-overlay: Test passed
-Test Case http-download: Test passed
-Measurement: 17.0200000000 seconds
-Test Case http-download: Test passed
-Measurement: 4.0500000000 seconds
-Test Case validate: Test passed
-No query is set for results comparing.
+Description: x86 health-check
+Submitted: 2020-06-04 09:40:08 (+0000 UTC)
+Started: 2020-06-04 09:40:09 (+0000 UTC)
+Finished: 2020-06-04 09:45:44 (+0000 UTC)
+Duration: 0:05:34
 
 -- 
 LAVA
@@ -109,8 +66,8 @@ Linaro Automated Validation Architecture
 -=-=-=-=-=-=-=-=-=-=-=-
 Links: You receive all messages sent to this group.
 
-View/Reply Online (#13620): https://lists.cip-project.org/g/cip-testing-results/message/13620
-Mute This Topic: https://lists.cip-project.org/mt/74667970/4520527
+View/Reply Online (#13621): https://lists.cip-project.org/g/cip-testing-results/message/13621
+Mute This Topic: https://lists.cip-project.org/mt/74667983/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129362/1896307328/xyzzy  [lists@lfdr.de]
 -=-=-=-=-=-=-=-=-=-=-=-
