@@ -1,21 +1,21 @@
-Return-Path: <bounce+64575+15529+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+15530+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 49010219720
-	for <lists@lfdr.de>; Thu,  9 Jul 2020 06:15:40 +0200 (CEST)
-X-Received: by 127.0.0.2 with SMTP id 5RksYY4521862xsEmaOmV1Nx; Wed, 08 Jul 2020 21:15:38 -0700
-X-Received: from a27-24.smtp-out.us-west-2.amazonses.com (a27-24.smtp-out.us-west-2.amazonses.com [54.240.27.24])
- by mx.groups.io with SMTP id smtpd.web10.4434.1594268138227724577
+	by mail.lfdr.de (Postfix) with ESMTPS id DCCCB219721
+	for <lists@lfdr.de>; Thu,  9 Jul 2020 06:15:45 +0200 (CEST)
+X-Received: by 127.0.0.2 with SMTP id A2YlYY4521862xjhQ8d1rfS4; Wed, 08 Jul 2020 21:15:44 -0700
+X-Received: from a27-27.smtp-out.us-west-2.amazonses.com (a27-27.smtp-out.us-west-2.amazonses.com [54.240.27.27])
+ by mx.groups.io with SMTP id smtpd.web11.4502.1594268144185230045
  for <cip-testing-results@lists.cip-project.org>;
- Wed, 08 Jul 2020 21:15:38 -0700
+ Wed, 08 Jul 2020 21:15:44 -0700
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 24416 ci-iwamatsu-linux-4.19.y-cip-rc_bzImage_cip_qemu_defconfig_4.19.131-cip29_570063b70_x86_cip_qemu_defconfig_ltp-timers-tests
+Subject: [cip-testing-results] LAVA notification for Test Job 24411 ci-iwamatsu-linux-4.19.y-cip-rc_bzImage_cip_qemu_defconfig_4.19.131-cip29_570063b70_x86_cip_qemu_defconfig_ltp-fs-tests
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Thu, 9 Jul 2020 04:15:37 +0000
-Message-ID: <0101017331c93777-2b5d67c6-3773-4d68-8c85-b7dd7b672199-000000@us-west-2.amazonses.com>
-X-SES-Outgoing: 2020.07.09-54.240.27.24
+Date: Thu, 9 Jul 2020 04:15:43 +0000
+Message-ID: <0101017331c94ed2-1d74d00d-c506-464c-ae5c-021e38c33149-000000@us-west-2.amazonses.com>
+X-SES-Outgoing: 2020.07.09-54.240.27.27
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 Precedence: Bulk
 List-Unsubscribe: <https://lists.cip-project.org/g/cip-testing-results/unsub>
@@ -24,86 +24,140 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: wSB5Z1BDYPG5IoORnG8SjBunx4520527AA=
+X-Gm-Message-State: ZZXWPj1x0gxF4Bq43UbyZmGFx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1594268138;
- bh=aggO0JiEMgn/hvq3GzYBTiehTIcYcGs/FmyM8uhA7Tk=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1594268144;
+ bh=CfTHYn9r2D7l4JEBkv9jar+ekpo2UalqwSL70PVQXQo=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=mul4DNOjKCYI+FkD0q18yhD9T0K9vDkfbKCQAwaio8cCbeQahrQXUpRT497VVOjes2B
- xWF0fGcrit2zoNqlodw+/pUpS8bydhcScw79/BFqgjaMzAmLyY6DtRRFhKhzqyTZCEzUz
- Fr65HNWegdehC/rLFW2c4VJ847OAWDn5EuU=
+ b=Iiq8gMkmqLx9Tfll6LweK+DuxIsHTYXpv15PJhoXkzHmMopTBpvbugaEplyNyCN39X7
+ g0EIDEtAkDcsT6sOKtlQrqujEN3vyT4LXK7g5Af056lIS2ix4ScJwZQhThlf/ul2BQPqo
+ L9Gu8i4fRYjSN3Y3y7mG87wO2omOPc+OQ7Q=
 
 
 Hello,
 
-The job with ID # 24416 is now in state Finished and health Complete. Job was submitted by CIP-Testing.
+The job with ID # 24411 is now in state Finished and health Complete. Job was submitted by CIP-Testing.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/24416
+Job details and log file: http://lava.ciplatform.org/scheduler/job/24411
 
 
 
 
 Device details:
-Hostname: qemu-04
+Hostname: qemu-03
 Type: qemu
 Owner: 
-Worker: lab-cip-denx
+Worker: lab-cip-cybertrust
 Job details:
 Priority: Medium
-Description: ci-iwamatsu-linux-4.19.y-cip-rc_bzImage_cip_qemu_defconfig_4.19.131-cip29_570063b70_x86_cip_qemu_defconfig_ltp-timers-tests
-Submitted: 2020-07-09 03:05:02 (+0000 UTC)
-Started: 2020-07-09 04:13:40 (+0000 UTC)
-Finished: 2020-07-09 04:15:37 (+0000 UTC)
-Duration: 0:01:56
+Description: ci-iwamatsu-linux-4.19.y-cip-rc_bzImage_cip_qemu_defconfig_4.19.131-cip29_570063b70_x86_cip_qemu_defconfig_ltp-fs-tests
+Submitted: 2020-07-09 03:04:48 (+0000 UTC)
+Started: 2020-07-09 03:51:26 (+0000 UTC)
+Finished: 2020-07-09 04:15:43 (+0000 UTC)
+Duration: 0:24:16
 
 Metadata:
 
 Results:
 
 
-Test Suite 2_ltp-timers-tests: http://lava.ciplatform.org/results/24416/2_ltp-timers-tests
-Test Case leapsec_timer: Test passed
-Test Case timer_settime03: Test passed
-Test Case timer_settime02: Test passed
-Test Case timer_delete03: Test passed
-Test Case timer_delete02: Test passed
-Test Case timer_create04: Test passed
-Test Case timer_create03: Test passed
-Test Case timer_create02: Test passed
+Test Suite 1_ltp-fs-tests: http://lava.ciplatform.org/results/24411/1_ltp-fs-tests
+Test Case binfmt_misc02: Test skipped
+Test Case binfmt_misc01: Test skipped
+Test Case fs_fill: Test passed
+Test Case isofs: Test skipped
+Test Case quota_remount_test01: Test passed
+Test Case fs_racer: Test passed
+Test Case read_all_sys: Test passed
+Test Case read_all_proc: Test passed
+Test Case read_all_dev: Test passed
+Test Case proc01: Test passed
+Test Case fs_di: Test passed
+Test Case writetest01: Test passed
+Test Case lftest01: Test passed
+Test Case ftest08: Test passed
+Test Case ftest07: Test passed
+Test Case ftest06: Test passed
+Test Case ftest05: Test passed
+Test Case ftest04: Test passed
+Test Case ftest03: Test passed
+Test Case ftest02: Test passed
+Test Case ftest01: Test passed
+Test Case stream05: Test passed
+Test Case stream04: Test passed
+Test Case stream03: Test passed
+Test Case stream02: Test passed
+Test Case stream01: Test passed
+Test Case inode02: Test passed
+Test Case inode01: Test passed
+Test Case openfile01: Test failed
+Test Case linker01: Test passed
+Test Case fs_inod01: Test passed
+Test Case iogen01: Test passed
+Test Case rwtest05: Test passed
+Test Case rwtest04: Test passed
+Test Case rwtest03: Test passed
+Test Case rwtest02: Test passed
+Test Case rwtest01: Test passed
+Test Case gf30: Test passed
+Test Case gf29: Test passed
+Test Case gf28: Test passed
+Test Case gf27: Test passed
+Test Case gf26: Test passed
+Test Case gf25: Test passed
+Test Case gf24: Test passed
+Test Case gf23: Test passed
+Test Case gf22: Test passed
+Test Case gf21: Test passed
+Test Case gf20: Test passed
+Test Case gf19: Test passed
+Test Case gf18: Test skipped
+Test Case gf17: Test passed
+Test Case gf16: Test passed
+Test Case gf15: Test skipped
+Test Case gf14: Test skipped
+Test Case gf13: Test passed
+Test Case gf12: Test passed
+Test Case gf11: Test passed
+Test Case gf10: Test passed
+Test Case gf09: Test passed
+Test Case gf08: Test passed
+Test Case gf07: Test passed
+Test Case gf06: Test passed
+Test Case gf05: Test passed
+Test Case gf04: Test passed
+Test Case gf03: Test passed
+Test Case gf02: Test passed
+Test Case gf01: Test skipped
 
-Test Suite lava: http://lava.ciplatform.org/results/24416/lava
+Test Suite lava: http://lava.ciplatform.org/results/24411/lava
 Test Case job: Test passed
-Test Case 2_ltp-timers-tests: Test passed
-Measurement: 24.9300000000 seconds
-Test Case 1_timesync-off: Test passed
-Measurement: 0.0300000000 seconds
+Test Case 1_ltp-fs-tests: Test passed
+Measurement: 1377.6300000000 seconds
 Test Case 0_prep-tmp-disk: Test passed
-Measurement: 0.2700000000 seconds
+Measurement: 0.1600000000 seconds
 Test Case auto-login-action: Test passed
-Measurement: 21.9100000000 seconds
+Measurement: 19.4300000000 seconds
 Test Case kernel-messages: Test passed
-Measurement: 17.1500000000 seconds
+Measurement: 14.9000000000 seconds
 Test Case execute-qemu: Test passed
-Measurement: 0.5600000000 seconds
+Measurement: 0.4200000000 seconds
 Test Case apply-overlay-guest: Test passed
-Measurement: 23.9500000000 seconds
+Measurement: 18.8600000000 seconds
 Test Case test-runscript-overlay: Test passed
 Test Case test-install-overlay: Test passed
 Test Case test-overlay: Test passed
 Test Case git-repo-action: Test passed
-Measurement: 7.4600000000 seconds
-Test Case test-runscript-overlay: Test passed
-Test Case test-install-overlay: Test passed
-Test Case test-overlay: Test passed
+Measurement: 4.7500000000 seconds
 Test Case test-runscript-overlay: Test passed
 Test Case test-install-overlay: Test passed
 Test Case test-overlay: Test passed
 Test Case http-download: Test passed
-Measurement: 15.1600000000 seconds
+Measurement: 8.0700000000 seconds
 Test Case http-download: Test passed
-Measurement: 4.9300000000 seconds
+Measurement: 12.0200000000 seconds
 Test Case validate: Test passed
 No query is set for results comparing.
 
@@ -114,8 +168,8 @@ Linaro Automated Validation Architecture
 -=-=-=-=-=-=-=-=-=-=-=-
 Links: You receive all messages sent to this group.
 
-View/Reply Online (#15529): https://lists.cip-project.org/g/cip-testing-results/message/15529
-Mute This Topic: https://lists.cip-project.org/mt/75391742/4520527
+View/Reply Online (#15530): https://lists.cip-project.org/g/cip-testing-results/message/15530
+Mute This Topic: https://lists.cip-project.org/mt/75391749/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129362/1896307328/xyzzy  [lists@lfdr.de]
 -=-=-=-=-=-=-=-=-=-=-=-
