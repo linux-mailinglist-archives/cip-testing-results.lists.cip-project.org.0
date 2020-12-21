@@ -1,21 +1,21 @@
-Return-Path: <bounce+64575+25167+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+25168+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id ED6A52DFC4B
-	for <lists@lfdr.de>; Mon, 21 Dec 2020 14:27:42 +0100 (CET)
-X-Received: by 127.0.0.2 with SMTP id wtsaYY4521862xKeuVMwP8zD; Mon, 21 Dec 2020 05:27:41 -0800
-X-Received: from a27-50.smtp-out.us-west-2.amazonses.com (a27-50.smtp-out.us-west-2.amazonses.com [54.240.27.50])
- by mx.groups.io with SMTP id smtpd.web11.39135.1608557261215439462
+	by mail.lfdr.de (Postfix) with ESMTPS id C47522DFCD0
+	for <lists@lfdr.de>; Mon, 21 Dec 2020 15:28:08 +0100 (CET)
+X-Received: by 127.0.0.2 with SMTP id spmrYY4521862xZOZBmH82X8; Mon, 21 Dec 2020 06:28:07 -0800
+X-Received: from a27-24.smtp-out.us-west-2.amazonses.com (a27-24.smtp-out.us-west-2.amazonses.com [54.240.27.24])
+ by mx.groups.io with SMTP id smtpd.web11.489.1608560886959087043
  for <cip-testing-results@lists.cip-project.org>;
- Mon, 21 Dec 2020 05:27:41 -0800
+ Mon, 21 Dec 2020 06:28:07 -0800
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 125006 beaglebone-black healthcheck
+Subject: [cip-testing-results] LAVA notification for Test Job 125047 linux-4.19.y_Image_ctj_zynqmp_defconfig_4.19.163_13d2ce42d_arm64_ctj_zynqmp_defconfig_zynqmp-zcu102-rev1.0.dtb_boot
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Mon, 21 Dec 2020 13:27:40 +0000
-Message-ID: <01010176857bed67-29e31009-4179-4364-9099-f59bff2f1f29-000000@us-west-2.amazonses.com>
-X-SES-Outgoing: 2020.12.21-54.240.27.50
+Date: Mon, 21 Dec 2020 14:28:05 +0000
+Message-ID: <0101017685b34069-bdedbba7-eb1f-4087-a425-3189fd877d80-000000@us-west-2.amazonses.com>
+X-SES-Outgoing: 2020.12.21-54.240.27.24
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 Precedence: Bulk
 List-Unsubscribe: <https://lists.cip-project.org/g/cip-testing-results/unsub>
@@ -24,39 +24,72 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: bAJFCb9zr4rHJ2XUx00laEanx4520527AA=
+X-Gm-Message-State: wdhBlfvn7UeAAhL59RsCVzC9x4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1608557261;
- bh=NQsV73V8mNu7Rq6O2DYZrYtD2imOiNoGUcJCNev/2M8=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1608560887;
+ bh=rJ5NL4y041uDRRilRE7KXwAQBkRFQpOjG6QyFYLdfIs=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=Uck/N1qTmorh8kfaSSaQDei56+jwJZRIae70AQqNuMIcojrqbukWC92i3y7ThvG9feH
- vrR2mLMhuz7ux/2I0+4yRaOjFnVm7YPjFZgU07x7LUJuaay/WH6w9JENYVIK/y3FfHXx1
- 7458qr/RkRNarOQVbZDG1Q1ELzZdcvdMkUw=
+ b=PP28FiGHQV7OQyCSGrHHgFXh/4x5PjdfGGE9Y7OZKolZqaWDXEVmg8OLje/4guL3A7C
+ G9j3vPUKeMcuxYzT5tX+usyC9u/Bw1c5tplQORi4B6aifpzDVsCneSixQQYY2tl7BXI65
+ 4LoTRqfUpVHMmIRqsredViAZrsFsUo7Vuho=
 
 
 Hello,
 
-The job with ID # 125006 is now in state Finished and health Complete. Job was submitted by lava-health.
+The job with ID # 125047 is now in state Finished and health Complete. Job was submitted by CIP-Testing.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/125006
+Job details and log file: http://lava.ciplatform.org/scheduler/job/125047
 
 
 
 
 Device details:
-Hostname: bbb-02
-Type: beaglebone-black
+Hostname: zynqmp-zcu102-01
+Type: zynqmp-zcu102
 Owner: 
-Worker: lab-cip-denx
+Worker: lab-cip-cybertrust
 Job details:
 Priority: Medium
-Description: beaglebone-black healthcheck
-Submitted: 2020-12-21 13:26:36 (+0000 UTC)
-Started: 2020-12-21 13:26:38 (+0000 UTC)
-Finished: 2020-12-21 13:27:39 (+0000 UTC)
-Duration: 0:01:01
+Description: linux-4.19.y_Image_ctj_zynqmp_defconfig_4.19.163_13d2ce42d_arm64_ctj_zynqmp_defconfig_zynqmp-zcu102-rev1.0.dtb_boot
+Submitted: 2020-12-21 14:26:30 (+0000 UTC)
+Started: 2020-12-21 14:26:50 (+0000 UTC)
+Finished: 2020-12-21 14:28:05 (+0000 UTC)
+Duration: 0:01:14
+
+Metadata:
+
+Results:
+
+
+Test Suite 0_kernel-version-inline: http://lava.ciplatform.org/results/125047/0_kernel-version-inline
+Test Case uname: Test passed
+
+Test Suite lava: http://lava.ciplatform.org/results/125047/lava
+Test Case job: Test passed
+Test Case power-off: Test passed
+Measurement: 0.4900000000 seconds
+Test Case 0_kernel-version-inline: Test passed
+Measurement: 0.0700000000 seconds
+Test Case login-action: Test passed
+Measurement: 9.4300000000 seconds
+Test Case kernel-messages: Test passed
+Measurement: 9.2800000000 seconds
+Test Case pdu-reboot: Test passed
+Measurement: 0.5000000000 seconds
+Test Case bootloader-overlay: Test passed
+Test Case test-runscript-overlay: Test passed
+Test Case test-install-overlay: Test passed
+Test Case test-overlay: Test passed
+Test Case http-download: Test passed
+Measurement: 11.6000000000 seconds
+Test Case http-download: Test passed
+Measurement: 0.7200000000 seconds
+Test Case http-download: Test passed
+Measurement: 27.3600000000 seconds
+Test Case validate: Test passed
+No query is set for results comparing.
 
 -- 
 LAVA
@@ -65,8 +98,8 @@ Linaro Automated Validation Architecture
 
 -=-=-=-=-=-=-=-=-=-=-=-
 Links: You receive all messages sent to this group.
-View/Reply Online (#25167): https://lists.cip-project.org/g/cip-testing-results/message/25167
-Mute This Topic: https://lists.cip-project.org/mt/79125134/4520527
+View/Reply Online (#25168): https://lists.cip-project.org/g/cip-testing-results/message/25168
+Mute This Topic: https://lists.cip-project.org/mt/79126432/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129362/1896307328/xyzzy [lists@lfdr.de]
 -=-=-=-=-=-=-=-=-=-=-=-
