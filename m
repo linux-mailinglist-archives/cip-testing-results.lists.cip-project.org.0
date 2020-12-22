@@ -1,21 +1,21 @@
-Return-Path: <bounce+64575+25214+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+25215+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 6B1C72E0B0E
-	for <lists@lfdr.de>; Tue, 22 Dec 2020 14:47:53 +0100 (CET)
-X-Received: by 127.0.0.2 with SMTP id 664aYY4521862xeE95YzTjZV; Tue, 22 Dec 2020 05:47:52 -0800
-X-Received: from a27-52.smtp-out.us-west-2.amazonses.com (a27-52.smtp-out.us-west-2.amazonses.com [54.240.27.52])
- by mx.groups.io with SMTP id smtpd.web09.11493.1608644871676126759
+	by mail.lfdr.de (Postfix) with ESMTPS id 9EE4C2E0D6D
+	for <lists@lfdr.de>; Tue, 22 Dec 2020 17:35:26 +0100 (CET)
+X-Received: by 127.0.0.2 with SMTP id gDVDYY4521862xw51JO7ENV0; Tue, 22 Dec 2020 08:35:24 -0800
+X-Received: from a27-50.smtp-out.us-west-2.amazonses.com (a27-50.smtp-out.us-west-2.amazonses.com [54.240.27.50])
+ by mx.groups.io with SMTP id smtpd.web11.13784.1608654924265474341
  for <cip-testing-results@lists.cip-project.org>;
- Tue, 22 Dec 2020 05:47:51 -0800
+ Tue, 22 Dec 2020 08:35:24 -0800
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 125730 ci-patersonc-linux-4.19.y-cip_zImage_siemens_de0-nano-soc_defconfig_4.19.163-cip40_cee35843c_arm_siemens_de0-nano-soc_defconfig_socfpga_cyclone5_de0_nano_soc.dtb_smc
+Subject: [cip-testing-results] LAVA notification for Test Job 125734 r8a774c0-ek874 healthcheck
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Tue, 22 Dec 2020 13:47:50 +0000
-Message-ID: <010101768ab4c1b2-874cf997-8146-4092-89a3-ce0b178db2f0-000000@us-west-2.amazonses.com>
-X-SES-Outgoing: 2020.12.22-54.240.27.52
+Date: Tue, 22 Dec 2020 16:35:23 +0000
+Message-ID: <010101768b4e25c6-b7781fae-414c-42bc-95bf-6ad88c03f502-000000@us-west-2.amazonses.com>
+X-SES-Outgoing: 2020.12.22-54.240.27.50
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 Precedence: Bulk
 List-Unsubscribe: <https://lists.cip-project.org/g/cip-testing-results/unsub>
@@ -24,64 +24,39 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: esAUWZ5FYE6D0eXadyuNovDcx4520527AA=
+X-Gm-Message-State: jfHRhncaFP1akbj0mEx4G7g4x4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1608644872;
- bh=IIOKksuL8czM6SVXNWJXQ77LOH0PxqpIxiLtP9FMK3k=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1608654924;
+ bh=UgcfcYlpXjM0dxDIArR4CotOoYoBLz/zbW/Ul+5xZ5U=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=wq+UoevtoRbnIGBNXLUG16deHW40IxR+ZazxkfjwrMA6+HEY+B/r/YrIviuUXJkCcmU
- dFZ2fdwM+OVxCrmH+khyt4JUam9NRkXd2580i2cs157Nx7r2jcJm3LZjBx9NPuE84HFKJ
- VrG0rBI8ug618BgVX9p2JGiqPDXbe01C/vA=
+ b=TO4n+QL4uBugxM4jgHrQoQDDH9rmhdSoXRub6lKyuzO4lfYq+9sO5x7FXJtt1M7RL7U
+ LHW+tFKUFcg/SvJY+w6s389fZeIwDNFyEjQWyjiVb7Gn59l7M5/tvtXjt04ozPadS5C9w
+ Zc11GtuwGfu0cgRQwALDVryW58vETdwHIYI=
 
 
 Hello,
 
-The job with ID # 125730 is now in state Finished and health Incomplete. Job was submitted by CIP-Testing.
+The job with ID # 125734 is now in state Finished and health Complete. Job was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/125730
+Job details and log file: http://lava.ciplatform.org/scheduler/job/125734
 
 
-Job error: tftp-deploy timed out after 1028 seconds
 
 
 Device details:
-Hostname: de0-nano-soc-01
-Type: de0-nano-soc
+Hostname: r8a774c0-ek874-01
+Type: r8a774c0-ek874
 Owner: 
-Worker: lab-cip-mentor
+Worker: lab-cip-renesas
 Job details:
-Priority: Medium
-Description: ci-patersonc-linux-4.19.y-cip_zImage_siemens_de0-nano-soc_defconfig_4.19.163-cip40_cee35843c_arm_siemens_de0-nano-soc_defconfig_socfpga_cyclone5_de0_nano_soc.dtb_smc
-Submitted: 2020-12-22 13:30:24 (+0000 UTC)
-Started: 2020-12-22 13:30:37 (+0000 UTC)
-Finished: 2020-12-22 13:47:50 (+0000 UTC)
-Duration: 0:17:12
-
-Metadata:
-
-Results:
-
-
-Test Suite lava: http://lava.ciplatform.org/results/125730/lava
-Test Case job: Test failed
-Test Case power-off: Test passed
-Measurement: 0.4300000000 seconds
-Test Case tftp-deploy: Test failed
-Measurement: 1028.6800000000 seconds
-Test Case download-retry: Test failed
-Measurement: 127.1800000000 seconds
-Test Case http-download: Test passed
-Measurement: 127.1800000000 seconds
-Test Case http-download: Test failed
-Measurement: 886.0000000000 seconds
-Test Case http-download: Test passed
-Measurement: 1.4900000000 seconds
-Test Case http-download: Test passed
-Measurement: 12.9900000000 seconds
-Test Case validate: Test passed
-No query is set for results comparing.
+Priority: High
+Description: r8a774c0-ek874 healthcheck
+Submitted: 2020-12-22 16:34:09 (+0000 UTC)
+Started: 2020-12-22 16:34:11 (+0000 UTC)
+Finished: 2020-12-22 16:35:23 (+0000 UTC)
+Duration: 0:01:11
 
 -- 
 LAVA
@@ -90,8 +65,8 @@ Linaro Automated Validation Architecture
 
 -=-=-=-=-=-=-=-=-=-=-=-
 Links: You receive all messages sent to this group.
-View/Reply Online (#25214): https://lists.cip-project.org/g/cip-testing-results/message/25214
-Mute This Topic: https://lists.cip-project.org/mt/79148811/4520527
+View/Reply Online (#25215): https://lists.cip-project.org/g/cip-testing-results/message/25215
+Mute This Topic: https://lists.cip-project.org/mt/79152814/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129362/1896307328/xyzzy [lists@lfdr.de]
 -=-=-=-=-=-=-=-=-=-=-=-
