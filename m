@@ -1,21 +1,21 @@
-Return-Path: <bounce+64575+25853+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+25854+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 97DE52ED4C8
-	for <lists@lfdr.de>; Thu,  7 Jan 2021 17:52:22 +0100 (CET)
-X-Received: by 127.0.0.2 with SMTP id 1Vj1YY4521862xzhRpepz0GN; Thu, 07 Jan 2021 08:52:16 -0800
-X-Received: from a27-50.smtp-out.us-west-2.amazonses.com (a27-50.smtp-out.us-west-2.amazonses.com [54.240.27.50])
- by mx.groups.io with SMTP id smtpd.web11.11202.1610038335973100360
+	by mail.lfdr.de (Postfix) with ESMTPS id B36062ED4C6
+	for <lists@lfdr.de>; Thu,  7 Jan 2021 17:52:19 +0100 (CET)
+X-Received: by 127.0.0.2 with SMTP id 5Lx5YY4521862xMluIXCetvF; Thu, 07 Jan 2021 08:52:18 -0800
+X-Received: from a27-42.smtp-out.us-west-2.amazonses.com (a27-42.smtp-out.us-west-2.amazonses.com [54.240.27.42])
+ by mx.groups.io with SMTP id smtpd.web09.11156.1610038338135420325
  for <cip-testing-results@lists.cip-project.org>;
- Thu, 07 Jan 2021 08:52:16 -0800
+ Thu, 07 Jan 2021 08:52:18 -0800
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 132270 linux-5.10.y_bzImage_siemens_ipc227e_defconfig_5.10.6-rc1_208f314c0_x86_siemens_ipc227e_defconfig_smc
+Subject: [cip-testing-results] LAVA notification for Test Job 132262 patersonc-update-x86-device-types_uImage_renesas_shmobile_defconfig_4.4.248-cip52_3fecc3c2_arm_renesas_shmobile_defconfig_r8a7743-iwg20d-q7-dbcm-ca.dtb_smc
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Thu, 7 Jan 2021 16:52:15 +0000
-Message-ID: <01010176ddc35577-ee886499-f78b-43cf-b44e-b50b476b192d-000000@us-west-2.amazonses.com>
-X-SES-Outgoing: 2021.01.07-54.240.27.50
+Date: Thu, 7 Jan 2021 16:52:17 +0000
+Message-ID: <01010176ddc35dff-1fdbcd51-8156-4e48-ad90-514fe11c1c9e-000000@us-west-2.amazonses.com>
+X-SES-Outgoing: 2021.01.07-54.240.27.42
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 Precedence: Bulk
 List-Unsubscribe: <https://lists.cip-project.org/g/cip-testing-results/unsub>
@@ -24,78 +24,84 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: FSxhS641TW3YTH5HIlWQnoMRx4520527AA=
+X-Gm-Message-State: oq6J7f5pNCx46GYvd1Ck4IR8x4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1610038336;
- bh=W1ndJWxT0Pwm0fBkPXyOvtPeDb0DttQN61AvapBUVyA=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1610038338;
+ bh=DqKWU4tz+yGjBb+6voWGRatcL+M4rEkr0ISWsx6Is0Q=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=CaUqAW0bTlh9CrMQRbcKiVM437Zxv4zMfo8FsFQ90koTuoBtkWi2Mp0ZSjxjbCF5H/d
- 6QybsN2S86/7v2DlfcyAb/wO8HpO/gt3FsHerDL4ST4drwidLU3gm/nO+s4yGF2pHBmIY
- TxfPiu0BgoR8RIX0Oe0Quwri2Ofbuv4y7us=
+ b=GEP5rTnvIhT0v6hoOLnfoWuYiBik0kVdYlHHkwDkLtDoqlV2s0SF/HG4jH99PTuq2/I
+ QCLk8Xfh9dyymGXxdpY7aTiicyL+rBmEx9mR5a0q1FS9k3XTG3Go1bL226KvBsJc3uafd
+ umnd3YKpndh+cqzzMFU43nLyYhWrgbY4T9k=
 
 
 Hello,
 
-The job with ID # 132270 is now in state Finished and health Incomplete. Job was submitted by CIP-Testing.
+The job with ID # 132262 is now in state Finished and health Complete. Job was submitted by CIP-Testing.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/132270
+Job details and log file: http://lava.ciplatform.org/scheduler/job/132262
 
-
-Job error: None of the boot strategies accepted your boot parameters, reasons given:
-UBoot: &#34;method&#34; was not &#34;u-boot&#34;
-BootFastboot: boot &#34;method&#34; was not &#34;fastboot&#34;
-BootLxc: &#34;method&#34; was not in parameters or &#34;method&#34; was not &#34;lxc&#34;
-BootBootloader: &#39;method&#39; was not &#39;bootloader&#39;
-CMSIS: &#34;cmsis-dap&#34; is not in the device configuration boot methods
-Depthcharge: &#34;method&#34; was not &#34;depthcharge&#34;
-DFU: &#34;dfu&#34; was not in the device configuration boot methods
-BootDocker: &#34;docker&#34; was not in the device configuration boot methods
-BootFVP: &#34;fvp&#34; was not in the device configuration boot methods
-GDB: &#34;gdb&#34; is not in the device configuration boot methods
-UefiMenu: &#34;method&#34; was not &#34;uefi-menu&#34;
-GrubSequence: &#34;method&#34; was not &#34;grub&#34; or &#34;grub-efi&#34;
-Grub: &#34;method&#34; was not &#34;grub&#34; or &#34;grub-efi&#34;
-BootIsoInstaller: &#34;media&#34; was not in parameters or &#34;media&#34; was not &#34;img&#34;
-IPXE: &#34;method&#34; was not &#34;ipxe&#34;
-BootKExec: &#34;method&#34; was not in parameters, or &#34;method&#34; was not &#34;kexec&#34;
-Minimal: &#34;minimal&#34; was not in device configuration boot methods
-Musca: &#34;musca&#34; was not in device configuration boot methods
-OpenOCD: &#34;openocd&#34; was not in the device configuration boot methods
-PyOCD: &#34;pyocd&#34; was not in the device configuration boot methods
-JLink: &#34;jlink&#34; was not in the device configuration boot methods
-BootQEMU: &#34;qemu&#34; or &#34;qemu-nfs&#34; was not in the device configuration boot methods
-SecondaryShell: new_connection not in method
-SshLogin: &#34;ssh&#34; not in &#34;method&#34;
-Schroot: &#34;schroot&#34; was not in the device configuration boot methods
-Barebox: &#34;method&#34; was not &#34;barebox&#34;
-UefiShell: &#34;method&#34; was not &#34;uefi&#34;
-RecoveryBoot: boot &#34;method&#34; was not &#34;recovery&#34;
-UUUBoot: &#34;method&#34; was not &#34;uuu&#34;
 
 
 
 Device details:
-Hostname: x86-simatic-ipc227e-02
-Type: x86-simatic-ipc227e
+Hostname: r8a7743-iwg20d-q7-03
+Type: r8a7743-iwg20d-q7
 Owner: 
-Worker: lab-cip-denx
+Worker: lab-cip-renesas
 Job details:
 Priority: Medium
-Description: linux-5.10.y_bzImage_siemens_ipc227e_defconfig_5.10.6-rc1_208f314c0_x86_siemens_ipc227e_defconfig_smc
-Submitted: 2021-01-07 16:51:57 (+0000 UTC)
-Started: 2021-01-07 16:52:13 (+0000 UTC)
-Finished: 2021-01-07 16:52:14 (+0000 UTC)
-Duration: 0:00:01
+Description: patersonc-update-x86-device-types_uImage_renesas_shmobile_defconfig_4.4.248-cip52_3fecc3c2_arm_renesas_shmobile_defconfig_r8a7743-iwg20d-q7-dbcm-ca.dtb_smc
+Submitted: 2021-01-07 16:49:41 (+0000 UTC)
+Started: 2021-01-07 16:50:02 (+0000 UTC)
+Finished: 2021-01-07 16:52:16 (+0000 UTC)
+Duration: 0:02:14
 
 Metadata:
 
 Results:
 
 
-Test Suite lava: http://lava.ciplatform.org/results/132270/lava
-Test Case job: Test failed
+Test Suite 0_spectre-meltdown-checker-test: http://lava.ciplatform.org/results/132262/0_spectre-meltdown-checker-test
+Test Case CVE-2019-11091: Test passed
+Test Case CVE-2018-12127: Test passed
+Test Case CVE-2018-12130: Test passed
+Test Case CVE-2018-12126: Test passed
+Test Case CVE-2018-3646: Test passed
+Test Case CVE-2018-3620: Test passed
+Test Case CVE-2018-3615: Test passed
+Test Case CVE-2018-3639: Test passed
+Test Case CVE-2018-3640: Test failed
+Test Case CVE-2017-5754: Test passed
+Test Case CVE-2017-5715: Test passed
+Test Case CVE-2017-5753: Test skipped
+
+Test Suite lava: http://lava.ciplatform.org/results/132262/lava
+Test Case job: Test passed
+Test Case power-off: Test passed
+Measurement: 0.5500000000 seconds
+Test Case 0_spectre-meltdown-checker-test: Test passed
+Measurement: 6.6000000000 seconds
+Test Case login-action: Test passed
+Measurement: 11.0700000000 seconds
+Test Case kernel-messages: Test passed
+Measurement: 10.6600000000 seconds
+Test Case pdu-reboot: Test passed
+Measurement: 0.5500000000 seconds
+Test Case bootloader-overlay: Test passed
+Test Case test-runscript-overlay: Test passed
+Test Case test-install-overlay: Test passed
+Test Case test-overlay: Test passed
+Test Case git-repo-action: Test passed
+Measurement: 23.2100000000 seconds
+Test Case http-download: Test passed
+Measurement: 14.8900000000 seconds
+Test Case http-download: Test passed
+Measurement: 0.8600000000 seconds
+Test Case http-download: Test passed
+Measurement: 3.6300000000 seconds
+Test Case validate: Test passed
 No query is set for results comparing.
 
 -- 
@@ -105,8 +111,8 @@ Linaro Automated Validation Architecture
 
 -=-=-=-=-=-=-=-=-=-=-=-
 Links: You receive all messages sent to this group.
-View/Reply Online (#25853): https://lists.cip-project.org/g/cip-testing-results/message/25853
-Mute This Topic: https://lists.cip-project.org/mt/79502992/4520527
+View/Reply Online (#25854): https://lists.cip-project.org/g/cip-testing-results/message/25854
+Mute This Topic: https://lists.cip-project.org/mt/79502996/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129362/1896307328/xyzzy [lists@lfdr.de]
 -=-=-=-=-=-=-=-=-=-=-=-
