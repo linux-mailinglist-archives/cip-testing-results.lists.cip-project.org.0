@@ -1,21 +1,21 @@
-Return-Path: <bounce+64575+27951+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+27952+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 8495030A6CB
-	for <lists@lfdr.de>; Mon,  1 Feb 2021 12:47:33 +0100 (CET)
-X-Received: by 127.0.0.2 with SMTP id bSwfYY4521862xIXwj0xOlBx; Mon, 01 Feb 2021 03:47:32 -0800
-X-Received: from a27-22.smtp-out.us-west-2.amazonses.com (a27-22.smtp-out.us-west-2.amazonses.com [54.240.27.22])
- by mx.groups.io with SMTP id smtpd.web11.32704.1612180051897925400
+	by mail.lfdr.de (Postfix) with ESMTPS id 0F56330AA66
+	for <lists@lfdr.de>; Mon,  1 Feb 2021 16:04:57 +0100 (CET)
+X-Received: by 127.0.0.2 with SMTP id JhHuYY4521862xNPFmlysjmT; Mon, 01 Feb 2021 07:04:56 -0800
+X-Received: from a27-42.smtp-out.us-west-2.amazonses.com (a27-42.smtp-out.us-west-2.amazonses.com [54.240.27.42])
+ by mx.groups.io with SMTP id smtpd.web12.35175.1612191601841215751
  for <cip-testing-results@lists.cip-project.org>;
- Mon, 01 Feb 2021 03:47:31 -0800
+ Mon, 01 Feb 2021 07:00:01 -0800
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 155121 de0-nano-soc healthcheck
+Subject: [cip-testing-results] LAVA notification for Test Job 155128 linux-4.19.y_uImage_shmobile_defconfig_4.19.173-rc1_dd974dc3c_arm_shmobile_defconfig_r8a7743-iwg20d-q7-dbcm-ca.dtb_boot
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Mon, 1 Feb 2021 11:47:31 +0000
-Message-ID: <010101775d6b5491-296ca79c-b6db-4238-9aa6-243ada2a8bc3-000000@us-west-2.amazonses.com>
-X-SES-Outgoing: 2021.02.01-54.240.27.22
+Date: Mon, 1 Feb 2021 15:00:00 +0000
+Message-ID: <010101775e1b909d-ec9dc19a-9401-4444-b4ac-839042f8f24a-000000@us-west-2.amazonses.com>
+X-SES-Outgoing: 2021.02.01-54.240.27.42
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 Precedence: Bulk
 List-Unsubscribe: <https://lists.cip-project.org/g/cip-testing-results/unsub>
@@ -24,39 +24,72 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: gIH9vTUEBshnrAtiSs1myK84x4520527AA=
+X-Gm-Message-State: DqnHSSKpyvWApzhUdFHC3nJgx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1612180052;
- bh=TRfUU+WwCNrocL0tF/lS1RNkmvKHbw3nI3abeIjLcGI=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1612191896;
+ bh=3uRPKwxT4RVZbEpbcGGPiQOb8xhu0I+cajb33n5oY3A=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=v6lpb1cveT3FwpzZHDGhgJA+G4JXqidoiHFif6Sua1+NfXsr48dQEX7RZJxwe8uc8W5
- e3g1L5pdfCDDQTNvvS9vNdp8WrcY2J6IFGwIcJjKE6RI4sDAgMgeO9zzhjzV+XcAcavhz
- 2Ah3ndM9ULd3kHk2TsyljeW8C3GEmTsmDk4=
+ b=cpG2sJH+CMYwD9TC7HNFjbJXthbIhBfFhsx/ZfU4rnd8ZnHY6bDCprimcLsqWUbNM3n
+ 6wfw6UjMOPG0uMxHFL5v6P9bBAx7WWZfnFjcE6abNmBbt4oKltIOEkeEyM0iDAvjz8Ayj
+ wuPSrX6xWzp9XFwcZszXbwJmMSvQXBFVc8A=
 
 
 Hello,
 
-The job with ID # 155121 is now in state Finished and health Complete. Job was submitted by lava-health.
+The job with ID # 155128 is now in state Finished and health Complete. Job was submitted by CIP-Testing.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/155121
+Job details and log file: http://lava.ciplatform.org/scheduler/job/155128
 
 
 
 
 Device details:
-Hostname: de0-nano-soc-02
-Type: de0-nano-soc
+Hostname: r8a7743-iwg20d-q7-04
+Type: r8a7743-iwg20d-q7
 Owner: 
-Worker: lab-cip-denx
+Worker: lab-cip-renesas
 Job details:
 Priority: Medium
-Description: de0-nano-soc healthcheck
-Submitted: 2021-02-01 11:45:12 (+0000 UTC)
-Started: 2021-02-01 11:45:15 (+0000 UTC)
-Finished: 2021-02-01 11:47:30 (+0000 UTC)
-Duration: 0:02:15
+Description: linux-4.19.y_uImage_shmobile_defconfig_4.19.173-rc1_dd974dc3c_arm_shmobile_defconfig_r8a7743-iwg20d-q7-dbcm-ca.dtb_boot
+Submitted: 2021-02-01 14:58:11 (+0000 UTC)
+Started: 2021-02-01 14:58:17 (+0000 UTC)
+Finished: 2021-02-01 15:00:00 (+0000 UTC)
+Duration: 0:01:43
+
+Metadata:
+
+Results:
+
+
+Test Suite 0_kernel-version-inline: http://lava.ciplatform.org/results/155128/0_kernel-version-inline
+Test Case uname: Test passed
+
+Test Suite lava: http://lava.ciplatform.org/results/155128/lava
+Test Case job: Test passed
+Test Case power-off: Test passed
+Measurement: 0.5600000000 seconds
+Test Case 0_kernel-version-inline: Test passed
+Measurement: 0.1500000000 seconds
+Test Case login-action: Test passed
+Measurement: 9.4100000000 seconds
+Test Case kernel-messages: Test passed
+Measurement: 9.0000000000 seconds
+Test Case pdu-reboot: Test passed
+Measurement: 0.5500000000 seconds
+Test Case bootloader-overlay: Test passed
+Test Case test-runscript-overlay: Test passed
+Test Case test-install-overlay: Test passed
+Test Case test-overlay: Test passed
+Test Case http-download: Test passed
+Measurement: 13.1900000000 seconds
+Test Case http-download: Test passed
+Measurement: 0.8300000000 seconds
+Test Case http-download: Test passed
+Measurement: 3.2000000000 seconds
+Test Case validate: Test passed
+No query is set for results comparing.
 
 -- 
 LAVA
@@ -65,8 +98,8 @@ Linaro Automated Validation Architecture
 
 -=-=-=-=-=-=-=-=-=-=-=-
 Links: You receive all messages sent to this group.
-View/Reply Online (#27951): https://lists.cip-project.org/g/cip-testing-results/message/27951
-Mute This Topic: https://lists.cip-project.org/mt/80282599/4520527
+View/Reply Online (#27952): https://lists.cip-project.org/g/cip-testing-results/message/27952
+Mute This Topic: https://lists.cip-project.org/mt/80287252/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129362/1896307328/xyzzy [lists@lfdr.de]
 -=-=-=-=-=-=-=-=-=-=-=-
