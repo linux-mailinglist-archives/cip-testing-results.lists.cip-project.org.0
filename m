@@ -1,20 +1,20 @@
-Return-Path: <bounce+64575+34574+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+34575+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id E7A6736A52B
-	for <lists@lfdr.de>; Sun, 25 Apr 2021 08:46:38 +0200 (CEST)
-X-Received: by 127.0.0.2 with SMTP id cG8jYY4521862x7QcOzvLoOx; Sat, 24 Apr 2021 23:46:37 -0700
+	by mail.lfdr.de (Postfix) with ESMTPS id 8325636A52C
+	for <lists@lfdr.de>; Sun, 25 Apr 2021 08:46:39 +0200 (CEST)
+X-Received: by 127.0.0.2 with SMTP id gVKkYY4521862xq2AWW3ENar; Sat, 24 Apr 2021 23:46:38 -0700
 X-Received: from a27-22.smtp-out.us-west-2.amazonses.com (a27-22.smtp-out.us-west-2.amazonses.com [54.240.27.22])
- by mx.groups.io with SMTP id smtpd.web09.8392.1619333197245305360
+ by mx.groups.io with SMTP id smtpd.web11.8499.1619333197803615369
  for <cip-testing-results@lists.cip-project.org>;
  Sat, 24 Apr 2021 23:46:37 -0700
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 220037 r8a7743-iwg20d-q7 healthcheck
+Subject: [cip-testing-results] LAVA notification for Test Job 220038 r8a7743-iwg20d-q7 healthcheck
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Sun, 25 Apr 2021 06:46:36 +0000
-Message-ID: <0101017907c7a922-7576d0e7-6015-48d6-94ec-89c22747031f-000000@us-west-2.amazonses.com>
+Date: Sun, 25 Apr 2021 06:46:37 +0000
+Message-ID: <0101017907c7ad15-77276e68-5378-49e0-91ab-edfd9fd88b39-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 X-SES-Outgoing: 2021.04.25-54.240.27.22
 Precedence: Bulk
@@ -26,29 +26,29 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: sQ4gUW0RRWgbmldSGTVxaXhtx4520527AA=
+X-Gm-Message-State: 6E9KXo1i2AfPybWk2fjjR3Azx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1619333197;
- bh=zjXGFXoVk7PKpthF21KEKlfFhrl4tauf86T9fnTFLxs=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1619333198;
+ bh=6usf0m1hVIW+a3DkWNtdyct0JOJfIucqfTqRJN1CmFY=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=uvwqeqUnharV6q1Fz2aK4MFWyydVJiTVAgqvcq0p/Jxs8jScfasQtGxJ92E2uBLz+Ag
- JTUB/Xqrp61ldlriHe/NRZYqhnnuOIE/O8pdao/4Gf0iFqtF0u8sEntvNvzHlCpaZzMrF
- hxdBxJoMJkcVdbwCRxUZi/Ec1A/a9vcQeeg=
+ b=w37bbVNLkJKgf+VMPSMis7u0TLEQ3/jxcDRZik5aeB8ssR/KxtikRadfItbDJ2mDH8k
+ rlzgEJ2SpTVncjHNbVyq9pOiWaIZzI71tOONqeukiXyYCVIOlmucYc9V1YDSVA5N6zKe/
+ zrurQtiTtTZpKmqeC2igc4rfb07J4kcCsvE=
 
 
 Hello,
 
-The job with ID # 220037 is now in state Finished and health Complete. Job was submitted by lava-health.
+The job with ID # 220038 is now in state Finished and health Complete. Job was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/220037
+Job details and log file: http://lava.ciplatform.org/scheduler/job/220038
 
 
 
 
 Device details:
-Hostname: r8a7743-iwg20d-q7-02
+Hostname: r8a7743-iwg20d-q7-03
 Type: r8a7743-iwg20d-q7
 Owner: 
 Worker: lab-cip-renesas
@@ -67,8 +67,8 @@ Linaro Automated Validation Architecture
 
 -=-=-=-=-=-=-=-=-=-=-=-
 Links: You receive all messages sent to this group.
-View/Reply Online (#34574): https://lists.cip-project.org/g/cip-testing-results/message/34574
-Mute This Topic: https://lists.cip-project.org/mt/82349342/4520527
+View/Reply Online (#34575): https://lists.cip-project.org/g/cip-testing-results/message/34575
+Mute This Topic: https://lists.cip-project.org/mt/82349343/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129362/4520527/1896307328/xyzzy [lists@lfdr.de]
 -=-=-=-=-=-=-=-=-=-=-=-
