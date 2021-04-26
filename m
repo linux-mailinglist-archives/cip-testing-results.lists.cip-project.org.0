@@ -1,20 +1,20 @@
-Return-Path: <bounce+64575+34794+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+34795+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id D51D936B392
-	for <lists@lfdr.de>; Mon, 26 Apr 2021 14:54:09 +0200 (CEST)
-X-Received: by 127.0.0.2 with SMTP id xv0mYY4521862xl0yVZQfz5X; Mon, 26 Apr 2021 05:54:08 -0700
+	by mail.lfdr.de (Postfix) with ESMTPS id 2F58C36B393
+	for <lists@lfdr.de>; Mon, 26 Apr 2021 14:54:10 +0200 (CEST)
+X-Received: by 127.0.0.2 with SMTP id S2wLYY4521862xlupLftYMOv; Mon, 26 Apr 2021 05:54:08 -0700
 X-Received: from a27-24.smtp-out.us-west-2.amazonses.com (a27-24.smtp-out.us-west-2.amazonses.com [54.240.27.24])
- by mx.groups.io with SMTP id smtpd.web08.6310.1619441647587751496
+ by mx.groups.io with SMTP id smtpd.web08.6311.1619441648007367920
  for <cip-testing-results@lists.cip-project.org>;
- Mon, 26 Apr 2021 05:54:07 -0700
+ Mon, 26 Apr 2021 05:54:08 -0700
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 221655 zynqmp-zcu102 healthcheck
+Subject: [cip-testing-results] LAVA notification for Test Job 221656 zynqmp-zcu102 healthcheck
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Mon, 26 Apr 2021 12:54:06 +0000
-Message-ID: <010101790e3e7b0b-33b55f26-d74d-48c1-a99a-60a7c71f4b9b-000000@us-west-2.amazonses.com>
+Date: Mon, 26 Apr 2021 12:54:07 +0000
+Message-ID: <010101790e3e7e8a-1ef3670b-b43a-4645-be73-84e319ce7a31-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 X-SES-Outgoing: 2021.04.26-54.240.27.24
 Precedence: Bulk
@@ -26,29 +26,29 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: X0Z8aFL5bNEMH47wpMIcXAIpx4520527AA=
+X-Gm-Message-State: mfjNqW8eZ3ndD0kVcXuHL8EPx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
  d=lists.cip-project.org; q=dns/txt; s=20140610; t=1619441648;
- bh=xZN5Rg+gKbd25kZh4x24N1x9+xLtdHLPB8ZHEI1fs/I=;
+ bh=Jh7VoFCOcVZxUAVJ63HqJDzkRYtRiSdpNhp1JMRZfF8=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=smfAK+gUu0dx1QxMIW+9X7mCRMku3XmpbxhZnFD9oHpDKaGZMeF8NUdGDFskyCK0P1r
- Mda3nFQ4oSwJ0yhJgQ5BheArBigpqd7CK3D/LDzcvlMaZyCNamlIoBhx8kHbfsvwxekiH
- JtNa8QWggnn9HRADRpdpg5CfxD/8Ild0538=
+ b=hqyvdZo0O4wdB31iVEfjaMbHABYVcxl0SQlzwPOaRiDIIctUM6KQQgjAnU2KNsqMu3z
+ Tx5DCQffBCJBRFDHUjRByIX66s/1F+K7VDqrhZsqBjE8VbdJIKjDSk41r8F9Nn96RMkMR
+ 3oPuXGNfe8mjkfDgkZ7813W0t0Dw95k+h6g=
 
 
 Hello,
 
-The job with ID # 221655 is now in state Finished and health Complete. Job was submitted by lava-health.
+The job with ID # 221656 is now in state Finished and health Complete. Job was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/221655
+Job details and log file: http://lava.ciplatform.org/scheduler/job/221656
 
 
 
 
 Device details:
-Hostname: zynqmp-zcu102-01
+Hostname: zynqmp-zcu102-02
 Type: zynqmp-zcu102
 Owner: 
 Worker: lab-cip-cybertrust
@@ -67,8 +67,8 @@ Linaro Automated Validation Architecture
 
 -=-=-=-=-=-=-=-=-=-=-=-
 Links: You receive all messages sent to this group.
-View/Reply Online (#34794): https://lists.cip-project.org/g/cip-testing-results/message/34794
-Mute This Topic: https://lists.cip-project.org/mt/82376870/4520527
+View/Reply Online (#34795): https://lists.cip-project.org/g/cip-testing-results/message/34795
+Mute This Topic: https://lists.cip-project.org/mt/82376871/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129362/4520527/1896307328/xyzzy [lists@lfdr.de]
 -=-=-=-=-=-=-=-=-=-=-=-
