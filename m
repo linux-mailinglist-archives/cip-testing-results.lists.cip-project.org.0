@@ -2,9 +2,9 @@ Return-Path: <bounce+64575+47194+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 21F513CC0E9
-	for <lists@lfdr.de>; Sat, 17 Jul 2021 06:04:26 +0200 (CEST)
-X-Received: by 127.0.0.2 with SMTP id DAZDYY4521862x0O73RyxCvg; Fri, 16 Jul 2021 21:04:25 -0700
+	by mail.lfdr.de (Postfix) with ESMTPS id 303DB3CC0EA
+	for <lists@lfdr.de>; Sat, 17 Jul 2021 06:04:45 +0200 (CEST)
+X-Received: by 127.0.0.2 with SMTP id oyjJYY4521862x1VP31nZksF; Fri, 16 Jul 2021 21:04:43 -0700
 X-Received: from a27-27.smtp-out.us-west-2.amazonses.com (a27-27.smtp-out.us-west-2.amazonses.com [54.240.27.27])
  by mx.groups.io with SMTP id smtpd.web12.100.1626494665585505917
  for <cip-testing-results@lists.cip-project.org>;
@@ -26,16 +26,16 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: jocxox7oY1w0AbWJdCeMyXcFx4520527AA=
+X-Gm-Message-State: 7nZtlE7MiuidOeLvRZFcRShRx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1626494665;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1626494683;
  bh=UmSj1FYUOQWdv6OaY65OhZd9wiorhgx22QVqQSCfKno=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=fqoFlN1azxibsuwcqU17L38vZcXqm4Yi8yOTWpcI0ILN4YQu5TCl9H1jG2bbnDyhNTY
- QfFh6oDMLFrB1nD+w95O4UtR8dMClkinC1Vl1YTR7YQ83HYsify+V1KigQNFm4oK5iuIF
- DcG8r6mITuw47vrjsAyNvfRY7pFTPtcAcUU=
+ b=vtcY2khTMkZ2f3OE2FhQyBpHpZLlqmQ8A1hpniLvGFan/3ixXU6WCw7bATn1JHRNRKp
+ 64bulZsmKPKGxkKj+kn6Kl3o+8tBTm4vFkAZqA6cet+WobyKl0GjBiVW0j77M8i2j976/
+ q7jZNXssl6SkiyhchhCLbe/L9Vx2y7yPsj8=
 
 
 Hello,
