@@ -1,22 +1,22 @@
-Return-Path: <bounce+64575+51137+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+51138+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 598EF3E9F7C
-	for <lists@lfdr.de>; Thu, 12 Aug 2021 09:35:39 +0200 (CEST)
-X-Received: by 127.0.0.2 with SMTP id gDJHYY4521862xFV6wL7Fyeg; Thu, 12 Aug 2021 00:35:37 -0700
-X-Received: from a27-50.smtp-out.us-west-2.amazonses.com (a27-50.smtp-out.us-west-2.amazonses.com [54.240.27.50])
- by mx.groups.io with SMTP id smtpd.web12.19305.1628753737587859404
+	by mail.lfdr.de (Postfix) with ESMTPS id 6B3BA3E9F83
+	for <lists@lfdr.de>; Thu, 12 Aug 2021 09:39:39 +0200 (CEST)
+X-Received: by 127.0.0.2 with SMTP id lHQhYY4521862x6SxKFrlaNH; Thu, 12 Aug 2021 00:39:37 -0700
+X-Received: from a27-52.smtp-out.us-west-2.amazonses.com (a27-52.smtp-out.us-west-2.amazonses.com [54.240.27.52])
+ by mx.groups.io with SMTP id smtpd.web11.19282.1628753977483758715
  for <cip-testing-results@lists.cip-project.org>;
- Thu, 12 Aug 2021 00:35:37 -0700
+ Thu, 12 Aug 2021 00:39:37 -0700
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 371599 linux-5.10.y_zImage_siemens_de0-nano-soc_defconfig_5.10.58-rc1_252d84386_arm_siemens_de0-nano-soc_defconfig_socfpga_cyclone5_de0_nano_soc.dtb_boot
+Subject: [cip-testing-results] LAVA notification for Test Job 373732 qemu x86_64 healthcheck
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Thu, 12 Aug 2021 07:35:36 +0000
-Message-ID: <0101017b3949b200-ebc0b8db-89f6-47ba-a809-e5cf81da9821-000000@us-west-2.amazonses.com>
+Date: Thu, 12 Aug 2021 07:39:36 +0000
+Message-ID: <0101017b394d5a6a-abfa7bb7-e774-444c-94f8-919fcf42b8bf-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-X-SES-Outgoing: 2021.08.12-54.240.27.50
+X-SES-Outgoing: 2021.08.12-54.240.27.52
 Precedence: Bulk
 List-Unsubscribe: <mailto:cip-testing-results+unsubscribe@lists.cip-project.org>
 List-Subscribe: <mailto:cip-testing-results+subscribe@lists.cip-project.org>
@@ -26,72 +26,39 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: HcQ2MGnnwib7v8AI7eoA5011x4520527AA=
+X-Gm-Message-State: nWrwKVIoHtwMezmPOQnPSRzTx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1628753737;
- bh=9RnFlrTmBxjgw4i33B4Ktmg9XgA8PZIXO35r1bVOXY4=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1628753977;
+ bh=txgps9F7YuoPlaC6IFg4NC/R0uApzwIjc/oVB6dszZk=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=ONyGCU6xeFypFLVOwR3olYUw40ifvaNPJyE23hwyRTAYFpGwkyhrjsJVRETyScFLHqU
- IFleAs/fY01UD470BhbWfS85oDraD4cXUGjDMpwe7Awao0tMmpiYQKCJ8PZstB+9nOQ2U
- 2TaIwSRU4gnDjhHzLmK4VXGAsBR6LjTn1zY=
+ b=kox7guH/OQRWVHiTx5txy7BElVL3IZf8kr259ApH7ery3n0Id3Mb/I9jw/7AnYdnyPF
+ hLfVpFN8Ch+ZJiS4AR4UkRVR54Gse3FAAJ+GO6k5yKFk+8r90o/9sLHDYNFWBw8X2kuEq
+ Gs2u5DAIh+iLDNBbzsmJ4JoWIHFucCsdjqg=
 
 
 Hello,
 
-The job with ID # 371599 is now in state Finished and health Complete. Job was submitted by CIP-Testing.
+The job with ID # 373732 is now in state Finished and health Complete. Job was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/371599
+Job details and log file: http://lava.ciplatform.org/scheduler/job/373732
 
 
 
 
 Device details:
-Hostname: de0-nano-soc-01
-Type: de0-nano-soc
+Hostname: qemu-02
+Type: qemu
 Owner: 
 Worker: lab-cip-mentor
 Job details:
-Priority: Medium
-Description: linux-5.10.y_zImage_siemens_de0-nano-soc_defconfig_5.10.58-rc1_252d84386_arm_siemens_de0-nano-soc_defconfig_socfpga_cyclone5_de0_nano_soc.dtb_boot
-Submitted: 2021-08-10 18:26:04 (+0000 UTC)
-Started: 2021-08-12 07:27:15 (+0000 UTC)
+Priority: High
+Description: qemu x86_64 healthcheck
+Submitted: 2021-08-12 07:38:29 (+0000 UTC)
+Started: 2021-08-12 07:38:35 (+0000 UTC)
 Finished: 
 Duration: None
-
-Metadata:
-
-Results:
-
-
-Test Suite 0_kernel-version-inline: http://lava.ciplatform.org/results/371599/0_kernel-version-inline
-Test Case uname: Test passed
-
-Test Suite lava: http://lava.ciplatform.org/results/371599/lava
-Test Case job: Test passed
-Test Case power-off: Test passed
-Measurement: 0.4300000000 seconds
-Test Case 0_kernel-version-inline: Test passed
-Measurement: 0.1200000000 seconds
-Test Case login-action: Test passed
-Measurement: 20.6300000000 seconds
-Test Case kernel-messages: Test passed
-Measurement: 19.5300000000 seconds
-Test Case pdu-reboot: Test passed
-Measurement: 0.4600000000 seconds
-Test Case bootloader-overlay: Test passed
-Test Case test-runscript-overlay: Test passed
-Test Case test-install-overlay: Test passed
-Test Case test-overlay: Test passed
-Test Case http-download: Test passed
-Measurement: 363.0900000000 seconds
-Test Case http-download: Test passed
-Measurement: 1.5300000000 seconds
-Test Case http-download: Test passed
-Measurement: 23.3000000000 seconds
-Test Case validate: Test passed
-No query is set for results comparing.
 
 -- 
 LAVA
@@ -100,8 +67,8 @@ Linaro Automated Validation Architecture
 
 -=-=-=-=-=-=-=-=-=-=-=-
 Links: You receive all messages sent to this group.
-View/Reply Online (#51137): https://lists.cip-project.org/g/cip-testing-results/message/51137
-Mute This Topic: https://lists.cip-project.org/mt/84835193/4520527
+View/Reply Online (#51138): https://lists.cip-project.org/g/cip-testing-results/message/51138
+Mute This Topic: https://lists.cip-project.org/mt/84835216/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129362/4520527/1896307328/xyzzy [lists@lfdr.de]
 -=-=-=-=-=-=-=-=-=-=-=-
