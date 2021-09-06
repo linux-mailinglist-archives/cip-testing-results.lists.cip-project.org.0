@@ -1,22 +1,22 @@
-Return-Path: <bounce+64575+54638+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+54639+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 9203940199B
-	for <lists@lfdr.de>; Mon,  6 Sep 2021 12:18:22 +0200 (CEST)
-X-Received: by 127.0.0.2 with SMTP id ujZNYY4521862xPLsNlA4Y1A; Mon, 06 Sep 2021 03:18:21 -0700
-X-Received: from a27-22.smtp-out.us-west-2.amazonses.com (a27-22.smtp-out.us-west-2.amazonses.com [54.240.27.22])
- by mx.groups.io with SMTP id smtpd.web10.20197.1630923500866803054
+	by mail.lfdr.de (Postfix) with ESMTPS id 2B8B54019AC
+	for <lists@lfdr.de>; Mon,  6 Sep 2021 12:20:38 +0200 (CEST)
+X-Received: by 127.0.0.2 with SMTP id v4fRYY4521862xTgmLXMLo1W; Mon, 06 Sep 2021 03:20:36 -0700
+X-Received: from a27-27.smtp-out.us-west-2.amazonses.com (a27-27.smtp-out.us-west-2.amazonses.com [54.240.27.27])
+ by mx.groups.io with SMTP id smtpd.web10.20211.1630923636340038012
  for <cip-testing-results@lists.cip-project.org>;
- Mon, 06 Sep 2021 03:18:20 -0700
+ Mon, 06 Sep 2021 03:20:36 -0700
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 411986 de0-nano-soc healthcheck
+Subject: [cip-testing-results] LAVA notification for Test Job 411989 linux-4.19.y_uImage_shmobile_defconfig_4.19.207-rc1_7ae2c9171_arm_shmobile_defconfig_r8a7743-iwg20d-q7-dbcm-ca.dtb_boot
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Mon, 6 Sep 2021 10:18:19 +0000
-Message-ID: <0101017bba9da8c0-92dc6b47-9bd9-4d92-8f3a-e66513dafe1a-000000@us-west-2.amazonses.com>
+Date: Mon, 6 Sep 2021 10:20:35 +0000
+Message-ID: <0101017bba9fba73-d7cbffbc-fa40-4220-9e57-99b72477e01b-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-X-SES-Outgoing: 2021.09.06-54.240.27.22
+X-SES-Outgoing: 2021.09.06-54.240.27.27
 Precedence: Bulk
 List-Unsubscribe: <mailto:cip-testing-results+unsubscribe@lists.cip-project.org>
 List-Subscribe: <mailto:cip-testing-results+subscribe@lists.cip-project.org>
@@ -26,39 +26,73 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: M6WJ0SwMQtB0bRgrzoem6vKwx4520527AA=
+X-Gm-Message-State: BcTiWgEbECTdhB2gJLxqYP0ix4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1630923501;
- bh=Gk7XC7hErfMbF3laxmfTykTeTFdHx208kD/oIRiUTec=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1630923636;
+ bh=7LGBImkyL9BquE+376n9gOQw2dSppn8Yy1/U0JSwOnM=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=Pjor0Cx0I1gRvdEj62RPdade0RDD1zkearPu4Z/KNZTIanlr/ETH3TArg5yf7qugis5
- DdWws4GW5hxQDBSkPHc4pKNhaT6xRjM6EssQLodrK1WIXWIwtW0FLiU3bAOtJh8SzFR99
- 44FGiNj18zr2KJxoYxW8ZJdCxOxI5KEWOpo=
+ b=MLY14OhMOMHHGa47NKrSLze5fdMepx1yIQbNrJfrgP0l6ZmIOcGMibh7nsvnU61J6Sf
+ 3m3cHsgEDls2vewoQqxAXIWBmf+ISEMgCkzsncdINT5f6L3y+5HVaIPGC946TxuvpTnaJ
+ 1L/F+yhXWoQ0EMl435SSqKwbLhKb5zIohlI=
 
 
 Hello,
 
-The job with ID # 411986 is now in state Finished and health Complete. Job was submitted by lava-health.
+The job with ID # 411989 is now in state Finished and health Complete. Job was submitted by CIP-Testing.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/411986
+Job details and log file: http://lava.ciplatform.org/scheduler/job/411989
 
 
 
 
 Device details:
-Hostname: de0-nano-soc-03
-Type: de0-nano-soc
+Hostname: r8a7743-iwg20d-q7-02
+Type: r8a7743-iwg20d-q7
 Owner: 
-Worker: lab-cip-denx
+Worker: lab-cip-renesas
 Job details:
 Priority: Medium
-Description: de0-nano-soc healthcheck
-Submitted: 2021-09-06 10:15:17 (+0000 UTC)
-Started: 2021-09-06 10:15:18 (+0000 UTC)
+Description: linux-4.19.y_uImage_shmobile_defconfig_4.19.207-rc1_7ae2c9171_arm_shmobile_defconfig_r8a7743-iwg20d-q7-dbcm-ca.dtb_boot
+Submitted: 2021-09-06 10:18:26 (+0000 UTC)
+Started: 2021-09-06 10:18:55 (+0000 UTC)
 Finished: 
 Duration: None
+
+Metadata:
+
+Results:
+
+
+Test Suite 0_kernel-version-inline: http://lava.ciplatform.org/results/411989/0_kernel-version-inline
+Test Case uname: Test passed
+
+Test Suite lava: http://lava.ciplatform.org/results/411989/lava
+Test Case job: Test passed
+Test Case power-off: Test passed
+Measurement: 0.5300000000 seconds
+Test Case 0_kernel-version-inline: Test passed
+Measurement: 0.1200000000 seconds
+Test Case login-action: Test passed
+Measurement: 9.0900000000 seconds
+Test Case kernel-messages: Test passed
+Measurement: 8.6700000000 seconds
+Test Case pdu-reboot: Test passed
+Measurement: 0.5300000000 seconds
+Test Case bootloader-overlay: Test passed
+Test Case test-runscript-overlay: Test passed
+Measurement: 0.0900000000 seconds
+Test Case test-install-overlay: Test passed
+Test Case test-overlay: Test passed
+Test Case http-download: Test passed
+Measurement: 12.9400000000 seconds
+Test Case http-download: Test passed
+Measurement: 0.9600000000 seconds
+Test Case http-download: Test passed
+Measurement: 3.0900000000 seconds
+Test Case validate: Test passed
+No query is set for results comparing.
 
 -- 
 LAVA
@@ -67,8 +101,8 @@ Linaro Automated Validation Architecture
 
 -=-=-=-=-=-=-=-=-=-=-=-
 Links: You receive all messages sent to this group.
-View/Reply Online (#54638): https://lists.cip-project.org/g/cip-testing-results/message/54638
-Mute This Topic: https://lists.cip-project.org/mt/85409004/4520527
+View/Reply Online (#54639): https://lists.cip-project.org/g/cip-testing-results/message/54639
+Mute This Topic: https://lists.cip-project.org/mt/85409024/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129362/4520527/1896307328/xyzzy [lists@lfdr.de]
 -=-=-=-=-=-=-=-=-=-=-=-
