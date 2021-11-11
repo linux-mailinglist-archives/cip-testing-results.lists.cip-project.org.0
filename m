@@ -1,22 +1,22 @@
-Return-Path: <bounce+64575+65658+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+65659+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id A83DC44D95B
-	for <lists@lfdr.de>; Thu, 11 Nov 2021 16:44:59 +0100 (CET)
-X-Received: by 127.0.0.2 with SMTP id vLaZYY4521862xXZckemRLt1; Thu, 11 Nov 2021 07:44:58 -0800
-X-Received: from a27-50.smtp-out.us-west-2.amazonses.com (a27-50.smtp-out.us-west-2.amazonses.com [54.240.27.50])
- by mx.groups.io with SMTP id smtpd.web10.1255.1636645498038283357
+	by mail.lfdr.de (Postfix) with ESMTPS id C432444D976
+	for <lists@lfdr.de>; Thu, 11 Nov 2021 16:49:37 +0100 (CET)
+X-Received: by 127.0.0.2 with SMTP id bfDPYY4521862xcLxABbqMvX; Thu, 11 Nov 2021 07:49:36 -0800
+X-Received: from a27-22.smtp-out.us-west-2.amazonses.com (a27-22.smtp-out.us-west-2.amazonses.com [54.240.27.22])
+ by mx.groups.io with SMTP id smtpd.web11.1344.1636645776000434609
  for <cip-testing-results@lists.cip-project.org>;
- Thu, 11 Nov 2021 07:44:58 -0800
+ Thu, 11 Nov 2021 07:49:36 -0800
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 518114 linux-5.10.y_zImage_siemens_de0-nano-soc_defconfig_5.10.79-rc1_b85617a62_arm_siemens_de0-nano-soc_defconfig_socfpga_cyclone5_de0_nano_soc.dtb_smc
+Subject: [cip-testing-results] LAVA notification for Test Job 518115 zynqmp-zcu102 healthcheck
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Thu, 11 Nov 2021 15:44:57 +0000
-Message-ID: <0101017d0fac68f0-61682f4a-7808-4153-924e-89f788db51a3-000000@us-west-2.amazonses.com>
+Date: Thu, 11 Nov 2021 15:49:35 +0000
+Message-ID: <0101017d0fb0a6c5-7fa79d5f-0c8e-46bb-8686-8565c72ba099-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-X-SES-Outgoing: 2021.11.11-54.240.27.50
+X-SES-Outgoing: 2021.11.11-54.240.27.22
 Precedence: Bulk
 List-Unsubscribe: <mailto:cip-testing-results+unsubscribe@lists.cip-project.org>
 List-Subscribe: <mailto:cip-testing-results+subscribe@lists.cip-project.org>
@@ -26,86 +26,39 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: xE0hReTprauC5ZVqwRR95FHXx4520527AA=
+X-Gm-Message-State: xbjmQZN6RuPNtVqYpoCrvZgcx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1636645498;
- bh=kJu7x3Qv6JWFJZkHeR+wb2h6oioBF3gbghIo3Cn0/ik=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1636645776;
+ bh=PCPPslzFPmFr3evGaBNDaU8iA6Ip30GVSaI4cLSMf6I=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=nKJTI4rZl8q2ho4JapSYqEQPiFzMxBqzw0UqSrV6sWqOQQbzePucQt8rY7mCqBSJqp0
- SNdxmRW+k5GkFOGeNaW72k6V1A40EWrIqCriOjPe7pf/su3jxBGLbQ52aLgihNBhXilSz
- j9FyA4iXulHU0Y5/KQcYk27GziBI4qhYlzA=
+ b=FoeeYpv0GmCCGxKedP+YOiN8zirlZ2gyIopxXXwYVr0x18wX+sydqxj4DD9cBmp2Hrq
+ qLEjVjnw5XmX/Zjd5ReFdcXsYvpzXPcwaoHxiJIu14MSJ706lUIUG1aIPnSboNqzbZMDb
+ VxA3udeMyrf1P2zYkKSxJz9VFf5TsbeOICQ=
 
 
 Hello,
 
-The job with ID # 518114 is now in state Finished and health Complete. Job was submitted by CIP-Testing.
+The job with ID # 518115 is now in state Finished and health Complete. Job was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/518114
+Job details and log file: http://lava.ciplatform.org/scheduler/job/518115
 
 
 
 
 Device details:
-Hostname: de0-nano-soc-03
-Type: de0-nano-soc
+Hostname: zynqmp-zcu102-01
+Type: zynqmp-zcu102
 Owner: 
-Worker: lab-cip-denx
+Worker: lab-cip-cybertrust
 Job details:
 Priority: Medium
-Description: linux-5.10.y_zImage_siemens_de0-nano-soc_defconfig_5.10.79-rc1_b85617a62_arm_siemens_de0-nano-soc_defconfig_socfpga_cyclone5_de0_nano_soc.dtb_smc
-Submitted: 2021-11-11 15:41:32 (+0000 UTC)
-Started: 2021-11-11 15:41:56 (+0000 UTC)
+Description: zynqmp-zcu102 healthcheck
+Submitted: 2021-11-11 15:48:50 (+0000 UTC)
+Started: 2021-11-11 15:48:54 (+0000 UTC)
 Finished: 
 Duration: None
-
-Metadata:
-
-Results:
-
-
-Test Suite lava: http://lava.ciplatform.org/results/518114/lava
-Test Case job: Test passed
-Test Case power-off: Test passed
-Measurement: 0.9500000000 seconds
-Test Case 0_spectre-meltdown-checker-test: Test passed
-Measurement: 3.4500000000 seconds
-Test Case login-action: Test passed
-Measurement: 18.3900000000 seconds
-Test Case kernel-messages: Test passed
-Measurement: 17.3400000000 seconds
-Test Case pdu-reboot: Test passed
-Measurement: 23.1000000000 seconds
-Test Case bootloader-overlay: Test passed
-Test Case test-runscript-overlay: Test passed
-Measurement: 0.0300000000 seconds
-Test Case test-install-overlay: Test passed
-Test Case test-overlay: Test passed
-Test Case git-repo-action: Test passed
-Measurement: 3.9500000000 seconds
-Test Case http-download: Test passed
-Measurement: 38.4500000000 seconds
-Test Case http-download: Test passed
-Measurement: 1.0400000000 seconds
-Test Case http-download: Test passed
-Measurement: 5.1300000000 seconds
-Test Case validate: Test passed
-
-Test Suite 0_spectre-meltdown-checker-test: http://lava.ciplatform.org/results/518114/0_spectre-meltdown-checker-test
-Test Case CVE-2019-11091: Test passed
-Test Case CVE-2018-12127: Test passed
-Test Case CVE-2018-12130: Test passed
-Test Case CVE-2018-12126: Test passed
-Test Case CVE-2018-3646: Test passed
-Test Case CVE-2018-3620: Test passed
-Test Case CVE-2018-3615: Test passed
-Test Case CVE-2018-3639: Test passed
-Test Case CVE-2018-3640: Test passed
-Test Case CVE-2017-5754: Test passed
-Test Case CVE-2017-5715: Test passed
-Test Case CVE-2017-5753: Test skipped
-No query is set for results comparing.
 
 -- 
 LAVA
@@ -114,8 +67,8 @@ Linaro Automated Validation Architecture
 
 -=-=-=-=-=-=-=-=-=-=-=-
 Links: You receive all messages sent to this group.
-View/Reply Online (#65658): https://lists.cip-project.org/g/cip-testing-results/message/65658
-Mute This Topic: https://lists.cip-project.org/mt/86984756/4520527
+View/Reply Online (#65659): https://lists.cip-project.org/g/cip-testing-results/message/65659
+Mute This Topic: https://lists.cip-project.org/mt/86984893/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129362/4520527/1896307328/xyzzy [lists@lfdr.de]
 -=-=-=-=-=-=-=-=-=-=-=-
