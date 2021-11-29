@@ -1,22 +1,22 @@
-Return-Path: <bounce+64575+69279+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+69280+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id DF11B461C06
-	for <lists@lfdr.de>; Mon, 29 Nov 2021 17:44:33 +0100 (CET)
-X-Received: by 127.0.0.2 with SMTP id FfqCYY4521862xkI0enWXbrE; Mon, 29 Nov 2021 08:44:32 -0800
-X-Received: from a27-42.smtp-out.us-west-2.amazonses.com (a27-42.smtp-out.us-west-2.amazonses.com [54.240.27.42])
- by mx.groups.io with SMTP id smtpd.web11.63191.1638204272273044864
+	by mail.lfdr.de (Postfix) with ESMTPS id AD8F4461C07
+	for <lists@lfdr.de>; Mon, 29 Nov 2021 17:44:51 +0100 (CET)
+X-Received: by 127.0.0.2 with SMTP id Vcq5YY4521862xfoWfFQXk2p; Mon, 29 Nov 2021 08:44:50 -0800
+X-Received: from a27-27.smtp-out.us-west-2.amazonses.com (a27-27.smtp-out.us-west-2.amazonses.com [54.240.27.27])
+ by mx.groups.io with SMTP id smtpd.web12.63565.1638204290091432758
  for <cip-testing-results@lists.cip-project.org>;
- Mon, 29 Nov 2021 08:44:32 -0800
+ Mon, 29 Nov 2021 08:44:50 -0800
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 558982 patersonc-move-s3-to-eu_Image_renesas_defconfig_4.19.216-cip61_6ecdd6690_arm64_renesas_defconfig_r8a774a1-hihope-rzg2m-ex.dtb_cyclicdeadline
+Subject: [cip-testing-results] LAVA notification for Test Job 558972 r8a774a1-hihope-rzg2m-ex healthcheck
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Mon, 29 Nov 2021 16:44:31 +0000
-Message-ID: <0101017d6c956b3b-b7aadf48-d990-4e9b-b3a2-5bf9f849d64b-000000@us-west-2.amazonses.com>
+Date: Mon, 29 Nov 2021 16:44:49 +0000
+Message-ID: <0101017d6c95b0d5-02d7f562-0cf8-49b4-b93f-00410a0d6107-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-X-SES-Outgoing: 2021.11.29-54.240.27.42
+X-SES-Outgoing: 2021.11.29-54.240.27.27
 Precedence: Bulk
 List-Unsubscribe: <mailto:cip-testing-results+unsubscribe@lists.cip-project.org>
 List-Subscribe: <mailto:cip-testing-results+subscribe@lists.cip-project.org>
@@ -26,56 +26,41 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: FXySSyubVAnT5uVSEOzrSxPlx4520527AA=
+X-Gm-Message-State: EgttJNkjToqs6qFVhUh4zfVmx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1638204272;
- bh=uQwouC9Olvsin4lLfSs1fo0Mx+X6p6IEev3Y0Gu3Srk=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1638204290;
+ bh=RCnE+Wu2I6caifI2SkELgdBH2pg+52wgKRWC8w6q8t8=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=ur3N3SoRoc9LpajTC0o9aNWZiz8AVqZyqzJ+K7yjrCwfPSeWrzg8SvD8V1rIpfO0tCw
- RbQAS/+pOj75O/8UF8omwSY9phMqPzuuGsu7CHc4mdzstrPSKvAVUH5uKn2JGuuLo8Ynm
- e6n5EZMg5bKBliqhi1Va1De8f8Mt/CmvqTY=
+ b=tO+5Yv+iimpEbnbQ7EW6lk+612tRgIMCqDbpz4JQNQ3hOpxZKR8qzlZw2J5W+Uu9MVG
+ aoXJNMFpSUjRfOdbA2A1dorbLDyjafvbQ8lhT7jH+FL0vQXtwtZtRKwqt8VFeY3qt3qW5
+ UUvs0i8YRjCLvxSUwjf+o4zd6G77Iu8h7R4=
 
 
 Hello,
 
-The job with ID # 558982 is now in state Finished and health Incomplete. Jo=
-b was submitted by CIP-Testing.
+The job with ID # 558972 is now in state Finished and health Incomplete. Jo=
+b was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/558982
+Job details and log file: http://lava.ciplatform.org/scheduler/job/558972
 
 
-Job error: Invalid job data: [&#34;Resource unavailable at &#39;https://s3-=
-eu-central-1.amazonaws.com/download2.cip-project.org/cip-testing/lava-healt=
-hchecks/rfs/core-image-minimal-hihope-rzg2m.tar.gz&#39; (403)&#34;]
-
+Infrastructure error: bootloader-interrupt timed out after 299 seconds
 
 
 Device details:
-Hostname: r8a774a1-hihope-rzg2m-ex-05
+Hostname: r8a774a1-hihope-rzg2m-ex-02
 Type: r8a774a1-hihope-rzg2m-ex
 Owner:=20
-Worker: lab-cip-denx
+Worker: lab-cip-renesas
 Job details:
-Priority: Medium
-Description: patersonc-move-s3-to-eu_Image_renesas_defconfig_4.19.216-cip61=
-_6ecdd6690_arm64_renesas_defconfig_r8a774a1-hihope-rzg2m-ex.dtb_cyclicdeadl=
-ine
-Submitted: 2021-11-29 16:40:20 (+0000 UTC)
-Started: 2021-11-29 16:44:10 (+0000 UTC)
+Priority: High
+Description: r8a774a1-hihope-rzg2m-ex healthcheck
+Submitted: 2021-11-29 16:38:49 (+0000 UTC)
+Started: 2021-11-29 16:39:10 (+0000 UTC)
 Finished:=20
 Duration: None
-
-Metadata:
-
-Results:
-
-
-Test Suite lava: http://lava.ciplatform.org/results/558982/lava
-Test Case job: Test failed
-Test Case validate: Test failed
-No query is set for results comparing.
 
 --=20
 LAVA
@@ -84,9 +69,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#69279): https://lists.cip-project.org/g/cip-testing-res=
-ults/message/69279
-Mute This Topic: https://lists.cip-project.org/mt/87382010/4520527
+View/Reply Online (#69280): https://lists.cip-project.org/g/cip-testing-res=
+ults/message/69280
+Mute This Topic: https://lists.cip-project.org/mt/87382017/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
