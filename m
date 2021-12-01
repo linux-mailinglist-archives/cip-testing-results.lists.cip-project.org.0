@@ -1,22 +1,22 @@
-Return-Path: <bounce+64575+70210+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+70211+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 5F5154653EC
-	for <lists@lfdr.de>; Wed,  1 Dec 2021 18:25:15 +0100 (CET)
-X-Received: by 127.0.0.2 with SMTP id 4ceaYY4521862x6f0uWzFrXq; Wed, 01 Dec 2021 09:25:14 -0800
-X-Received: from a27-52.smtp-out.us-west-2.amazonses.com (a27-52.smtp-out.us-west-2.amazonses.com [54.240.27.52])
- by mx.groups.io with SMTP id smtpd.web08.95123.1638379513727661021
+	by mail.lfdr.de (Postfix) with ESMTPS id D377B4653ED
+	for <lists@lfdr.de>; Wed,  1 Dec 2021 18:25:23 +0100 (CET)
+X-Received: by 127.0.0.2 with SMTP id kKjYYY4521862xKn7okRwnOl; Wed, 01 Dec 2021 09:25:22 -0800
+X-Received: from a27-42.smtp-out.us-west-2.amazonses.com (a27-42.smtp-out.us-west-2.amazonses.com [54.240.27.42])
+ by mx.groups.io with SMTP id smtpd.web11.94836.1638379522159782187
  for <cip-testing-results@lists.cip-project.org>;
- Wed, 01 Dec 2021 09:25:13 -0800
+ Wed, 01 Dec 2021 09:25:22 -0800
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 560892 patersonc-11-add-cip-core-support_bzImage_siemens_ipc227e_defconfig_4.19.217-cip62_dc62e26e3_x86_siemens_ipc227e_defconfig_boot
+Subject: [cip-testing-results] LAVA notification for Test Job 560890 patersonc-11-add-cip-core-support_uImage_renesas_shmobile_defconfig_4.4.291-cip65_65ed894b_arm_renesas_shmobile_defconfig_r8a7743-iwg20d-q7-dbcm-ca.dtb_wlan-smoke
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Wed, 1 Dec 2021 17:25:13 +0000
-Message-ID: <0101017d7707644e-880e0d0d-72c2-444d-8622-29f012d95dd7-000000@us-west-2.amazonses.com>
+Date: Wed, 1 Dec 2021 17:25:21 +0000
+Message-ID: <0101017d77078556-f4b8614c-efc9-4439-a584-f19bacb7187c-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-X-SES-Outgoing: 2021.12.01-54.240.27.52
+X-SES-Outgoing: 2021.12.01-54.240.27.42
 Precedence: Bulk
 List-Unsubscribe: <mailto:cip-testing-results+unsubscribe@lists.cip-project.org>
 List-Subscribe: <mailto:cip-testing-results+subscribe@lists.cip-project.org>
@@ -26,44 +26,44 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: lEU24r4awBb9R9qySXAhcwmax4520527AA=
+X-Gm-Message-State: 06EfheQkxBMYrTZFS2jJ1M0px4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1638379514;
- bh=tVVQ3jg9enf95ztSYoElE7OdqOBvfEIE7+fOS+7FHX8=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1638379522;
+ bh=/NNQoVzQ2Fz8C7bcja/tmnuQsOtVXjQdeXbV30SObOQ=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=IzAMtLeyIgV63Q4hRsfjAILKTL6dKEKGPOJXH/tES6NsgvIbZ/XKP69MXVz9TKgvmMh
- L4Im/J3SnJCL/yI61jcX7lewKHlsdBAka4OfWNwA5KjT4sKyXMHwj+GDAYcVuSwxbHD7Z
- HH120VBmFN21enveBP1Bc7ibKtxgi84tpeU=
+ b=tHJ1GuX/CU/jPsFNLrogZnYlHUqYYso+Bjvnjuc47VKMFLvqCkt5DO6WgBJHhAveZGX
+ 2KV3oDvjLZlMiTkIRsiy6MVliZ4X83pF5j0Tj4i790H57UlzhoRtQPEKcUWl4kcHs8bRa
+ V4eZ7wRqqmbfbaCUVBciYM6m4Amjik89wG8=
 
 
 Hello,
 
-The job with ID # 560892 is now in state Finished and health Incomplete. Jo=
+The job with ID # 560890 is now in state Finished and health Incomplete. Jo=
 b was submitted by CIP-Testing.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/560892
+Job details and log file: http://lava.ciplatform.org/scheduler/job/560890
 
 
 Job error: Invalid job data: [&#34;Resource unavailable at &#39;https://s3.=
-eu-central-1.amazonaws.com/download2.cip-project.org/cip-core/next/simatic-=
-ipc227e/cip-core-image-cip-core-buster-simatic-ipc227e.tar.gz&#39; (403)&#3=
-4;]
+eu-central-1.amazonaws.com/download2.cip-project.org/cip-core/next/iwg20m/c=
+ip-core-image-cip-core-buster-iwg20m.tar.gz&#39; (403)&#34;]
 
 
 
 Device details:
-Hostname: x86-simatic-ipc227e-02
-Type: x86-simatic-ipc227e
+Hostname: r8a7743-iwg20d-q7-04
+Type: r8a7743-iwg20d-q7
 Owner:=20
-Worker: lab-cip-denx
+Worker: lab-cip-renesas
 Job details:
 Priority: Medium
-Description: patersonc-11-add-cip-core-support_bzImage_siemens_ipc227e_defc=
-onfig_4.19.217-cip62_dc62e26e3_x86_siemens_ipc227e_defconfig_boot
-Submitted: 2021-12-01 17:24:25 (+0000 UTC)
-Started: 2021-12-01 17:24:52 (+0000 UTC)
+Description: patersonc-11-add-cip-core-support_uImage_renesas_shmobile_defc=
+onfig_4.4.291-cip65_65ed894b_arm_renesas_shmobile_defconfig_r8a7743-iwg20d-=
+q7-dbcm-ca.dtb_wlan-smoke
+Submitted: 2021-12-01 17:24:10 (+0000 UTC)
+Started: 2021-12-01 17:25:01 (+0000 UTC)
 Finished:=20
 Duration: None
 
@@ -72,7 +72,7 @@ Metadata:
 Results:
 
 
-Test Suite lava: http://lava.ciplatform.org/results/560892/lava
+Test Suite lava: http://lava.ciplatform.org/results/560890/lava
 Test Case job: Test failed
 Test Case validate: Test failed
 No query is set for results comparing.
@@ -84,9 +84,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#70210): https://lists.cip-project.org/g/cip-testing-res=
-ults/message/70210
-Mute This Topic: https://lists.cip-project.org/mt/87433522/4520527
+View/Reply Online (#70211): https://lists.cip-project.org/g/cip-testing-res=
+ults/message/70211
+Mute This Topic: https://lists.cip-project.org/mt/87433531/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
