@@ -1,20 +1,20 @@
-Return-Path: <bounce+64575+72573+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+72574+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id DBE3C474740
-	for <lists@lfdr.de>; Tue, 14 Dec 2021 17:13:02 +0100 (CET)
-X-Received: by 127.0.0.2 with SMTP id 7M4XYY4521862xA0q18PrXLk; Tue, 14 Dec 2021 08:13:01 -0800
+	by mail.lfdr.de (Postfix) with ESMTPS id 6ACCB474741
+	for <lists@lfdr.de>; Tue, 14 Dec 2021 17:13:17 +0100 (CET)
+X-Received: by 127.0.0.2 with SMTP id 8Zk6YY4521862xEzUNByehTS; Tue, 14 Dec 2021 08:13:16 -0800
 X-Received: from a27-22.smtp-out.us-west-2.amazonses.com (a27-22.smtp-out.us-west-2.amazonses.com [54.240.27.22])
  by mx.groups.io with SMTP id smtpd.web12.28035.1639498361130701554
  for <cip-testing-results@lists.cip-project.org>;
- Tue, 14 Dec 2021 08:13:00 -0800
+ Tue, 14 Dec 2021 08:13:15 -0800
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 571699 linux-4.19.y_bzImage_cip_qemu_defconfig_4.19.221_5fd3cce37_x86_cip_qemu_defconfig_smc
+Subject: [cip-testing-results] LAVA notification for Test Job 571700 r8a7743-iwg20d-q7 healthcheck
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Tue, 14 Dec 2021 16:13:00 +0000
-Message-ID: <0101017db9b7f47f-3eb5beaf-b6ef-414f-98ef-9ad2b525be29-000000@us-west-2.amazonses.com>
+Date: Tue, 14 Dec 2021 16:13:15 +0000
+Message-ID: <0101017db9b82e59-a2b7ba42-9134-4f6c-9202-e4d8e831b9f8-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 X-SES-Outgoing: 2021.12.14-54.240.27.22
 Precedence: Bulk
@@ -26,85 +26,40 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: qAb5jKkoRwmJUCpS3CuTeSygx4520527AA=
+X-Gm-Message-State: e9dxowlAwAm3YD3hOTnIaEGox4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1639498381;
- bh=CK9djiRyUK2nHqZRXi8KUnfQdyU/oiZXpiT2VwnC8oA=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1639498396;
+ bh=Nm28H9hqq0zZvzWDV30fbChHc6gRZb8PrlArerefGlc=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=sVScAV4k01VUPyxcPt4KaM04MtOwuJJmsGT06KREtkhVtH5EpZxwlxqKYyChLJHYOpc
- FptmnSfB8/TsrhXeg+SVFoieZtv0xc+yUcJZF+nUIy7Pk/KB2uczl0U3yUsncDOlOuU8A
- PIFWhQ34qwH2NeUtVyJjkDNxReHdVbQW5ys=
+ b=Fz+v/tAgOVO3ta+NWhEHrGyPaet8Xk8wkUYaJckhX54xWFCNsF4pBaCUwPqTmcsF9Ks
+ IzYhPIjZkZ5nC/3cS+Ti3t7dHGCiS+xOJ7cwyRNFzlPEGrux6lhBjX3FPqz/U16X1FssA
+ JS5nQj5EovKAYMGXWjfngL96r89u6gE1XGc=
 
 
 Hello,
 
-The job with ID # 571699 is now in state Finished and health Complete. Job =
-was submitted by CIP-Testing.
+The job with ID # 571700 is now in state Finished and health Complete. Job =
+was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/571699
+Job details and log file: http://lava.ciplatform.org/scheduler/job/571700
 
 
 
 
 Device details:
-Hostname: qemu-03
-Type: qemu
+Hostname: r8a7743-iwg20d-q7-01
+Type: r8a7743-iwg20d-q7
 Owner:=20
-Worker: lab-cip-cybertrust
+Worker: lab-cip-renesas
 Job details:
 Priority: Medium
-Description: linux-4.19.y_bzImage_cip_qemu_defconfig_4.19.221_5fd3cce37_x86=
-_cip_qemu_defconfig_smc
-Submitted: 2021-12-14 16:11:18 (+0000 UTC)
-Started: 2021-12-14 16:11:40 (+0000 UTC)
+Description: r8a7743-iwg20d-q7 healthcheck
+Submitted: 2021-12-14 16:11:20 (+0000 UTC)
+Started: 2021-12-14 16:11:35 (+0000 UTC)
 Finished:=20
 Duration: None
-
-Metadata:
-
-Results:
-
-
-Test Suite lava: http://lava.ciplatform.org/results/571699/lava
-Test Case validate: Test passed
-Test Case http-download: Test passed
-Measurement: 7.7700000000 seconds
-Test Case http-download: Test passed
-Measurement: 9.1200000000 seconds
-Test Case git-repo-action: Test passed
-Measurement: 3.1200000000 seconds
-Test Case test-overlay: Test passed
-Test Case test-install-overlay: Test passed
-Test Case test-runscript-overlay: Test passed
-Test Case apply-overlay-guest: Test passed
-Measurement: 4.1500000000 seconds
-Test Case execute-qemu: Test passed
-Measurement: 0.3600000000 seconds
-Test Case kernel-messages: Test passed
-Measurement: 10.9800000000 seconds
-Test Case login-action: Test passed
-Measurement: 11.6900000000 seconds
-Test Case 0_spectre-meltdown-checker-test: Test passed
-Measurement: 16.1000000000 seconds
-Test Case job: Test passed
-
-Test Suite 0_spectre-meltdown-checker-test: http://lava.ciplatform.org/resu=
-lts/571699/0_spectre-meltdown-checker-test
-Test Case CVE-2017-5753: Test passed
-Test Case CVE-2017-5715: Test failed
-Test Case CVE-2017-5754: Test passed
-Test Case CVE-2018-3640: Test passed
-Test Case CVE-2018-3639: Test failed
-Test Case CVE-2018-3615: Test passed
-Test Case CVE-2018-3620: Test passed
-Test Case CVE-2018-3646: Test passed
-Test Case CVE-2018-12126: Test passed
-Test Case CVE-2018-12130: Test passed
-Test Case CVE-2018-12127: Test passed
-Test Case CVE-2019-11091: Test passed
-No query is set for results comparing.
 
 --=20
 LAVA
@@ -113,9 +68,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#72573): https://lists.cip-project.org/g/cip-testing-res=
-ults/message/72573
-Mute This Topic: https://lists.cip-project.org/mt/87724248/4520527
+View/Reply Online (#72574): https://lists.cip-project.org/g/cip-testing-res=
+ults/message/72574
+Mute This Topic: https://lists.cip-project.org/mt/87724255/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
