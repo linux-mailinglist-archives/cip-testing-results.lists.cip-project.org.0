@@ -1,20 +1,20 @@
-Return-Path: <bounce+64575+76153+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+76154+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 02A274853B8
-	for <lists@lfdr.de>; Wed,  5 Jan 2022 14:41:58 +0100 (CET)
-X-Received: by 127.0.0.2 with SMTP id ujoKYY4521862xozEgL5eMEB; Wed, 05 Jan 2022 05:41:57 -0800
+	by mail.lfdr.de (Postfix) with ESMTPS id 2B60D4853BC
+	for <lists@lfdr.de>; Wed,  5 Jan 2022 14:42:59 +0100 (CET)
+X-Received: by 127.0.0.2 with SMTP id h0IsYY4521862xgUUeqfpLYJ; Wed, 05 Jan 2022 05:42:57 -0800
 X-Received: from a27-27.smtp-out.us-west-2.amazonses.com (a27-27.smtp-out.us-west-2.amazonses.com [54.240.27.27])
- by mx.groups.io with SMTP id smtpd.web10.333.1641390117302119304
+ by mx.groups.io with SMTP id smtpd.web12.307.1641390177479419511
  for <cip-testing-results@lists.cip-project.org>;
- Wed, 05 Jan 2022 05:41:57 -0800
+ Wed, 05 Jan 2022 05:42:57 -0800
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 590241 ci-iwamatsu-linux-5.10.y-cip-rc_bzImage_cip_qemu_defconfig_5.10.90-cip1_c0cecb724_x86_cip_qemu_defconfig_ltp-ipc-tests
+Subject: [cip-testing-results] LAVA notification for Test Job 590243 ci-iwamatsu-linux-5.10.y-cip-rc_bzImage_cip_qemu_defconfig_5.10.90-cip1_c0cecb724_x86_cip_qemu_defconfig_boot
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Wed, 5 Jan 2022 13:41:56 +0000
-Message-ID: <0101017e2a798dc4-499990de-e514-4d01-8fe9-3972cdff36e9-000000@us-west-2.amazonses.com>
+Date: Wed, 5 Jan 2022 13:42:56 +0000
+Message-ID: <0101017e2a7a7919-326c386e-cac2-4eda-9e95-948a04886882-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 X-SES-Outgoing: 2022.01.05-54.240.27.27
 Precedence: Bulk
@@ -26,26 +26,56 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: 5rmqPZPVtrZ4rm7AC296xK3Rx4520527AA=
+X-Gm-Message-State: jyoKIObyr4aok1KqB2mkVRJPx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1641390117;
- bh=i2lNd7Y6hTawxisdAbuOcyP3lsGMApQkALJdyBK3/AA=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1641390177;
+ bh=DUV7/msr70T+rYHrF0QcnW5y0/I7Z7NsBc3XZ5NheYY=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=vmkofb2646nq5qaWChbSesdJWJZr+/b0u6cbZspvgCy4/Rg6b73Gc/IuFukP0t5nFnL
- 3jzXMIv2UP0+/cR1DLNBjXcx+0nxo+C/rNXbAWnfD3+tN1m5m0dFDDSG+z2d/k7ofA8Wu
- dQYdikzIz6BydRVtcBKOX9Wgh8GFJtSmytk=
+ b=fBYBFfOgLAA6E1OY8uwfb8A+KhNN9+Fkl1VnJHPtfHd+rwlppHOskkJ3NA7Njukd9K0
+ bHyHYnjNsKvWwHow5smaTY6uoLk/EhaUYMnayEwIplLT4z3tuYlKZ5MW5rRZPLw8x2MJ5
+ CHhQhZmjvIi3t0f0ydaQs8YAFWHaib7cWqY=
 
 
 Hello,
 
-The job with ID # 590241 is now in state Finished and health Complete. Job =
-was submitted by CIP-Testing.
+The job with ID # 590243 is now in state Finished and health Incomplete. Jo=
+b was submitted by CIP-Testing.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/590241
+Job details and log file: http://lava.ciplatform.org/scheduler/job/590243
 
 
+Job error: Kernel panic - not syncing: IO-APIC + timer doesn&#39;t work!  B=
+oot with apic=3Ddebug and send a report.  Then try booting with the &#39;no=
+apic&#39; option.
+
+[    1.323844] CPU: 0 PID: 0 Comm: swapper/0 Not tainted 5.10.90-cip1+ #1
+
+[    1.324922] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS =
+1.12.0-1 04/01/2014
+
+[    1.326127] Call Trace:
+
+[    1.327214]  dump_stack+0x57/0x6a
+
+[    1.327964]  panic+0xf6/0x2b7
+
+[    1.328472]  setup_IO_APIC+0x7d2/0x82b
+
+[    1.329233]  ? ioapic_read_entry+0x34/0x40
+
+[    1.329790]  ? clear_IO_APIC_pin+0xb3/0x100
+
+[    1.330392]  apic_intr_mode_init+0xf9/0xff
+
+[    1.330610]  x86_late_time_init+0x1b/0x2b
+
+[    1.331301]  start_kernel+0x481/0x53d
+
+[    1.331523]  secondary_startup_64_no_verify+0xc2/0xcb
+
+[    1.332830] ---[ end Kernel panic
 
 
 Device details:
@@ -56,9 +86,9 @@ Worker: lab-cip-renesas
 Job details:
 Priority: Medium
 Description: ci-iwamatsu-linux-5.10.y-cip-rc_bzImage_cip_qemu_defconfig_5.1=
-0.90-cip1_c0cecb724_x86_cip_qemu_defconfig_ltp-ipc-tests
-Submitted: 2022-01-05 13:15:35 (+0000 UTC)
-Started: 2022-01-05 13:40:16 (+0000 UTC)
+0.90-cip1_c0cecb724_x86_cip_qemu_defconfig_boot
+Submitted: 2022-01-05 13:15:39 (+0000 UTC)
+Started: 2022-01-05 13:42:16 (+0000 UTC)
 Finished:=20
 Duration: None
 
@@ -67,46 +97,29 @@ Metadata:
 Results:
 
 
-Test Suite lava: http://lava.ciplatform.org/results/590241/lava
+Test Suite lava: http://lava.ciplatform.org/results/590243/lava
 Test Case validate: Test passed
 Test Case http-download: Test passed
-Measurement: 4.0200000000 seconds
+Measurement: 3.9600000000 seconds
 Test Case http-download: Test passed
-Measurement: 14.9500000000 seconds
+Measurement: 3.2200000000 seconds
 Test Case test-overlay: Test passed
 Test Case test-install-overlay: Test passed
 Test Case test-runscript-overlay: Test passed
-Measurement: 0.1000000000 seconds
-Test Case git-repo-action: Test passed
-Measurement: 10.3500000000 seconds
-Test Case test-overlay: Test passed
-Test Case test-install-overlay: Test passed
-Test Case test-runscript-overlay: Test passed
-Measurement: 0.0300000000 seconds
+Measurement: 0.0100000000 seconds
 Test Case apply-overlay-guest: Test passed
-Measurement: 19.9500000000 seconds
+Measurement: 13.8000000000 seconds
 Test Case execute-qemu: Test passed
-Measurement: 0.2200000000 seconds
-Test Case kernel-messages: Test passed
-Measurement: 12.7500000000 seconds
-Test Case login-action: Test passed
-Measurement: 13.6200000000 seconds
-Test Case 0_prep-tmp-disk: Test passed
-Measurement: 0.0800000000 seconds
-Test Case 1_ltp-ipc-tests: Test passed
-Measurement: 11.2200000000 seconds
-Test Case job: Test passed
-
-Test Suite 1_ltp-ipc-tests: http://lava.ciplatform.org/results/590241/1_ltp=
--ipc-tests
-Test Case pipeio_1: Test passed
-Test Case pipeio_3: Test passed
-Test Case pipeio_4: Test passed
-Test Case pipeio_5: Test passed
-Test Case pipeio_6: Test passed
-Test Case pipeio_8: Test passed
-Test Case sem01: Test passed
-Test Case sem02: Test failed
+Measurement: 0.2300000000 seconds
+Test Case kernel-messages: Test failed
+Measurement: 1.1800000000 seconds
+Test Case login-action: Test failed
+Measurement: 1.1800000000 seconds
+Test Case auto-login-action: Test failed
+Measurement: 2.7900000000 seconds
+Test Case boot-image-retry: Test failed
+Measurement: 3.0100000000 seconds
+Test Case job: Test failed
 No query is set for results comparing.
 
 --=20
@@ -116,9 +129,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#76153): https://lists.cip-project.org/g/cip-testing-res=
-ults/message/76153
-Mute This Topic: https://lists.cip-project.org/mt/88213493/4520527
+View/Reply Online (#76154): https://lists.cip-project.org/g/cip-testing-res=
+ults/message/76154
+Mute This Topic: https://lists.cip-project.org/mt/88213509/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
