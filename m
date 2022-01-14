@@ -1,20 +1,20 @@
-Return-Path: <bounce+64575+77628+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+77629+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 0778C48EA6A
-	for <lists@lfdr.de>; Fri, 14 Jan 2022 14:13:21 +0100 (CET)
-X-Received: by 127.0.0.2 with SMTP id IIObYY4521862xHYpHzqOjok; Fri, 14 Jan 2022 05:13:20 -0800
+	by mail.lfdr.de (Postfix) with ESMTPS id BF01C48EAD3
+	for <lists@lfdr.de>; Fri, 14 Jan 2022 14:36:26 +0100 (CET)
+X-Received: by 127.0.0.2 with SMTP id D1TgYY4521862xAJdeXAWwgW; Fri, 14 Jan 2022 05:36:25 -0800
 X-Received: from a27-52.smtp-out.us-west-2.amazonses.com (a27-52.smtp-out.us-west-2.amazonses.com [54.240.27.52])
- by mx.groups.io with SMTP id smtpd.web10.6744.1642166000120533274
+ by mx.groups.io with SMTP id smtpd.web10.6970.1642167384601807399
  for <cip-testing-results@lists.cip-project.org>;
- Fri, 14 Jan 2022 05:13:20 -0800
+ Fri, 14 Jan 2022 05:36:24 -0800
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 599492 ci-iwamatsu-linux-4.19.y-cip-rc_Image_ctj_zynqmp_defconfig_4.19.225-cip64_54dcb2987_arm64_ctj_zynqmp_defconfig_zynqmp-zcu102-rev1.0.dtb_ltp-syscalls-tests
+Subject: [cip-testing-results] LAVA notification for Test Job 599491 ci-iwamatsu-linux-4.19.y-cip-rc_bzImage_cip_qemu_defconfig_4.19.225-cip64_54dcb2987_x86_cip_qemu_defconfig_ltp-syscalls-tests
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Fri, 14 Jan 2022 13:13:18 +0000
-Message-ID: <0101017e58b8951b-9f387498-d0e3-494e-92f7-15ef8734630f-000000@us-west-2.amazonses.com>
+Date: Fri, 14 Jan 2022 13:36:23 +0000
+Message-ID: <0101017e58cdb5cf-1b24734d-4898-443f-b471-4a45640a2141-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 X-SES-Outgoing: 2022.01.14-54.240.27.52
 Precedence: Bulk
@@ -26,40 +26,39 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: 1fqX4cFbhFdOY9ZqpDaRF3JKx4520527AA=
+X-Gm-Message-State: n3O0v38NwYcVV2SRPLpJdXkHx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1642166000;
- bh=E+t3b0hot7IW5WcU4OF00X7rGZyWqbtiDX98Wco4PbE=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1642167385;
+ bh=H7T7dqTtdh1ERTJFrrLfw7OGKKyV0hoVziy59YMAUls=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=e3jl46viSvZNFbtvvEYNOjc115NN1ltT+PiHTomPo3KqBFFCZMwftoNFrqIIGRtKnqt
- nGsqLRs+QF7/MG/l2XSoiW18eUtH/OHChmA6gKD1G/SeCQoNKySHYwpH2IS2ibwdrBm29
- n7hHDem38Cl80pXfOGa312Mxya2x2DoqtSc=
+ b=pFURmMEQ++E9ru9+aA712vRxp0fCt3d3f3s6vmZwy9lmmOB6v+KJif05HExUSNmKqMA
+ KdYp4C5IUJE1FmYj3Fg5KB+6vOFzAosfqZYkHKxlyFydWWF8WJUKWrwZCc2Dm/3TKLB4Y
+ bQDU4KWxTGG+7dNM7C2285wUvkOoKfLNqOY=
 
 
 Hello,
 
-The job with ID # 599492 is now in state Finished and health Complete. Job =
+The job with ID # 599491 is now in state Finished and health Complete. Job =
 was submitted by CIP-Testing.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/599492
+Job details and log file: http://lava.ciplatform.org/scheduler/job/599491
 
 
 
 
 Device details:
-Hostname: zynqmp-zcu102-01
-Type: zynqmp-zcu102
+Hostname: qemu-05
+Type: qemu
 Owner:=20
-Worker: lab-cip-cybertrust
+Worker: lab-cip-renesas
 Job details:
 Priority: Medium
-Description: ci-iwamatsu-linux-4.19.y-cip-rc_Image_ctj_zynqmp_defconfig_4.1=
-9.225-cip64_54dcb2987_arm64_ctj_zynqmp_defconfig_zynqmp-zcu102-rev1.0.dtb_l=
-tp-syscalls-tests
-Submitted: 2022-01-14 12:31:03 (+0000 UTC)
-Started: 2022-01-14 13:00:58 (+0000 UTC)
+Description: ci-iwamatsu-linux-4.19.y-cip-rc_bzImage_cip_qemu_defconfig_4.1=
+9.225-cip64_54dcb2987_x86_cip_qemu_defconfig_ltp-syscalls-tests
+Submitted: 2022-01-14 12:31:02 (+0000 UTC)
+Started: 2022-01-14 12:55:43 (+0000 UTC)
 Finished:=20
 Duration: None
 
@@ -68,7 +67,35 @@ Metadata:
 Results:
 
 
-Test Suite 1_ltp-syscalls-tests: http://lava.ciplatform.org/results/599492/=
+Test Suite lava: http://lava.ciplatform.org/results/599491/lava
+Test Case 1_ltp-syscalls-tests: Test passed
+Measurement: 2339.5900000000 seconds
+Test Case job: Test passed
+Test Case validate: Test passed
+Test Case http-download: Test passed
+Measurement: 3.8500000000 seconds
+Test Case http-download: Test passed
+Measurement: 14.8700000000 seconds
+Test Case test-overlay: Test passed
+Test Case test-install-overlay: Test passed
+Test Case test-runscript-overlay: Test passed
+Test Case git-repo-action: Test passed
+Measurement: 9.4300000000 seconds
+Test Case test-overlay: Test passed
+Test Case test-install-overlay: Test passed
+Test Case test-runscript-overlay: Test passed
+Test Case apply-overlay-guest: Test passed
+Measurement: 19.1000000000 seconds
+Test Case execute-qemu: Test passed
+Measurement: 0.2500000000 seconds
+Test Case kernel-messages: Test passed
+Measurement: 12.8400000000 seconds
+Test Case login-action: Test passed
+Measurement: 13.7200000000 seconds
+Test Case 0_prep-tmp-disk: Test passed
+Measurement: 0.0800000000 seconds
+
+Test Suite 1_ltp-syscalls-tests: http://lava.ciplatform.org/results/599491/=
 1_ltp-syscalls-tests
 Test Case abort01: Test passed
 Test Case accept01: Test passed
@@ -145,7 +172,7 @@ Test Case clone05: Test passed
 Test Case clone06: Test passed
 Test Case clone07: Test passed
 Test Case clone08: Test passed
-Test Case clone09: Test skipped
+Test Case clone09: Test passed
 Test Case close01: Test passed
 Test Case close02: Test passed
 Test Case close08: Test passed
@@ -183,7 +210,7 @@ Test Case epoll_wait01: Test passed
 Test Case epoll_wait02: Test passed
 Test Case epoll_wait03: Test passed
 Test Case epoll_pwait01: Test passed
-Test Case eventfd01: Test skipped
+Test Case eventfd01: Test passed
 Test Case eventfd2_01: Test passed
 Test Case eventfd2_02: Test passed
 Test Case eventfd2_03: Test passed
@@ -199,7 +226,7 @@ Test Case execve05: Test passed
 Test Case execvp01: Test passed
 Test Case execveat01: Test passed
 Test Case execveat02: Test passed
-Test Case execveat03: Test skipped
+Test Case execveat03: Test passed
 Test Case exit01: Test passed
 Test Case exit02: Test passed
 Test Case exit_group01: Test passed
@@ -369,15 +396,15 @@ Test Case ftruncate03: Test passed
 Test Case ftruncate03_64: Test passed
 Test Case ftruncate04: Test passed
 Test Case ftruncate04_64: Test passed
-Test Case futimesat01: Test skipped
+Test Case futimesat01: Test passed
 Test Case getcontext01: Test passed
 Test Case getcpu01: Test passed
 Test Case getcwd01: Test passed
 Test Case getcwd02: Test passed
 Test Case getcwd03: Test passed
-Test Case getcwd04: Test passed
-Test Case getdents01: Test skipped
-Test Case getdents02: Test skipped
+Test Case getcwd04: Test skipped
+Test Case getdents01: Test passed
+Test Case getdents02: Test passed
 Test Case getdents01_64: Test passed
 Test Case getdents02_64: Test passed
 Test Case getdomainname01: Test passed
@@ -416,7 +443,7 @@ Test Case getppid02: Test passed
 Test Case getpriority01: Test passed
 Test Case getpriority02: Test passed
 Test Case getrandom01: Test passed
-Test Case getrandom02: Test passed
+Test Case getrandom02: Test failed
 Test Case getrandom03: Test passed
 Test Case getrandom04: Test passed
 Test Case getresgid01: Test passed
@@ -439,7 +466,7 @@ Test Case get_robust_list01: Test passed
 Test Case getrusage01: Test passed
 Test Case getrusage02: Test passed
 Test Case getrusage03: Test passed
-Test Case getrusage04: Test passed
+Test Case getrusage04: Test skipped
 Test Case getsid01: Test passed
 Test Case getsid02: Test passed
 Test Case getsockname01: Test passed
@@ -456,20 +483,20 @@ Test Case getxattr01: Test skipped
 Test Case getxattr02: Test skipped
 Test Case getxattr03: Test skipped
 Test Case getxattr04: Test skipped
-Test Case getxattr05: Test failed
+Test Case getxattr05: Test passed
 Test Case ioctl01_02: Test passed
-Test Case ioctl03: Test passed
+Test Case ioctl03: Test skipped
 Test Case ioctl04: Test passed
 Test Case ioctl05: Test passed
 Test Case ioctl06: Test passed
 Test Case ioctl07: Test passed
 Test Case ioctl08: Test skipped
-Test Case ioctl_ns01: Test failed
-Test Case ioctl_ns02: Test failed
-Test Case ioctl_ns03: Test failed
-Test Case ioctl_ns04: Test failed
-Test Case ioctl_ns05: Test failed
-Test Case ioctl_ns06: Test failed
+Test Case ioctl_ns01: Test passed
+Test Case ioctl_ns02: Test passed
+Test Case ioctl_ns03: Test passed
+Test Case ioctl_ns04: Test passed
+Test Case ioctl_ns05: Test passed
+Test Case ioctl_ns06: Test passed
 Test Case ioctl_ns07: Test passed
 Test Case inotify_init1_01: Test passed
 Test Case inotify_init1_02: Test passed
@@ -619,9 +646,9 @@ Test Case mmap13: Test passed
 Test Case mmap14: Test passed
 Test Case mmap15: Test passed
 Test Case mmap16: Test passed
-Test Case modify_ldt01: Test passed
-Test Case modify_ldt02: Test passed
-Test Case modify_ldt03: Test passed
+Test Case modify_ldt01: Test skipped
+Test Case modify_ldt02: Test skipped
+Test Case modify_ldt03: Test skipped
 Test Case mount01: Test passed
 Test Case mount02: Test passed
 Test Case mount03: Test passed
@@ -987,7 +1014,7 @@ Test Case setitimer01: Test passed
 Test Case setitimer02: Test passed
 Test Case setitimer03: Test passed
 Test Case setns01: Test passed
-Test Case setns02: Test skipped
+Test Case setns02: Test passed
 Test Case setpgid01: Test passed
 Test Case setpgid02: Test passed
 Test Case setpgid03: Test passed
@@ -1084,7 +1111,7 @@ Test Case signal02: Test passed
 Test Case signal03: Test passed
 Test Case signal04: Test passed
 Test Case signal05: Test passed
-Test Case signal06: Test skipped
+Test Case signal06: Test passed
 Test Case signalfd01: Test passed
 Test Case signalfd4_01: Test passed
 Test Case signalfd4_02: Test passed
@@ -1152,12 +1179,12 @@ Test Case sysconf01: Test passed
 Test Case sysctl01: Test skipped
 Test Case sysctl03: Test skipped
 Test Case sysctl04: Test skipped
-Test Case sysfs01: Test skipped
-Test Case sysfs02: Test skipped
-Test Case sysfs03: Test skipped
-Test Case sysfs04: Test skipped
-Test Case sysfs05: Test skipped
-Test Case sysfs06: Test skipped
+Test Case sysfs01: Test passed
+Test Case sysfs02: Test passed
+Test Case sysfs03: Test passed
+Test Case sysfs04: Test passed
+Test Case sysfs05: Test passed
+Test Case sysfs06: Test passed
 Test Case sysinfo01: Test passed
 Test Case sysinfo02: Test passed
 Test Case syslog01: Test passed
@@ -1165,11 +1192,11 @@ Test Case syslog02: Test passed
 Test Case syslog03: Test passed
 Test Case syslog04: Test passed
 Test Case syslog05: Test passed
-Test Case syslog06: Test failed
-Test Case syslog07: Test failed
-Test Case syslog08: Test failed
-Test Case syslog09: Test failed
-Test Case syslog10: Test failed
+Test Case syslog06: Test passed
+Test Case syslog07: Test passed
+Test Case syslog08: Test passed
+Test Case syslog09: Test passed
+Test Case syslog10: Test passed
 Test Case syslog11: Test passed
 Test Case syslog12: Test passed
 Test Case tgkill01: Test passed
@@ -1215,8 +1242,8 @@ Test Case umount2_01: Test passed
 Test Case umount2_02: Test passed
 Test Case umount2_03: Test passed
 Test Case userfaultfd01: Test skipped
-Test Case ustat01: Test skipped
-Test Case ustat02: Test skipped
+Test Case ustat01: Test passed
+Test Case ustat02: Test passed
 Test Case utime01: Test passed
 Test Case utime01A: Test passed
 Test Case utime02: Test passed
@@ -1282,42 +1309,11 @@ Test Case copy_file_range01: Test passed
 Test Case statx01: Test passed
 Test Case statx02: Test passed
 Test Case statx03: Test passed
-Test Case statx04: Test failed
+Test Case statx04: Test passed
 Test Case statx05: Test skipped
 Test Case statx06: Test passed
 Test Case statx07: Test skipped
 Test Case membarrier01: Test passed
-
-Test Suite lava: http://lava.ciplatform.org/results/599492/lava
-Test Case validate: Test passed
-Test Case kernel-messages: Test passed
-Measurement: 13.4500000000 seconds
-Test Case login-action: Test passed
-Measurement: 13.6000000000 seconds
-Test Case http-download: Test passed
-Measurement: 29.5100000000 seconds
-Test Case 0_prep-tmp-disk: Test passed
-Measurement: 0.0200000000 seconds
-Test Case http-download: Test passed
-Measurement: 1.3800000000 seconds
-Test Case http-download: Test passed
-Measurement: 43.8200000000 seconds
-Test Case test-overlay: Test passed
-Test Case test-install-overlay: Test passed
-Test Case test-runscript-overlay: Test passed
-Test Case git-repo-action: Test passed
-Measurement: 3.8200000000 seconds
-Test Case test-overlay: Test passed
-Test Case test-install-overlay: Test passed
-Test Case test-runscript-overlay: Test passed
-Test Case bootloader-overlay: Test passed
-Test Case pdu-reboot: Test passed
-Measurement: 0.4700000000 seconds
-Test Case 1_ltp-syscalls-tests: Test passed
-Measurement: 609.6600000000 seconds
-Test Case power-off: Test passed
-Measurement: 0.4700000000 seconds
-Test Case job: Test passed
 No query is set for results comparing.
 
 --=20
@@ -1327,9 +1323,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#77628): https://lists.cip-project.org/g/cip-testing-res=
-ults/message/77628
-Mute This Topic: https://lists.cip-project.org/mt/88420019/4520527
+View/Reply Online (#77629): https://lists.cip-project.org/g/cip-testing-res=
+ults/message/77629
+Mute This Topic: https://lists.cip-project.org/mt/88420420/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
