@@ -1,22 +1,22 @@
-Return-Path: <bounce+64575+78073+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+78074+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 3A53C490060
-	for <lists@lfdr.de>; Mon, 17 Jan 2022 03:54:35 +0100 (CET)
-X-Received: by 127.0.0.2 with SMTP id C5a2YY4521862x0MGeO2gG8J; Sun, 16 Jan 2022 18:54:33 -0800
-X-Received: from a27-50.smtp-out.us-west-2.amazonses.com (a27-50.smtp-out.us-west-2.amazonses.com [54.240.27.50])
- by mx.groups.io with SMTP id smtpd.web09.6431.1642388073425704907
+	by mail.lfdr.de (Postfix) with ESMTPS id 8BDF6490065
+	for <lists@lfdr.de>; Mon, 17 Jan 2022 03:56:48 +0100 (CET)
+X-Received: by 127.0.0.2 with SMTP id ZCGdYY4521862xObO1lbD5iA; Sun, 16 Jan 2022 18:56:47 -0800
+X-Received: from a27-24.smtp-out.us-west-2.amazonses.com (a27-24.smtp-out.us-west-2.amazonses.com [54.240.27.24])
+ by mx.groups.io with SMTP id smtpd.web08.6497.1642388206811375028
  for <cip-testing-results@lists.cip-project.org>;
- Sun, 16 Jan 2022 18:54:33 -0800
+ Sun, 16 Jan 2022 18:56:46 -0800
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 602402 qemu x86_64 healthcheck
+Subject: [cip-testing-results] LAVA notification for Test Job 602395 iwamatsu-gcc_Image_renesas_defconfig_5.10.83-cip1_e27e06399_arm64_renesas_defconfig_r8a774a1-hihope-rzg2m-ex.dtb_smc
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Mon, 17 Jan 2022 02:54:32 +0000
-Message-ID: <0101017e65f526ca-ad7952d4-2aeb-4e94-8c8a-e43fe678430f-000000@us-west-2.amazonses.com>
+Date: Mon, 17 Jan 2022 02:56:46 +0000
+Message-ID: <0101017e65f731e3-bf026a6f-1104-404c-8a45-40007da2fc74-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-X-SES-Outgoing: 2022.01.17-54.240.27.50
+X-SES-Outgoing: 2022.01.17-54.240.27.24
 Precedence: Bulk
 List-Unsubscribe: <mailto:cip-testing-results+unsubscribe@lists.cip-project.org>
 List-Subscribe: <mailto:cip-testing-results+subscribe@lists.cip-project.org>
@@ -26,40 +26,73 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: 1Vgi4jCV0M3XyWDjIC4PteUHx4520527AA=
+X-Gm-Message-State: FfKhiQLf0WC4ROdvdMLBNQ04x4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1642388073;
- bh=Bw2fKDx2vBGZpIyYZDtxoXLCV7DQNtHATdecnZYjv+E=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1642388207;
+ bh=o68qBR//7s7BXs8gJos1jXM85EHwL3yFwQswdCePnj4=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=V2DjKhRa6qEOp10jMb+9PrTFMYZBx5HSyrnSnTDp88k3oTVZjf91w6yNe/c6galtyhk
- mnm57N7Ri3iplidry4hKmZGn6LXoEGZEUhspX0/t1Taz+iH3CvgVkwNoMhAC8GKq54WUi
- XPUE0vrooYtV81YwlbXDUHhEmGXr6MvrbTU=
+ b=lUT1U0eCCMILmsHMKWx8XS30eGOAczM7xD5QPx+A0lfWiVAvbJulFd3SMK5s8wQ8sW+
+ a35Rta6x6fzJCh4p4vaB6UKsQCE97BMer+eUxBaxcTfTGn3X1uMnNKDFWBV/XBd7tZVK+
+ qvGRv8U0ziA/9STxmE7hX11qihPkwuBq6d8=
 
 
 Hello,
 
-The job with ID # 602402 is now in state Finished and health Complete. Job =
-was submitted by lava-health.
+The job with ID # 602395 is now in state Finished and health Complete. Job =
+was submitted by CIP-Testing.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/602402
+Job details and log file: http://lava.ciplatform.org/scheduler/job/602395
 
 
 
 
 Device details:
-Hostname: qemu-03
-Type: qemu
+Hostname: r8a774a1-hihope-rzg2m-ex-03
+Type: r8a774a1-hihope-rzg2m-ex
 Owner:=20
-Worker: lab-cip-cybertrust
+Worker: lab-cip-renesas
 Job details:
-Priority: High
-Description: qemu x86_64 healthcheck
-Submitted: 2022-01-17 02:53:40 (+0000 UTC)
-Started: 2022-01-17 02:53:52 (+0000 UTC)
+Priority: Medium
+Description: iwamatsu-gcc_Image_renesas_defconfig_5.10.83-cip1_e27e06399_ar=
+m64_renesas_defconfig_r8a774a1-hihope-rzg2m-ex.dtb_smc
+Submitted: 2022-01-17 02:47:25 (+0000 UTC)
+Started: 2022-01-17 02:54:25 (+0000 UTC)
 Finished:=20
 Duration: None
+
+Metadata:
+
+Results:
+
+
+Test Suite lava: http://lava.ciplatform.org/results/602395/lava
+Test Case validate: Test passed
+Test Case http-download: Test passed
+Measurement: 8.9900000000 seconds
+Test Case http-download: Test passed
+Measurement: 0.2100000000 seconds
+Test Case http-download: Test passed
+Measurement: 11.2200000000 seconds
+Test Case git-repo-action: Test passed
+Measurement: 24.5400000000 seconds
+Test Case test-overlay: Test passed
+Test Case test-install-overlay: Test passed
+Test Case test-runscript-overlay: Test passed
+Test Case bootloader-overlay: Test passed
+Test Case pdu-reboot: Test passed
+Measurement: 0.5800000000 seconds
+Test Case kernel-messages: Test passed
+Measurement: 19.2600000000 seconds
+Test Case login-action: Test passed
+Measurement: 20.9700000000 seconds
+Test Case 0_spectre-meltdown-checker-test: Test passed
+Measurement: 0.3100000000 seconds
+Test Case power-off: Test passed
+Measurement: 0.5400000000 seconds
+Test Case job: Test passed
+No query is set for results comparing.
 
 --=20
 LAVA
@@ -68,9 +101,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#78073): https://lists.cip-project.org/g/cip-testing-res=
-ults/message/78073
-Mute This Topic: https://lists.cip-project.org/mt/88477504/4520527
+View/Reply Online (#78074): https://lists.cip-project.org/g/cip-testing-res=
+ults/message/78074
+Mute This Topic: https://lists.cip-project.org/mt/88477539/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
