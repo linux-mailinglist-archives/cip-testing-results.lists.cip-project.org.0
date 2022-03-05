@@ -1,22 +1,22 @@
-Return-Path: <bounce+64575+87752+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+87753+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 0D5A24CE7AE
-	for <lists@lfdr.de>; Sun,  6 Mar 2022 00:33:08 +0100 (CET)
-X-Received: by 127.0.0.2 with SMTP id MWrMYY4521862xwBa80r1H7z; Sat, 05 Mar 2022 15:33:07 -0800
-X-Received: from a27-42.smtp-out.us-west-2.amazonses.com (a27-42.smtp-out.us-west-2.amazonses.com [54.240.27.42])
- by mx.groups.io with SMTP id smtpd.web10.10765.1646523187287714754
+	by mail.lfdr.de (Postfix) with ESMTPS id 056704CE7AF
+	for <lists@lfdr.de>; Sun,  6 Mar 2022 00:33:18 +0100 (CET)
+X-Received: by 127.0.0.2 with SMTP id W1xlYY4521862xKiV2BKUT5l; Sat, 05 Mar 2022 15:33:17 -0800
+X-Received: from a27-24.smtp-out.us-west-2.amazonses.com (a27-24.smtp-out.us-west-2.amazonses.com [54.240.27.24])
+ by mx.groups.io with SMTP id smtpd.web11.10691.1646523197234689669
  for <cip-testing-results@lists.cip-project.org>;
- Sat, 05 Mar 2022 15:33:07 -0800
+ Sat, 05 Mar 2022 15:33:17 -0800
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 643047 linux-4.19.y_Image_ctj_zynqmp_defconfig_4.19.233-rc1_5da8d7368_arm64_ctj_zynqmp_defconfig_zynqmp-zcu102-rev1.0.dtb_smc
+Subject: [cip-testing-results] LAVA notification for Test Job 643041 x86-simatic-ipc227e health-check
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Sat, 5 Mar 2022 23:33:06 +0000
-Message-ID: <0101017f5c6dfc2c-754c862d-dc38-46b1-b0c7-94d2c4450e52-000000@us-west-2.amazonses.com>
+Date: Sat, 5 Mar 2022 23:33:16 +0000
+Message-ID: <0101017f5c6e2267-cacb32fc-8c70-47aa-93a2-8d0bb559445d-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-X-SES-Outgoing: 2022.03.05-54.240.27.42
+X-SES-Outgoing: 2022.03.05-54.240.27.24
 Precedence: Bulk
 List-Unsubscribe: <mailto:cip-testing-results+unsubscribe@lists.cip-project.org>
 List-Subscribe: <mailto:cip-testing-results+subscribe@lists.cip-project.org>
@@ -26,73 +26,40 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: Llv4LtC4dMCbp4OEWUSvQhy5x4520527AA=
+X-Gm-Message-State: xIDES9rboIcSGsQb7C213LGqx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1646523187;
- bh=FVcWx13bikyNrr9Lt7EWqrnzr9TEnqa2Xuxnh9Gp5Jc=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1646523197;
+ bh=2hZ91EfRaMM0oeUuDVv2Qd5DR3bbl6egzBGtR+Fxah4=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=pTfhJ4w8YOQrqhYl8MaPyVxEk3eCzcgC+Z81Sd/R1vKv5FLPCIdaDFFJ/e8uPqHdta3
- bQGgIMY1GrBZ1ixL5iBppLIoP6Q6s8EpaCS9Pe9z62gy+a+C2UES4wnizSjQy+3iqjHdV
- f6dvXdtjO7a14EAbvULC07nXAEeMsPmX++Q=
+ b=iWIfu+UieK2F88uTyFlux8I3RH8TDuoqqzu2eJEV+fBPaGmTV+Gz27sIfngrJw4eVM4
+ eiE3nurR+ySdNTNHfDizIStI4nTb4QLynfRoohCAHIpdI0qjTMieeWEht2Z2HsWR6TNyX
+ fb4CFK1m+/FxOe9CRjQPUGQVsYmMQD9de8I=
 
 
 Hello,
 
-The job with ID # 643047 is now in state Finished and health Complete. Job =
-was submitted by CIP-Testing.
+The job with ID # 643041 is now in state Finished and health Complete. Job =
+was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/643047
+Job details and log file: http://lava.ciplatform.org/scheduler/job/643041
 
 
 
 
 Device details:
-Hostname: zynqmp-zcu102-02
-Type: zynqmp-zcu102
+Hostname: x86-simatic-ipc227e-02
+Type: x86-simatic-ipc227e
 Owner:=20
-Worker: lab-cip-cybertrust
+Worker: lab-cip-denx
 Job details:
 Priority: Medium
-Description: linux-4.19.y_Image_ctj_zynqmp_defconfig_4.19.233-rc1_5da8d7368=
-_arm64_ctj_zynqmp_defconfig_zynqmp-zcu102-rev1.0.dtb_smc
-Submitted: 2022-03-05 23:31:26 (+0000 UTC)
-Started: 2022-03-05 23:31:46 (+0000 UTC)
+Description: x86-simatic-ipc227e health-check
+Submitted: 2022-03-05 23:24:27 (+0000 UTC)
+Started: 2022-03-05 23:24:37 (+0000 UTC)
 Finished:=20
 Duration: None
-
-Metadata:
-
-Results:
-
-
-Test Suite lava: http://lava.ciplatform.org/results/643047/lava
-Test Case job: Test passed
-Test Case power-off: Test passed
-Measurement: 0.4700000000 seconds
-Test Case 0_spectre-meltdown-checker-test: Test passed
-Measurement: 0.0700000000 seconds
-Test Case login-action: Test passed
-Measurement: 9.7300000000 seconds
-Test Case kernel-messages: Test passed
-Measurement: 9.5600000000 seconds
-Test Case pdu-reboot: Test passed
-Measurement: 0.4800000000 seconds
-Test Case bootloader-overlay: Test passed
-Test Case test-runscript-overlay: Test passed
-Test Case test-install-overlay: Test passed
-Test Case test-overlay: Test passed
-Test Case git-repo-action: Test passed
-Measurement: 3.3700000000 seconds
-Test Case http-download: Test passed
-Measurement: 16.1700000000 seconds
-Test Case http-download: Test passed
-Measurement: 1.3800000000 seconds
-Test Case http-download: Test passed
-Measurement: 12.1100000000 seconds
-Test Case validate: Test passed
-No query is set for results comparing.
 
 --=20
 LAVA
@@ -101,9 +68,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#87752): https://lists.cip-project.org/g/cip-testing-res=
-ults/message/87752
-Mute This Topic: https://lists.cip-project.org/mt/89580986/4520527
+View/Reply Online (#87753): https://lists.cip-project.org/g/cip-testing-res=
+ults/message/87753
+Mute This Topic: https://lists.cip-project.org/mt/89580988/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
