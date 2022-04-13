@@ -1,20 +1,20 @@
-Return-Path: <bounce+64575+94754+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+94755+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 9A9D7500083
-	for <lists@lfdr.de>; Wed, 13 Apr 2022 23:02:39 +0200 (CEST)
-X-Received: by 127.0.0.2 with SMTP id L13DYY4521862xaOETS5eRbl; Wed, 13 Apr 2022 14:02:38 -0700
+	by mail.lfdr.de (Postfix) with ESMTPS id 355A5500086
+	for <lists@lfdr.de>; Wed, 13 Apr 2022 23:03:59 +0200 (CEST)
+X-Received: by 127.0.0.2 with SMTP id FbdZYY4521862x5KMl1ipmPC; Wed, 13 Apr 2022 14:03:57 -0700
 X-Received: from a27-24.smtp-out.us-west-2.amazonses.com (a27-24.smtp-out.us-west-2.amazonses.com [54.240.27.24])
- by mx.groups.io with SMTP id smtpd.web11.3986.1649883757994480546
+ by mx.groups.io with SMTP id smtpd.web11.3996.1649883837519028478
  for <cip-testing-results@lists.cip-project.org>;
- Wed, 13 Apr 2022 14:02:38 -0700
+ Wed, 13 Apr 2022 14:03:57 -0700
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 663031 linux-4.9.y_bzImage_cip_qemu_defconfig_4.9.310_6348ae07_x86_cip_qemu_defconfig_boot
+Subject: [cip-testing-results] LAVA notification for Test Job 663032 linux-4.9.y_bzImage_cip_qemu_defconfig_4.9.310_6348ae07_x86_cip_qemu_defconfig_smc
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Wed, 13 Apr 2022 21:02:37 +0000
-Message-ID: <0101018024bc3a2b-f182457f-4343-45ee-a39a-a790a531a0f2-000000@us-west-2.amazonses.com>
+Date: Wed, 13 Apr 2022 21:03:56 +0000
+Message-ID: <0101018024bd70c6-5107b468-90c4-4ee3-b32e-4b465f8d9ffa-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 X-SES-Outgoing: 2022.04.13-54.240.27.24
 Precedence: Bulk
@@ -26,39 +26,39 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: cJYJYReYshwpOZVAB6hQYlvsx4520527AA=
+X-Gm-Message-State: My0NRzr1NwPL5o3PjoHFoSG4x4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1649883758;
- bh=46jKwdbEKOSgM0Qsj1i80+Cx6i6GUTN915FcbWk08GY=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1649883837;
+ bh=+QlyNTTFM3GypIqEQwZQnUhM+2bviQ2gpTcxlNG0qAk=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=W0uKut4RY3f0VF6Mghggzpx74zQBzP0eqWTM28Ea0XsgDB9AlYhgwlA3bTdtVURb69Y
- 1QFZJsO8YDA4n/PorwrsJKc/syTS5yKHBQ2PhKlc4U9OZh4XC/2jwTeicdtfxUZaNYyqz
- /ufz3aNrn/GPKO4ZYmMg3Ub3XOuj8/C1pr0=
+ b=uivYMttLb1tRffFUg6cQPvnsI0IEMacE3ydUMAprsuLpTCZCr2LBw1E750F1DxXm11j
+ As/OWA6QBeyVB8pQLBn5Ow00BLcTBvC5Q+g34HYn9crZTwWBM00ZMUjABbLnHAK15FTPd
+ azNUBoyPbg9dH2zI16ts+LzIU+CSHhmFMAg=
 
 
 Hello,
 
-The job with ID # 663031 is now in state Finished and health Complete. Job =
+The job with ID # 663032 is now in state Finished and health Complete. Job =
 was submitted by CIP-Testing.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/663031
+Job details and log file: http://lava.ciplatform.org/scheduler/job/663032
 
 
 
 
 Device details:
-Hostname: qemu-01
+Hostname: qemu-05
 Type: qemu
 Owner:=20
 Worker: lab-cip-renesas
 Job details:
 Priority: Medium
 Description: linux-4.9.y_bzImage_cip_qemu_defconfig_4.9.310_6348ae07_x86_ci=
-p_qemu_defconfig_boot
-Submitted: 2022-04-13 20:48:56 (+0000 UTC)
-Started: 2022-04-13 21:01:36 (+0000 UTC)
+p_qemu_defconfig_smc
+Submitted: 2022-04-13 20:48:59 (+0000 UTC)
+Started: 2022-04-13 21:02:36 (+0000 UTC)
 Finished:=20
 Duration: None
 
@@ -67,30 +67,28 @@ Metadata:
 Results:
 
 
-Test Suite 0_kernel-version-inline: http://lava.ciplatform.org/results/6630=
-31/0_kernel-version-inline
-Test Case uname: Test passed
-
-Test Suite lava: http://lava.ciplatform.org/results/663031/lava
+Test Suite lava: http://lava.ciplatform.org/results/663032/lava
 Test Case job: Test passed
-Test Case 0_kernel-version-inline: Test passed
-Measurement: 0.3300000000 seconds
+Test Case 0_spectre-meltdown-checker-test: Test passed
+Measurement: 0.6200000000 seconds
 Test Case login-action: Test passed
-Measurement: 11.1900000000 seconds
+Measurement: 9.6000000000 seconds
 Test Case kernel-messages: Test passed
-Measurement: 10.5800000000 seconds
+Measurement: 9.0100000000 seconds
 Test Case execute-qemu: Test passed
-Measurement: 0.2200000000 seconds
+Measurement: 0.2100000000 seconds
 Test Case apply-overlay-guest: Test passed
-Measurement: 14.0000000000 seconds
+Measurement: 22.3500000000 seconds
 Test Case test-runscript-overlay: Test passed
-Measurement: 0.0100000000 seconds
+Measurement: 0.0300000000 seconds
 Test Case test-install-overlay: Test passed
 Test Case test-overlay: Test passed
+Test Case git-repo-action: Test passed
+Measurement: 10.4800000000 seconds
 Test Case http-download: Test passed
-Measurement: 3.2000000000 seconds
+Measurement: 3.2300000000 seconds
 Test Case http-download: Test passed
-Measurement: 3.2500000000 seconds
+Measurement: 3.1700000000 seconds
 Test Case validate: Test passed
 No query is set for results comparing.
 
@@ -101,9 +99,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#94754): https://lists.cip-project.org/g/cip-testing-res=
-ults/message/94754
-Mute This Topic: https://lists.cip-project.org/mt/90450925/4520527
+View/Reply Online (#94755): https://lists.cip-project.org/g/cip-testing-res=
+ults/message/94755
+Mute This Topic: https://lists.cip-project.org/mt/90450947/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
