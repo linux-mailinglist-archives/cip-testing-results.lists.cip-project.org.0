@@ -1,22 +1,22 @@
-Return-Path: <bounce+64575+108717+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+108718+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id E1F0D55BD1A
-	for <lists@lfdr.de>; Tue, 28 Jun 2022 04:01:09 +0200 (CEST)
-X-Received: by 127.0.0.2 with SMTP id Y408YY4521862xD7TaCF2frq; Mon, 27 Jun 2022 19:01:08 -0700
-X-Received: from a27-52.smtp-out.us-west-2.amazonses.com (a27-52.smtp-out.us-west-2.amazonses.com [54.240.27.52])
- by mx.groups.io with SMTP id smtpd.web10.50453.1656381668223172124
+	by mail.lfdr.de (Postfix) with ESMTPS id ACC3A55BD1C
+	for <lists@lfdr.de>; Tue, 28 Jun 2022 04:01:49 +0200 (CEST)
+X-Received: by 127.0.0.2 with SMTP id yncUYY4521862xrqTLlCxahm; Mon, 27 Jun 2022 19:01:48 -0700
+X-Received: from a27-22.smtp-out.us-west-2.amazonses.com (a27-22.smtp-out.us-west-2.amazonses.com [54.240.27.22])
+ by mx.groups.io with SMTP id smtpd.web08.51170.1656381707825386747
  for <cip-testing-results@lists.cip-project.org>;
- Mon, 27 Jun 2022 19:01:08 -0700
+ Mon, 27 Jun 2022 19:01:47 -0700
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 702634 beaglebone-black healthcheck
+Subject: [cip-testing-results] LAVA notification for Test Job 702612 v4.19.249-cip76_Image_ctj_zynqmp_defconfig_4.19.249-cip76_c293ac909_arm64_ctj_zynqmp_defconfig_zynqmp-zcu102-rev1.0.dtb_boot
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Tue, 28 Jun 2022 02:01:07 +0000
-Message-ID: <01010181a80a77d0-2458a032-5947-4903-8f54-1353be1f6fb8-000000@us-west-2.amazonses.com>
+Date: Tue, 28 Jun 2022 02:01:46 +0000
+Message-ID: <01010181a80b1291-030fc1bb-cea2-400c-95da-90f44d4a718b-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-X-SES-Outgoing: 2022.06.28-54.240.27.52
+X-SES-Outgoing: 2022.06.28-54.240.27.22
 Precedence: Bulk
 List-Unsubscribe: <mailto:cip-testing-results+unsubscribe@lists.cip-project.org>
 List-Subscribe: <mailto:cip-testing-results+subscribe@lists.cip-project.org>
@@ -26,40 +26,75 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: LhbrcEE9WRcROH8FLYe6lW0dx4520527AA=
+X-Gm-Message-State: xZRFYW9hshHgOtlMgODdhnGAx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1656381668;
- bh=4PuFwM9mLJXx/6ihWdF/L1KtO6PrwBGvZ8O9Q/FPOeM=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1656381708;
+ bh=9ZiewSXuD8/5ecT+jP4NA6nurnwM4ZsRCGXDXDCdVzo=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=MRqg7fo0m4rSgiYsgJQQFFF1vZJ1Bf8M1GPHGgsA9O4S/2VGN65wLN7hdsAOQAUtV9g
- S7JVx85xJ9ejW4CWxDzdRcLVuF4Ud58s/WSyZBTwy27mzUPOlIRBjBt3Po/ZFGGmsnpiI
- gcgBdVqRh0l9jNSFbB6p9qqfGx98xzyb1xI=
+ b=Y2USg3woJxpBZIl+U5+NVBQlXNbzmkVRf2H4XYPgtNsmM17v0kfF8yyFcxKJTSCukOD
+ GZ4ccZea9CtZBWelUxnFgU7tMOgYx5MHQeCk921Z2xym3ScLz6apzMfxzAnZtfFeGZSxP
+ zlHamB+4ET0J6k78g3R8gASUSMQL8ghB75I=
 
 
 Hello,
 
-The job with ID # 702634 is now in state Finished and health Complete. Job =
-was submitted by lava-health.
+The job with ID # 702612 is now in state Finished and health Complete. Job =
+was submitted by CIP-Testing.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/702634
+Job details and log file: http://lava.ciplatform.org/scheduler/job/702612
 
 
 
 
 Device details:
-Hostname: bbb-03
-Type: beaglebone-black
+Hostname: zynqmp-zcu102-01
+Type: zynqmp-zcu102
 Owner:=20
 Worker: lab-cip-cybertrust
 Job details:
 Priority: Medium
-Description: beaglebone-black healthcheck
-Submitted: 2022-06-28 01:59:30 (+0000 UTC)
-Started: 2022-06-28 01:59:46 (+0000 UTC)
+Description: v4.19.249-cip76_Image_ctj_zynqmp_defconfig_4.19.249-cip76_c293=
+ac909_arm64_ctj_zynqmp_defconfig_zynqmp-zcu102-rev1.0.dtb_boot
+Submitted: 2022-06-28 01:36:15 (+0000 UTC)
+Started: 2022-06-28 02:00:46 (+0000 UTC)
 Finished:=20
 Duration: None
+
+Metadata:
+
+Results:
+
+
+Test Suite lava: http://lava.ciplatform.org/results/702612/lava
+Test Case validate: Test passed
+Test Case http-download: Test passed
+Measurement: 12.3400000000 seconds
+Test Case http-download: Test passed
+Measurement: 1.4300000000 seconds
+Test Case http-download: Test passed
+Measurement: 10.6400000000 seconds
+Test Case test-overlay: Test passed
+Test Case test-install-overlay: Test passed
+Test Case test-runscript-overlay: Test passed
+Test Case bootloader-overlay: Test passed
+Test Case pdu-reboot: Test passed
+Measurement: 0.5000000000 seconds
+Test Case kernel-messages: Test passed
+Measurement: 8.9100000000 seconds
+Test Case login-action: Test passed
+Measurement: 9.0600000000 seconds
+Test Case 0_kernel-version-inline: Test passed
+Measurement: 0.0500000000 seconds
+Test Case power-off: Test passed
+Measurement: 0.5000000000 seconds
+Test Case job: Test passed
+
+Test Suite 0_kernel-version-inline: http://lava.ciplatform.org/results/7026=
+12/0_kernel-version-inline
+Test Case uname: Test passed
+No query is set for results comparing.
 
 --=20
 LAVA
@@ -68,9 +103,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#108717): https://lists.cip-project.org/g/cip-testing-re=
-sults/message/108717
-Mute This Topic: https://lists.cip-project.org/mt/92036328/4520527
+View/Reply Online (#108718): https://lists.cip-project.org/g/cip-testing-re=
+sults/message/108718
+Mute This Topic: https://lists.cip-project.org/mt/92036342/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
