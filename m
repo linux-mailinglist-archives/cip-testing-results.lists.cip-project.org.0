@@ -1,20 +1,20 @@
-Return-Path: <bounce+64575+113864+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+113865+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 8FAFB57C7D2
-	for <lists@lfdr.de>; Thu, 21 Jul 2022 11:38:38 +0200 (CEST)
-X-Received: by 127.0.0.2 with SMTP id dF1uYY4521862xqxFKOvw23o; Thu, 21 Jul 2022 02:38:37 -0700
+	by mail.lfdr.de (Postfix) with ESMTPS id 0590657C7D5
+	for <lists@lfdr.de>; Thu, 21 Jul 2022 11:38:58 +0200 (CEST)
+X-Received: by 127.0.0.2 with SMTP id yo1gYY4521862xG3SoqEpQmg; Thu, 21 Jul 2022 02:38:57 -0700
 X-Received: from a27-24.smtp-out.us-west-2.amazonses.com (a27-24.smtp-out.us-west-2.amazonses.com [54.240.27.24])
- by mx.groups.io with SMTP id smtpd.web12.4304.1658396316893296491
+ by mx.groups.io with SMTP id smtpd.web09.4444.1658396337246024659
  for <cip-testing-results@lists.cip-project.org>;
- Thu, 21 Jul 2022 02:38:37 -0700
+ Thu, 21 Jul 2022 02:38:57 -0700
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 714794 ci-iwamatsu-linux-5.10.y-cip-rc_uImage_renesas_shmobile_defconfig_5.10.129-cip12_e4e007863_arm_renesas_shmobile_defconfig_r8a7743-iwg20d-q7-dbcm-ca.dtb_ltp-ipc-tests
+Subject: [cip-testing-results] LAVA notification for Test Job 714802 ci-iwamatsu-linux-5.10.y-cip-rc_Image_renesas_defconfig_5.10.129-cip12_e4e007863_arm64_renesas_defconfig_r8a774a1-hihope-rzg2m-ex.dtb_ltp-cve-tests
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Thu, 21 Jul 2022 09:38:35 +0000
-Message-ID: <01010182201f900a-84ae276f-dab6-479c-a5e7-7b306e5c808e-000000@us-west-2.amazonses.com>
+Date: Thu, 21 Jul 2022 09:38:56 +0000
+Message-ID: <01010182201fe0f8-ca3cbcce-c9b0-4b49-95ca-c479ab514d8c-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 X-SES-Outgoing: 2022.07.21-54.240.27.24
 Precedence: Bulk
@@ -26,102 +26,58 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: hPoh5UCx2SaOUgsNnJiGLtUHx4520527AA=
+X-Gm-Message-State: E0TrrN6irAYTP0EXTCukamjSx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1658396317;
- bh=cVme/6fBS0NknA3rG1I7WZwb35xBAQnVvPMG7+++MQg=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1658396337;
+ bh=JgCyDxqN8kTkyO7Fv+o0r4T6owXRo5Orozv4fUvINXY=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=fcedPP9lpJoH7oTifFatHbyRMzSm9HJYF/4/qi7izX/h5G1M1lBwIS9XUxTgw0fhtsL
- dIR5jbn6ECypTJeY7pnMynxfqIRdgZWMKg+At7iOteoF4BLkZ8dvf36CEjrmpZXjHiL5Q
- L1zUF5mfg65rf6Zi7AhwrNxLeWslQEU3vzY=
+ b=rjnwPp4bat+X9X15aI7jijSldsIePWFqCRhJW3U/DmdqKj4zZ80pgDemvxkSIBzlrp9
+ aJUTqZELsiG2gRDvhCjHIE4r/hQzX5/gii2gRKvNMB4wkrC7Sqmk/0V5aAOwYPI11zY0T
+ luC/mQ+yyMpsCPl4BLNP+jwwokYkSSDWhsI=
 
 
 Hello,
 
-The job with ID # 714794 is now in state Finished and health Incomplete. Jo=
+The job with ID # 714802 is now in state Finished and health Incomplete. Jo=
 b was submitted by CIP-Testing.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/714794
+Job details and log file: http://lava.ciplatform.org/scheduler/job/714802
 
 
 Job error: Kernel panic - not syncing: No working init found.  Try passing =
 init=3D option to kernel. See Linux Documentation/admin-guide/init.rst for =
 guidance.
-[  106.165005] CPU: 0 PID: 1 Comm: swapper/0 Not tainted 5.10.129-cip12-ge4=
-e007863cc7 #1
-[  106.172848] Hardware name: Generic RZ/G1 (Flattened Device Tree)
-[  106.178915] [&lt;c010da88&gt;] (unwind_backtrace) from [&lt;c01099bc&gt;=
-] (show_stack+0x10/0x14)
-[  106.186692] [&lt;c01099bc&gt;] (show_stack) from [&lt;c07cdf54&gt;] (dum=
-p_stack+0x88/0xa4)
-[  106.193947] [&lt;c07cdf54&gt;] (dump_stack) from [&lt;c07c6b24&gt;] (pan=
-ic+0xf8/0x320)
-[  106.200852] [&lt;c07c6b24&gt;] (panic) from [&lt;c07ce5e8&gt;] (kernel_i=
-nit+0xe0/0x118)
-[  106.207841] [&lt;c07ce5e8&gt;] (kernel_init) from [&lt;c0100148&gt;] (re=
-t_from_fork+0x14/0x2c)
-[  106.215426] Exception stack(0xc109ffb0 to 0xc109fff8)
-[  106.220498] ffa0:                                     00000000 00000000 =
-00000000 00000000
-[  106.228699] ffc0: 00000000 00000000 00000000 00000000 00000000 00000000 =
-00000000 00000000
-[  106.236896] ffe0: 00000000 00000000 00000000 00000000 00000013 00000000
-[  106.243549] CPU1: stopping
-[  106.246290] CPU: 1 PID: 0 Comm: swapper/1 Not tainted 5.10.129-cip12-ge4=
-e007863cc7 #1
-[  106.254135] Hardware name: Generic RZ/G1 (Flattened Device Tree)
-[  106.260190] [&lt;c010da88&gt;] (unwind_backtrace) from [&lt;c01099bc&gt;=
-] (show_stack+0x10/0x14)
-[  106.267966] [&lt;c01099bc&gt;] (show_stack) from [&lt;c07cdf54&gt;] (dum=
-p_stack+0x88/0xa4)
-[  106.275219] [&lt;c07cdf54&gt;] (dump_stack) from [&lt;c010b8fc&gt;] (do_=
-handle_IPI+0x1e8/0x2ac)
-[  106.282906] [&lt;c010b8fc&gt;] (do_handle_IPI) from [&lt;c010b9d4&gt;] (=
-ipi_handler+0x14/0x20)
-[  106.290512] [&lt;c010b9d4&gt;] (ipi_handler) from [&lt;c01685a4&gt;] (ha=
-ndle_percpu_devid_fasteoi_ipi+0x4c/0x60)
-[  106.299679] [&lt;c01685a4&gt;] (handle_percpu_devid_fasteoi_ipi) from [&=
-lt;c0163624&gt;] (generic_handle_irq+0x28/0x38)
-[  106.309448] [&lt;c0163624&gt;] (generic_handle_irq) from [&lt;c01636c4&g=
-t;] (__handle_domain_irq+0x90/0xa0)
-[  106.318180] [&lt;c01636c4&gt;] (__handle_domain_irq) from [&lt;c03e70b8&=
-gt;] (gic_handle_irq+0x6c/0x7c)
-[  106.326562] [&lt;c03e70b8&gt;] (gic_handle_irq) from [&lt;c0100b8c&gt;] =
-(__irq_svc+0x6c/0x90)
-[  106.334060] Exception stack(0xc10c5f78 to 0xc10c5fc0)
-[  106.339131] 5f60:                                                       =
-00002a10 00000000
-[  106.347334] 5f80: 00002a10 c0115cc0 ffffe000 c10c4000 c0c04cd4 c0c04d18 =
-4000406a 413fc0f2
-[  106.355535] 5fa0: 00000000 00000000 00000000 c10c5fc8 c0106908 c01068f8 =
-60000013 ffffffff
-[  106.363744] [&lt;c0100b8c&gt;] (__irq_svc) from [&lt;c01068f8&gt;] (arch=
-_cpu_idle+0x1c/0x38)
-[  106.371176] [&lt;c01068f8&gt;] (arch_cpu_idle) from [&lt;c07d1fa0&gt;] (=
-default_idle_call+0x38/0x60)
-[  106.379299] [&lt;c07d1fa0&gt;] (default_idle_call) from [&lt;c0145a14&gt=
-;] (do_idle+0xc8/0x110)
-[  106.386985] [&lt;c0145a14&gt;] (do_idle) from [&lt;c0145ccc&gt;] (cpu_st=
-artup_entry+0x18/0x1c)
-[  106.394580] [&lt;c0145ccc&gt;] (cpu_startup_entry) from [&lt;401015ac&gt=
-;] (0x401015ac)
-[  106.401587] ---[ end Kernel panic
+[  107.564728] CPU: 2 PID: 1 Comm: swapper/0 Not tainted 5.10.129-cip12-arm=
+64-renesas-ge4e007863cc7 #1
+[  107.573792] Hardware name: HopeRun HiHope RZ/G2M with sub board (DT)
+[  107.580165] Call trace:
+[  107.582650]  dump_backtrace+0x0/0x1b0
+[  107.586337]  show_stack+0x18/0x24
+[  107.589679]  dump_stack+0xf8/0x168
+[  107.593104]  panic+0x180/0x368
+[  107.596181]  kernel_init+0xf8/0x114
+[  107.599693]  ret_from_fork+0x10/0x30
+[  107.603475] SMP: stopping secondary CPUs
+[  107.607448] Kernel Offset: disabled
+[  107.611015] CPU features: 0x8240022,21002004
+[  107.615305] Memory Limit: none
+[  107.618431] ---[ end Kernel panic
 
 
 Device details:
-Hostname: r8a7743-iwg20d-q7-06
-Type: r8a7743-iwg20d-q7
+Hostname: r8a774a1-hihope-rzg2m-ex-06
+Type: r8a774a1-hihope-rzg2m-ex
 Owner:=20
 Worker: lab-cip-denx
 Job details:
 Priority: Medium
-Description: ci-iwamatsu-linux-5.10.y-cip-rc_uImage_renesas_shmobile_defcon=
-fig_5.10.129-cip12_e4e007863_arm_renesas_shmobile_defconfig_r8a7743-iwg20d-=
-q7-dbcm-ca.dtb_ltp-ipc-tests
-Submitted: 2022-07-21 09:29:42 (+0000 UTC)
-Started: 2022-07-21 09:34:36 (+0000 UTC)
+Description: ci-iwamatsu-linux-5.10.y-cip-rc_Image_renesas_defconfig_5.10.1=
+29-cip12_e4e007863_arm64_renesas_defconfig_r8a774a1-hihope-rzg2m-ex.dtb_ltp=
+-cve-tests
+Submitted: 2022-07-21 09:30:47 (+0000 UTC)
+Started: 2022-07-21 09:35:15 (+0000 UTC)
 Finished:=20
 Duration: None
 
@@ -130,39 +86,40 @@ Metadata:
 Results:
 
 
-Test Suite lava: http://lava.ciplatform.org/results/714794/lava
+Test Suite lava: http://lava.ciplatform.org/results/714802/lava
 Test Case job: Test failed
 Test Case power-off: Test passed
-Measurement: 0.7900000000 seconds
+Measurement: 0.9100000000 seconds
 Test Case uboot-action: Test failed
-Measurement: 196.9600000000 seconds
+Measurement: 166.0000000000 seconds
 Test Case uboot-commands: Test failed
-Measurement: 196.4700000000 seconds
+Measurement: 165.4700000000 seconds
 Test Case auto-login-action: Test failed
-Measurement: 106.5800000000 seconds
+Measurement: 107.8800000000 seconds
 Test Case login-action: Test failed
-Measurement: 105.6900000000 seconds
+Measurement: 106.3900000000 seconds
 Test Case kernel-messages: Test failed
-Measurement: 105.6900000000 seconds
+Measurement: 106.3900000000 seconds
 Test Case pdu-reboot: Test passed
-Measurement: 16.0400000000 seconds
+Measurement: 16.3200000000 seconds
 Test Case bootloader-overlay: Test passed
 Test Case test-runscript-overlay: Test passed
 Measurement: 0.0100000000 seconds
 Test Case test-install-overlay: Test passed
-Measurement: 0.0300000000 seconds
+Measurement: 0.0500000000 seconds
 Test Case test-overlay: Test passed
 Test Case git-repo-action: Test passed
-Measurement: 6.8300000000 seconds
+Measurement: 3.9000000000 seconds
 Test Case test-runscript-overlay: Test passed
+Measurement: 0.0200000000 seconds
 Test Case test-install-overlay: Test passed
 Test Case test-overlay: Test passed
 Test Case http-download: Test passed
-Measurement: 8.4100000000 seconds
+Measurement: 11.2200000000 seconds
 Test Case http-download: Test passed
-Measurement: 0.2700000000 seconds
+Measurement: 0.1900000000 seconds
 Test Case http-download: Test passed
-Measurement: 0.8000000000 seconds
+Measurement: 3.5500000000 seconds
 Test Case validate: Test passed
 No query is set for results comparing.
 
@@ -173,9 +130,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#113864): https://lists.cip-project.org/g/cip-testing-re=
-sults/message/113864
-Mute This Topic: https://lists.cip-project.org/mt/92523296/4520527
+View/Reply Online (#113865): https://lists.cip-project.org/g/cip-testing-re=
+sults/message/113865
+Mute This Topic: https://lists.cip-project.org/mt/92523300/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
