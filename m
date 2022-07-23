@@ -1,20 +1,20 @@
-Return-Path: <bounce+64575+114167+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+114168+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 5423957ED1D
-	for <lists@lfdr.de>; Sat, 23 Jul 2022 11:40:23 +0200 (CEST)
-X-Received: by 127.0.0.2 with SMTP id yQ0gYY4521862xBzhsWKQJE5; Sat, 23 Jul 2022 02:40:21 -0700
+	by mail.lfdr.de (Postfix) with ESMTPS id 62C0A57ED1E
+	for <lists@lfdr.de>; Sat, 23 Jul 2022 11:40:24 +0200 (CEST)
+X-Received: by 127.0.0.2 with SMTP id mUTUYY4521862xTjYJecdoZV; Sat, 23 Jul 2022 02:40:23 -0700
 X-Received: from a27-24.smtp-out.us-west-2.amazonses.com (a27-24.smtp-out.us-west-2.amazonses.com [54.240.27.24])
- by mx.groups.io with SMTP id smtpd.web12.4669.1658569221569931700
+ by mx.groups.io with SMTP id smtpd.web11.4822.1658569222771755095
  for <cip-testing-results@lists.cip-project.org>;
- Sat, 23 Jul 2022 02:40:21 -0700
+ Sat, 23 Jul 2022 02:40:22 -0700
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 715708 linux-4.9.y_zImage_cip_bbb_defconfig_4.9.324_65be5f56_arm_cip_bbb_defconfig_am335x-boneblack.dtb_boot
+Subject: [cip-testing-results] LAVA notification for Test Job 715709 linux-5.10.y_Image_renesas_defconfig_5.10.132_7748091a3_arm64_renesas_defconfig_r8a774a1-hihope-rzg2m-ex.dtb_boot
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Sat, 23 Jul 2022 09:40:20 +0000
-Message-ID: <010101822a6de125-4efd2279-3cb5-446f-a65a-6d2ff6b031a4-000000@us-west-2.amazonses.com>
+Date: Sat, 23 Jul 2022 09:40:21 +0000
+Message-ID: <010101822a6de4bf-85e3945f-2a09-4b85-bede-831b0039d332-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 X-SES-Outgoing: 2022.07.23-54.240.27.24
 Precedence: Bulk
@@ -26,57 +26,57 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: tm59n9mKP8WUAFYkOMaApjgox4520527AA=
+X-Gm-Message-State: CqjSdRWCsyV6xrpk0zmCcDXTx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1658569221;
- bh=fkGmp44dJ4SMyGLUkeym5zxqr17WDA3iOX77Vznb4R0=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1658569223;
+ bh=NHJN+B4rML/a8aU4Fn9re/tByGaZ+7FHzebKD0s3w6Y=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=dgmuiF8gxRzrvXGhGk9HizYoqGpj+nFqwTjSJPOq7YGwIP3LtQI5GyQncp/YjAgCeZi
- QXqO6Jlp1mpxiXn3Ws0zvHuih9CDLW/rTiOXu5mkf1z0rqgokc76zh/ifI7XhBs59rY3E
- ax+R8HjLyxpiJyvAUEjWpXhYPR5kI9vlrFQ=
+ b=YfvU+NSjscQBmzakvMzKJvze/8lklJeWodukOWk+Y5EV0PqxQzWsAEc1DiViJyOE41U
+ zx5G6ZJk2CmUhp/RPoh7COAbgaSr/SKo+wSvp+mid90fRsI6kEYLUOZHpU6h0VdK5V6cD
+ f144rBc+Up+Y4aPEPh09J5qEN0rzbWSNl44=
 
 
 Hello,
 
-The job with ID # 715708 is now in state Finished and health Incomplete. Jo=
+The job with ID # 715709 is now in state Finished and health Incomplete. Jo=
 b was submitted by CIP-Testing.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/715708
+Job details and log file: http://lava.ciplatform.org/scheduler/job/715709
 
 
-Job error: Kernel panic - not syncing: VFS: Unable to mount root fs on unkn=
-own-block(2,0)
-CPU: 0 PID: 1 Comm: swapper Not tainted 4.9.324 #1
-Hardware name: Generic AM33XX (Flattened Device Tree)
-[&lt;c010ddf0&gt;] (unwind_backtrace) from [&lt;c010ac70&gt;] (show_stack+0=
-x18/0x1c)
-[&lt;c010ac70&gt;] (show_stack) from [&lt;c07c8db8&gt;] (panic+0xcc/0x240)
-[&lt;c07c8db8&gt;] (panic) from [&lt;c0b01370&gt;] (mount_block_root+0x1a4/=
-0x238)
-[&lt;c0b01370&gt;] (mount_block_root) from [&lt;c0b01760&gt;] (prepare_name=
-space+0x174/0x1b4)
-[&lt;c0b01760&gt;] (prepare_namespace) from [&lt;c0b00f3c&gt;] (kernel_init=
-_freeable+0x170/0x1d4)
-[&lt;c0b00f3c&gt;] (kernel_init_freeable) from [&lt;c07cd96c&gt;] (kernel_i=
-nit+0x10/0x110)
-[&lt;c07cd96c&gt;] (kernel_init) from [&lt;c0106c50&gt;] (ret_from_fork+0x1=
-4/0x24)
----[ end Kernel panic
+Job error: Kernel panic - not syncing: No working init found.  Try passing =
+init=3D option to kernel. See Linux Documentation/admin-guide/init.rst for =
+guidance.
+[  105.520508] CPU: 0 PID: 1 Comm: swapper/0 Not tainted 5.10.132-arm64-ren=
+esas #1
+[  105.527847] Hardware name: HopeRun HiHope RZ/G2M with sub board (DT)
+[  105.534228] Call trace:
+[  105.536722]  dump_backtrace+0x0/0x1b0
+[  105.540420]  show_stack+0x18/0x24
+[  105.543774]  dump_stack+0xf8/0x168
+[  105.547209]  panic+0x180/0x368
+[  105.550295]  kernel_init+0xf8/0x114
+[  105.553816]  ret_from_fork+0x10/0x30
+[  105.557545] SMP: stopping secondary CPUs
+[  105.561531] Kernel Offset: disabled
+[  105.565104] CPU features: 0x8240022,21002004
+[  105.569402] Memory Limit: none
+[  105.572544] ---[ end Kernel panic
 
 
 Device details:
-Hostname: bbb-01
-Type: beaglebone-black
+Hostname: r8a774a1-hihope-rzg2m-ex-05
+Type: r8a774a1-hihope-rzg2m-ex
 Owner:=20
 Worker: lab-cip-denx
 Job details:
 Priority: Medium
-Description: linux-4.9.y_zImage_cip_bbb_defconfig_4.9.324_65be5f56_arm_cip_=
-bbb_defconfig_am335x-boneblack.dtb_boot
-Submitted: 2022-07-23 09:36:41 (+0000 UTC)
-Started: 2022-07-23 09:37:00 (+0000 UTC)
+Description: linux-5.10.y_Image_renesas_defconfig_5.10.132_7748091a3_arm64_=
+renesas_defconfig_r8a774a1-hihope-rzg2m-ex.dtb_boot
+Submitted: 2022-07-23 09:36:42 (+0000 UTC)
+Started: 2022-07-23 09:37:02 (+0000 UTC)
 Finished:=20
 Duration: None
 
@@ -85,33 +85,33 @@ Metadata:
 Results:
 
 
-Test Suite lava: http://lava.ciplatform.org/results/715708/lava
+Test Suite lava: http://lava.ciplatform.org/results/715709/lava
 Test Case job: Test failed
 Test Case power-off: Test passed
-Measurement: 0.8700000000 seconds
+Measurement: 1.0600000000 seconds
 Test Case uboot-action: Test failed
-Measurement: 148.6300000000 seconds
+Measurement: 162.6000000000 seconds
 Test Case uboot-commands: Test failed
-Measurement: 148.0900000000 seconds
+Measurement: 162.0600000000 seconds
 Test Case auto-login-action: Test failed
-Measurement: 100.9100000000 seconds
+Measurement: 105.8400000000 seconds
 Test Case login-action: Test failed
-Measurement: 100.0800000000 seconds
+Measurement: 104.3700000000 seconds
 Test Case kernel-messages: Test failed
-Measurement: 100.0800000000 seconds
+Measurement: 104.3700000000 seconds
 Test Case pdu-reboot: Test passed
 Measurement: 16.2300000000 seconds
 Test Case bootloader-overlay: Test passed
 Test Case test-runscript-overlay: Test passed
-Measurement: 0.0600000000 seconds
+Measurement: 0.0200000000 seconds
 Test Case test-install-overlay: Test passed
 Test Case test-overlay: Test passed
 Test Case http-download: Test passed
-Measurement: 25.2200000000 seconds
+Measurement: 8.6000000000 seconds
 Test Case http-download: Test passed
-Measurement: 0.1700000000 seconds
+Measurement: 0.2000000000 seconds
 Test Case http-download: Test passed
-Measurement: 0.8400000000 seconds
+Measurement: 8.5000000000 seconds
 Test Case validate: Test passed
 No query is set for results comparing.
 
@@ -122,9 +122,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#114167): https://lists.cip-project.org/g/cip-testing-re=
-sults/message/114167
-Mute This Topic: https://lists.cip-project.org/mt/92564100/4520527
+View/Reply Online (#114168): https://lists.cip-project.org/g/cip-testing-re=
+sults/message/114168
+Mute This Topic: https://lists.cip-project.org/mt/92564101/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
