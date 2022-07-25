@@ -1,22 +1,22 @@
-Return-Path: <bounce+64575+114347+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+114348+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 6CCDD57F9F9
-	for <lists@lfdr.de>; Mon, 25 Jul 2022 09:14:33 +0200 (CEST)
-X-Received: by 127.0.0.2 with SMTP id J1ThYY4521862xzJzEmrLJJX; Mon, 25 Jul 2022 00:14:32 -0700
-X-Received: from a27-27.smtp-out.us-west-2.amazonses.com (a27-27.smtp-out.us-west-2.amazonses.com [54.240.27.27])
- by mx.groups.io with SMTP id smtpd.web10.25374.1658733271516873330
+	by mail.lfdr.de (Postfix) with ESMTPS id B66BD57F9FA
+	for <lists@lfdr.de>; Mon, 25 Jul 2022 09:14:34 +0200 (CEST)
+X-Received: by 127.0.0.2 with SMTP id CCoMYY4521862xJ34U3mvfY8; Mon, 25 Jul 2022 00:14:33 -0700
+X-Received: from a27-42.smtp-out.us-west-2.amazonses.com (a27-42.smtp-out.us-west-2.amazonses.com [54.240.27.42])
+ by mx.groups.io with SMTP id smtpd.web12.25304.1658733273114356369
  for <cip-testing-results@lists.cip-project.org>;
- Mon, 25 Jul 2022 00:14:31 -0700
+ Mon, 25 Jul 2022 00:14:33 -0700
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 715900 r8a7743-iwg20d-q7 healthcheck
+Subject: [cip-testing-results] LAVA notification for Test Job 715904 x86-openblocks-iot-vx2 health-check
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Mon, 25 Jul 2022 07:14:30 +0000
-Message-ID: <010101823435167b-e93a2e22-bef2-48ef-ba6f-46a6115da6e8-000000@us-west-2.amazonses.com>
+Date: Mon, 25 Jul 2022 07:14:31 +0000
+Message-ID: <0101018234351982-f3b7148c-37a6-43c0-a8f6-29d4466a8bff-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-X-SES-Outgoing: 2022.07.25-54.240.27.27
+X-SES-Outgoing: 2022.07.25-54.240.27.42
 Precedence: Bulk
 List-Unsubscribe: <mailto:cip-testing-results+unsubscribe@lists.cip-project.org>
 List-Subscribe: <mailto:cip-testing-results+subscribe@lists.cip-project.org>
@@ -26,39 +26,57 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: hdfMWwn0gTv8F60GheAV4Aidx4520527AA=
+X-Gm-Message-State: yldnV1egCySD3o3RJWQ23saYx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1658733272;
- bh=YlN5TurlpwmWdcQpMqRcXGsS+S2Fiu21F1N0JiN2blg=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1658733273;
+ bh=Ff+cgy5jX7BEjYZBNBqd5TVwhpGSstxBRYazLwn5mv0=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=u5KR/W+t0Eq5Z/ZeZWTgzrf+XX01QIyjEDQ0xCt/A1yeHBN7ZEw9jAy0vr7BmKsdyps
- XmU7PwVvhCL7N+DyxflclP5RUzFGpFBgGfS0fkYvMvv6F9n6bx2D8d9+O4oPCbsQs3ndg
- VWCJzmEzSVnciwi7EcXBNPQ3Vx+t9vBB9d4=
+ b=qeFQow+Ef3m68DojituHHv54fYR5w+NtCyPtdI/QWAbT+bJPhaRjH2ZthKbX5AAxDLY
+ ehjxXxvi/GJfc2FcKJfcbeC8rcCOgPy7RGt0WESujIWKrmrQiz0Be8GpusRUeg0E8gFFt
+ 8qB56qEcqcgbHHA11SZvGsOYMglobuSNSZg=
 
 
 Hello,
 
-The job with ID # 715900 is now in state Finished and health Incomplete. Jo=
+The job with ID # 715904 is now in state Finished and health Incomplete. Jo=
 b was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/715900
+Job details and log file: http://lava.ciplatform.org/scheduler/job/715904
 
 
-Infrastructure error: bootloader-interrupt timed out after 283 seconds
+Job error: Kernel panic - not syncing: VFS: Unable to mount root fs on unkn=
+own-block(2,0)
+[  113.043659] CPU: 0 PID: 1 Comm: swapper/0 Not tainted 4.19.66-cip9 #1
+[  113.050855] Hardware name: Default string Default string/Aptio CRB, BIOS=
+ 5.6.5 03/27/2018
+[  113.059995] Call Trace:
+[  113.062734]  dump_stack+0x5c/0x7b
+[  113.066439]  panic+0xe4/0x252
+[  113.069757]  mount_block_root+0x180/0x246
+[  113.074239]  ? set_debug_rodata+0x11/0x11
+[  113.078717]  mount_root+0x126/0x144
+[  113.082614]  prepare_namespace+0x130/0x166
+[  113.087191]  kernel_init_freeable+0x20a/0x21a
+[  113.092059]  ? rest_init+0xb0/0xb0
+[  113.095858]  kernel_init+0xa/0x110
+[  113.099657]  ret_from_fork+0x35/0x40
+[  113.103810] Kernel Offset: 0x28a00000 from 0xffffffff81000000 (relocatio=
+n range: 0xffffffff80000000-0xffffffffbfffffff)
+[  113.115866] ---[ end Kernel panic
 
 
 Device details:
-Hostname: r8a7743-iwg20d-q7-05
-Type: r8a7743-iwg20d-q7
+Hostname: openblocks-iot-vx2-01
+Type: x86-openblocks-iot-vx2
 Owner:=20
 Worker: lab-cip-denx
 Job details:
 Priority: Medium
-Description: r8a7743-iwg20d-q7 healthcheck
+Description: x86-openblocks-iot-vx2 health-check
 Submitted: 2022-07-25 07:08:25 (+0000 UTC)
-Started: 2022-07-25 07:08:33 (+0000 UTC)
+Started: 2022-07-25 07:08:35 (+0000 UTC)
 Finished:=20
 Duration: None
 
@@ -69,9 +87,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#114347): https://lists.cip-project.org/g/cip-testing-re=
-sults/message/114347
-Mute This Topic: https://lists.cip-project.org/mt/92600065/4520527
+View/Reply Online (#114348): https://lists.cip-project.org/g/cip-testing-re=
+sults/message/114348
+Mute This Topic: https://lists.cip-project.org/mt/92600066/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
