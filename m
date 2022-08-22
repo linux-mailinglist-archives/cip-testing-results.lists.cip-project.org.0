@@ -1,20 +1,20 @@
-Return-Path: <bounce+64575+120789+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+120790+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 747DA59CB11
-	for <lists@lfdr.de>; Mon, 22 Aug 2022 23:45:08 +0200 (CEST)
-X-Received: by 127.0.0.2 with SMTP id 3KNZYY4521862xVhQNXwbvKw; Mon, 22 Aug 2022 14:45:07 -0700
+	by mail.lfdr.de (Postfix) with ESMTPS id 8112D59CB13
+	for <lists@lfdr.de>; Mon, 22 Aug 2022 23:45:28 +0200 (CEST)
+X-Received: by 127.0.0.2 with SMTP id XdK5YY4521862xYQbpAsilIz; Mon, 22 Aug 2022 14:45:27 -0700
 X-Received: from a27-42.smtp-out.us-west-2.amazonses.com (a27-42.smtp-out.us-west-2.amazonses.com [54.240.27.42])
- by mx.groups.io with SMTP id smtpd.web09.24323.1661204706608451160
+ by mx.groups.io with SMTP id smtpd.web09.24330.1661204726771238732
  for <cip-testing-results@lists.cip-project.org>;
- Mon, 22 Aug 2022 14:45:06 -0700
+ Mon, 22 Aug 2022 14:45:26 -0700
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 732017 beaglebone-black healthcheck
+Subject: [cip-testing-results] LAVA notification for Test Job 732018 r8a774a1-hihope-rzg2m-ex healthcheck
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Mon, 22 Aug 2022 21:45:05 +0000
-Message-ID: <01010182c784320e-e8e5249a-61db-4ac4-b0ac-9e9abe8e92f5-000000@us-west-2.amazonses.com>
+Date: Mon, 22 Aug 2022 21:45:25 +0000
+Message-ID: <01010182c7848040-ae930d06-bb52-4edd-bb80-eed1e98efb37-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 X-SES-Outgoing: 2022.08.22-54.240.27.42
 Precedence: Bulk
@@ -26,38 +26,38 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: bLcMUcjQxoKLcGm5c5Xn4lOZx4520527AA=
+X-Gm-Message-State: YfG6m3RyvDXOvmAT8N8wpwpEx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1661204707;
- bh=LiPfd8MQm00zu5DRlhXlvftGl6n7b3c839V+uAlztDI=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1661204727;
+ bh=+exdm0rQ2XDhaz4U+bKu+Nf4g0bZXsr6WmcOS99bRUE=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=uN99Gp812RG2tzsqzV3kftMe5lQPE+/MezrvFkLPlGFAiI/aSNBSJHohxg8wQJ4D40t
- ac3Hb+gcWYI0nh4X5bGveJ9rUn8g2t1u8B4MAcePbuBYMXaL6YMdnh7LkG1wNQjgT9Py+
- hQgzzab+I/oAVxLIbw4zFTVNGShHr5uiaCM=
+ b=kWQ9EZO8R7Z6l2RMrFP63xcvYK9NrB8TEuxbJkzmQxiAl16mlw8mqOXjMC6Ug2jZ6l2
+ tbZ3ux4rfEHdaEVPL1mzOZuvSxnB0mnbaAps/XsSokScVCwNNxQVY1557fr5HNLWuP2e+
+ mJdcAu5gBFIdyc5Dlvwm/fsPaasGQD0Utus=
 
 
 Hello,
 
-The job with ID # 732017 is now in state Finished and health Complete. Job =
+The job with ID # 732018 is now in state Finished and health Complete. Job =
 was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/732017
+Job details and log file: http://lava.ciplatform.org/scheduler/job/732018
 
 
 
 
 Device details:
-Hostname: bbb-02
-Type: beaglebone-black
+Hostname: r8a774a1-hihope-rzg2m-ex-05
+Type: r8a774a1-hihope-rzg2m-ex
 Owner:=20
 Worker: lab-cip-denx
 Job details:
-Priority: Medium
-Description: beaglebone-black healthcheck
+Priority: High
+Description: r8a774a1-hihope-rzg2m-ex healthcheck
 Submitted: 2022-08-22 21:43:25 (+0000 UTC)
-Started: 2022-08-22 21:43:45 (+0000 UTC)
+Started: 2022-08-22 21:43:46 (+0000 UTC)
 Finished:=20
 Duration: None
 
@@ -68,9 +68,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#120789): https://lists.cip-project.org/g/cip-testing-re=
-sults/message/120789
-Mute This Topic: https://lists.cip-project.org/mt/93192186/4520527
+View/Reply Online (#120790): https://lists.cip-project.org/g/cip-testing-re=
+sults/message/120790
+Mute This Topic: https://lists.cip-project.org/mt/93192200/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
