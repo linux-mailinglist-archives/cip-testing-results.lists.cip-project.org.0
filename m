@@ -1,22 +1,22 @@
-Return-Path: <bounce+64575+124043+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+124044+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id A0DBD5ADBE8
-	for <lists@lfdr.de>; Tue,  6 Sep 2022 01:34:19 +0200 (CEST)
-X-Received: by 127.0.0.2 with SMTP id XvOAYY4521862xiu12fCX5Ae; Mon, 05 Sep 2022 16:34:18 -0700
-X-Received: from a27-50.smtp-out.us-west-2.amazonses.com (a27-50.smtp-out.us-west-2.amazonses.com [54.240.27.50])
- by mx.groups.io with SMTP id smtpd.web10.31379.1662420857714164414
+	by mail.lfdr.de (Postfix) with ESMTPS id 9A0D45ADBEC
+	for <lists@lfdr.de>; Tue,  6 Sep 2022 01:39:14 +0200 (CEST)
+X-Received: by 127.0.0.2 with SMTP id 8iU6YY4521862xox8fwQUkXk; Mon, 05 Sep 2022 16:39:13 -0700
+X-Received: from a27-24.smtp-out.us-west-2.amazonses.com (a27-24.smtp-out.us-west-2.amazonses.com [54.240.27.24])
+ by mx.groups.io with SMTP id smtpd.web09.31128.1662421152743603463
  for <cip-testing-results@lists.cip-project.org>;
- Mon, 05 Sep 2022 16:34:17 -0700
+ Mon, 05 Sep 2022 16:39:12 -0700
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 739153 beaglebone-black healthcheck
+Subject: [cip-testing-results] LAVA notification for Test Job 739168 r8a774a1-hihope-rzg2m-ex healthcheck
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Mon, 5 Sep 2022 23:34:16 +0000
-Message-ID: <0101018310012fba-c2741025-5e98-4365-aafd-50c0d81b43a1-000000@us-west-2.amazonses.com>
+Date: Mon, 5 Sep 2022 23:39:11 +0000
+Message-ID: <010101831005af3c-6559166d-72b8-416d-a96a-93576b06749e-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-X-SES-Outgoing: 2022.09.05-54.240.27.50
+X-SES-Outgoing: 2022.09.05-54.240.27.24
 Precedence: Bulk
 List-Unsubscribe: <mailto:cip-testing-results+unsubscribe@lists.cip-project.org>
 List-Subscribe: <mailto:cip-testing-results+subscribe@lists.cip-project.org>
@@ -26,38 +26,38 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: BLpP2NVkzTgl0lzOiGJI2AeGx4520527AA=
+X-Gm-Message-State: pDHpCxd6S2JaNLDSEi10YHGwx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1662420858;
- bh=hfxk0N7yCz9vdw4M8YgbMhRgCtpdZGGmZFWUtQTojH4=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1662421153;
+ bh=psrQsXXFgSEK2q3kdyhnNIl99TKxbKaDh4Sel92QrSU=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=QGvOYulRYOcHRgzzwtJibJU4vZcCvbs1yeP8LA9I0ZfO3pxfCLy5ZARRL4T4Np5NBDz
- ox+7g0PSuZs6juBQRPwbblvH8rnnmolPMPEYOuiImC5XfeozsJ2RT1a1yG2vOpFbV4S5v
- JfANt+Rt7rGOG2lPwkH9IiShc6HKBnrLguc=
+ b=eEZMx8yvLNsE9psNfoXY+TwpJcEczISIIxa65yz0InD19OvHSjOm0jtnoKXls+oHRoI
+ Rqps82rTjWHXTEqWoBb5Myzaew0f6Xhrd1UA8AYwCRPxPFi0aVZ+Rqqjmr/eFTTnIVcsE
+ FGGdDY0KXHXUIFKlzKVf5PbmgHif1ZM7e4g=
 
 
 Hello,
 
-The job with ID # 739153 is now in state Finished and health Complete. Job =
+The job with ID # 739168 is now in state Finished and health Complete. Job =
 was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/739153
+Job details and log file: http://lava.ciplatform.org/scheduler/job/739168
 
 
 
 
 Device details:
-Hostname: bbb-02
-Type: beaglebone-black
+Hostname: r8a774a1-hihope-rzg2m-ex-03
+Type: r8a774a1-hihope-rzg2m-ex
 Owner:=20
-Worker: lab-cip-denx
+Worker: lab-cip-renesas
 Job details:
-Priority: Medium
-Description: beaglebone-black healthcheck
-Submitted: 2022-09-05 23:32:36 (+0000 UTC)
-Started: 2022-09-05 23:32:56 (+0000 UTC)
+Priority: High
+Description: r8a774a1-hihope-rzg2m-ex healthcheck
+Submitted: 2022-09-05 23:37:16 (+0000 UTC)
+Started: 2022-09-05 23:37:31 (+0000 UTC)
 Finished:=20
 Duration: None
 
@@ -68,9 +68,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#124043): https://lists.cip-project.org/g/cip-testing-re=
-sults/message/124043
-Mute This Topic: https://lists.cip-project.org/mt/93490719/4520527
+View/Reply Online (#124044): https://lists.cip-project.org/g/cip-testing-re=
+sults/message/124044
+Mute This Topic: https://lists.cip-project.org/mt/93490797/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
