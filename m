@@ -1,20 +1,20 @@
-Return-Path: <bounce+64575+131501+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+131502+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id BA7955FA055
-	for <lists@lfdr.de>; Mon, 10 Oct 2022 16:43:00 +0200 (CEST)
-X-Received: by 127.0.0.2 with SMTP id 5MBDYY4521862xsjg1FrxP6H; Mon, 10 Oct 2022 07:42:59 -0700
+	by mail.lfdr.de (Postfix) with ESMTPS id 7578C5FA056
+	for <lists@lfdr.de>; Mon, 10 Oct 2022 16:43:20 +0200 (CEST)
+X-Received: by 127.0.0.2 with SMTP id GgTiYY4521862xEd5Vl6hj1n; Mon, 10 Oct 2022 07:43:19 -0700
 X-Received: from a27-27.smtp-out.us-west-2.amazonses.com (a27-27.smtp-out.us-west-2.amazonses.com [54.240.27.27])
- by mx.groups.io with SMTP id smtpd.web10.7196.1665412978952045581
+ by mx.groups.io with SMTP id smtpd.web11.6917.1665412998504022026
  for <cip-testing-results@lists.cip-project.org>;
- Mon, 10 Oct 2022 07:42:59 -0700
+ Mon, 10 Oct 2022 07:43:18 -0700
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 757671 qemu x86_64 healthcheck
+Subject: [cip-testing-results] LAVA notification for Test Job 757670 qemu x86_64 healthcheck
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Mon, 10 Oct 2022 14:42:57 +0000
-Message-ID: <01010183c2595445-84d32ae5-e263-4f35-b27f-8c27ca35a16b-000000@us-west-2.amazonses.com>
+Date: Mon, 10 Oct 2022 14:43:17 +0000
+Message-ID: <01010183c259a013-350798f6-0635-4910-ab96-21ed135a7c8c-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 X-SES-Outgoing: 2022.10.10-54.240.27.27
 Precedence: Bulk
@@ -26,30 +26,30 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: 96YJlCK9frIz9oKKaMS3vuUQx4520527AA=
+X-Gm-Message-State: xhAwm2W1hWT6RoGDPjOYFGo2x4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1665412979;
- bh=qZTKkDCyKKlWLRihvN70cTz/qqZocI+0oWLUVaPvuMY=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1665412999;
+ bh=kbkCoke5JOs/wChTaOTjeqeoc7o6vco3V6kXD/aWrMc=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=bncj365fwnPrHPievrnyiB1UNvtWrAIkml8yg1TPGRhD3l7EoAooeMLHt9yeWw6wG8Z
- 9idrRT+ZPdYSWP+WYlYTqKzAZVC5NYjetwkXhEanzq2mYiNhwzNoQ2vs5olUwBNkUnUcE
- pU9PwoswMDysze5zaJUrDKYQa+xfLdPJGgw=
+ b=qMaAX0CaMf8VNJBGO9HvZTC7qG+jHxHV/6qokcEGW/6EdKJX1qSTnDRExlOvDp3GM0k
+ QqKO0LGh7l5xwNkNgY+vKqaR5w7T7e9xwLyirqaDrBNAWm8XG8mqUb/WyxD61E66OOt/9
+ /sbxY++evdPjr9vsPoqnAi6BFmkzNsRYFyk=
 
 
 Hello,
 
-The job with ID # 757671 is now in state Finished and health Complete. Job =
+The job with ID # 757670 is now in state Finished and health Complete. Job =
 was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/757671
+Job details and log file: http://lava.ciplatform.org/scheduler/job/757670
 
 
 
 
 Device details:
-Hostname: qemu-05
+Hostname: qemu-01
 Type: qemu
 Owner:=20
 Worker: lab-cip-renesas
@@ -68,9 +68,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#131501): https://lists.cip-project.org/g/cip-testing-re=
-sults/message/131501
-Mute This Topic: https://lists.cip-project.org/mt/94237622/4520527
+View/Reply Online (#131502): https://lists.cip-project.org/g/cip-testing-re=
+sults/message/131502
+Mute This Topic: https://lists.cip-project.org/mt/94237630/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
