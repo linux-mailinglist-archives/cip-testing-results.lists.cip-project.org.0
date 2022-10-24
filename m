@@ -1,20 +1,20 @@
-Return-Path: <bounce+64575+134895+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+134896+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 49517609BD8
+	by mail.lfdr.de (Postfix) with ESMTPS id A8D78609BD9
 	for <lists@lfdr.de>; Mon, 24 Oct 2022 09:54:44 +0200 (CEST)
-X-Received: by 127.0.0.2 with SMTP id q21HYY4521862x3VWB4U9gP9; Mon, 24 Oct 2022 00:54:42 -0700
+X-Received: by 127.0.0.2 with SMTP id ruw4YY4521862xyKwWZKMWtE; Mon, 24 Oct 2022 00:54:43 -0700
 X-Received: from a27-22.smtp-out.us-west-2.amazonses.com (a27-22.smtp-out.us-west-2.amazonses.com [54.240.27.22])
  by mx.groups.io with SMTP id smtpd.web08.16651.1666598082338144149
  for <cip-testing-results@lists.cip-project.org>;
- Mon, 24 Oct 2022 00:54:42 -0700
+ Mon, 24 Oct 2022 00:54:43 -0700
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 767737 r8a774a1-hihope-rzg2m-ex healthcheck
+Subject: [cip-testing-results] LAVA notification for Test Job 767738 r8a774a1-hihope-rzg2m-ex healthcheck
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Mon, 24 Oct 2022 07:54:41 +0000
-Message-ID: <0101018408fc9232-84e2ad02-133d-42f7-b1ec-f48d3cedadc9-000000@us-west-2.amazonses.com>
+Date: Mon, 24 Oct 2022 07:54:42 +0000
+Message-ID: <0101018408fc9797-88f7d339-daeb-4ede-b0f8-c3ea9b1c200e-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 X-SES-Outgoing: 2022.10.24-54.240.27.22
 Precedence: Bulk
@@ -26,30 +26,30 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: u5mxXQVv0sxU3BEtoiCElLc3x4520527AA=
+X-Gm-Message-State: k3GjZfY6B9cLlqX7PRY4qvEXx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1666598082;
- bh=0wWh87gem0t3Dalk/bwQkKajEFYlY/fHNfk8ON07fyQ=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1666598083;
+ bh=nLHG7Nd+TLvrq+TVX3aoSiD5WEb31CAo4MOBlT7C29o=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=KudjsLXJTj5jffmzAxWtW2W3DHcH2xiGR/i54dYt/qWWf9RT8QruPRDRt6TODLxK7dQ
- G7skKqHFSsbun13X6qH8Z/3RUDk1evPJ+I6ikFXgvOkvQ+3mZc9H+l5YurJtE8zLfTTYT
- 02Bynj1kbszS4btN5mStU8HgYdq7KH/a1S4=
+ b=j5SYkOYNdJODRjxLJDH6FjmaVEk+hmfNLT+TYGRFrd+dJ4+Az+wHqLCcuYQRbc/gSaf
+ 3/kxy/2XrGSB2kB28i6DBpeHx2X1FYXu7WOYNIWiwstK34I5Bkmdp5+fOPrLm12hgh8pk
+ AF6nnyquhcLhZ5b5Mt9e+CcW5KKYGuq1aSo=
 
 
 Hello,
 
-The job with ID # 767737 is now in state Finished and health Complete. Job =
+The job with ID # 767738 is now in state Finished and health Complete. Job =
 was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/767737
+Job details and log file: http://lava.ciplatform.org/scheduler/job/767738
 
 
 
 
 Device details:
-Hostname: r8a774a1-hihope-rzg2m-ex-01
+Hostname: r8a774a1-hihope-rzg2m-ex-02
 Type: r8a774a1-hihope-rzg2m-ex
 Owner:=20
 Worker: lab-cip-renesas
@@ -68,9 +68,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#134895): https://lists.cip-project.org/g/cip-testing-re=
-sults/message/134895
-Mute This Topic: https://lists.cip-project.org/mt/94529507/4520527
+View/Reply Online (#134896): https://lists.cip-project.org/g/cip-testing-re=
+sults/message/134896
+Mute This Topic: https://lists.cip-project.org/mt/94529508/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
