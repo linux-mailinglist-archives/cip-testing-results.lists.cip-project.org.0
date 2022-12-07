@@ -1,20 +1,20 @@
-Return-Path: <bounce+64575+145605+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+145604+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 682D06460C7
+	by mail.lfdr.de (Postfix) with ESMTPS id 5E4B86460C6
 	for <lists@lfdr.de>; Wed,  7 Dec 2022 18:55:04 +0100 (CET)
-X-Received: by 127.0.0.2 with SMTP id qczwYY4521862x9xZ2zjmGFO; Wed, 07 Dec 2022 09:55:02 -0800
+X-Received: by 127.0.0.2 with SMTP id eLrEYY4521862xVcQpA2XsUh; Wed, 07 Dec 2022 09:55:02 -0800
 X-Received: from a27-22.smtp-out.us-west-2.amazonses.com (a27-22.smtp-out.us-west-2.amazonses.com [54.240.27.22])
- by mx.groups.io with SMTP id smtpd.web10.22776.1670435701629181412
+ by mx.groups.io with SMTP id smtpd.web11.22742.1670435701529493658
  for <cip-testing-results@lists.cip-project.org>;
  Wed, 07 Dec 2022 09:55:01 -0800
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 801258 qemu x86_64 healthcheck
+Subject: [cip-testing-results] LAVA notification for Test Job 801259 qemu x86_64 healthcheck
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Wed, 7 Dec 2022 17:54:59 +0000
-Message-ID: <01010184edb9fbd0-7d4a2690-b015-4a71-8568-84115528df2f-000000@us-west-2.amazonses.com>
+Date: Wed, 7 Dec 2022 17:55:00 +0000
+Message-ID: <01010184edb9ff45-3460c589-7c1e-4556-93a5-bda803efec85-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 X-SES-Outgoing: 2022.12.07-54.240.27.22
 Precedence: Bulk
@@ -26,30 +26,30 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: Eh0rajbkEKnCcGfjgq2Od3BVx4520527AA=
+X-Gm-Message-State: JnTLwzujxIxZSOiKCwHmupODx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
  d=lists.cip-project.org; q=dns/txt; s=20140610; t=1670435702;
- bh=Lz/7gC8bYo8a0hbs4ppH1i5bAborX9FIAHf4iRZoLcY=;
+ bh=1eNEQ0Cjsb/D9kHpFYMxp7s0Xo0NGA3UxFJGAcNPPYo=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=IU3pREMVzbaMvKUb59lwhYiUBexmGPC0gXTTGs6sJmidGwHQJPjogowWgE+dsFHg3M5
- 3ofMnOGgda5Hu8g3jf2MAqGaHs8fSCZo/QXXPGlwaZdDPO401rAW3jyHcrY79eSQ7h7/v
- NRM1NI2hborxSk085ca4QmPYfLpaXFvzuL8=
+ b=jf/Q0m/HAvGSJ0TA47F9lB5YaaudXAJTxgZP3dzf96ghMZ+bo4dzO2ksF89C2eOI5rX
+ TwcelJ04O1aQ9bTXN87g44GyI/GZb7twDZEd78BZobO6mMdMtDXCC6LI9WTXjX70pB+yd
+ JaK47tAW5Whm25D7mtWjPYRowcpf1Y5pP0Q=
 
 
 Hello,
 
-The job with ID # 801258 is now in state Finished and health Complete. Job =
+The job with ID # 801259 is now in state Finished and health Complete. Job =
 was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/801258
+Job details and log file: http://lava.ciplatform.org/scheduler/job/801259
 
 
 
 
 Device details:
-Hostname: qemu-01
+Hostname: qemu-05
 Type: qemu
 Owner:=20
 Worker: lab-cip-renesas
@@ -68,9 +68,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#145605): https://lists.cip-project.org/g/cip-testing-re=
-sults/message/145605
-Mute This Topic: https://lists.cip-project.org/mt/95520834/4520527
+View/Reply Online (#145604): https://lists.cip-project.org/g/cip-testing-re=
+sults/message/145604
+Mute This Topic: https://lists.cip-project.org/mt/95520833/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
