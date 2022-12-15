@@ -1,20 +1,20 @@
-Return-Path: <bounce+64575+147655+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+147656+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from web01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 113B664DD03
-	for <lists@lfdr.de>; Thu, 15 Dec 2022 15:42:36 +0100 (CET)
-X-Received: by 127.0.0.2 with SMTP id YBFtYY4521862x6gW5DTDZhm; Thu, 15 Dec 2022 06:42:35 -0800
+	by mail.lfdr.de (Postfix) with ESMTPS id 387E464DD04
+	for <lists@lfdr.de>; Thu, 15 Dec 2022 15:42:37 +0100 (CET)
+X-Received: by 127.0.0.2 with SMTP id jW2nYY4521862xvuf4Ne48JA; Thu, 15 Dec 2022 06:42:35 -0800
 X-Received: from a27-24.smtp-out.us-west-2.amazonses.com (a27-24.smtp-out.us-west-2.amazonses.com [54.240.27.24])
- by mx.groups.io with SMTP id smtpd.web10.134795.1671115354814206093
+ by mx.groups.io with SMTP id smtpd.web11.135646.1671115355141976493
  for <cip-testing-results@lists.cip-project.org>;
- Thu, 15 Dec 2022 06:42:34 -0800
+ Thu, 15 Dec 2022 06:42:35 -0800
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 806981 de0-nano-soc healthcheck
+Subject: [cip-testing-results] LAVA notification for Test Job 806982 de0-nano-soc healthcheck
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Thu, 15 Dec 2022 14:42:33 +0000
-Message-ID: <01010185163cacc2-529e5a2d-5482-402c-bb82-214c44e32688-000000@us-west-2.amazonses.com>
+Date: Thu, 15 Dec 2022 14:42:34 +0000
+Message-ID: <01010185163cafdf-da3ed94a-d430-47f8-8359-b9587db659be-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 X-SES-Outgoing: 2022.12.15-54.240.27.24
 Precedence: Bulk
@@ -26,30 +26,30 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: QsCBUX4n3n6LY8sQuHeHqsL1x4520527AA=
+X-Gm-Message-State: B0GXZrxKaQQFScvSnFnY8teVx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
  d=lists.cip-project.org; q=dns/txt; s=20140610; t=1671115355;
- bh=d3Mg2vsdmDLBiKjq1Ur4xflAKqN8lkrZ+LCHQYEkJ3U=;
+ bh=NfD3JIPoXICFqarLFUIDUytO9Zx5ud3GktA17z1PAlE=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=Gub1qycxmUP/OaeE9h4BuZvtZSHr4til7eu0TtnXB5bfa6GShM02T6dNXe3s3gYdyGG
- kFQrBv9+6mprqcxL2sxcaK1prCEmvjzilUh7dUwm8t4eWZrtSYwV3aTtUWWrqYqbVlf3G
- vIg3FoA6M/46sgw7hI7TKJSZybs2GxqTRCA=
+ b=dThDlsfoEbO6XQhFY+6U+MifrIFWca/6aGrpl0VBdQE0a1WGEquvZr4h2mIaqhzfx5k
+ +luRbx7I2i25N+g2T/YAwKznhixyvLfvL6ua9/M+3meBm6ew1z4P20cIPChNClYIPQYVF
+ BEhMk9dpfbCVtzJz9xCpQHkvWf01tlN9lyw=
 
 
 Hello,
 
-The job with ID # 806981 is now in state Finished and health Complete. Job =
+The job with ID # 806982 is now in state Finished and health Complete. Job =
 was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/806981
+Job details and log file: http://lava.ciplatform.org/scheduler/job/806982
 
 
 
 
 Device details:
-Hostname: de0-nano-soc-02
+Hostname: de0-nano-soc-03
 Type: de0-nano-soc
 Owner:=20
 Worker: lab-cip-denx
@@ -68,9 +68,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#147655): https://lists.cip-project.org/g/cip-testing-re=
-sults/message/147655
-Mute This Topic: https://lists.cip-project.org/mt/95689543/4520527
+View/Reply Online (#147656): https://lists.cip-project.org/g/cip-testing-re=
+sults/message/147656
+Mute This Topic: https://lists.cip-project.org/mt/95689544/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
