@@ -1,20 +1,20 @@
-Return-Path: <bounce+64575+164533+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+164534+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from mail01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 477CA6A07CA
-	for <lists@lfdr.de>; Thu, 23 Feb 2023 12:54:28 +0100 (CET)
-X-Received: by 127.0.0.2 with SMTP id 4jOGYY4521862xC8a3KSI4fc; Thu, 23 Feb 2023 03:54:26 -0800
+	by mail.lfdr.de (Postfix) with ESMTPS id EEE716A07CE
+	for <lists@lfdr.de>; Thu, 23 Feb 2023 12:54:47 +0100 (CET)
+X-Received: by 127.0.0.2 with SMTP id KGRpYY4521862xBna6XuOaWa; Thu, 23 Feb 2023 03:54:46 -0800
 X-Received: from a27-24.smtp-out.us-west-2.amazonses.com (a27-24.smtp-out.us-west-2.amazonses.com [54.240.27.24])
  by mx.groups.io with SMTP id smtpd.web11.8612.1677153266701137201
  for <cip-testing-results@lists.cip-project.org>;
- Thu, 23 Feb 2023 03:54:26 -0800
+ Thu, 23 Feb 2023 03:54:46 -0800
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 857909 ci-patersonc-linux-5.15.y_zImage_cip_bbb_defconfig_5.15.95_2a8b27cbe_arm_cip_bbb_defconfig_am335x-boneblack.dtb_smc
+Subject: [cip-testing-results] LAVA notification for Test Job 857923 ci-patersonc-linux-5.15.y_Image_qemu_arm64_defconfig_5.15.95_2a8b27cbe_arm64_qemu_arm64_defconfig_smc
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Thu, 23 Feb 2023 11:54:25 +0000
-Message-ID: <010101867e1fe858-9a7690d6-5181-46b4-94a8-0221770818af-000000@us-west-2.amazonses.com>
+Date: Thu, 23 Feb 2023 11:54:45 +0000
+Message-ID: <010101867e20358e-96aaa050-c4ca-453a-8b21-47ac959313f4-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 X-SES-Outgoing: 2023.02.23-54.240.27.24
 Precedence: Bulk
@@ -26,57 +26,39 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: RaHk7soxmo20Nr0Cuffx41Fwx4520527AA=
+X-Gm-Message-State: JgCvQTtIUBzjw9FMmpb3b5znx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1677153266;
- bh=0SQRdj38fl/PeTjdMAbEnU7XkoNWxox1KkiaNQpCOx4=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1677153286;
+ bh=XwZgZCtM+rgC1qojC4e71SDRkWhtOrIFRHruY+NoHO0=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=qyMLSnhR/uQRapT6ZoIcoxDrRVzOH+Yk38FRcOxG8AnFUCLtSXnf14jtjccwiO6OOfX
- q6TGtwPtNZ5IRkRF1O6v46F12T+F74mP1vG2J2BbZGpb3TSVRyPsofvdjFPdPII/ffWux
- oI6b708BWxOHmumnwUOvyQnHvhsI95DIQKU=
+ b=C1QFi99CqhvLeKdu1cS4n/z0IhMgbs58tHfkMQGP7/3hnQnt4ErmRxOOje/xDPYsB8c
+ f0Wio1LqumitW6QP2fL7ZB21O9Y3+qOdZpM0XJYbNLKugB2PYLkQSbB2kKaenKhx1joV6
+ fd2D+LgIVH62FMHiseKG+5O4liSNczBaodY=
 
 
 Hello,
 
-The job with ID # 857909 is now in state Finished and health Incomplete. Jo=
-b was submitted by CIP-Testing.
+The job with ID # 857923 is now in state Finished and health Complete. Job =
+was submitted by CIP-Testing.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/857909
+Job details and log file: http://lava.ciplatform.org/scheduler/job/857923
 
 
-Job error: Kernel panic - not syncing: No working init found.  Try passing =
-init=3D option to kernel. See Linux Documentation/admin-guide/init.rst for =
-guidance.
-CPU: 0 PID: 1 Comm: swapper Not tainted 5.15.95+ #1
-Hardware name: Generic AM33XX (Flattened Device Tree)
-[&lt;c010e348&gt;] (unwind_backtrace) from [&lt;c010aae8&gt;] (show_stack+0=
-x18/0x1c)
-[&lt;c010aae8&gt;] (show_stack) from [&lt;c097decc&gt;] (panic+0x108/0x310)
-[&lt;c097decc&gt;] (panic) from [&lt;c0986770&gt;] (kernel_init+0xfc/0x138)
-[&lt;c0986770&gt;] (kernel_init) from [&lt;c0100130&gt;] (ret_from_fork+0x1=
-4/0x24)
-Exception stack(0xc195dfb0 to 0xc195dff8)
-dfa0:                                     00000000 00000000 00000000 000000=
-00
-dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 000000=
-00
-dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
----[ end Kernel panic
 
 
 Device details:
-Hostname: bbb-03
-Type: beaglebone-black
+Hostname: qemu-01
+Type: qemu
 Owner:=20
-Worker: lab-cip-cybertrust
+Worker: lab-cip-renesas
 Job details:
 Priority: Medium
-Description: ci-patersonc-linux-5.15.y_zImage_cip_bbb_defconfig_5.15.95_2a8=
-b27cbe_arm_cip_bbb_defconfig_am335x-boneblack.dtb_smc
-Submitted: 2023-02-23 11:45:03 (+0000 UTC)
-Started: 2023-02-23 11:50:25 (+0000 UTC)
+Description: ci-patersonc-linux-5.15.y_Image_qemu_arm64_defconfig_5.15.95_2=
+a8b27cbe_arm64_qemu_arm64_defconfig_smc
+Submitted: 2023-02-23 11:52:19 (+0000 UTC)
+Started: 2023-02-23 11:52:45 (+0000 UTC)
 Finished:=20
 Duration: None
 
@@ -85,34 +67,45 @@ Metadata:
 Results:
 
 
-Test Suite lava: http://lava.ciplatform.org/results/857909/lava
-Test Case job: Test failed
-Test Case power-off: Test passed
-Measurement: 0.4600000000 seconds
-Test Case uboot-action: Test failed
-Measurement: 146.8700000000 seconds
-Test Case uboot-commands: Test failed
-Measurement: 146.5100000000 seconds
-Test Case auto-login-action: Test failed
-Measurement: 111.7000000000 seconds
-Test Case login-action: Test failed
-Measurement: 109.4800000000 seconds
-Test Case kernel-messages: Test failed
-Measurement: 109.4800000000 seconds
-Test Case pdu-reboot: Test passed
-Measurement: 0.4800000000 seconds
-Test Case bootloader-overlay: Test passed
+Test Suite 0_spectre-meltdown-checker-test: http://lava.ciplatform.org/resu=
+lts/857923/0_spectre-meltdown-checker-test
+Test Case CVE-2020-0543: Test passed
+Test Case CVE-2018-12207: Test passed
+Test Case CVE-2019-11135: Test passed
+Test Case CVE-2019-11091: Test passed
+Test Case CVE-2018-12127: Test passed
+Test Case CVE-2018-12130: Test passed
+Test Case CVE-2018-12126: Test passed
+Test Case CVE-2018-3646: Test passed
+Test Case CVE-2018-3620: Test passed
+Test Case CVE-2018-3615: Test passed
+Test Case CVE-2018-3639: Test passed
+Test Case CVE-2018-3640: Test passed
+Test Case CVE-2017-5754: Test passed
+Test Case CVE-2017-5715: Test passed
+Test Case CVE-2017-5753: Test passed
+
+Test Suite lava: http://lava.ciplatform.org/results/857923/lava
+Test Case job: Test passed
+Test Case 0_spectre-meltdown-checker-test: Test passed
+Measurement: 11.0000000000 seconds
+Test Case login-action: Test passed
+Measurement: 24.1200000000 seconds
+Test Case kernel-messages: Test passed
+Measurement: 23.2200000000 seconds
+Test Case execute-qemu: Test passed
+Measurement: 0.2100000000 seconds
+Test Case apply-overlay-guest: Test passed
+Measurement: 17.0600000000 seconds
 Test Case test-runscript-overlay: Test passed
 Test Case test-install-overlay: Test passed
 Test Case test-overlay: Test passed
 Test Case git-repo-action: Test passed
-Measurement: 3.2800000000 seconds
+Measurement: 10.2800000000 seconds
 Test Case http-download: Test passed
-Measurement: 60.2800000000 seconds
+Measurement: 30.1100000000 seconds
 Test Case http-download: Test passed
-Measurement: 1.8200000000 seconds
-Test Case http-download: Test passed
-Measurement: 5.5500000000 seconds
+Measurement: 7.8400000000 seconds
 Test Case validate: Test passed
 No query is set for results comparing.
 
@@ -123,9 +116,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#164533): https://lists.cip-project.org/g/cip-testing-re=
-sults/message/164533
-Mute This Topic: https://lists.cip-project.org/mt/97180925/4520527
+View/Reply Online (#164534): https://lists.cip-project.org/g/cip-testing-re=
+sults/message/164534
+Mute This Topic: https://lists.cip-project.org/mt/97180928/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
