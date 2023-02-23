@@ -1,20 +1,20 @@
-Return-Path: <bounce+64575+164606+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+164607+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from mail01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id D0B7D6A0D6C
-	for <lists@lfdr.de>; Thu, 23 Feb 2023 16:59:49 +0100 (CET)
-X-Received: by 127.0.0.2 with SMTP id I9bRYY4521862xJk2XpaUYfV; Thu, 23 Feb 2023 07:59:48 -0800
+	by mail.lfdr.de (Postfix) with ESMTPS id 6C8FA6A0D81
+	for <lists@lfdr.de>; Thu, 23 Feb 2023 17:04:04 +0100 (CET)
+X-Received: by 127.0.0.2 with SMTP id EHaJYY4521862xlVb0SwCxgr; Thu, 23 Feb 2023 08:04:03 -0800
 X-Received: from a27-24.smtp-out.us-west-2.amazonses.com (a27-24.smtp-out.us-west-2.amazonses.com [54.240.27.24])
- by mx.groups.io with SMTP id smtpd.web11.14294.1677167987680539055
+ by mx.groups.io with SMTP id smtpd.web11.14397.1677168242555946902
  for <cip-testing-results@lists.cip-project.org>;
- Thu, 23 Feb 2023 07:59:47 -0800
+ Thu, 23 Feb 2023 08:04:02 -0800
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 858052 zynqmp-zcu102 healthcheck
+Subject: [cip-testing-results] LAVA notification for Test Job 858053 ci-patersonc-linux-6.1.y_zImage_cip_bbb_defconfig_6.1.13_9668308f1_arm_cip_bbb_defconfig_am335x-boneblack.dtb_boot
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Thu, 23 Feb 2023 15:59:46 +0000
-Message-ID: <010101867f0087df-d61eb864-29ea-448d-ac65-9606f7a9f24c-000000@us-west-2.amazonses.com>
+Date: Thu, 23 Feb 2023 16:04:01 +0000
+Message-ID: <010101867f046c28-e0a010bc-e2ac-4f34-9598-e4a7668b051f-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 X-SES-Outgoing: 2023.02.23-54.240.27.24
 Precedence: Bulk
@@ -26,40 +26,94 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: bEvbqIYMEfYgsfDYzcWT9TETx4520527AA=
+X-Gm-Message-State: mH2GXlCFCtCOe1lNeaaVh6QLx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1677167988;
- bh=0O66O7VOS+DKuoPFH156NDURUuOx9Is8Yc92XGPWDt0=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1677168243;
+ bh=iUEEhgEwZKQLMyxPpSM1DelIeKoyhBEAQWfAzJaVGH4=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=cBcf7kMWt/0kQeuOJ5tXDi1OlK0fubhJOAAQwEpvGwRwQVxYppQ8E2JoExXasjguAr2
- KzLJd+NFLWorG/PD4rUBtxbvHrDC64g0+KDMYAHBoTvyGzU96DE6XvacO46U1pwDH2Gfd
- cLBRg0Q2Py2SLBKnHqTq57GQ4dVfgbzHeRg=
+ b=kmbPoO5TFhAE98F3FHdAKLRRt/3ALBQJBZ2Fo3ZPyoF8VPmdzvnMg1fCFf1b3zvtcsy
+ xhjWZtA9V/I7RP2wgYm6FvgjT+9cP8b7gPy4xmLP8YqbeRlUY2PbjsS3jaqySAi7DJeID
+ 3HqiYNHms7u25wnawaCxhg+Y8/5CLDVBaZ0=
 
 
 Hello,
 
-The job with ID # 858052 is now in state Finished and health Complete. Job =
-was submitted by lava-health.
+The job with ID # 858053 is now in state Finished and health Incomplete. Jo=
+b was submitted by CIP-Testing.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/858052
+Job details and log file: http://lava.ciplatform.org/scheduler/job/858053
 
 
+Job error: Kernel panic - not syncing: No working init found.  Try passing =
+init=3D option to kernel. See Linux Documentation/admin-guide/init.rst for =
+guidance.
+CPU: 0 PID: 1 Comm: swapper Not tainted 6.1.13+ #1
+Hardware name: Generic AM33XX (Flattened Device Tree)
+ unwind_backtrace from show_stack+0x18/0x1c
+ show_stack from dump_stack_lvl+0x24/0x2c
+ dump_stack_lvl from panic+0x104/0x30c
+ panic from kernel_init+0x104/0x140
+ kernel_init from ret_from_fork+0x14/0x2c
+Exception stack(0xe0009fb0 to 0xe0009ff8)
+9fa0:                                     00000000 00000000 00000000 000000=
+00
+9fc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 000000=
+00
+9fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+---[ end Kernel panic
 
 
 Device details:
-Hostname: zynqmp-zcu102-02
-Type: zynqmp-zcu102
+Hostname: bbb-02
+Type: beaglebone-black
 Owner:=20
-Worker: lab-cip-cybertrust
+Worker: lab-cip-denx
 Job details:
 Priority: Medium
-Description: zynqmp-zcu102 healthcheck
-Submitted: 2023-02-23 15:59:02 (+0000 UTC)
-Started: 2023-02-23 15:59:06 (+0000 UTC)
+Description: ci-patersonc-linux-6.1.y_zImage_cip_bbb_defconfig_6.1.13_96683=
+08f1_arm_cip_bbb_defconfig_am335x-boneblack.dtb_boot
+Submitted: 2023-02-23 15:59:26 (+0000 UTC)
+Started: 2023-02-23 16:00:21 (+0000 UTC)
 Finished:=20
 Duration: None
+
+Metadata:
+
+Results:
+
+
+Test Suite lava: http://lava.ciplatform.org/results/858053/lava
+Test Case job: Test failed
+Test Case power-off: Test passed
+Measurement: 1.0900000000 seconds
+Test Case uboot-action: Test failed
+Measurement: 160.2300000000 seconds
+Test Case uboot-commands: Test failed
+Measurement: 159.5400000000 seconds
+Test Case auto-login-action: Test failed
+Measurement: 111.6500000000 seconds
+Test Case login-action: Test failed
+Measurement: 109.3900000000 seconds
+Test Case kernel-messages: Test failed
+Measurement: 109.3900000000 seconds
+Test Case pdu-reboot: Test passed
+Measurement: 16.4600000000 seconds
+Test Case bootloader-overlay: Test passed
+Measurement: 0.0100000000 seconds
+Test Case test-runscript-overlay: Test passed
+Measurement: 0.0200000000 seconds
+Test Case test-install-overlay: Test passed
+Test Case test-overlay: Test passed
+Test Case http-download: Test passed
+Measurement: 38.7400000000 seconds
+Test Case http-download: Test passed
+Measurement: 0.1500000000 seconds
+Test Case http-download: Test passed
+Measurement: 1.5100000000 seconds
+Test Case validate: Test passed
+No query is set for results comparing.
 
 --=20
 LAVA
@@ -68,9 +122,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#164606): https://lists.cip-project.org/g/cip-testing-re=
-sults/message/164606
-Mute This Topic: https://lists.cip-project.org/mt/97185675/4520527
+View/Reply Online (#164607): https://lists.cip-project.org/g/cip-testing-re=
+sults/message/164607
+Mute This Topic: https://lists.cip-project.org/mt/97185792/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
