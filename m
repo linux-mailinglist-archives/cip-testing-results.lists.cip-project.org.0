@@ -1,22 +1,22 @@
-Return-Path: <bounce+64575+168745+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+168746+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from mail01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 81E326B21E9
-	for <lists@lfdr.de>; Thu,  9 Mar 2023 11:54:07 +0100 (CET)
-X-Received: by 127.0.0.2 with SMTP id G1neYY4521862xlk7usPXgDN; Thu, 09 Mar 2023 02:54:06 -0800
-X-Received: from a27-22.smtp-out.us-west-2.amazonses.com (a27-22.smtp-out.us-west-2.amazonses.com [54.240.27.22])
- by mx.groups.io with SMTP id smtpd.web11.10340.1678359245938414631
+	by mail.lfdr.de (Postfix) with ESMTPS id 3CD206B21EA
+	for <lists@lfdr.de>; Thu,  9 Mar 2023 11:54:27 +0100 (CET)
+X-Received: by 127.0.0.2 with SMTP id n4KyYY4521862xcBR7xwObNp; Thu, 09 Mar 2023 02:54:25 -0800
+X-Received: from a27-42.smtp-out.us-west-2.amazonses.com (a27-42.smtp-out.us-west-2.amazonses.com [54.240.27.42])
+ by mx.groups.io with SMTP id smtpd.web10.10404.1678359265646678661
  for <cip-testing-results@lists.cip-project.org>;
- Thu, 09 Mar 2023 02:54:06 -0800
+ Thu, 09 Mar 2023 02:54:25 -0800
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 870587 r8a774b1-hihope-rzg2n-ex healthcheck
+Subject: [cip-testing-results] LAVA notification for Test Job 870569 x86-openblocks-iot-vx2 health-check
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Thu, 9 Mar 2023 10:54:05 +0000
-Message-ID: <01010186c601b07e-3d0301c8-6c8a-4986-9933-f80181f94df9-000000@us-west-2.amazonses.com>
+Date: Thu, 9 Mar 2023 10:54:24 +0000
+Message-ID: <01010186c601fdf6-705d236a-fa11-403a-973c-89fb6b811942-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-X-SES-Outgoing: 2023.03.09-54.240.27.22
+X-SES-Outgoing: 2023.03.09-54.240.27.42
 Precedence: Bulk
 List-Unsubscribe: <mailto:cip-testing-results+unsubscribe@lists.cip-project.org>
 List-Subscribe: <mailto:cip-testing-results+subscribe@lists.cip-project.org>
@@ -26,38 +26,38 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: 1xd5OzF63jmsxinnQyWz9iB7x4520527AA=
+X-Gm-Message-State: WgEezrlNoMCnRGzNj1YsmA75x4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1678359246;
- bh=5lh37d5DGGYcfwxqkEsIR9DzPjbwuIPPXM0hi6piCe4=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1678359265;
+ bh=Hf6/AfT60WAzjlJdWKfo//Crz68E1KxTXFEf9L1DR/4=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=QvjQQ0daZGJ+S9HnTqt+77k5iXcULQmbcAV284rU+D34MePF1sLUB0gkBqbWWpiMJBZ
- 3wuJURSSNOQLFapiN10aQWviyhAcjzxStmCRFrv3qLQaS7X6cRmGBuSoMmNKKpG5vHkfg
- J0qUG3zE4YVACqEAWiuu16gggTzht6fbI7w=
+ b=enqoafG/sCRceOCu27zkz51SwYpmwN957injIvlDhuCG1LmWoXauLVlRf7a5w4IdMad
+ DzzzTJRvS1TBhT9CH53KkHxPxoppRtflRCRGrh/FwqUpYTSZAnJnKnCAD+rSfNBKbrRPW
+ k/1XZsmd3yz9qc2XHhzomX0NNrk1R4AJsGQ=
 
 
 Hello,
 
-The job with ID # 870587 is now in state Finished and health Complete. Job =
+The job with ID # 870569 is now in state Finished and health Complete. Job =
 was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/870587
+Job details and log file: http://lava.ciplatform.org/scheduler/job/870569
 
 
 
 
 Device details:
-Hostname: r8a774b1-hihope-rzg2n-ex-01
-Type: r8a774b1-hihope-rzg2n-ex
+Hostname: openblocks-iot-vx2-02
+Type: x86-openblocks-iot-vx2
 Owner:=20
-Worker: lab-cip-renesas
+Worker: lab-cip-denx
 Job details:
-Priority: High
-Description: r8a774b1-hihope-rzg2n-ex healthcheck
-Submitted: 2023-03-09 10:52:06 (+0000 UTC)
-Started: 2023-03-09 10:52:26 (+0000 UTC)
+Priority: Medium
+Description: x86-openblocks-iot-vx2 health-check
+Submitted: 2023-03-09 10:49:46 (+0000 UTC)
+Started: 2023-03-09 10:50:02 (+0000 UTC)
 Finished:=20
 Duration: None
 
@@ -68,9 +68,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#168745): https://lists.cip-project.org/g/cip-testing-re=
-sults/message/168745
-Mute This Topic: https://lists.cip-project.org/mt/97493410/4520527
+View/Reply Online (#168746): https://lists.cip-project.org/g/cip-testing-re=
+sults/message/168746
+Mute This Topic: https://lists.cip-project.org/mt/97493411/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
