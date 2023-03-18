@@ -1,20 +1,20 @@
-Return-Path: <bounce+64575+172653+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+172654+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from mail01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 3C0246BFC84
+	by mail.lfdr.de (Postfix) with ESMTPS id A2B476BFC85
 	for <lists@lfdr.de>; Sat, 18 Mar 2023 20:52:42 +0100 (CET)
-X-Received: by 127.0.0.2 with SMTP id lopjYY4521862xVvn4uv3s9v; Sat, 18 Mar 2023 12:52:40 -0700
+X-Received: by 127.0.0.2 with SMTP id 9EEXYY4521862xamWnFNSLoX; Sat, 18 Mar 2023 12:52:41 -0700
 X-Received: from a27-22.smtp-out.us-west-2.amazonses.com (a27-22.smtp-out.us-west-2.amazonses.com [54.240.27.22])
- by mx.groups.io with SMTP id smtpd.web11.3666.1679169160560158820
+ by mx.groups.io with SMTP id smtpd.web11.3667.1679169161050521709
  for <cip-testing-results@lists.cip-project.org>;
- Sat, 18 Mar 2023 12:52:40 -0700
+ Sat, 18 Mar 2023 12:52:41 -0700
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 879787 qemu x86_64 healthcheck
+Subject: [cip-testing-results] LAVA notification for Test Job 879788 qemu x86_64 healthcheck
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Sat, 18 Mar 2023 19:52:39 +0000
-Message-ID: <01010186f6480101-836f7acb-3bdd-422c-b855-e72c1f849ea7-000000@us-west-2.amazonses.com>
+Date: Sat, 18 Mar 2023 19:52:40 +0000
+Message-ID: <01010186f64803a2-333a8062-fd59-4a16-9069-a54620b0a0b3-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 X-SES-Outgoing: 2023.03.18-54.240.27.22
 Precedence: Bulk
@@ -26,30 +26,30 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: bHp0QcSY4DByTzhxHyyXIZCdx4520527AA=
+X-Gm-Message-State: qhKXJF8ojih7e8CQOKNBNyflx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1679169160;
- bh=TLkYqmf4Ru6vzfLdiLQ/1Tm3hvuzvHoMA8ou8lCdquo=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1679169161;
+ bh=XJp3R3dYALEgqNorBzjLVWnKqsuuVer+8EEyPh6TlnI=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=Q3cS97etPW6PXwSaoX4cr+pk4EEA1qht5dV5dE9FSq4ihCztzw0xh5dian2FUnHGppj
- zfhW87m5oKoThlAarXNn6lu7ITo4MXtLL5Bm62ycnxeBKHgXps7gVP93OIhVLpNPllPsl
- RX5BqxSynOVNtexo1oi3utr7DbiDyvxRjbo=
+ b=V2x9NnKIyz/kYFDkE/Ht9dXIpk0dy9SyclKkW2BirC1lGQsPzUxoDvYCuioVqq3eCwW
+ VAPxkrkdDi9W2lI7BwIs6k8GTcZgxZqRY02rLcju+2zbMScBXk77KK3pfeB4LwLF7p8jS
+ PqHlSnoPkQzneM1rNuGylGi96cWqlDo5h0M=
 
 
 Hello,
 
-The job with ID # 879787 is now in state Finished and health Complete. Job =
+The job with ID # 879788 is now in state Finished and health Complete. Job =
 was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/879787
+Job details and log file: http://lava.ciplatform.org/scheduler/job/879788
 
 
 
 
 Device details:
-Hostname: qemu-patersonc-01
+Hostname: qemu-patersonc-02
 Type: qemu
 Owner:=20
 Worker: lab-patersonc
@@ -68,9 +68,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#172653): https://lists.cip-project.org/g/cip-testing-re=
-sults/message/172653
-Mute This Topic: https://lists.cip-project.org/mt/97699758/4520527
+View/Reply Online (#172654): https://lists.cip-project.org/g/cip-testing-re=
+sults/message/172654
+Mute This Topic: https://lists.cip-project.org/mt/97699759/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
