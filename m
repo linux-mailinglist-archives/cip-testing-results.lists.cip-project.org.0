@@ -1,22 +1,22 @@
-Return-Path: <bounce+64575+176503+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+176504+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from mail01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id BE8D56D15AA
-	for <lists@lfdr.de>; Fri, 31 Mar 2023 04:36:12 +0200 (CEST)
-X-Received: by 127.0.0.2 with SMTP id 1yPQYY4521862xyDJNgLIJYL; Thu, 30 Mar 2023 19:36:11 -0700
-X-Received: from a27-42.smtp-out.us-west-2.amazonses.com (a27-42.smtp-out.us-west-2.amazonses.com [54.240.27.42])
- by mx.groups.io with SMTP id smtpd.web11.45726.1680230171189309585
+	by mail.lfdr.de (Postfix) with ESMTPS id 4EDE96D15B9
+	for <lists@lfdr.de>; Fri, 31 Mar 2023 04:44:14 +0200 (CEST)
+X-Received: by 127.0.0.2 with SMTP id 3BHuYY4521862xWbIspF9nXu; Thu, 30 Mar 2023 19:44:12 -0700
+X-Received: from a27-24.smtp-out.us-west-2.amazonses.com (a27-24.smtp-out.us-west-2.amazonses.com [54.240.27.24])
+ by mx.groups.io with SMTP id smtpd.web11.45817.1680230652032588489
  for <cip-testing-results@lists.cip-project.org>;
- Thu, 30 Mar 2023 19:36:11 -0700
+ Thu, 30 Mar 2023 19:44:12 -0700
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 892209 r8a774b1-hihope-rzg2n-ex healthcheck
+Subject: [cip-testing-results] LAVA notification for Test Job 892210 r8a774b1-hihope-rzg2n-ex healthcheck
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Fri, 31 Mar 2023 02:36:10 +0000
-Message-ID: <010101873585be41-49439b19-6efc-4df5-9fd5-597c42fc45b0-000000@us-west-2.amazonses.com>
+Date: Fri, 31 Mar 2023 02:44:11 +0000
+Message-ID: <01010187358d1477-7f674298-bf6e-4c19-9250-d5bb52fa08b2-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-X-SES-Outgoing: 2023.03.31-54.240.27.42
+X-SES-Outgoing: 2023.03.31-54.240.27.24
 Precedence: Bulk
 List-Unsubscribe: <mailto:cip-testing-results+unsubscribe@lists.cip-project.org>
 List-Subscribe: <mailto:cip-testing-results+subscribe@lists.cip-project.org>
@@ -26,24 +26,24 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: uggCvsTjuZcVgqrdvcHRmBJyx4520527AA=
+X-Gm-Message-State: iGrk0wckqKRMsH0nmw7kVGkXx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1680230171;
- bh=h+BV+8WKYHOWrigxsC8W8JXVxjo821XyaCyXLUTpytg=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1680230652;
+ bh=QV4mIUQfj7HSobx5OZdqoBdPQGs57E4N5pk4P9ofvio=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=aq1l1UBHf8Q+7e7T9AftSQG1ihvr8hQaDz7KEeoz0115l3w44ZuWvUvumJll430VoTi
- USkBG8pxpSqsTmJuJ0PL0hn5FGKHDwH1miOZkYC6S4tOLOUVJV9T6cv9pDWfJdvID2AHH
- sGZ8M2XdORM6eghrgQY7GLnPvqdbjtH/css=
+ b=Nod4vDDFKVdPxKFXQt9Q7mRPo/9REwGuMUMlZSZBYO5l4oQrmBolYclkq4fymki3mp0
+ cIq+kQ1vuHg1ijxqFGqulAb3P/MI3WgpgXnlcoYIewbWHwz/KlSlrs3eRRXUVIsu2jGSd
+ yf+rurz3pf81LxDola76KZHOsvmfbYwAkN4=
 
 
 Hello,
 
-The job with ID # 892209 is now in state Finished and health Complete. Job =
+The job with ID # 892210 is now in state Finished and health Complete. Job =
 was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/892209
+Job details and log file: http://lava.ciplatform.org/scheduler/job/892210
 
 
 
@@ -56,8 +56,8 @@ Worker: lab-cip-renesas
 Job details:
 Priority: High
 Description: r8a774b1-hihope-rzg2n-ex healthcheck
-Submitted: 2023-03-31 02:34:10 (+0000 UTC)
-Started: 2023-03-31 02:34:29 (+0000 UTC)
+Submitted: 2023-03-31 02:42:30 (+0000 UTC)
+Started: 2023-03-31 02:42:49 (+0000 UTC)
 Finished:=20
 Duration: None
 
@@ -68,9 +68,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#176503): https://lists.cip-project.org/g/cip-testing-re=
-sults/message/176503
-Mute This Topic: https://lists.cip-project.org/mt/97965885/4520527
+View/Reply Online (#176504): https://lists.cip-project.org/g/cip-testing-re=
+sults/message/176504
+Mute This Topic: https://lists.cip-project.org/mt/97965949/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
