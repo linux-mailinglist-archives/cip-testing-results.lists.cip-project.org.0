@@ -1,20 +1,20 @@
-Return-Path: <bounce+64575+180433+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+180434+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from mail01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 2803C6E2BBC
+	by mail.lfdr.de (Postfix) with ESMTPS id 248F76E2BBB
 	for <lists@lfdr.de>; Fri, 14 Apr 2023 23:25:03 +0200 (CEST)
-X-Received: by 127.0.0.2 with SMTP id v9paYY4521862xydIaIk5isT; Fri, 14 Apr 2023 14:25:02 -0700
+X-Received: by 127.0.0.2 with SMTP id dCVWYY4521862xdwuRuYDoG1; Fri, 14 Apr 2023 14:25:02 -0700
 X-Received: from a27-24.smtp-out.us-west-2.amazonses.com (a27-24.smtp-out.us-west-2.amazonses.com [54.240.27.24])
- by mx.groups.io with SMTP id smtpd.web11.90.1681507502288686938
+ by mx.groups.io with SMTP id smtpd.web10.63.1681507485656944381
  for <cip-testing-results@lists.cip-project.org>;
  Fri, 14 Apr 2023 14:25:02 -0700
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 905887 x86-openblocks-iot-vx2 health-check
+Subject: [cip-testing-results] LAVA notification for Test Job 905888 x86-openblocks-iot-vx2 health-check
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Fri, 14 Apr 2023 21:25:01 +0000
-Message-ID: <0101018781a844a6-a086fb76-df1e-4a9c-b248-726f3d708a45-000000@us-west-2.amazonses.com>
+Date: Fri, 14 Apr 2023 21:25:02 +0000
+Message-ID: <0101018781a847ef-90d27da3-3a86-4063-bcf2-c85b3f8c6b1e-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 X-SES-Outgoing: 2023.04.14-54.240.27.24
 Precedence: Bulk
@@ -26,30 +26,30 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: swpLIbeeL4EMqOQzzQy9OY1nx4520527AA=
+X-Gm-Message-State: OsTUi94plYXj0qBCaEfGBwoyx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
  d=lists.cip-project.org; q=dns/txt; s=20140610; t=1681507502;
- bh=EGOdxGglYSMN9aKThTR4MZ8hS6cLsPo/ZAadrFqVB4A=;
+ bh=4tihe1xr0QAGs+UQYEET3nPPIMRSmSAf+ZvTrnbTAhM=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=khpjvx72zF+ahTXZgnmOf2K7iGLP77PRjXHz6Z67McPHCzug7QUCxgf0iMlW8PG3+hX
- KW2Wt8WROkVAK9u0pCHNuIHaMUUqy6z6zQgMrdn6oMg/1LjUSiQJaLMon9mkCKBAllp1S
- J7DytVOGhJJ5KYgdwloBldZNPeXUqqWwKI8=
+ b=WpiaYCUcR3HhqZo8FDvm6HCgUd1tEk1YCMwQPS9Qh/6/+j3iG4lHZylnbE/PlwoFNxi
+ dLpll0vZjBxZnJVZOZtd9hOVIcgXYg9YSJajDS4xG4P/y1SmOooSKBJoV7J8/fEEKE/Ub
+ zUtZjwgER7ITZdMoAm2IzjebkpFI5AhqAXk=
 
 
 Hello,
 
-The job with ID # 905887 is now in state Finished and health Complete. Job =
+The job with ID # 905888 is now in state Finished and health Complete. Job =
 was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/905887
+Job details and log file: http://lava.ciplatform.org/scheduler/job/905888
 
 
 
 
 Device details:
-Hostname: openblocks-iot-vx2-01
+Hostname: openblocks-iot-vx2-02
 Type: x86-openblocks-iot-vx2
 Owner:=20
 Worker: lab-cip-denx
@@ -68,9 +68,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#180433): https://lists.cip-project.org/g/cip-testing-re=
-sults/message/180433
-Mute This Topic: https://lists.cip-project.org/mt/98272002/4520527
+View/Reply Online (#180434): https://lists.cip-project.org/g/cip-testing-re=
+sults/message/180434
+Mute This Topic: https://lists.cip-project.org/mt/98272003/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
