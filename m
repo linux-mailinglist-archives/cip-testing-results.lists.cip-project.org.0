@@ -1,22 +1,22 @@
-Return-Path: <bounce+64575+183991+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+183992+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from mail01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id A8B146F152E
-	for <lists@lfdr.de>; Fri, 28 Apr 2023 12:18:36 +0200 (CEST)
-X-Received: by 127.0.0.2 with SMTP id dleDYY4521862xugAwYrwuiF; Fri, 28 Apr 2023 03:18:35 -0700
-X-Received: from a27-50.smtp-out.us-west-2.amazonses.com (a27-50.smtp-out.us-west-2.amazonses.com [54.240.27.50])
- by mx.groups.io with SMTP id smtpd.web10.15919.1682677114926936330
+	by mail.lfdr.de (Postfix) with ESMTPS id 4397D6F1531
+	for <lists@lfdr.de>; Fri, 28 Apr 2023 12:19:33 +0200 (CEST)
+X-Received: by 127.0.0.2 with SMTP id OcDsYY4521862x4xKdwP56uR; Fri, 28 Apr 2023 03:19:31 -0700
+X-Received: from a27-22.smtp-out.us-west-2.amazonses.com (a27-22.smtp-out.us-west-2.amazonses.com [54.240.27.22])
+ by mx.groups.io with SMTP id smtpd.web11.15913.1682677171667784660
  for <cip-testing-results@lists.cip-project.org>;
- Fri, 28 Apr 2023 03:18:34 -0700
+ Fri, 28 Apr 2023 03:19:31 -0700
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 919281 linux-4.19.y_qemu_arm64_defconfig_4.19.283-rc1_91ed867e7_arm64_qemu_arm64_defconfig_boot
+Subject: [cip-testing-results] LAVA notification for Test Job 919279 linux-4.19.y_cip_bbb_defconfig_4.19.283-rc1_91ed867e7_arm_cip_bbb_defconfig_am335x-boneblack.dtb_boot
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Fri, 28 Apr 2023 10:18:34 +0000
-Message-ID: <01010187c75f2531-2e721c1d-f160-42bb-a598-9c94b23c7174-000000@us-west-2.amazonses.com>
+Date: Fri, 28 Apr 2023 10:19:31 +0000
+Message-ID: <01010187c760032d-7ec519de-6f67-4729-a555-12cd31e7b1e1-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-X-SES-Outgoing: 2023.04.28-54.240.27.50
+X-SES-Outgoing: 2023.04.28-54.240.27.22
 Precedence: Bulk
 List-Unsubscribe: <mailto:cip-testing-results+unsubscribe@lists.cip-project.org>
 List-Subscribe: <mailto:cip-testing-results+subscribe@lists.cip-project.org>
@@ -26,39 +26,39 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: L2GK5jqrvKowYK1TajLwsboxx4520527AA=
+X-Gm-Message-State: HsIxk5qrFytYkmJSiRViiBXrx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1682677115;
- bh=IO0NtkgokEyfIB6cbPtPd7CFk15vCOXxTRQWtf1Y3z8=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1682677171;
+ bh=8qDBSE9Kaj6stN5CzcpnsTiyjjkvZ+Vk/3HEzjORIic=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=gWaoO6Nj2ECMIo2kDeKQc3URDeddjlBaodhQ7Hq0x17GPXuPDYz1DSTJvaMaktKYPst
- v2BPBfHZi3mmTBlk/yFDAQj+Qch+HtEu/amx/68jvVF4/OKSMjEc/sJiP/gscu2QJ+GU7
- SBW2n2M9KfTMFrJra9HygPAWYvuVlNKQ2Tg=
+ b=bgfnES6WqMbGQEEHbdeGUWFVhfddEJPxNMpfafgggk3MiMQpr2qo9hwpQD35AdOwgXv
+ HTkP6oxQ1ToffKCNDe+Blw4Pexov/pE6fAvMkwic6z38v/FK1gZ1EjwHjdDF0EXNg2Veu
+ ugRG5u0+oVJH0xrUEaE1qjVn9D13RzbdGrQ=
 
 
 Hello,
 
-The job with ID # 919281 is now in state Finished and health Complete. Job =
+The job with ID # 919279 is now in state Finished and health Complete. Job =
 was submitted by CIP-Testing.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/919281
+Job details and log file: http://lava.ciplatform.org/scheduler/job/919279
 
 
 
 
 Device details:
-Hostname: qemu-05
-Type: qemu
+Hostname: bbb-03
+Type: beaglebone-black
 Owner:=20
-Worker: lab-cip-renesas
+Worker: lab-cip-cybertrust
 Job details:
 Priority: Medium
-Description: linux-4.19.y_qemu_arm64_defconfig_4.19.283-rc1_91ed867e7_arm64=
-_qemu_arm64_defconfig_boot
-Submitted: 2023-04-28 10:16:49 (+0000 UTC)
-Started: 2023-04-28 10:17:13 (+0000 UTC)
+Description: linux-4.19.y_cip_bbb_defconfig_4.19.283-rc1_91ed867e7_arm_cip_=
+bbb_defconfig_am335x-boneblack.dtb_boot
+Submitted: 2023-04-28 10:16:39 (+0000 UTC)
+Started: 2023-04-28 10:16:50 (+0000 UTC)
 Finished:=20
 Duration: None
 
@@ -68,28 +68,31 @@ Results:
 
 
 Test Suite 0_kernel-version-inline: http://lava.ciplatform.org/results/9192=
-81/0_kernel-version-inline
+79/0_kernel-version-inline
 Test Case uname: Test passed
 
-Test Suite lava: http://lava.ciplatform.org/results/919281/lava
+Test Suite lava: http://lava.ciplatform.org/results/919279/lava
 Test Case job: Test passed
+Test Case power-off: Test passed
+Measurement: 0.4700000000 seconds
 Test Case 0_kernel-version-inline: Test passed
-Measurement: 0.1100000000 seconds
+Measurement: 0.1000000000 seconds
 Test Case login-action: Test passed
-Measurement: 24.5700000000 seconds
+Measurement: 25.0900000000 seconds
 Test Case kernel-messages: Test passed
-Measurement: 23.6600000000 seconds
-Test Case execute-qemu: Test passed
-Measurement: 0.2300000000 seconds
-Test Case apply-overlay-guest: Test passed
-Measurement: 11.1200000000 seconds
+Measurement: 23.5800000000 seconds
+Test Case pdu-reboot: Test passed
+Measurement: 0.4800000000 seconds
+Test Case bootloader-overlay: Test passed
 Test Case test-runscript-overlay: Test passed
 Test Case test-install-overlay: Test passed
 Test Case test-overlay: Test passed
 Test Case http-download: Test passed
-Measurement: 28.2800000000 seconds
+Measurement: 58.0300000000 seconds
 Test Case http-download: Test passed
-Measurement: 5.5900000000 seconds
+Measurement: 1.3600000000 seconds
+Test Case http-download: Test passed
+Measurement: 5.6800000000 seconds
 Test Case validate: Test passed
 No query is set for results comparing.
 
@@ -100,9 +103,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#183991): https://lists.cip-project.org/g/cip-testing-re=
-sults/message/183991
-Mute This Topic: https://lists.cip-project.org/mt/98555634/4520527
+View/Reply Online (#183992): https://lists.cip-project.org/g/cip-testing-re=
+sults/message/183992
+Mute This Topic: https://lists.cip-project.org/mt/98555640/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
