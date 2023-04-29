@@ -1,20 +1,20 @@
-Return-Path: <bounce+64575+184534+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+184533+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from mail01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 185326F2723
+	by mail.lfdr.de (Postfix) with ESMTPS id DE6B66F2722
 	for <lists@lfdr.de>; Sun, 30 Apr 2023 01:11:09 +0200 (CEST)
-X-Received: by 127.0.0.2 with SMTP id KcCpYY4521862xEl8eiBXOYA; Sat, 29 Apr 2023 16:11:08 -0700
+X-Received: by 127.0.0.2 with SMTP id jD1mYY4521862xBuwTDkqnSu; Sat, 29 Apr 2023 16:11:08 -0700
 X-Received: from a27-42.smtp-out.us-west-2.amazonses.com (a27-42.smtp-out.us-west-2.amazonses.com [54.240.27.42])
- by mx.groups.io with SMTP id smtpd.web10.59176.1682809868338046008
+ by mx.groups.io with SMTP id smtpd.web10.59175.1682809868147498375
  for <cip-testing-results@lists.cip-project.org>;
  Sat, 29 Apr 2023 16:11:08 -0700
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 920367 de0-nano-soc healthcheck
+Subject: [cip-testing-results] LAVA notification for Test Job 920368 de0-nano-soc healthcheck
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Sat, 29 Apr 2023 23:11:06 +0000
-Message-ID: <01010187cf48c7ba-b65bdac1-a9de-47a6-a6ce-20cda9a6d2b8-000000@us-west-2.amazonses.com>
+Date: Sat, 29 Apr 2023 23:11:07 +0000
+Message-ID: <01010187cf48cb3b-99a7862e-825f-4775-9f8b-e411310178f8-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 X-SES-Outgoing: 2023.04.29-54.240.27.42
 Precedence: Bulk
@@ -26,30 +26,30 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: e2EpYz5tJH6uqL6njWBhTYdBx4520527AA=
+X-Gm-Message-State: HJ0BJrKx4lBgBVj8mXWsubfDx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
  d=lists.cip-project.org; q=dns/txt; s=20140610; t=1682809868;
- bh=II4pc0XDkXwoOaU0g3l8JbOj0ShYTLYF//KWLmflfag=;
+ bh=SMJXRaibDmMISnSEVODaq8mrw2VSentfbINvZobLbbo=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=iKTwjYzXs0G/sG+PPwbd6PlD6uXIoVijrmj0e413RvgsSsik4/RJ3zY+yeaZ0ynTLWQ
- E7XbQ6lVpVrqwpiU4glSWVF1lErixqRtDwuV6J7ihaYMMcoj86OJOcLajVL4GNbfPbEht
- 7BHxih8XyHoJwNNoiz5tmpg7CW9GKxlH4FU=
+ b=kgp7bmzYa39HKk8BLvzXpmjo8SPuu/TZQ+VLlFm8TzRJkw3+zuUnPsnnhpgikxd4NUN
+ dZD8tvDLeowQ1CUMlOIKBUzOYqPUjhc31E1Ejph5VHziuBSj0O93/aGJ4wWwr+N6Zibcq
+ HfuHOzu8zlsT0AP64hh12CWMCR0J2J6bRZI=
 
 
 Hello,
 
-The job with ID # 920367 is now in state Finished and health Complete. Job =
+The job with ID # 920368 is now in state Finished and health Complete. Job =
 was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/920367
+Job details and log file: http://lava.ciplatform.org/scheduler/job/920368
 
 
 
 
 Device details:
-Hostname: de0-nano-soc-02
+Hostname: de0-nano-soc-03
 Type: de0-nano-soc
 Owner:=20
 Worker: lab-cip-denx
@@ -68,9 +68,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#184534): https://lists.cip-project.org/g/cip-testing-re=
-sults/message/184534
-Mute This Topic: https://lists.cip-project.org/mt/98586036/4520527
+View/Reply Online (#184533): https://lists.cip-project.org/g/cip-testing-re=
+sults/message/184533
+Mute This Topic: https://lists.cip-project.org/mt/98586035/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
