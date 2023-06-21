@@ -1,22 +1,22 @@
-Return-Path: <bounce+64575+200034+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+200035+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from mail01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 155CF73890D
-	for <lists@lfdr.de>; Wed, 21 Jun 2023 17:28:50 +0200 (CEST)
-X-Received: by 127.0.0.2 with SMTP id aP1sYY4521862xARhrVrVafz; Wed, 21 Jun 2023 08:28:49 -0700
-X-Received: from a27-52.smtp-out.us-west-2.amazonses.com (a27-52.smtp-out.us-west-2.amazonses.com [54.240.27.52])
- by mx.groups.io with SMTP id smtpd.web11.1637.1687361329456561491
+	by mail.lfdr.de (Postfix) with ESMTPS id 4F7B373890E
+	for <lists@lfdr.de>; Wed, 21 Jun 2023 17:29:02 +0200 (CEST)
+X-Received: by 127.0.0.2 with SMTP id 2MoMYY4521862xEPYOd9j1wb; Wed, 21 Jun 2023 08:29:00 -0700
+X-Received: from a27-27.smtp-out.us-west-2.amazonses.com (a27-27.smtp-out.us-west-2.amazonses.com [54.240.27.27])
+ by mx.groups.io with SMTP id smtpd.web10.1542.1687361340668876338
  for <cip-testing-results@lists.cip-project.org>;
- Wed, 21 Jun 2023 08:28:49 -0700
+ Wed, 21 Jun 2023 08:29:00 -0700
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 969726 ci-iwamatsu-linux-5.10.y-cip-rc_renesas_defconfig_5.10.185-cip35_3c0549540_arm64_renesas_defconfig_r8a774a1-hihope-rzg2m-ex.dtb_ltp-sched-tests
+Subject: [cip-testing-results] LAVA notification for Test Job 969725 ci-iwamatsu-linux-5.10.y-cip-rc_cip_qemu_defconfig_5.10.185-cip35_3c0549540_x86_cip_qemu_defconfig_ltp-timers-tests
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Wed, 21 Jun 2023 15:28:48 +0000
-Message-ID: <01010188de9295af-09001458-7de4-441c-a74e-ccc079487cf0-000000@us-west-2.amazonses.com>
+Date: Wed, 21 Jun 2023 15:29:00 +0000
+Message-ID: <01010188de92c257-38a321bc-b35f-49ca-849b-094ae25cf26a-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-X-SES-Outgoing: 2023.06.21-54.240.27.52
+X-SES-Outgoing: 2023.06.21-54.240.27.27
 Precedence: Bulk
 List-Unsubscribe: <mailto:cip-testing-results+unsubscribe@lists.cip-project.org>
 List-Subscribe: <mailto:cip-testing-results+subscribe@lists.cip-project.org>
@@ -26,40 +26,39 @@ List-Id: <cip-testing-results.lists.cip-project.org>
 Mailing-List: list cip-testing-results@lists.cip-project.org; contact cip-testing-results+owner@lists.cip-project.org
 Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
-X-Gm-Message-State: d6ajglppfndWasxCsXvPvxMYx4520527AA=
+X-Gm-Message-State: jUbGGLSRAzDLPT00AUcHtzVMx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=lists.cip-project.org; q=dns/txt; s=20140610; t=1687361329;
- bh=F4RtMmY0EiTnXay6HtBiqDtEXRqGNUOl5Ud9zXUxmJM=;
+ d=lists.cip-project.org; q=dns/txt; s=20140610; t=1687361340;
+ bh=0paKPcXcez1gxXZIS51AzhhpLjF5jeLgXvMbBYJ4mCQ=;
  h=Content-Type:Date:From:Reply-To:Subject:To;
- b=MJfvzvQ0K2TGfOq0E7SaE4UFpXYsMWtCcJNAyMkf/frtqUMPfPKEKCLXXe2nqPE4tku
- GA1oCMe5hB6zNCkLTDUaOf3Auk30Lbcu6B7qWBVLXg3TTYS5aFaupeUDm5B/iTPpnhp2b
- /3tA5cb/gwswaNTVaj6A2UPu0LGxTn7/dpU=
+ b=fe46sp9ImEY2j9pxkaKsD2Wq7BEsSoLdnC1Eef7jkPB/dO2cYeEsFF4BL4EpcBSC3IF
+ 8IsQM60+RoQTAJI4bwgw7F/pV3OfRX05QfgMJeDfG/olTqqI6WhXvELtQQHnEwfrefz3d
+ Xz+MItbTClPqmI8y8g+I/TC+laGowXwkTMI=
 
 
 Hello,
 
-The job with ID # 969726 is now in state Finished and health Complete. Job =
+The job with ID # 969725 is now in state Finished and health Complete. Job =
 was submitted by CIP-Testing.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/969726
+Job details and log file: http://lava.ciplatform.org/scheduler/job/969725
 
 
 
 
 Device details:
-Hostname: r8a774a1-hihope-rzg2m-ex-patersonc-01
-Type: r8a774a1-hihope-rzg2m-ex
+Hostname: qemu-01
+Type: qemu
 Owner:=20
-Worker: lab-patersonc
+Worker: lab-cip-renesas
 Job details:
 Priority: Medium
-Description: ci-iwamatsu-linux-5.10.y-cip-rc_renesas_defconfig_5.10.185-cip=
-35_3c0549540_arm64_renesas_defconfig_r8a774a1-hihope-rzg2m-ex.dtb_ltp-sched=
--tests
-Submitted: 2023-06-21 15:19:40 (+0000 UTC)
-Started: 2023-06-21 15:25:08 (+0000 UTC)
+Description: ci-iwamatsu-linux-5.10.y-cip-rc_cip_qemu_defconfig_5.10.185-ci=
+p35_3c0549540_x86_cip_qemu_defconfig_ltp-timers-tests
+Submitted: 2023-06-21 15:19:37 (+0000 UTC)
+Started: 2023-06-21 15:21:52 (+0000 UTC)
 Finished:=20
 Duration: None
 
@@ -68,48 +67,51 @@ Metadata:
 Results:
 
 
-Test Suite 1_ltp-sched-tests: http://lava.ciplatform.org/results/969726/1_l=
-tp-sched-tests
-Test Case autogroup01: Test passed
-Test Case sched_stress: Test passed
-Test Case sched_cli_serv: Test failed
-Test Case hackbench02: Test skipped
-Test Case hackbench01: Test skipped
-Test Case trace_sched01: Test failed
-Test Case time-schedule01: Test skipped
-Test Case pth_str03: Test skipped
-Test Case pth_str02: Test skipped
-Test Case pth_str01: Test skipped
+Test Suite 2_ltp-timers-tests: http://lava.ciplatform.org/results/969725/2_=
+ltp-timers-tests
+Test Case leapsec_timer: Test passed
+Test Case timer_settime03: Test passed
+Test Case timer_settime02: Test passed
+Test Case timer_delete03: Test passed
+Test Case timer_delete02: Test passed
+Test Case timer_create04: Test passed
+Test Case timer_create03: Test passed
+Test Case timer_create02: Test passed
 
-Test Suite lava: http://lava.ciplatform.org/results/969726/lava
+Test Suite lava: http://lava.ciplatform.org/results/969725/lava
 Test Case job: Test passed
-Test Case power-off: Test passed
-Measurement: 0.5600000000 seconds
-Test Case 1_ltp-sched-tests: Test passed
-Measurement: 97.2000000000 seconds
+Test Case 2_ltp-timers-tests: Test passed
+Measurement: 38.2900000000 seconds
+Test Case 1_timesync-off: Test passed
+Measurement: 0.0300000000 seconds
 Test Case 0_prep-tmp-disk: Test passed
-Measurement: 0.0600000000 seconds
+Measurement: 0.2400000000 seconds
 Test Case login-action: Test passed
-Measurement: 19.3100000000 seconds
+Measurement: 69.1000000000 seconds
 Test Case kernel-messages: Test passed
-Measurement: 18.7200000000 seconds
-Test Case pdu-reboot: Test passed
-Measurement: 0.5800000000 seconds
-Test Case bootloader-overlay: Test passed
+Measurement: 66.9700000000 seconds
+Test Case execute-qemu: Test passed
+Measurement: 0.2100000000 seconds
+Test Case apply-overlay-guest: Test passed
+Measurement: 182.3900000000 seconds
 Test Case test-runscript-overlay: Test passed
+Measurement: 1.1700000000 seconds
 Test Case test-install-overlay: Test passed
 Test Case test-overlay: Test passed
 Test Case git-repo-action: Test passed
-Measurement: 4.3900000000 seconds
+Measurement: 24.1700000000 seconds
 Test Case test-runscript-overlay: Test passed
+Measurement: 0.5500000000 seconds
+Test Case test-install-overlay: Test passed
+Test Case test-overlay: Test passed
+Test Case test-runscript-overlay: Test passed
+Measurement: 1.0700000000 seconds
 Test Case test-install-overlay: Test passed
 Test Case test-overlay: Test passed
 Test Case http-download: Test passed
-Measurement: 13.6000000000 seconds
+Measurement: 21.3300000000 seconds
 Test Case http-download: Test passed
-Measurement: 0.1900000000 seconds
-Test Case http-download: Test passed
-Measurement: 0.5500000000 seconds
+Measurement: 14.0700000000 seconds
 Test Case validate: Test passed
 No query is set for results comparing.
 
@@ -120,9 +122,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#200034): https://lists.cip-project.org/g/cip-testing-re=
-sults/message/200034
-Mute This Topic: https://lists.cip-project.org/mt/99678642/4520527
+View/Reply Online (#200035): https://lists.cip-project.org/g/cip-testing-re=
+sults/message/200035
+Mute This Topic: https://lists.cip-project.org/mt/99678647/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
