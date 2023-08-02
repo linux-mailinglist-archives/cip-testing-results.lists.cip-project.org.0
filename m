@@ -1,29 +1,29 @@
-Return-Path: <bounce+64575+211994+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+211995+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from mail01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id BEF9F76D847
-	for <lists@lfdr.de>; Wed,  2 Aug 2023 21:59:50 +0200 (CEST)
-DKIM-Signature: a=rsa-sha256; bh=wUAe3GZFpzBrqxaHisCm/4+6N+IPtiO/3jfixSjIUw0=;
+	by mail.lfdr.de (Postfix) with ESMTPS id D0DF676D84A
+	for <lists@lfdr.de>; Wed,  2 Aug 2023 22:00:10 +0200 (CEST)
+DKIM-Signature: a=rsa-sha256; bh=r+RUQBlT1v1obzrrVPSa4o4eVkEDvhiLO9UX7gy4O9E=;
  c=relaxed/simple; d=lists.cip-project.org;
  h=MIME-Version:Subject:From:To:Date:Message-ID:Feedback-ID:Precedence:List-Subscribe:List-Help:Sender:List-Id:Mailing-List:Delivered-To:Reply-To:List-Unsubscribe-Post:List-Unsubscribe:Content-Type:Content-Transfer-Encoding;
- s=20140610; t=1691006389; v=1;
- b=FsPSyimJvv2/JdIshSfRitvZHgkEX4UOlMcz1+zraFY1xnI8lgOxyQXrh/X8Unmlv8SCGhoh
- mOt6pOykLejz42Si7tUsM4d2pz990Tp2EGhxcr18y1DGd73NAv4D3NXICvoPJc9JU/gQzdQN2eR
- fvuo3iqgOilDrgcMf+i7JM/g=
-X-Received: by 127.0.0.2 with SMTP id UxaDYY4521862xg1hn9Yc4sl; Wed, 02 Aug 2023 12:59:49 -0700
-X-Received: from a27-22.smtp-out.us-west-2.amazonses.com (a27-22.smtp-out.us-west-2.amazonses.com [54.240.27.22])
- by mx.groups.io with SMTP id smtpd.web10.6063.1691006389050816412
+ s=20140610; t=1691006409; v=1;
+ b=jw547oA9zPnT2VinquJG9wOBUxSSdNIjtQjVldpJKnbRwyhn11PU+RumU6CMmSf5X0D/Wdkc
+ ptgSmi6TPr1IZoSwlrsDjmIMDueAtJ/fa1spY6LFZgJcBzhkOdPB+s4s7UAizYxEoi4PaXHr0dY
+ QUBKXpyYOmeanHHo3+fYMDTY=
+X-Received: by 127.0.0.2 with SMTP id uhDjYY4521862xMCSo8be7oc; Wed, 02 Aug 2023 13:00:09 -0700
+X-Received: from a27-27.smtp-out.us-west-2.amazonses.com (a27-27.smtp-out.us-west-2.amazonses.com [54.240.27.27])
+ by mx.groups.io with SMTP id smtpd.web10.6075.1691006409216020809
  for <cip-testing-results@lists.cip-project.org>;
- Wed, 02 Aug 2023 12:59:49 -0700
+ Wed, 02 Aug 2023 13:00:09 -0700
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 991796 qemu x86_64 healthcheck
+Subject: [cip-testing-results] LAVA notification for Test Job 991795 qemu x86_64 healthcheck
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Wed, 2 Aug 2023 19:59:48 +0000
-Message-ID: <01010189b7d5c7b3-af847295-2549-4bee-87d3-50d9a62180dc-000000@us-west-2.amazonses.com>
+Date: Wed, 2 Aug 2023 20:00:08 +0000
+Message-ID: <01010189b7d615d8-7b8ee6f8-d111-4555-bd29-b52131872c2e-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-X-SES-Outgoing: 2023.08.02-54.240.27.22
+X-SES-Outgoing: 2023.08.02-54.240.27.27
 Precedence: Bulk
 List-Subscribe: <mailto:cip-testing-results+subscribe@lists.cip-project.org>
 List-Help: <mailto:cip-testing-results+help@lists.cip-project.org>
@@ -34,23 +34,23 @@ Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
 List-Unsubscribe: <https://lists.cip-project.org/g/cip-testing-results/leave/8129362/4520527/1896307328/plugh>
-X-Gm-Message-State: SL4phDRXJHs9Vlzdxg03o5i1x4520527AA=
+X-Gm-Message-State: Nym9X5q2GAYkhi6UEp413JXex4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
 
 Hello,
 
-The job with ID # 991796 is now in state Finished and health Complete. Job =
+The job with ID # 991795 is now in state Finished and health Complete. Job =
 was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/991796
+Job details and log file: http://lava.ciplatform.org/scheduler/job/991795
 
 
 
 
 Device details:
-Hostname: qemu-patersonc-02
+Hostname: qemu-patersonc-01
 Type: qemu
 Owner:=20
 Worker: lab-patersonc
@@ -69,9 +69,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#211994): https://lists.cip-project.org/g/cip-testing-re=
-sults/message/211994
-Mute This Topic: https://lists.cip-project.org/mt/100513309/4520527
+View/Reply Online (#211995): https://lists.cip-project.org/g/cip-testing-re=
+sults/message/211995
+Mute This Topic: https://lists.cip-project.org/mt/100513335/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
