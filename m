@@ -1,29 +1,29 @@
-Return-Path: <bounce+64575+214012+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+214013+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from mail01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 87D33775F4B
-	for <lists@lfdr.de>; Wed,  9 Aug 2023 14:38:13 +0200 (CEST)
-DKIM-Signature: a=rsa-sha256; bh=c6TMixWfcTy9ydHClaugI7kbZ6h6FSUOAgaWdWZVLAA=;
+	by mail.lfdr.de (Postfix) with ESMTPS id ED29E775F4C
+	for <lists@lfdr.de>; Wed,  9 Aug 2023 14:38:19 +0200 (CEST)
+DKIM-Signature: a=rsa-sha256; bh=L4K+FtOiPUSyh7qgvae/bFIEmDBIo7qVzttJJs54Rxc=;
  c=relaxed/simple; d=lists.cip-project.org;
  h=MIME-Version:Subject:From:To:Date:Message-ID:Feedback-ID:Precedence:List-Subscribe:List-Help:Sender:List-Id:Mailing-List:Delivered-To:Reply-To:List-Unsubscribe-Post:List-Unsubscribe:Content-Type:Content-Transfer-Encoding;
- s=20140610; t=1691584692; v=1;
- b=cIu3ZciPyOdCE1x8JRDJCa2csWIZNQnTvLh7WS5K7VFH6g2KUOifCcc2A82DCSQxmph0wQKc
- /kRXG+4AS0V3RPAkK/MtXg/gOuUkHQq82sXrC6bP4XfAhUxnoznHLwUQ02z6xzAwh++1IkOs5KH
- ygxTlRNqu47FSS2A5awdNCdQ=
-X-Received: by 127.0.0.2 with SMTP id sL76YY4521862xeAFdPPcayH; Wed, 09 Aug 2023 05:38:12 -0700
-X-Received: from a27-22.smtp-out.us-west-2.amazonses.com (a27-22.smtp-out.us-west-2.amazonses.com [54.240.27.22])
- by mx.groups.io with SMTP id smtpd.web11.87167.1691584671098269741
+ s=20140610; t=1691584693; v=1;
+ b=Inh2e2CCmlTtXD/WWpvlYTuDe3ZTJxKqkcRUJ/TwQGBkWqfk39c202jyx5FZCPY6FgDTfHQD
+ ZqT3Kv5tqzZesPMi9JlPB8AmlqZFcIFsudHdJskS2ojhiGtbawj9LS8lOneleYiaN5Z1Ot2YVVJ
+ FczsvA1pr8Vrlgl9uUTOkvN0=
+X-Received: by 127.0.0.2 with SMTP id 0yc6YY4521862xcpAltRVh6t; Wed, 09 Aug 2023 05:38:13 -0700
+X-Received: from a27-27.smtp-out.us-west-2.amazonses.com (a27-27.smtp-out.us-west-2.amazonses.com [54.240.27.27])
+ by mx.groups.io with SMTP id smtpd.web11.87172.1691584693344923049
  for <cip-testing-results@lists.cip-project.org>;
- Wed, 09 Aug 2023 05:38:12 -0700
+ Wed, 09 Aug 2023 05:38:13 -0700
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 994999 linux-5.15.y_shmobile_defconfig_5.15.126-rc1_ae7f23cbf_arm_shmobile_defconfig_r8a7743-iwg20d-q7-dbcm-ca.dtb_boot
+Subject: [cip-testing-results] LAVA notification for Test Job 995013 linux-4.19.y_qemu_arm64_defconfig_4.19.291-rc1_de1cde99f_arm64_qemu_arm64_defconfig_boot
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Wed, 9 Aug 2023 12:38:11 +0000
-Message-ID: <01010189da4dfd66-a6287165-ad48-4d7b-b204-917b14602a76-000000@us-west-2.amazonses.com>
+Date: Wed, 9 Aug 2023 12:38:12 +0000
+Message-ID: <01010189da4e00e9-43fe813b-8e91-40a8-aa83-b481ea428fed-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-X-SES-Outgoing: 2023.08.09-54.240.27.22
+X-SES-Outgoing: 2023.08.09-54.240.27.27
 Precedence: Bulk
 List-Subscribe: <mailto:cip-testing-results+subscribe@lists.cip-project.org>
 List-Help: <mailto:cip-testing-results+help@lists.cip-project.org>
@@ -34,32 +34,32 @@ Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
 List-Unsubscribe: <https://lists.cip-project.org/g/cip-testing-results/leave/8129362/4520527/1896307328/plugh>
-X-Gm-Message-State: qBuYsAd5vteU0Cuo6RF0qhajx4520527AA=
+X-Gm-Message-State: Y7oa2juBzjAmC4zA7ZmUbZAQx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
 
 Hello,
 
-The job with ID # 994999 is now in state Finished and health Complete. Job =
+The job with ID # 995013 is now in state Finished and health Complete. Job =
 was submitted by CIP-Testing.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/994999
+Job details and log file: http://lava.ciplatform.org/scheduler/job/995013
 
 
 
 
 Device details:
-Hostname: r8a7743-iwg20d-q7-01
-Type: r8a7743-iwg20d-q7
+Hostname: qemu-01
+Type: qemu
 Owner:=20
 Worker: lab-cip-renesas
 Job details:
 Priority: Medium
-Description: linux-5.15.y_shmobile_defconfig_5.15.126-rc1_ae7f23cbf_arm_shm=
-obile_defconfig_r8a7743-iwg20d-q7-dbcm-ca.dtb_boot
-Submitted: 2023-08-09 12:35:14 (+0000 UTC)
-Started: 2023-08-09 12:35:31 (+0000 UTC)
+Description: linux-4.19.y_qemu_arm64_defconfig_4.19.291-rc1_de1cde99f_arm64=
+_qemu_arm64_defconfig_boot
+Submitted: 2023-08-09 12:35:35 (+0000 UTC)
+Started: 2023-08-09 12:35:51 (+0000 UTC)
 Finished:=20
 Duration: None
 
@@ -68,32 +68,29 @@ Metadata:
 Results:
 
 
-Test Suite 0_kernel-version-inline: http://lava.ciplatform.org/results/9949=
-99/0_kernel-version-inline
+Test Suite 0_kernel-version-inline: http://lava.ciplatform.org/results/9950=
+13/0_kernel-version-inline
 Test Case uname: Test passed
 
-Test Suite lava: http://lava.ciplatform.org/results/994999/lava
+Test Suite lava: http://lava.ciplatform.org/results/995013/lava
 Test Case job: Test passed
-Test Case power-off: Test passed
-Measurement: 0.5400000000 seconds
 Test Case 0_kernel-version-inline: Test passed
-Measurement: 0.2400000000 seconds
+Measurement: 0.0800000000 seconds
 Test Case login-action: Test passed
-Measurement: 11.6300000000 seconds
+Measurement: 29.3700000000 seconds
 Test Case kernel-messages: Test passed
-Measurement: 11.0800000000 seconds
-Test Case pdu-reboot: Test passed
-Measurement: 0.5500000000 seconds
-Test Case bootloader-overlay: Test passed
+Measurement: 27.9800000000 seconds
+Test Case execute-qemu: Test passed
+Measurement: 0.2300000000 seconds
+Test Case apply-overlay-guest: Test passed
+Measurement: 17.6000000000 seconds
 Test Case test-runscript-overlay: Test passed
 Test Case test-install-overlay: Test passed
 Test Case test-overlay: Test passed
 Test Case http-download: Test passed
-Measurement: 55.6100000000 seconds
+Measurement: 51.2200000000 seconds
 Test Case http-download: Test passed
-Measurement: 0.5100000000 seconds
-Test Case http-download: Test passed
-Measurement: 4.6300000000 seconds
+Measurement: 14.9800000000 seconds
 Test Case validate: Test passed
 No query is set for results comparing.
 
@@ -104,9 +101,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#214012): https://lists.cip-project.org/g/cip-testing-re=
-sults/message/214012
-Mute This Topic: https://lists.cip-project.org/mt/100641788/4520527
+View/Reply Online (#214013): https://lists.cip-project.org/g/cip-testing-re=
+sults/message/214013
+Mute This Topic: https://lists.cip-project.org/mt/100641789/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
