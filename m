@@ -1,29 +1,29 @@
-Return-Path: <bounce+64575+217403+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+217404+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from mail01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 65C1B785EC0
-	for <lists@lfdr.de>; Wed, 23 Aug 2023 19:37:26 +0200 (CEST)
-DKIM-Signature: a=rsa-sha256; bh=y/SWY3efxDEp/mQV8wK7hn+zDwBHDBTl94Xs9oNtyPk=;
+	by mail.lfdr.de (Postfix) with ESMTPS id 84763785EC4
+	for <lists@lfdr.de>; Wed, 23 Aug 2023 19:38:25 +0200 (CEST)
+DKIM-Signature: a=rsa-sha256; bh=aqkHWdKlXCBgxTefJZ+xmw/3vjA7E3A9jyNK103D4MY=;
  c=relaxed/simple; d=lists.cip-project.org;
  h=MIME-Version:Subject:From:To:Date:Message-ID:Feedback-ID:Precedence:List-Subscribe:List-Help:Sender:List-Id:Mailing-List:Delivered-To:Reply-To:List-Unsubscribe-Post:List-Unsubscribe:Content-Type:Content-Transfer-Encoding;
- s=20140610; t=1692812245; v=1;
- b=wwlIXsjzHN7jAV5dE9zQ6BerV+M0Ukorm3uJMgBKuSS7ZLacINcl1FtH6Pkw5vZ2NSGMQvBJ
- lrs+pNk7+dGsuW77Jj+4Zzjz5ITGKNaivTk33HNAtfraGT4buG1OM7nyqPYpwSJAP5iHE4l0yem
- iFbx/UAeYaJ9RGXGUFBF66dA=
-X-Received: by 127.0.0.2 with SMTP id 7stHYY4521862xesjjFLssKJ; Wed, 23 Aug 2023 10:37:25 -0700
-X-Received: from a27-22.smtp-out.us-west-2.amazonses.com (a27-22.smtp-out.us-west-2.amazonses.com [54.240.27.22])
- by mx.groups.io with SMTP id smtpd.web11.3049.1692812244844094735
+ s=20140610; t=1692812304; v=1;
+ b=vXs05jnCHOYbaubGDyr0y2PICWX2kz9qxfpREbCJQTHNqV7YQ7RwA/GfadCj9vbsVvIHyAsc
+ y/LNFbxEr0xPMwhJktndEd7XTO6Y7UCy+R2wV1jmP9fsRl8EB7JIB4Z2CmxOzxd+F0+gdY++DYv
+ eqC9AW3ly4c/1S7fKDUa3hbk=
+X-Received: by 127.0.0.2 with SMTP id AL0xYY4521862xM0xYp4Jx1g; Wed, 23 Aug 2023 10:38:24 -0700
+X-Received: from a27-27.smtp-out.us-west-2.amazonses.com (a27-27.smtp-out.us-west-2.amazonses.com [54.240.27.27])
+ by mx.groups.io with SMTP id smtpd.web10.3063.1692812303933463808
  for <cip-testing-results@lists.cip-project.org>;
- Wed, 23 Aug 2023 10:37:24 -0700
+ Wed, 23 Aug 2023 10:38:24 -0700
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 999754 ci-iwamatsu-linux-6.1.y-cip-rc_cip_qemu_defconfig_6.1.47-cip3_e3c6326b8_x86_cip_qemu_defconfig_ltp-ipc-tests
+Subject: [cip-testing-results] LAVA notification for Test Job 999761 r8a774a1-hihope-rzg2m-ex healthcheck
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Wed, 23 Aug 2023 17:37:23 +0000
-Message-ID: <0101018a2378f334-dd86245f-0661-480e-b6a6-f902bb8ffacf-000000@us-west-2.amazonses.com>
+Date: Wed, 23 Aug 2023 17:38:23 +0000
+Message-ID: <0101018a2379da9b-70702687-8bfc-4cec-b158-ce8452622e23-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-X-SES-Outgoing: 2023.08.23-54.240.27.22
+X-SES-Outgoing: 2023.08.23-54.240.27.27
 Precedence: Bulk
 List-Subscribe: <mailto:cip-testing-results+subscribe@lists.cip-project.org>
 List-Help: <mailto:cip-testing-results+help@lists.cip-project.org>
@@ -34,81 +34,33 @@ Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
 List-Unsubscribe: <https://lists.cip-project.org/g/cip-testing-results/leave/8129362/4520527/1896307328/plugh>
-X-Gm-Message-State: RMNAGt4wgtVnpJEdcXIxP5jDx4520527AA=
+X-Gm-Message-State: YSU9xv2JuulNnWQPCIODKcj0x4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
 
 Hello,
 
-The job with ID # 999754 is now in state Finished and health Complete. Job =
-was submitted by CIP-Testing.
+The job with ID # 999761 is now in state Finished and health Complete. Job =
+was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/999754
+Job details and log file: http://lava.ciplatform.org/scheduler/job/999761
 
 
 
 
 Device details:
-Hostname: qemu-05
-Type: qemu
+Hostname: r8a774a1-hihope-rzg2m-ex-04
+Type: r8a774a1-hihope-rzg2m-ex
 Owner:=20
 Worker: lab-cip-renesas
 Job details:
-Priority: Medium
-Description: ci-iwamatsu-linux-6.1.y-cip-rc_cip_qemu_defconfig_6.1.47-cip3_=
-e3c6326b8_x86_cip_qemu_defconfig_ltp-ipc-tests
-Submitted: 2023-08-23 17:30:28 (+0000 UTC)
-Started: 2023-08-23 17:30:42 (+0000 UTC)
+Priority: High
+Description: r8a774a1-hihope-rzg2m-ex healthcheck
+Submitted: 2023-08-23 17:35:57 (+0000 UTC)
+Started: 2023-08-23 17:36:03 (+0000 UTC)
 Finished:=20
 Duration: None
-
-Metadata:
-
-Results:
-
-
-Test Suite 1_ltp-ipc-tests: http://lava.ciplatform.org/results/999754/1_ltp=
--ipc-tests
-Test Case sem02: Test failed
-Test Case sem01: Test passed
-Test Case pipeio_8: Test passed
-Test Case pipeio_6: Test passed
-Test Case pipeio_5: Test passed
-Test Case pipeio_4: Test passed
-Test Case pipeio_3: Test passed
-Test Case pipeio_1: Test passed
-
-Test Suite lava: http://lava.ciplatform.org/results/999754/lava
-Test Case job: Test passed
-Test Case 1_ltp-ipc-tests: Test passed
-Measurement: 26.1600000000 seconds
-Test Case 0_prep-tmp-disk: Test passed
-Measurement: 0.2700000000 seconds
-Test Case login-action: Test passed
-Measurement: 66.7300000000 seconds
-Test Case kernel-messages: Test passed
-Measurement: 64.2600000000 seconds
-Test Case execute-qemu: Test passed
-Measurement: 0.2100000000 seconds
-Test Case apply-overlay-guest: Test passed
-Measurement: 96.4800000000 seconds
-Test Case test-runscript-overlay: Test passed
-Measurement: 0.3400000000 seconds
-Test Case test-install-overlay: Test passed
-Test Case test-overlay: Test passed
-Test Case git-repo-action: Test passed
-Measurement: 38.1100000000 seconds
-Test Case test-runscript-overlay: Test passed
-Measurement: 0.0700000000 seconds
-Test Case test-install-overlay: Test passed
-Test Case test-overlay: Test passed
-Test Case http-download: Test passed
-Measurement: 68.3000000000 seconds
-Test Case http-download: Test passed
-Measurement: 32.0800000000 seconds
-Test Case validate: Test passed
-No query is set for results comparing.
 
 --=20
 LAVA
@@ -117,9 +69,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#217403): https://lists.cip-project.org/g/cip-testing-re=
-sults/message/217403
-Mute This Topic: https://lists.cip-project.org/mt/100920038/4520527
+View/Reply Online (#217404): https://lists.cip-project.org/g/cip-testing-re=
+sults/message/217404
+Mute This Topic: https://lists.cip-project.org/mt/100920064/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
