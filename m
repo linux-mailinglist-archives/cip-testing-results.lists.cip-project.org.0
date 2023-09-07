@@ -1,29 +1,29 @@
-Return-Path: <bounce+64575+222194+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+222195+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from mail01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 9B0C57972CB
-	for <lists@lfdr.de>; Thu,  7 Sep 2023 15:17:57 +0200 (CEST)
-DKIM-Signature: a=rsa-sha256; bh=A/Te8HraEd9ZWlE9xrLYbgg190pbA6gijOFDxPA2OOY=;
+	by mail.lfdr.de (Postfix) with ESMTPS id B66027972CC
+	for <lists@lfdr.de>; Thu,  7 Sep 2023 15:19:57 +0200 (CEST)
+DKIM-Signature: a=rsa-sha256; bh=ywWYacnEBDChwvFBSgiV3dYOWnPN4jvfqofGdcgtgOI=;
  c=relaxed/simple; d=lists.cip-project.org;
  h=MIME-Version:Subject:From:To:Date:Message-ID:Feedback-ID:Precedence:List-Subscribe:List-Help:Sender:List-Id:Mailing-List:Delivered-To:Reply-To:List-Unsubscribe-Post:List-Unsubscribe:Content-Type:Content-Transfer-Encoding;
- s=20140610; t=1694092676; v=1;
- b=WS8zoQ/PBAry7T3an3VDxQsT5t/NHAzj/xpzsMqj3Pn/qtOV3vgT34/Tz5fbrwnHTpoZyHzE
- 9S4YpmJ3KcgDdfCe5L47qG5BaHZ4DEwJPZzVKKiVTqETOa4DjsIjUjZ0lbIeBiXXMvYo/O4BQGx
- Yn3vu9Hvt8EqqcPMSGs1r4Rg=
-X-Received: by 127.0.0.2 with SMTP id j0NPYY4521862xeWqnx1STfF; Thu, 07 Sep 2023 06:17:56 -0700
-X-Received: from a27-24.smtp-out.us-west-2.amazonses.com (a27-24.smtp-out.us-west-2.amazonses.com [54.240.27.24])
- by mx.groups.io with SMTP id smtpd.web11.12736.1694092675880002429
+ s=20140610; t=1694092796; v=1;
+ b=rGuRLBZUmCJQccks9LKy82BPm5PQueCe2K3thm6BWSu975GflZeFVvTPWWI1PHGVvG55vKF9
+ +G/dLRSS7jEOECk/b9qAZ1ibmENhH8nxLC2UkSKpYAaBMXJmeH/JE/xgqoMTf2k9RSHhPycfpne
+ DnJ0lpQtN8LFpuT25CwZq/EE=
+X-Received: by 127.0.0.2 with SMTP id khokYY4521862xGgbJgsDOUY; Thu, 07 Sep 2023 06:19:56 -0700
+X-Received: from a27-27.smtp-out.us-west-2.amazonses.com (a27-27.smtp-out.us-west-2.amazonses.com [54.240.27.27])
+ by mx.groups.io with SMTP id smtpd.web11.12785.1694092796056562073
  for <cip-testing-results@lists.cip-project.org>;
- Thu, 07 Sep 2023 06:17:56 -0700
+ Thu, 07 Sep 2023 06:19:56 -0700
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 562 linux-6.1.y-cip_cip_qemu_defconfig_6.1.38-cip1_093191f30_x86_cip_qemu_defconfig_ltp-sched-tests
+Subject: [cip-testing-results] LAVA notification for Test Job 563 linux-6.1.y-cip_qemu_arm64_defconfig_6.1.38-cip1_093191f30_arm64_qemu_arm64_defconfig_wlan-smoke
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Thu, 7 Sep 2023 13:17:54 +0000
-Message-ID: <0101018a6fcac795-d588a7ca-5df5-4987-bb23-e0d7d792a329-000000@us-west-2.amazonses.com>
+Date: Thu, 7 Sep 2023 13:19:55 +0000
+Message-ID: <0101018a6fcc9c61-276dee06-c5b0-4097-89fe-fe6bb6a3595d-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-X-SES-Outgoing: 2023.09.07-54.240.27.24
+X-SES-Outgoing: 2023.09.07-54.240.27.27
 Precedence: Bulk
 List-Subscribe: <mailto:cip-testing-results+subscribe@lists.cip-project.org>
 List-Help: <mailto:cip-testing-results+help@lists.cip-project.org>
@@ -34,18 +34,18 @@ Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
 List-Unsubscribe: <https://lists.cip-project.org/g/cip-testing-results/leave/8129362/4520527/1896307328/plugh>
-X-Gm-Message-State: 71D9dqH1VA9O9N9KAlCD2dvFx4520527AA=
+X-Gm-Message-State: EVHpvbGagh7YDohFLUkWFqXtx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
 
 Hello,
 
-The job with ID # 562 is now in state Finished and health Complete. Job was=
+The job with ID # 563 is now in state Finished and health Complete. Job was=
  submitted by buurenvans.
 
 Job details and log file: http://lava-staging.ciplatform.org/scheduler/job/=
-562
+563
 
 
 
@@ -57,10 +57,10 @@ Owner: None
 Worker: lab-patersonc
 Job details:
 Priority: Medium
-Description: linux-6.1.y-cip_cip_qemu_defconfig_6.1.38-cip1_093191f30_x86_c=
-ip_qemu_defconfig_ltp-sched-tests
-Submitted: 2023-09-07 11:51:59 (+0000 UTC)
-Started: 2023-09-07 13:15:15 (+0000 UTC)
+Description: linux-6.1.y-cip_qemu_arm64_defconfig_6.1.38-cip1_093191f30_arm=
+64_qemu_arm64_defconfig_wlan-smoke
+Submitted: 2023-09-07 11:52:00 (+0000 UTC)
+Started: 2023-09-07 13:18:35 (+0000 UTC)
 Finished:=20
 Duration: None
 
@@ -69,46 +69,32 @@ Metadata:
 Results:
 
 
-Test Suite lava: http://lava-staging.ciplatform.org/results/562/lava
+Test Suite lava: http://lava-staging.ciplatform.org/results/563/lava
 Test Case validate: Test passed
-Test Case test-overlay: Test passed
-Test Case test-install-overlay: Test passed
-Test Case test-runscript-overlay: Test passed
 Test Case git-repo-action: Test passed
-Measurement: 2.7600000000 seconds
+Measurement: 2.8100000000 seconds
 Test Case test-overlay: Test passed
 Test Case test-install-overlay: Test passed
 Test Case test-runscript-overlay: Test passed
 Test Case apply-overlay-guest: Test passed
-Measurement: 18.4600000000 seconds
+Measurement: 17.9400000000 seconds
 Test Case http-download: Test passed
-Measurement: 0.6200000000 seconds
+Measurement: 0.5700000000 seconds
 Test Case http-download: Test passed
-Measurement: 4.7700000000 seconds
+Measurement: 7.0300000000 seconds
 Test Case execute-qemu: Test passed
-Measurement: 0.4500000000 seconds
+Measurement: 0.4300000000 seconds
 Test Case kernel-messages: Test passed
-Measurement: 13.8000000000 seconds
+Measurement: 22.2800000000 seconds
 Test Case login-action: Test passed
-Measurement: 14.4300000000 seconds
-Test Case 0_prep-tmp-disk: Test passed
-Measurement: 0.0500000000 seconds
-Test Case 1_ltp-sched-tests: Test passed
-Measurement: 86.4900000000 seconds
+Measurement: 22.8500000000 seconds
+Test Case 0_wlan-smoke: Test passed
+Measurement: 0.2000000000 seconds
 Test Case job: Test passed
 
-Test Suite 1_ltp-sched-tests: http://lava-staging.ciplatform.org/results/56=
-2/1_ltp-sched-tests
-Test Case time-schedule01: Test skipped
-Test Case pth_str01: Test skipped
-Test Case pth_str02: Test skipped
-Test Case pth_str03: Test skipped
-Test Case trace_sched01: Test failed
-Test Case hackbench01: Test skipped
-Test Case hackbench02: Test skipped
-Test Case sched_cli_serv: Test failed
-Test Case sched_stress: Test passed
-Test Case autogroup01: Test skipped
+Test Suite 0_wlan-smoke: http://lava-staging.ciplatform.org/results/563/0_w=
+lan-smoke
+Test Case ip-link: Test failed
 No query is set for results comparing.
 
 --
@@ -118,9 +104,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#222194): https://lists.cip-project.org/g/cip-testing-re=
-sults/message/222194
-Mute This Topic: https://lists.cip-project.org/mt/101214204/4520527
+View/Reply Online (#222195): https://lists.cip-project.org/g/cip-testing-re=
+sults/message/222195
+Mute This Topic: https://lists.cip-project.org/mt/101214246/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
