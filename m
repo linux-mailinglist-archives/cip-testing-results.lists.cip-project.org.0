@@ -1,29 +1,29 @@
-Return-Path: <bounce+64575+228234+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+228235+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from mail01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id D2EBB7B4A4E
-	for <lists@lfdr.de>; Mon,  2 Oct 2023 01:24:57 +0200 (CEST)
-DKIM-Signature: a=rsa-sha256; bh=q4YEzLglJiYOHue5L7QHczuHyYp2BXDtTTfWg15qkzY=;
+	by mail.lfdr.de (Postfix) with ESMTPS id 8463D7B4A4F
+	for <lists@lfdr.de>; Mon,  2 Oct 2023 01:25:17 +0200 (CEST)
+DKIM-Signature: a=rsa-sha256; bh=rXOc6m5YK2ZUAxjDOSC5+/69btm6BJe7wNMEV2AImuA=;
  c=relaxed/simple; d=lists.cip-project.org;
  h=MIME-Version:Subject:From:To:Date:Message-ID:Feedback-ID:Precedence:List-Subscribe:List-Help:Sender:List-Id:Mailing-List:Delivered-To:Reply-To:List-Unsubscribe-Post:List-Unsubscribe:Content-Type:Content-Transfer-Encoding;
- s=20140610; t=1696202696; v=1;
- b=g2U3AZ2lp8dDuTFroYrbCppS+B6KfUU6jDUbciE6NYowA6U+I3KWUdf9oKPZjq0F4jfXkp92
- qcwFV34kcH8Aiw+W2Jnf15iV3M/V2qk3V0NyU4eSvPVpPSrI23jfbqBcOw6+gboR1kcfvSRKye1
- 4t7ZSQnGvTdsPGjLiMgh98ic=
-X-Received: by 127.0.0.2 with SMTP id 0jCAYY4521862xClr3dqIbpr; Sun, 01 Oct 2023 16:24:56 -0700
-X-Received: from a27-27.smtp-out.us-west-2.amazonses.com (a27-27.smtp-out.us-west-2.amazonses.com [54.240.27.27])
- by mx.groups.io with SMTP id smtpd.web11.70710.1696202696214123924
+ s=20140610; t=1696202716; v=1;
+ b=C07MU+tqiWIc8t/2jVPRQw/HXW4jtLWqb2gR3xXcaPSe0pd4ZsTy9It19rhDf9m0INBHLhD6
+ xGVw46aMsaZyNCe+mZ5KP2CUX17ja6LsQZqv9a7pbon0Y63DcJFFGVB0LtpIjn41ue9SSXlmwbl
+ CrhvH5/uo3pXKvKqaM9PsjZo=
+X-Received: by 127.0.0.2 with SMTP id tHFDYY4521862x0L6EaqGUTV; Sun, 01 Oct 2023 16:25:16 -0700
+X-Received: from a27-24.smtp-out.us-west-2.amazonses.com (a27-24.smtp-out.us-west-2.amazonses.com [54.240.27.24])
+ by mx.groups.io with SMTP id smtpd.web10.70851.1696202715874017249
  for <cip-testing-results@lists.cip-project.org>;
- Sun, 01 Oct 2023 16:24:56 -0700
+ Sun, 01 Oct 2023 16:25:16 -0700
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 1015714 de0-nano-soc healthcheck
+Subject: [cip-testing-results] LAVA notification for Test Job 1015716 x86-openblocks-iot-vx2 health-check
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Sun, 1 Oct 2023 23:24:55 +0000
-Message-ID: <0101018aed8f2204-75165f8d-96fa-4cff-903e-65d2fbfefdae-000000@us-west-2.amazonses.com>
+Date: Sun, 1 Oct 2023 23:25:15 +0000
+Message-ID: <0101018aed8f7026-ee6b9021-c98b-48f0-8d5c-e3666c0851c3-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-X-SES-Outgoing: 2023.10.01-54.240.27.27
+X-SES-Outgoing: 2023.10.01-54.240.27.24
 Precedence: Bulk
 List-Subscribe: <mailto:cip-testing-results+subscribe@lists.cip-project.org>
 List-Help: <mailto:cip-testing-results+help@lists.cip-project.org>
@@ -34,31 +34,31 @@ Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
 List-Unsubscribe: <https://lists.cip-project.org/g/cip-testing-results/leave/8129362/4520527/1896307328/plugh>
-X-Gm-Message-State: LRFHoK2PfVWm4aOng3eDJfrFx4520527AA=
+X-Gm-Message-State: l5jEyW0e3OesYEKYozABuLPYx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
 
 Hello,
 
-The job with ID # 1015714 is now in state Finished and health Complete. Job=
+The job with ID # 1015716 is now in state Finished and health Complete. Job=
  was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/1015714
+Job details and log file: http://lava.ciplatform.org/scheduler/job/1015716
 
 
 
 
 Device details:
-Hostname: de0-nano-soc-02
-Type: de0-nano-soc
+Hostname: openblocks-iot-vx2-01
+Type: x86-openblocks-iot-vx2
 Owner:=20
 Worker: lab-cip-denx
 Job details:
 Priority: Medium
-Description: de0-nano-soc healthcheck
+Description: x86-openblocks-iot-vx2 health-check
 Submitted: 2023-10-01 23:21:27 (+0000 UTC)
-Started: 2023-10-01 23:21:35 (+0000 UTC)
+Started: 2023-10-01 23:21:37 (+0000 UTC)
 Finished:=20
 Duration: None
 
@@ -69,9 +69,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#228234): https://lists.cip-project.org/g/cip-testing-re=
-sults/message/228234
-Mute This Topic: https://lists.cip-project.org/mt/101702514/4520527
+View/Reply Online (#228235): https://lists.cip-project.org/g/cip-testing-re=
+sults/message/228235
+Mute This Topic: https://lists.cip-project.org/mt/101702516/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
