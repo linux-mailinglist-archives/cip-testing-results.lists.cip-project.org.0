@@ -1,29 +1,29 @@
-Return-Path: <bounce+64575+232613+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+232614+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from mail01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id DEF887D20AD
-	for <lists@lfdr.de>; Sun, 22 Oct 2023 03:56:07 +0200 (CEST)
-DKIM-Signature: a=rsa-sha256; bh=uKBir/YDX3nMxtXzmzFmZuf/xjDbrxPKg7b86kdZ9Uc=;
+	by mail.lfdr.de (Postfix) with ESMTPS id 0E9287D20AE
+	for <lists@lfdr.de>; Sun, 22 Oct 2023 03:56:53 +0200 (CEST)
+DKIM-Signature: a=rsa-sha256; bh=WhOMY0toSFWVFgMZBnrwcYhuXljZ9qBp22xR38bN/Dg=;
  c=relaxed/simple; d=lists.cip-project.org;
  h=MIME-Version:Subject:From:To:Date:Message-ID:Feedback-ID:Precedence:List-Subscribe:List-Help:Sender:List-Id:Mailing-List:Delivered-To:Reply-To:List-Unsubscribe-Post:List-Unsubscribe:Content-Type:Content-Transfer-Encoding;
- s=20140610; t=1697939766; v=1;
- b=KNwpnAXP2CQbLTGWuLLRSvcmq5QVFxI18EaTHu0lOMmPpub9cm8jHKDi+HnW+FFpjz+6EqzC
- ACYgJU/7IHl78WJ++0Cz+FRo/2QKXeOG/XTtjJ/d9URv39mn91n6YaReKR1WeWe0I2lgi1pwS3b
- XwTlsMehgL6SI65Iho+ovAJI=
-X-Received: by 127.0.0.2 with SMTP id FXc6YY4521862xkIjHTxPLKQ; Sat, 21 Oct 2023 18:56:06 -0700
-X-Received: from a27-24.smtp-out.us-west-2.amazonses.com (a27-24.smtp-out.us-west-2.amazonses.com [54.240.27.24])
- by mx.groups.io with SMTP id smtpd.web10.91971.1697939766392135337
+ s=20140610; t=1697939812; v=1;
+ b=ODVrTzf/9JwjOw5O/SsS3Jux5IUtcki2ascpcMHox8iziLYOBtJotb0St94+V4z960g0qIcu
+ BOtNb98VmDNxkEiqF2aiOy1hUO75RL5+HsXSu+X2Degk3mC65MmCh92MP3LRSKX/IjAio0byzZZ
+ CdQgwDka01kv9cmYJOycFjK8=
+X-Received: by 127.0.0.2 with SMTP id ONIWYY4521862xTWD5K9DxQ0; Sat, 21 Oct 2023 18:56:52 -0700
+X-Received: from a27-50.smtp-out.us-west-2.amazonses.com (a27-50.smtp-out.us-west-2.amazonses.com [54.240.27.50])
+ by mx.groups.io with SMTP id smtpd.web11.92304.1697939812477315690
  for <cip-testing-results@lists.cip-project.org>;
- Sat, 21 Oct 2023 18:56:06 -0700
+ Sat, 21 Oct 2023 18:56:52 -0700
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 1024002 x86-openblocks-iot-vx2 health-check
+Subject: [cip-testing-results] LAVA notification for Test Job 1024005 qemu x86_64 healthcheck
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Sun, 22 Oct 2023 01:56:05 +0000
-Message-ID: <0101018b5518b8a7-1ec5ec61-2b0f-409f-b4b7-e743c6425108-000000@us-west-2.amazonses.com>
+Date: Sun, 22 Oct 2023 01:56:51 +0000
+Message-ID: <0101018b55196d89-3839cf48-21a1-460a-adb5-7b221ad3ce54-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-X-SES-Outgoing: 2023.10.22-54.240.27.24
+X-SES-Outgoing: 2023.10.22-54.240.27.50
 Precedence: Bulk
 List-Subscribe: <mailto:cip-testing-results+subscribe@lists.cip-project.org>
 List-Help: <mailto:cip-testing-results+help@lists.cip-project.org>
@@ -34,33 +34,33 @@ Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
 List-Unsubscribe: <https://lists.cip-project.org/g/cip-testing-results/leave/8129362/4520527/1896307328/plugh>
-X-Gm-Message-State: KX4PoCjLXMwhl6G9FHdMcQy8x4520527AA=
+X-Gm-Message-State: GaTmpZhfiviwXQZvMOLMjh1hx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
 
 Hello,
 
-The job with ID # 1024002 is now in state Finished and health Complete. Job=
+The job with ID # 1024005 is now in state Finished and health Complete. Job=
  was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/1024002
+Job details and log file: http://lava.ciplatform.org/scheduler/job/1024005
 
 
 
 
 Device details:
-Hostname: openblocks-iot-vx2-02
-Type: x86-openblocks-iot-vx2
+Hostname: qemu-renesas-01
+Type: qemu
 Owner: None
-Worker: lab-cip-denx
+Worker: lab-cip-renesas
 Job details:
-Priority: Medium
-Description: x86-openblocks-iot-vx2 health-check
-Submitted: 2023-10-22 01:51:05 (+0000 UTC)
-Started: 2023-10-22 01:51:26 (+0000 UTC)
-Finished: 2023-10-22 01:56:05 (+0000 UTC)
-Duration: 0:04:38
+Priority: High
+Description: qemu x86_64 healthcheck
+Submitted: 2023-10-22 01:55:44 (+0000 UTC)
+Started: 2023-10-22 01:55:57 (+0000 UTC)
+Finished: 2023-10-22 01:56:51 (+0000 UTC)
+Duration: 0:00:54
 
 --
 LAVA
@@ -69,9 +69,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#232613): https://lists.cip-project.org/g/cip-testing-re=
-sults/message/232613
-Mute This Topic: https://lists.cip-project.org/mt/102110633/4520527
+View/Reply Online (#232614): https://lists.cip-project.org/g/cip-testing-re=
+sults/message/232614
+Mute This Topic: https://lists.cip-project.org/mt/102110640/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
