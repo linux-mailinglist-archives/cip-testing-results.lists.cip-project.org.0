@@ -1,29 +1,29 @@
-Return-Path: <bounce+64575+236323+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+236324+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from mail01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 862377DDDFB
-	for <lists@lfdr.de>; Wed,  1 Nov 2023 10:03:36 +0100 (CET)
-DKIM-Signature: a=rsa-sha256; bh=xs8TQLc/KrzDVNMYmg6wAX46dgrX2im/U2oRDHkU3OQ=;
+	by mail.lfdr.de (Postfix) with ESMTPS id B3D167DDE27
+	for <lists@lfdr.de>; Wed,  1 Nov 2023 10:08:36 +0100 (CET)
+DKIM-Signature: a=rsa-sha256; bh=/0GVao4uNFOUmNjTZ0lN3c9xaMf/6t8NT6WljZ0WCUo=;
  c=relaxed/simple; d=lists.cip-project.org;
  h=MIME-Version:Subject:From:To:Date:Message-ID:Feedback-ID:Precedence:List-Subscribe:List-Help:Sender:List-Id:Mailing-List:Delivered-To:Reply-To:List-Unsubscribe-Post:List-Unsubscribe:Content-Type:Content-Transfer-Encoding;
- s=20140610; t=1698829415; v=1;
- b=odI9dQzOjXnYfd0uPvfqy/bAbXtbfPK11F27sSigg/AesPbhKsyJpx9CRSo70VsLP0aGv2FZ
- xubqLMBkMXtPN0ceI2eM/9+rIT1j46AHEQrXJWsB0qSqvtTSPD69RSZTKu8+LQ7KhDAXuvygTq6
- 28ar9eO4aZizmzSXedHF4Beo=
-X-Received: by 127.0.0.2 with SMTP id kMpTYY4521862xVXmANOMyEI; Wed, 01 Nov 2023 02:03:35 -0700
-X-Received: from a27-27.smtp-out.us-west-2.amazonses.com (a27-27.smtp-out.us-west-2.amazonses.com [54.240.27.27])
- by mx.groups.io with SMTP id smtpd.web10.2958.1698829414952801557
+ s=20140610; t=1698829715; v=1;
+ b=lDq6pn76kHMwCyQb8EnKZ+yKGXllhhUeE3JF4WYd97h6cjOqq1K0ld3A4a3sW+kHH0oo0803
+ WaNOwhhGadMRSLHLIfdbHTdgKu//3Pjn8HEl6EvRMRq9fPzrTZUS69y0EkLOXa40E0ZVbnA2H0o
+ 2sTlXKImFHb8HIijPl3lvht4=
+X-Received: by 127.0.0.2 with SMTP id cx7uYY4521862xncM3mk2yKP; Wed, 01 Nov 2023 02:08:35 -0700
+X-Received: from a27-52.smtp-out.us-west-2.amazonses.com (a27-52.smtp-out.us-west-2.amazonses.com [54.240.27.52])
+ by mx.groups.io with SMTP id smtpd.web11.2930.1698829714912924646
  for <cip-testing-results@lists.cip-project.org>;
- Wed, 01 Nov 2023 02:03:35 -0700
+ Wed, 01 Nov 2023 02:08:35 -0700
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 1031063 de0-nano-soc healthcheck
+Subject: [cip-testing-results] LAVA notification for Test Job 1031071 linux-5.15.y_renesas_defconfig_5.15.138-rc1_f26ee6f20_arm64_renesas_defconfig_r8a774a1-hihope-rzg2m-ex.dtb_boot
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Wed, 1 Nov 2023 09:03:33 +0000
-Message-ID: <0101018b8a1fadca-4eb97223-4308-43ec-b26d-648e9284d8ac-000000@us-west-2.amazonses.com>
+Date: Wed, 1 Nov 2023 09:08:33 +0000
+Message-ID: <0101018b8a2441f3-4cfe60e3-a26f-4da1-86d8-f65563ad45c8-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-X-SES-Outgoing: 2023.11.01-54.240.27.27
+X-SES-Outgoing: 2023.11.01-54.240.27.52
 Precedence: Bulk
 List-Subscribe: <mailto:cip-testing-results+subscribe@lists.cip-project.org>
 List-Help: <mailto:cip-testing-results+help@lists.cip-project.org>
@@ -34,96 +34,68 @@ Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
 List-Unsubscribe: <https://lists.cip-project.org/g/cip-testing-results/leave/8129362/4520527/1896307328/plugh>
-X-Gm-Message-State: 8cQBpbcbrwQofOx1pQ3vGkvJx4520527AA=
+X-Gm-Message-State: PIWHEs7qvltv9rHd1RQQh6qLx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
 
 Hello,
 
-The job with ID # 1031063 is now in state Finished and health Incomplete. J=
-ob was submitted by lava-health.
+The job with ID # 1031071 is now in state Finished and health Complete. Job=
+ was submitted by CIP-Testing.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/1031063
+Job details and log file: http://lava.ciplatform.org/scheduler/job/1031071
 
 
-Job error: [  100.379809] Kernel panic - not syncing: VFS: Unable to mount =
-root fs on unknown-block(2,0)
-[  100.388038] CPU: 1 PID: 1 Comm: swapper/0 Not tainted 4.19.66-cip9 #1
-[  100.394449] Hardware name: Altera SOCFPGA
-[  100.398464] [&lt;c0112bc8&gt;] (unwind_backtrace) from [&lt;c010d670&gt;=
-] (show_stack+0x20/0x24)
-[  100.406185] [&lt;c010d670&gt;] (show_stack) from [&lt;c07f918c&gt;] (dum=
-p_stack+0x8c/0xa0)
-[  100.413386] [&lt;c07f918c&gt;] (dump_stack) from [&lt;c01233e4&gt;] (pan=
-ic+0x100/0x26c)
-[  100.420325] [&lt;c01233e4&gt;] (panic) from [&lt;c0c01818&gt;] (mount_bl=
-ock_root+0x1b8/0x2a4)
-[  100.427779] [&lt;c0c01818&gt;] (mount_block_root) from [&lt;c0c01b9c&gt;=
-] (mount_root+0x150/0x16c)
-[  100.435664] [&lt;c0c01b9c&gt;] (mount_root) from [&lt;c0c01d44&gt;] (pre=
-pare_namespace+0x18c/0x1d4)
-[  100.443640] [&lt;c0c01d44&gt;] (prepare_namespace) from [&lt;c0c01320&gt=
-;] (kernel_init_freeable+0x328/0x39c)
-[  100.452477] [&lt;c0c01320&gt;] (kernel_init_freeable) from [&lt;c080f7e0=
-&gt;] (kernel_init+0x18/0x128)
-[  100.460709] [&lt;c080f7e0&gt;] (kernel_init) from [&lt;c01010e8&gt;] (re=
-t_from_fork+0x14/0x2c)
-[  100.468244] Exception stack(0xef107fb0 to 0xef107ff8)
-[  100.473274] 7fa0:                                     00000000 00000000 =
-00000000 00000000
-[  100.481417] 7fc0: 00000000 00000000 00000000 00000000 00000000 00000000 =
-00000000 00000000
-[  100.489558] 7fe0: 00000000 00000000 00000000 00000000 00000013 00000000
-[  100.496147] CPU0: stopping
-[  100.498849] CPU: 0 PID: 0 Comm: swapper/0 Not tainted 4.19.66-cip9 #1
-[  100.505260] Hardware name: Altera SOCFPGA
-[  100.509262] [&lt;c0112bc8&gt;] (unwind_backtrace) from [&lt;c010d670&gt;=
-] (show_stack+0x20/0x24)
-[  100.516980] [&lt;c010d670&gt;] (show_stack) from [&lt;c07f918c&gt;] (dum=
-p_stack+0x8c/0xa0)
-[  100.524176] [&lt;c07f918c&gt;] (dump_stack) from [&lt;c0110e54&gt;] (han=
-dle_IPI+0x33c/0x3b8)
-[  100.531546] [&lt;c0110e54&gt;] (handle_IPI) from [&lt;c01022a8&gt;] (gic=
-_handle_irq+0x9c/0xa0)
-[  100.539085] [&lt;c01022a8&gt;] (gic_handle_irq) from [&lt;c0101a0c&gt;] =
-(__irq_svc+0x6c/0x90)
-[  100.546533] Exception stack(0xc0d01ee0 to 0xc0d01f28)
-[  100.551567] 1ee0: 00000000 00014d8c ef7ce3b8 c011c8c0 c0d00000 c0d03c70 =
-c0d03cb0 00000001
-[  100.559711] 1f00: c0d767c7 c09e00bc c0c59a34 c0d01f3c c0d01f40 c0d01f30 =
-c01098d8 c01098dc
-[  100.567850] 1f20: 60000013 ffffffff
-[  100.571332] [&lt;c0101a0c&gt;] (__irq_svc) from [&lt;c01098dc&gt;] (arch=
-_cpu_idle+0x48/0x4c)
-[  100.578702] [&lt;c01098dc&gt;] (arch_cpu_idle) from [&lt;c0815694&gt;] (=
-default_idle_call+0x30/0x3c)
-[  100.586764] [&lt;c0815694&gt;] (default_idle_call) from [&lt;c0155160&gt=
-;] (do_idle+0xd8/0x148)
-[  100.594390] [&lt;c0155160&gt;] (do_idle) from [&lt;c0155490&gt;] (cpu_st=
-artup_entry+0x28/0x30)
-[  100.601928] [&lt;c0155490&gt;] (cpu_startup_entry) from [&lt;c080f7c4&gt=
-;] (rest_init+0xc0/0xc4)
-[  100.609642] [&lt;c080f7c4&gt;] (rest_init) from [&lt;c0c00fc8&gt;] (star=
-t_kernel+0x46c/0x49c)
-[  100.617094] [&lt;c0c00fc8&gt;] (start_kernel) from [&lt;00000000&gt;] ( =
- (null))
-[  100.623427] ---[ end Kernel panic - not syncing: VFS: Unable to mount ro=
-ot fs on unknown-block(2,0) ]---
 
 
 Device details:
-Hostname: de0-nano-soc-siemens-muc
-Type: de0-nano-soc
+Hostname: r8a774a1-hihope-rzg2m-ex-05
+Type: r8a774a1-hihope-rzg2m-ex
 Owner: None
-Worker: lab-cip-siemens-muc
+Worker: lab-cip-denx
 Job details:
 Priority: Medium
-Description: de0-nano-soc healthcheck
-Submitted: 2023-11-01 08:56:13 (+0000 UTC)
-Started: 2023-11-01 08:56:31 (+0000 UTC)
-Finished: 2023-11-01 09:03:33 (+0000 UTC)
-Duration: 0:07:01
+Description: linux-5.15.y_renesas_defconfig_5.15.138-rc1_f26ee6f20_arm64_re=
+nesas_defconfig_r8a774a1-hihope-rzg2m-ex.dtb_boot
+Submitted: 2023-11-01 09:06:18 (+0000 UTC)
+Started: 2023-11-01 09:06:34 (+0000 UTC)
+Finished: 2023-11-01 09:08:33 (+0000 UTC)
+Duration: 0:01:59
+
+Metadata:
+
+Results:
+
+
+Test Suite lava: http://lava.ciplatform.org/results/1031071/lava
+Test Case validate: Test passed
+Test Case http-download: Test passed
+Measurement: 4.25 seconds
+Test Case http-download: Test passed
+Measurement: 0.06 seconds
+Test Case http-download: Test passed
+Measurement: 5.26 seconds
+Test Case test-overlay: Test passed
+Test Case test-install-overlay: Test passed
+Test Case test-runscript-overlay: Test passed
+Test Case bootloader-overlay: Test passed
+Test Case pdu-reboot: Test passed
+Measurement: 16.50 seconds
+Test Case kernel-messages: Test passed
+Measurement: 18.44 seconds
+Test Case login-action: Test passed
+Measurement: 19.86 seconds
+Test Case 0_kernel-version-inline: Test passed
+Measurement: 0.20 seconds
+Test Case power-off: Test passed
+Measurement: 1.08 seconds
+Test Case job: Test passed
+
+Test Suite 0_kernel-version-inline: http://lava.ciplatform.org/results/1031=
+071/0_kernel-version-inline
+Test Case uname: Test passed
+No query is set for results comparing.
 
 --
 LAVA
@@ -132,9 +104,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#236323): https://lists.cip-project.org/g/cip-testing-re=
-sults/message/236323
-Mute This Topic: https://lists.cip-project.org/mt/102314989/4520527
+View/Reply Online (#236324): https://lists.cip-project.org/g/cip-testing-re=
+sults/message/236324
+Mute This Topic: https://lists.cip-project.org/mt/102315017/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
