@@ -1,29 +1,29 @@
-Return-Path: <bounce+64575+237317+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+237318+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from mail01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 2CDDA7E00E4
-	for <lists@lfdr.de>; Fri,  3 Nov 2023 11:30:41 +0100 (CET)
-DKIM-Signature: a=rsa-sha256; bh=BvO6dVtQEBb+MXQBr3GG7UsAowBBjuEb+kMr1Edn9Kk=;
+	by mail.lfdr.de (Postfix) with ESMTPS id 93C6B7E0190
+	for <lists@lfdr.de>; Fri,  3 Nov 2023 11:32:57 +0100 (CET)
+DKIM-Signature: a=rsa-sha256; bh=XLjAJ8e9scVVXvPT4aqbD5iHkzBaA88g9wGkFui76Tg=;
  c=relaxed/simple; d=lists.cip-project.org;
  h=MIME-Version:Subject:From:To:Date:Message-ID:Feedback-ID:Precedence:List-Subscribe:List-Help:Sender:List-Id:Mailing-List:Delivered-To:Reply-To:List-Unsubscribe-Post:List-Unsubscribe:Content-Type:Content-Transfer-Encoding;
- s=20140610; t=1699007439; v=1;
- b=XWMi2DtYTB99Hx+43r0qE5UTwCIM5HIeSnAvKW2Z4S7v1GviJIxZuAFKD8tYhQKL6mMbh1nR
- OD/mPD0OZlSWCLj24YD77hMBMy0jJC2rVg4gGoqsH6haamCJZOYq8G46ba+dTY25BovBtAbX5jN
- 5C1uXSUevg3LsN9lAT1AR+P8=
-X-Received: by 127.0.0.2 with SMTP id KrITYY4521862xbBRzATYiI7; Fri, 03 Nov 2023 03:30:39 -0700
-X-Received: from a27-27.smtp-out.us-west-2.amazonses.com (a27-27.smtp-out.us-west-2.amazonses.com [54.240.27.27])
- by mx.groups.io with SMTP id smtpd.web11.48071.1699007439624838411
+ s=20140610; t=1699007576; v=1;
+ b=sUuhle1g8aZKXgx68bOeciAULjHBlqLuA2wNmB07CPVrwtEQkMkiig2p/1HObHjKwGuWWwGk
+ mg25Cu3UABgwyBfKGLUVyL8vQXhyYrSkMsYpj/K3cZ6mdLnCNRqxAr/eA4+wGmo6fwjA+mxHsLh
+ fJNjj6hZ+UTiJ0p0qx9ybYl0=
+X-Received: by 127.0.0.2 with SMTP id fHmRYY4521862xUaOYWPumMS; Fri, 03 Nov 2023 03:32:56 -0700
+X-Received: from a27-22.smtp-out.us-west-2.amazonses.com (a27-22.smtp-out.us-west-2.amazonses.com [54.240.27.22])
+ by mx.groups.io with SMTP id smtpd.web10.48941.1699007575815441775
  for <cip-testing-results@lists.cip-project.org>;
- Fri, 03 Nov 2023 03:30:39 -0700
+ Fri, 03 Nov 2023 03:32:56 -0700
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 1033416 x86-simatic-ipc227e health-check
+Subject: [cip-testing-results] LAVA notification for Test Job 1033415 de0-nano-soc healthcheck
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Fri, 3 Nov 2023 10:30:38 +0000
-Message-ID: <0101018b94bc2002-cab820b2-4d93-435e-b005-9b007437cebe-000000@us-west-2.amazonses.com>
+Date: Fri, 3 Nov 2023 10:32:55 +0000
+Message-ID: <0101018b94be3498-8dac0891-8abb-43d1-8aa0-77bd5fc3b567-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-X-SES-Outgoing: 2023.11.03-54.240.27.27
+X-SES-Outgoing: 2023.11.03-54.240.27.22
 Precedence: Bulk
 List-Subscribe: <mailto:cip-testing-results+subscribe@lists.cip-project.org>
 List-Help: <mailto:cip-testing-results+help@lists.cip-project.org>
@@ -34,36 +34,96 @@ Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
 List-Unsubscribe: <https://lists.cip-project.org/g/cip-testing-results/leave/8129362/4520527/1896307328/plugh>
-X-Gm-Message-State: 3ElAXI0mw1mbWFTs18XPnjfjx4520527AA=
+X-Gm-Message-State: acGwYArnXxJaTSFgIjOxdi5yx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
 
 Hello,
 
-The job with ID # 1033416 is now in state Finished and health Incomplete. J=
+The job with ID # 1033415 is now in state Finished and health Incomplete. J=
 ob was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/1033416
+Job details and log file: http://lava.ciplatform.org/scheduler/job/1033415
 
 
-Infrastructure error: Unable to unpack /var/lib/lava/dispatcher/tmp/1033416=
-/tftp-deploy-r6sq0_v4/nfsrootfs/rootfs-simatic-ipc227e.tar: [Errno 28] No s=
-pace left on device
+Job error: [  100.390171] Kernel panic - not syncing: VFS: Unable to mount =
+root fs on unknown-block(2,0)
+[  100.398400] CPU: 1 PID: 1 Comm: swapper/0 Not tainted 4.19.66-cip9 #1
+[  100.404811] Hardware name: Altera SOCFPGA
+[  100.408825] [&lt;c0112bc8&gt;] (unwind_backtrace) from [&lt;c010d670&gt;=
+] (show_stack+0x20/0x24)
+[  100.416546] [&lt;c010d670&gt;] (show_stack) from [&lt;c07f918c&gt;] (dum=
+p_stack+0x8c/0xa0)
+[  100.423748] [&lt;c07f918c&gt;] (dump_stack) from [&lt;c01233e4&gt;] (pan=
+ic+0x100/0x26c)
+[  100.430686] [&lt;c01233e4&gt;] (panic) from [&lt;c0c01818&gt;] (mount_bl=
+ock_root+0x1b8/0x2a4)
+[  100.438141] [&lt;c0c01818&gt;] (mount_block_root) from [&lt;c0c01b9c&gt;=
+] (mount_root+0x150/0x16c)
+[  100.446026] [&lt;c0c01b9c&gt;] (mount_root) from [&lt;c0c01d44&gt;] (pre=
+pare_namespace+0x18c/0x1d4)
+[  100.454003] [&lt;c0c01d44&gt;] (prepare_namespace) from [&lt;c0c01320&gt=
+;] (kernel_init_freeable+0x328/0x39c)
+[  100.462840] [&lt;c0c01320&gt;] (kernel_init_freeable) from [&lt;c080f7e0=
+&gt;] (kernel_init+0x18/0x128)
+[  100.471073] [&lt;c080f7e0&gt;] (kernel_init) from [&lt;c01010e8&gt;] (re=
+t_from_fork+0x14/0x2c)
+[  100.478607] Exception stack(0xef107fb0 to 0xef107ff8)
+[  100.483638] 7fa0:                                     00000000 00000000 =
+00000000 00000000
+[  100.491780] 7fc0: 00000000 00000000 00000000 00000000 00000000 00000000 =
+00000000 00000000
+[  100.499921] 7fe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[  100.506510] CPU0: stopping
+[  100.509212] CPU: 0 PID: 0 Comm: swapper/0 Not tainted 4.19.66-cip9 #1
+[  100.515622] Hardware name: Altera SOCFPGA
+[  100.519625] [&lt;c0112bc8&gt;] (unwind_backtrace) from [&lt;c010d670&gt;=
+] (show_stack+0x20/0x24)
+[  100.527341] [&lt;c010d670&gt;] (show_stack) from [&lt;c07f918c&gt;] (dum=
+p_stack+0x8c/0xa0)
+[  100.534538] [&lt;c07f918c&gt;] (dump_stack) from [&lt;c0110e54&gt;] (han=
+dle_IPI+0x33c/0x3b8)
+[  100.541906] [&lt;c0110e54&gt;] (handle_IPI) from [&lt;c01022a8&gt;] (gic=
+_handle_irq+0x9c/0xa0)
+[  100.549446] [&lt;c01022a8&gt;] (gic_handle_irq) from [&lt;c0101a0c&gt;] =
+(__irq_svc+0x6c/0x90)
+[  100.556895] Exception stack(0xc0d01ee0 to 0xc0d01f28)
+[  100.561928] 1ee0: 00000000 00014964 ef7ce3b8 c011c8c0 c0d00000 c0d03c70 =
+c0d03cb0 00000001
+[  100.570072] 1f00: c0d767c7 c09e00bc c0c59a34 c0d01f3c c0d01f40 c0d01f30 =
+c01098d8 c01098dc
+[  100.578211] 1f20: 60000013 ffffffff
+[  100.581692] [&lt;c0101a0c&gt;] (__irq_svc) from [&lt;c01098dc&gt;] (arch=
+_cpu_idle+0x48/0x4c)
+[  100.589062] [&lt;c01098dc&gt;] (arch_cpu_idle) from [&lt;c0815694&gt;] (=
+default_idle_call+0x30/0x3c)
+[  100.597124] [&lt;c0815694&gt;] (default_idle_call) from [&lt;c0155160&gt=
+;] (do_idle+0xd8/0x148)
+[  100.604751] [&lt;c0155160&gt;] (do_idle) from [&lt;c0155490&gt;] (cpu_st=
+artup_entry+0x28/0x30)
+[  100.612290] [&lt;c0155490&gt;] (cpu_startup_entry) from [&lt;c080f7c4&gt=
+;] (rest_init+0xc0/0xc4)
+[  100.620004] [&lt;c080f7c4&gt;] (rest_init) from [&lt;c0c00fc8&gt;] (star=
+t_kernel+0x46c/0x49c)
+[  100.627457] [&lt;c0c00fc8&gt;] (start_kernel) from [&lt;00000000&gt;] ( =
+ (null))
+[  100.633790] ---[ end Kernel panic - not syncing: VFS: Unable to mount ro=
+ot fs on unknown-block(2,0) ]---
 
 
 Device details:
-Hostname: ipc227e-siemens-muc
-Type: x86-simatic-ipc227e
+Hostname: de0-nano-soc-siemens-muc
+Type: de0-nano-soc
 Owner: None
 Worker: lab-cip-siemens-muc
 Job details:
 Priority: Medium
-Description: x86-simatic-ipc227e health-check
-Submitted: 2023-11-03 10:25:52 (+0000 UTC)
+Description: de0-nano-soc healthcheck
+Submitted: 2023-11-03 10:25:50 (+0000 UTC)
 Started: 2023-11-03 10:25:55 (+0000 UTC)
-Finished: 2023-11-03 10:30:38 (+0000 UTC)
-Duration: 0:04:42
+Finished: 2023-11-03 10:32:54 (+0000 UTC)
+Duration: 0:06:59
 
 --
 LAVA
@@ -72,9 +132,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#237317): https://lists.cip-project.org/g/cip-testing-re=
-sults/message/237317
-Mute This Topic: https://lists.cip-project.org/mt/102361136/4520527
+View/Reply Online (#237318): https://lists.cip-project.org/g/cip-testing-re=
+sults/message/237318
+Mute This Topic: https://lists.cip-project.org/mt/102361147/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
