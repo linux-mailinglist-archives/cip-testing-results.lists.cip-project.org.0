@@ -1,29 +1,29 @@
-Return-Path: <bounce+64575+240091+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+240092+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from mail01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 83A707EAD35
-	for <lists@lfdr.de>; Tue, 14 Nov 2023 10:44:30 +0100 (CET)
-DKIM-Signature: a=rsa-sha256; bh=YNVm3PfIimcdYNdWUvM2+WemNWJEYP+je7xjvRSKQaQ=;
+	by mail.lfdr.de (Postfix) with ESMTPS id 296AE7EAD43
+	for <lists@lfdr.de>; Tue, 14 Nov 2023 10:48:11 +0100 (CET)
+DKIM-Signature: a=rsa-sha256; bh=KA9/cTDPghY+bKmjX/km5KfPg8YqYpGKt5ncbY9Crdo=;
  c=relaxed/simple; d=lists.cip-project.org;
  h=MIME-Version:Subject:From:To:Date:Message-ID:Feedback-ID:Precedence:List-Subscribe:List-Help:Sender:List-Id:Mailing-List:Delivered-To:Reply-To:List-Unsubscribe-Post:List-Unsubscribe:Content-Type:Content-Transfer-Encoding;
- s=20140610; t=1699955068; v=1;
- b=P50Y4keBkKPDNN7DKDI6/aIMRUhyq/dveSApV8CGcanfgBjzlUo+z9THyqZGILB1ghWQ6DQG
- Towm3ihNyRyLuxv/fSQ/sVKPpM66hiL8lilPuzDQ6ZrAwfPN3X4mBIGtvMZ1QTxJP+ZPiAciTFQ
- TaXyxzVv8q5JqzPISE6HX404=
-X-Received: by 127.0.0.2 with SMTP id pZawYY4521862xYqKWqTVXxo; Tue, 14 Nov 2023 01:44:28 -0800
-X-Received: from a27-52.smtp-out.us-west-2.amazonses.com (a27-52.smtp-out.us-west-2.amazonses.com [54.240.27.52])
- by mx.groups.io with SMTP id smtpd.web11.9452.1699955068661971485
+ s=20140610; t=1699955289; v=1;
+ b=FWZnKF0xvJ7y3yWhlXrlXJ9k5ApJNkUeKjl4IEzpaf7w/T82ViptNCk5OiopGFBfkPlp2JeC
+ is5wQllBGbuVh8o2qeO2xQH09Fl4IgqjXE0zq1YCtuxnUdXMye2OKqEj5XGKAuWjencPG+pRV8f
+ T5e0YK/BarZ5l6cT7KmzRiU8=
+X-Received: by 127.0.0.2 with SMTP id pf51YY4521862xacq5WuIbex; Tue, 14 Nov 2023 01:48:09 -0800
+X-Received: from a27-42.smtp-out.us-west-2.amazonses.com (a27-42.smtp-out.us-west-2.amazonses.com [54.240.27.42])
+ by mx.groups.io with SMTP id smtpd.web10.9387.1699955289471663992
  for <cip-testing-results@lists.cip-project.org>;
- Tue, 14 Nov 2023 01:44:28 -0800
+ Tue, 14 Nov 2023 01:48:09 -0800
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 1038567 beaglebone-black healthcheck
+Subject: [cip-testing-results] LAVA notification for Test Job 1038508 v6.1.62-cip9_cip_qemu_defconfig_6.1.62-cip9_4441e8879_x86_cip_qemu_defconfig_ltp-cve-tests
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
-Date: Tue, 14 Nov 2023 09:44:27 +0000
-Message-ID: <0101018bcd37cb5b-372845be-0993-4798-bf44-b90d8850418e-000000@us-west-2.amazonses.com>
+Date: Tue, 14 Nov 2023 09:48:08 +0000
+Message-ID: <0101018bcd3b291e-00e3f1c0-45cd-486f-bbda-e24a1af914f2-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
-X-SES-Outgoing: 2023.11.14-54.240.27.52
+X-SES-Outgoing: 2023.11.14-54.240.27.42
 Precedence: Bulk
 List-Subscribe: <mailto:cip-testing-results+subscribe@lists.cip-project.org>
 List-Help: <mailto:cip-testing-results+help@lists.cip-project.org>
@@ -34,33 +34,113 @@ Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
 List-Unsubscribe: <https://lists.cip-project.org/g/cip-testing-results/leave/8129362/4520527/1896307328/plugh>
-X-Gm-Message-State: bQFysnGme4qPyPTnmuTU8FZwx4520527AA=
+X-Gm-Message-State: Ysu2Uct3F0tK3o04cFadqoiLx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
 
 Hello,
 
-The job with ID # 1038567 is now in state Finished and health Complete. Job=
- was submitted by lava-health.
+The job with ID # 1038508 is now in state Finished and health Complete. Job=
+ was submitted by buurenvans.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/1038567
+Job details and log file: http://lava.ciplatform.org/scheduler/job/1038508
 
 
 
 
 Device details:
-Hostname: bbb-01
-Type: beaglebone-black
+Hostname: qemu-renesas-02
+Type: qemu
 Owner: None
-Worker: lab-cip-denx
+Worker: lab-cip-renesas
 Job details:
 Priority: Medium
-Description: beaglebone-black healthcheck
-Submitted: 2023-11-14 09:42:47 (+0000 UTC)
-Started: 2023-11-14 09:43:07 (+0000 UTC)
-Finished: 2023-11-14 09:44:27 (+0000 UTC)
-Duration: 0:01:19
+Description: v6.1.62-cip9_cip_qemu_defconfig_6.1.62-cip9_4441e8879_x86_cip_=
+qemu_defconfig_ltp-cve-tests
+Submitted: 2023-11-14 08:52:27 (+0000 UTC)
+Started: 2023-11-14 09:12:48 (+0000 UTC)
+Finished: 2023-11-14 09:48:08 (+0000 UTC)
+Duration: 0:35:19
+
+Metadata:
+
+Results:
+
+
+Test Suite lava: http://lava.ciplatform.org/results/1038508/lava
+Test Case validate: Test passed
+Test Case test-overlay: Test passed
+Test Case test-install-overlay: Test passed
+Test Case test-runscript-overlay: Test passed
+Measurement: 0.03 seconds
+Test Case git-repo-action: Test passed
+Measurement: 20.97 seconds
+Test Case test-overlay: Test passed
+Test Case test-install-overlay: Test passed
+Measurement: 0.04 seconds
+Test Case test-runscript-overlay: Test passed
+Measurement: 0.51 seconds
+Test Case apply-overlay-guest: Test passed
+Measurement: 42.38 seconds
+Test Case http-download: Test passed
+Measurement: 4.82 seconds
+Test Case http-download: Test passed
+Measurement: 14.99 seconds
+Test Case execute-qemu: Test passed
+Test Case kernel-messages: Test passed
+Measurement: 18.80 seconds
+Test Case login-action: Test passed
+Measurement: 19.29 seconds
+Test Case 0_prep-tmp-disk: Test passed
+Measurement: 0.04 seconds
+Test Case 1_ltp-cve-tests: Test passed
+Measurement: 1976.29 seconds
+Test Case job: Test passed
+
+Test Suite 1_ltp-cve-tests: http://lava.ciplatform.org/results/1038508/1_lt=
+p-cve-tests
+Test Case cve-2011-0999: Test passed
+Test Case cve-2011-2183: Test skipped
+Test Case cve-2011-2496: Test skipped
+Test Case cve-2012-0957: Test passed
+Test Case cve-2014-0196: Test passed
+Test Case cve-2015-0235: Test passed
+Test Case cve-2015-7550: Test passed
+Test Case cve-2016-4470: Test skipped
+Test Case cve-2015-3290: Test skipped
+Test Case cve-2016-4997: Test passed
+Test Case cve-2016-5195: Test passed
+Test Case cve-2016-7042: Test passed
+Test Case cve-2016-7117: Test passed
+Test Case cve-2016-9604: Test passed
+Test Case cve-2016-10044: Test passed
+Test Case cve-2017-2618: Test passed
+Test Case cve-2017-2671: Test passed
+Test Case cve-2017-5669: Test passed
+Test Case cve-2017-6951: Test passed
+Test Case cve-2017-7308: Test passed
+Test Case cve-2017-7472: Test passed
+Test Case cve-2017-12192: Test passed
+Test Case cve-2017-12193: Test passed
+Test Case cve-2017-15274: Test passed
+Test Case cve-2017-15299: Test passed
+Test Case cve-2017-15537: Test skipped
+Test Case cve-2017-15649: Test passed
+Test Case cve-2017-15951: Test passed
+Test Case cve-2017-17805: Test skipped
+Test Case cve-2017-17806: Test skipped
+Test Case cve-2017-17807: Test passed
+Test Case cve-2017-1000364: Test passed
+Test Case cve-2017-5754: Test skipped
+Test Case cve-2017-17052: Test passed
+Test Case cve-2017-16939: Test passed
+Test Case cve-2017-17053: Test passed
+Test Case cve-2017-18075: Test skipped
+Test Case cve-2018-5803: Test skipped
+Test Case cve-2018-1000001: Test passed
+Test Case cve-2018-19854: Test skipped
+No query is set for results comparing.
 
 --
 LAVA
@@ -69,9 +149,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#240091): https://lists.cip-project.org/g/cip-testing-re=
-sults/message/240091
-Mute This Topic: https://lists.cip-project.org/mt/102580452/4520527
+View/Reply Online (#240092): https://lists.cip-project.org/g/cip-testing-re=
+sults/message/240092
+Mute This Topic: https://lists.cip-project.org/mt/102580464/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
