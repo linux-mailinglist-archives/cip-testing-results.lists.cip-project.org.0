@@ -1,27 +1,27 @@
-Return-Path: <bounce+64575+252359+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+252360+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from mail01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id C69D481DF34
-	for <lists@lfdr.de>; Mon, 25 Dec 2023 09:32:47 +0100 (CET)
-DKIM-Signature: a=rsa-sha256; bh=rHUYjimMJNoA3XgDhfhdGbeJQCfhiJ1xc8QIXbQB31I=;
+	by mail.lfdr.de (Postfix) with ESMTPS id 5BB7081DF35
+	for <lists@lfdr.de>; Mon, 25 Dec 2023 09:32:48 +0100 (CET)
+DKIM-Signature: a=rsa-sha256; bh=VAk56mE7o/OVXej8Xhx4ETnec9rUelf2IXtePcM+zP0=;
  c=relaxed/simple; d=lists.cip-project.org;
  h=MIME-Version:Subject:From:To:Date:Message-ID:Feedback-ID:Precedence:List-Subscribe:List-Help:Sender:List-Id:Mailing-List:Delivered-To:Reply-To:List-Unsubscribe-Post:List-Unsubscribe:Content-Type:Content-Transfer-Encoding;
  s=20140610; t=1703493166; v=1;
- b=dxnzfWY2/CgWkLsR0fSIwG4Ih0ste03ND+Gl8hEohK7jZISK38hT8MtPlV+aXJ6T+f1AZS33
- qOQrDdJ8I5hVkW0Z7nL/DnSlj55/hPDSp8Cwmm8RO/MQ23UduRCLyQehh1QKh3cHpT3Rm9GOx72
- 0FbMVb9Eb+KGkMQnnlluf8eA=
-X-Received: by 127.0.0.2 with SMTP id GwDHYY4521862xejO0PzQKH7; Mon, 25 Dec 2023 00:32:46 -0800
+ b=OdYHN7z1vhIrqe7kpEhYmwpPB8Cwd7S/c5Z/WEMOizqjO7D1voLBExPYWthNLzDknt+Nk1lD
+ FYfOlup05ViLsdKb244B6RDJDuE6O+A2MEBZr2u2UImth7chNeLj+AMuBsDYd20bD/81529QDGU
+ 8TfaPVlmQt/JnGyunkdjAuY4=
+X-Received: by 127.0.0.2 with SMTP id kf09YY4521862x9U1tvYPCKU; Mon, 25 Dec 2023 00:32:46 -0800
 X-Received: from a27-27.smtp-out.us-west-2.amazonses.com (a27-27.smtp-out.us-west-2.amazonses.com [54.240.27.27])
- by mx.groups.io with SMTP id smtpd.web11.57141.1703493166238743359
+ by mx.groups.io with SMTP id smtpd.web10.57289.1703493166721942382
  for <cip-testing-results@lists.cip-project.org>;
  Mon, 25 Dec 2023 00:32:46 -0800
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 1065375 x86-openblocks-iot-vx2 health-check
+Subject: [cip-testing-results] LAVA notification for Test Job 1065376 x86-openblocks-iot-vx2 health-check
 From: noreply@ciplatform.org
 To: cip-testing-results@lists.cip-project.org
 Date: Mon, 25 Dec 2023 08:32:45 +0000
-Message-ID: <0101018ca01ae10c-334c980a-7220-4850-9bfd-130e59b34202-000000@us-west-2.amazonses.com>
+Message-ID: <0101018ca01ae37d-b6bb42ac-366c-40ec-8c72-7770839c8b59-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 X-SES-Outgoing: 2023.12.25-54.240.27.27
 Precedence: Bulk
@@ -34,23 +34,23 @@ Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
 List-Unsubscribe: <https://lists.cip-project.org/g/cip-testing-results/leave/8129362/4520527/1896307328/plugh>
-X-Gm-Message-State: uNuIxZ8ZbBjl4n1XzSkYgxrcx4520527AA=
+X-Gm-Message-State: LBkVnV51HYx5zlukBykAjkLAx4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
 
 Hello,
 
-The job with ID # 1065375 is now in state Finished and health Complete. Job=
+The job with ID # 1065376 is now in state Finished and health Complete. Job=
  was submitted by lava-health.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/1065375
+Job details and log file: http://lava.ciplatform.org/scheduler/job/1065376
 
 
 
 
 Device details:
-Hostname: openblocks-iot-vx2-01
+Hostname: openblocks-iot-vx2-02
 Type: x86-openblocks-iot-vx2
 Owner: None
 Worker: lab-cip-denx
@@ -69,9 +69,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#252359): https://lists.cip-project.org/g/cip-testing-re=
-sults/message/252359
-Mute This Topic: https://lists.cip-project.org/mt/103357758/4520527
+View/Reply Online (#252360): https://lists.cip-project.org/g/cip-testing-re=
+sults/message/252360
+Mute This Topic: https://lists.cip-project.org/mt/103357759/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
