@@ -1,27 +1,27 @@
-Return-Path: <bounce+64575+258801+4520527+8129362@lists.cip-project.org>
+Return-Path: <bounce+64575+258802+4520527+8129362@lists.cip-project.org>
 X-Original-To: lists@lfdr.de
 Delivered-To: lists@lfdr.de
 Received: from mail01.groups.io (web01.groups.io [66.175.222.12])
-	by mail.lfdr.de (Postfix) with ESMTPS id 9DCDA832295
-	for <lists@lfdr.de>; Fri, 19 Jan 2024 01:17:47 +0100 (CET)
-DKIM-Signature: a=rsa-sha256; bh=3KMT4DWWi/OKKASt85UIe6c7pKBaC8cCpdU7N0SbTZY=;
+	by mail.lfdr.de (Postfix) with ESMTPS id 3E33E832296
+	for <lists@lfdr.de>; Fri, 19 Jan 2024 01:18:29 +0100 (CET)
+DKIM-Signature: a=rsa-sha256; bh=yp+pZT0zKFv0It5q3TGO4VswDJn7CxZg7LCxqSPUy3Y=;
  c=relaxed/simple; d=lists.cip-project.org;
  h=MIME-Version:Subject:From:To:Date:Message-ID:Feedback-ID:Precedence:List-Subscribe:List-Help:Sender:List-Id:Mailing-List:Delivered-To:Reply-To:List-Unsubscribe-Post:List-Unsubscribe:Content-Type:Content-Transfer-Encoding;
- s=20140610; t=1705623466; v=1;
- b=iM3lKkX0KdVakPKi36LXTP9dPROZ5rsNH+s9tj3dd7vHbI3tLdztDwhdG1baGTmQ5HAXvLsq
- kB6Z3RTRvwF+HGiwQp+yHUUcXPzm9pdQm0dWoMjGhss8n05QKPp7NmNmviqQTkDFxmlWvGZvSUb
- FA3Ogq7CjvoYhddz1oVejBP0=
-X-Received: by 127.0.0.2 with SMTP id N2wWYY4521862xVunAppPJdo; Thu, 18 Jan 2024 16:17:46 -0800
+ s=20140610; t=1705623507; v=1;
+ b=lJ4Whchzxj15tKK7BavFQGbI4rJJxGbx5PkWJeKRme0Eca0ChNpe68v7QmEN6k74f6GBJvlx
+ iaakmLJR+id5gJ/JhYm5dk1HGl5xsp2wibtFF/X92zsmBAlIRoUHiJbDmxfovksxjsiTuFKmwYq
+ WXkc98CmCiOVSatUcu0OuijA=
+X-Received: by 127.0.0.2 with SMTP id AHhNYY4521862xdIX5PqOJEe; Thu, 18 Jan 2024 16:18:27 -0800
 X-Received: from a27-24.smtp-out.us-west-2.amazonses.com (a27-24.smtp-out.us-west-2.amazonses.com [54.240.27.24])
- by mx.groups.io with SMTP id smtpd.web11.9879.1705623466064879737
+ by mx.groups.io with SMTP id smtpd.web11.9894.1705623507685133052
  for <cip-testing-results@lists.cip-project.org>;
- Thu, 18 Jan 2024 16:17:46 -0800
+ Thu, 18 Jan 2024 16:18:27 -0800
 MIME-Version: 1.0
-Subject: [cip-testing-results] LAVA notification for Test Job 1078630 ci-iwamatsu-linux-5.10.y-cip-rc_renesas_defconfig_5.10.208-cip41_bc6037ac1_arm64_renesas_defconfig_r8a774a1-hihope-rzg2m-ex.dtb_ltp-syscalls-tests
+Subject: [cip-testing-results] LAVA notification for Test Job 1078589 ci-iwamatsu-linux-5.10.y-cip-rc_renesas_shmobile_defconfig_5.10.208-cip41_bc6037ac1_arm_renesas_shmobile_defconfig_r8a7743-iwg20d-q7-dbcm-ca.dtb_ltp-dio-tests
 From: "Neal Caidin" <noreply@ciplatform.org>
 To: cip-testing-results@lists.cip-project.org
-Date: Fri, 19 Jan 2024 00:17:45 +0000
-Message-ID: <0101018d1f14ad22-9d2c561c-cee8-415e-953b-c511f53c6a6f-000000@us-west-2.amazonses.com>
+Date: Fri, 19 Jan 2024 00:18:26 +0000
+Message-ID: <0101018d1f154f45-0fac5f83-07ad-45a7-9f42-d7a1aa7721ed-000000@us-west-2.amazonses.com>
 Feedback-ID: 1.us-west-2.dpZ3+4zb8Tw1/c7xkFZPskvGKx/SAg98+h1xxHxUxV4=:AmazonSES
 X-SES-Outgoing: 2024.01.19-54.240.27.24
 Precedence: Bulk
@@ -34,74 +34,118 @@ Delivered-To: mailing list cip-testing-results@lists.cip-project.org
 Reply-To: cip-testing-results@lists.cip-project.org
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
 List-Unsubscribe: <https://lists.cip-project.org/g/cip-testing-results/leave/8129362/4520527/1896307328/plugh>
-X-Gm-Message-State: i2GiQgIEIBSEKbvD13JfR6LBx4520527AA=
+X-Gm-Message-State: MLOFJu9ufLckKYaKmm6ziAc7x4520527AA=
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
 
 Hello,
 
-The job with ID # 1078630 is now in state Finished and health Incomplete. J=
-ob was submitted by CIP-Testing.
+The job with ID # 1078589 is now in state Finished and health Complete. Job=
+ was submitted by CIP-Testing.
 
-Job details and log file: http://lava.ciplatform.org/scheduler/job/1078630
+Job details and log file: http://lava.ciplatform.org/scheduler/job/1078589
 
 
-Infrastructure error: bootloader-interrupt timed out after 300 seconds
 
 
 Device details:
-Hostname: r8a774a1-hihope-rzg2m-ex-renesas-04
-Type: r8a774a1-hihope-rzg2m-ex
+Hostname: r8a7743-iwg20d-q7-renesas-02
+Type: r8a7743-iwg20d-q7
 Owner: None
 Worker: lab-cip-renesas
 Job details:
 Priority: Medium
-Description: ci-iwamatsu-linux-5.10.y-cip-rc_renesas_defconfig_5.10.208-cip=
-41_bc6037ac1_arm64_renesas_defconfig_r8a774a1-hihope-rzg2m-ex.dtb_ltp-sysca=
-lls-tests
-Submitted: 2024-01-19 00:09:27 (+0000 UTC)
-Started: 2024-01-19 00:09:44 (+0000 UTC)
-Finished: 2024-01-19 00:17:45 (+0000 UTC)
-Duration: 0:08:00
+Description: ci-iwamatsu-linux-5.10.y-cip-rc_renesas_shmobile_defconfig_5.1=
+0.208-cip41_bc6037ac1_arm_renesas_shmobile_defconfig_r8a7743-iwg20d-q7-dbcm=
+-ca.dtb_ltp-dio-tests
+Submitted: 2024-01-19 00:05:37 (+0000 UTC)
+Started: 2024-01-19 00:05:43 (+0000 UTC)
+Finished: 2024-01-19 00:18:26 (+0000 UTC)
+Duration: 0:12:42
 
 Metadata:
 
 Results:
 
 
-Test Suite lava: http://lava.ciplatform.org/results/1078630/lava
+Test Suite lava: http://lava.ciplatform.org/results/1078589/lava
 Test Case validate: Test passed
 Test Case http-download: Test passed
-Measurement: 36.14 seconds
+Measurement: 2.76 seconds
 Test Case http-download: Test passed
-Measurement: 0.14 seconds
+Measurement: 0.10 seconds
 Test Case http-download: Test passed
-Measurement: 94.10 seconds
+Measurement: 84.12 seconds
 Test Case test-overlay: Test passed
 Test Case test-install-overlay: Test passed
-Measurement: 0.18 seconds
 Test Case test-runscript-overlay: Test passed
-Measurement: 0.60 seconds
 Test Case git-repo-action: Test passed
-Measurement: 18.00 seconds
+Measurement: 59.51 seconds
 Test Case test-overlay: Test passed
 Test Case test-install-overlay: Test passed
-Measurement: 0.15 seconds
 Test Case test-runscript-overlay: Test passed
-Measurement: 0.31 seconds
+Test Case git-repo-action: Test passed
+Measurement: 28.84 seconds
+Test Case test-overlay: Test passed
+Test Case test-install-overlay: Test passed
+Measurement: 0.06 seconds
+Test Case test-runscript-overlay: Test passed
+Measurement: 0.04 seconds
 Test Case bootloader-overlay: Test passed
 Test Case pdu-reboot: Test passed
 Measurement: 0.33 seconds
-Test Case bootloader-interrupt: Test failed
-Measurement: 300.00 seconds
-Test Case uboot-commands: Test failed
-Measurement: 300.33 seconds
-Test Case uboot-action: Test failed
-Measurement: 300.34 seconds
+Test Case kernel-messages: Test passed
+Measurement: 40.41 seconds
+Test Case login-action: Test passed
+Measurement: 41.27 seconds
+Test Case 0_prep-tmp-disk: Test passed
+Measurement: 0.68 seconds
+Test Case 1_ltp-io-tests: Test passed
+Measurement: 87.18 seconds
+Test Case 2_ltp-dio-tests: Test passed
+Measurement: 327.78 seconds
 Test Case power-off: Test passed
-Measurement: 0.34 seconds
-Test Case job: Test failed
+Measurement: 0.36 seconds
+Test Case job: Test passed
+
+Test Suite 1_ltp-io-tests: http://lava.ciplatform.org/results/1078589/1_ltp=
+-io-tests
+Test Case aio01: Test passed
+Test Case aio02: Test passed
+
+Test Suite 2_ltp-dio-tests: http://lava.ciplatform.org/results/1078589/2_lt=
+p-dio-tests
+Test Case dio11: Test passed
+Test Case dio01: Test passed
+Test Case dio02: Test passed
+Test Case dio03: Test passed
+Test Case dio04: Test passed
+Test Case dio05: Test passed
+Test Case dio06: Test passed
+Test Case dio07: Test passed
+Test Case dio08: Test passed
+Test Case dio09: Test passed
+Test Case dio10: Test skipped
+Test Case dio12: Test skipped
+Test Case dio13: Test skipped
+Test Case dio14: Test skipped
+Test Case dio15: Test skipped
+Test Case dio16: Test skipped
+Test Case dio17: Test skipped
+Test Case dio18: Test skipped
+Test Case dio19: Test skipped
+Test Case dio20: Test skipped
+Test Case dio21: Test skipped
+Test Case dio22: Test skipped
+Test Case dio23: Test skipped
+Test Case dio24: Test skipped
+Test Case dio25: Test skipped
+Test Case dio26: Test skipped
+Test Case dio27: Test skipped
+Test Case dio28: Test skipped
+Test Case dio29: Test skipped
+Test Case dio30: Test skipped
 No query is set for results comparing.
 
 --
@@ -111,9 +155,9 @@ Linaro Automated Validation Architecture
 
 -=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-=3D-
 Links: You receive all messages sent to this group.
-View/Reply Online (#258801): https://lists.cip-project.org/g/cip-testing-re=
-sults/message/258801
-Mute This Topic: https://lists.cip-project.org/mt/103821180/4520527
+View/Reply Online (#258802): https://lists.cip-project.org/g/cip-testing-re=
+sults/message/258802
+Mute This Topic: https://lists.cip-project.org/mt/103821194/4520527
 Group Owner: cip-testing-results+owner@lists.cip-project.org
 Unsubscribe: https://lists.cip-project.org/g/cip-testing-results/leave/8129=
 362/4520527/1896307328/xyzzy [lists@lfdr.de]
